@@ -62,39 +62,51 @@ def generate_report(trades):
     
     last_date = trades['Time'].iloc[-1]
      
-    def tenor_summary(tenor_value, tenor_unit):
+    def symbol_by_tenor_summary(symbol, tenor_values, tenor_units):
         
-        tenor_str = str(tenor_value) + tenor_unit
         
-        if tenor_unit == 'M':
-            tenor = last_date + relativedelta(months=tenor_value)
-        elif tenor_unit == 'Y':
-            tenor = last_date + relativedelta(years=tenor_value)
+        not_enough_data = True
+        summary_line = {
+            'Symbol':symbol,
+            'Last Traded Date':last_date,
+            }
+        
+        for i in range(len(tenor_values)):
+            tenor_value = tenor_values[i]
+            tenor_unit = tenor_units[i]
             
-        hist = order[order['Time'] >= tenor]
-        if hist.shape[0] > 1:
-            start_pr = hist['Price'].iloc[0]
-            end_pr = hist['Price'].iloc[-1]
+            tenor_str = str(tenor_value) + tenor_unit
             
-            summary_line = {
-                'Symbol':symbol,
-                'Start Price':start_pr,
-                'End Price':end_pr,
-                tenor_str + ' Momentum': 'increase' if end_pr > start_pr else 'decrease',
-                tenor_str + ' PnL':(end_pr - start_pr)/start_pr
-                }
-        
+            if tenor_unit == 'M':
+                tenor = last_date + relativedelta(months=-tenor_value)
+            elif tenor_unit == 'Y':
+                tenor = last_date + relativedelta(years=-tenor_value)
+                
+            hist = order[order['Time'] >= tenor]
+            if hist.shape[0] > 1:
+                not_enough_data = False
+                
+                start_pr = hist['Price'].iloc[0]
+                end_pr = hist['Price'].iloc[-1]
+                
+                summary_line[tenor_str + ' Start Traded Date'] = hist['Time'].iloc[0]
+                summary_line[tenor_str + ' Last Traded Date'] = hist['Time'].iloc[-1]
+                summary_line[tenor_str + ' Start Price'] = start_pr
+                summary_line[tenor_str + ' End Price'] = end_pr
+                summary_line[tenor_str + ' Momentum'] = 'increase' if end_pr > start_pr else 'decrease'
+                summary_line[tenor_str + ' PnL'] = str(100 * (end_pr - start_pr)/start_pr) + '%'
+            
+        if not_enough_data == False:
             return summary_line
     
     for symbol in trades['Symbol'].unique():
         order = trades[trades['Symbol'] == symbol]
         
-        threeM_summary = tenor_summary(-3, 'M')
-        report = report.append(threeM_summary, ignore_index=True)
-            
-        oneY_summary = tenor_summary(-1, 'Y')
-        report = report.append(oneY_summary, ignore_index=True)
-            
+        summary = symbol_by_tenor_summary(symbol, [3, 1], ['M', 'Y'])
+        report = report.append(summary, ignore_index=True)
+    
+    report.to_csv('report.csv', index=False)
+    
     return report
 
 
@@ -106,4 +118,5 @@ def show_symbol_plot(symbol):
 
 # plot_symbols(trades)
 LSEA = show_symbol_plot('LSEA')
+ADS = show_symbol_plot('ADS')
 report = generate_report(trades)
