@@ -2,6 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import os
+from dateutil.relativedelta import relativedelta
+
 
 # trades_csv = 'Smooth Sky Blue Sheep_trades.csv'
 trades_csv = 'Logical Magenta Scorpion_trades.csv'
@@ -43,8 +45,7 @@ def plot_symbols(trades):
     if not os.path.exists(path):
         os.makedirs(path)
     
-    for symbol in trades['Symbol'].unique():
-        print('Processing symbol:', symbol)
+    for symbol in trades['Symbol'].unique():      
         order = trades[trades['Symbol'] == symbol]
         if order.shape[0] != 1: # remove symbol occurs only once
             plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
@@ -56,9 +57,45 @@ def plot_symbols(trades):
             print(symbol, 'only occurs once, therefore cannot generate plot')
 
 def generate_report(trades):
+    
+    report = pd.DataFrame()
+    
+    last_date = trades['Time'].iloc[-1]
+     
+    def tenor_summary(tenor_value, tenor_unit):
+        
+        tenor_str = str(tenor_value) + tenor_unit
+        
+        if tenor_unit == 'M':
+            tenor = last_date + relativedelta(months=tenor_value)
+        elif tenor_unit == 'Y':
+            tenor = last_date + relativedelta(years=tenor_value)
+            
+        hist = order[order['Time'] >= tenor]
+        if hist.shape[0] > 1:
+            start_pr = hist['Price'].iloc[0]
+            end_pr = hist['Price'].iloc[-1]
+            
+            summary_line = {
+                'Symbol':symbol,
+                'Start Price':start_pr,
+                'End Price':end_pr,
+                tenor_str + ' Momentum': 'increase' if end_pr > start_pr else 'decrease',
+                tenor_str + ' PnL':(end_pr - start_pr)/start_pr
+                }
+        
+            return summary_line
+    
     for symbol in trades['Symbol'].unique():
-        print('hi')
-    return 0
+        order = trades[trades['Symbol'] == symbol]
+        
+        threeM_summary = tenor_summary(-3, 'M')
+        report = report.append(threeM_summary, ignore_index=True)
+            
+        oneY_summary = tenor_summary(-1, 'Y')
+        report = report.append(oneY_summary, ignore_index=True)
+            
+    return report
 
 
 # show symbol df for Debugging
@@ -68,3 +105,5 @@ def show_symbol_plot(symbol):
 
 
 # plot_symbols(trades)
+LSEA = show_symbol_plot('LSEA')
+report = generate_report(trades)
