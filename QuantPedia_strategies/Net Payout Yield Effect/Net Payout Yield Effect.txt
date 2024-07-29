@@ -1,0 +1,78 @@
+# https://quantpedia.com/strategies/net-payout-yield-effect/
+#
+# The investment universe consists of all stocks on NYSE, AMEX, and NASDAQ. At the end of June of each year t, ten portfolios are formed based on ranked 
+# values net payout yield. The net payout yield is the ratio of dividends plus repurchases minus common share issuances in year t to year-end market
+# capitalization. There are two measures of payout yield, one based on the statement of cash flows, the other based on the change in Treasury stocks. 
+# For the net payout yield, we use the cash flow-based measure of repurchases. The portfolio with the highest net payout yield is bought and held for
+# one year, after which it is rebalanced.
+#
+# QC implementation changes:
+#   - Instead of all listed stock, we select 500 most liquid stocks traded on NYSE, AMEX, or NASDAQ.
+
+class NetPayoutYieldEffect(QCAlgorithm):
+
+    def Initialize(self):
+        self.SetStartDate(2000, 1, 1)  
+        self.SetCash(100000) 
+
+        self.symbol = self.AddEquity('SPY', Resolution.Daily).Symbol
+        
+        self.coarse_count = 500
+        
+        self.long = []
+        
+        self.selection_flag = False
+        self.UniverseSettings.Resolution = Resolution.Daily
+        self.AddUniverse(self.CoarseSelectionFunction, self.FineSelectionFunction)
+        self.Schedule.On(self.DateRules.MonthEnd(self.symbol), self.TimeRules.AfterMarketOpen(self.symbol), self.Selection)
+
+    def OnSecuritiesChanged(self, changes):
+        for security in changes.AddedSecurities:
+            security.SetFeeModel(CustomFeeModel(self))
+
+    def CoarseSelectionFunction(self, coarse):
+        if not self.selection_flag:
+            return Universe.Unchanged
+        
+        selected = sorted([x for x in coarse if x.HasFundamentalData and x.Market == 'usa'],
+            key=lambda x: x.DollarVolume, reverse=True)
+        
+        return [x.Symbol for x in selected[:self.coarse_count]]
+    
+    def FineSelectionFunction(self, fine):
+        fine = [x for x in fine if x.MarketCap !=0 and x.ValuationRatios.TotalYield != 0 and x.FinancialStatements.CashFlowStatement.CommonStockIssuance.TwelveMonths != 0 and 
+            ((x.SecurityReference.ExchangeId == "NYS") or (x.SecurityReference.ExchangeId == "NAS") or (x.SecurityReference.ExchangeId == "ASE"))]
+        
+        # Sorting by net payout.
+        sorted_by_payout = sorted(fine, key = lambda x: ( (x.ValuationRatios.TotalYield * (x.MarketCap)) - \
+                                                            (x.FinancialStatements.CashFlowStatement.CommonStockIssuance.TwelveMonths / (x.MarketCap))), reverse=True)
+        decile = int(len(sorted_by_payout) / 10)
+        self.long = [x.Symbol for x in sorted_by_payout[:decile]]
+
+        return self.long
+    
+    def OnData(self, data):
+        if not self.selection_flag:
+            return
+        self.selection_flag = False
+
+        stocks_invested = [x.Key for x in self.Portfolio if x.Value.Invested]
+        for symbol in stocks_invested:
+            if symbol not in self.long:
+                self.Liquidate(symbol)
+
+        for symbol in self.long:
+            if self.Securities[symbol].Price != 0 and self.Securities[symbol].IsTradable:  # Prevent error message.
+                self.SetHoldings(symbol, 1 / len(self.long))
+
+        self.long.clear()
+    
+    def Selection(self):
+        if self.Time.month == 6:
+            self.selection_flag = True
+
+# Custom fee model.
+class CustomFeeModel(FeeModel):
+    def GetOrderFee(self, parameters):
+        fee = parameters.Security.Price * parameters.Order.AbsoluteQuantity * 0.00005
+        return OrderFee(CashAmount(fee, "USD"))
