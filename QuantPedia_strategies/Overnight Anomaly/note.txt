@@ -1,0 +1,10 @@
+A lot of academic studies have found that the US equity premium from the mid-90s was due solely to overnight returns. The equity premium in the adjacent open to close (daytime) period is zero or even negative, with first hour returns (AM) negative on average. This finding is consistent for equity indices, derived ETFs, derivatives (like futures), and also for individual stocks.
+
+Fundamental reason
+One probable reason for this anomaly is that companies started to publish positive earnings surprises outside of market hours in the middle of the 90s. Several academic studies also show that part of the reason for this effect is the high opening prices derived from the accumulation of market orders from market participants, which subsequently decline in the first hour of trading. Some degree of positive overnight returns can also be expected due to an illiquidity premium, but liquidity can explain only a small portion of the night and day return difference.
+
+Simple trading strategy
+The simplest form of this strategy is to buy SPY ETF at its closing price and sell it at the opening each day. The strategy makes a lot of trades each year, and therefore the whole strategy is susceptible to slippage costs and fees. Consequently, it is probably better not to trade it on its own but use it as an input parameter in a more sophisticated strategy or use it as a trade execution strategy to improve enter/exit trades.
+
+Hedge for stocks during bear markets
+Not known - A strategy is hard for everyday execution. However, a lot of research paper shows that there really is a negative correlation between daily and nightly returns on equities markets. Overnight strategy can be maybe amended to go long equity market during the night and go short during the day. Strategy can also be modified to trade market only after strong moves during previous days/nights. Resultant long/short strategy can have a negative correlation against the overall market and can be partially used as a hedge against equity risk. However, a rigorous backtest is needed to determine return/risk characteristics and correlation to equity market risk …
