@@ -1,0 +1,15 @@
+The Post-Earnings Announcement Drift (PEAD) effect, i.e., the tendency for stocks to drift after a positive earnings announcement, is a well-documented anomaly covered by numerous academic research papers. A closer look into these papers shows another (even stronger) anomaly – the tendency for stocks with strong past earnings announcements (and earnings announcement returns) to rise during the days around the subsequent future announcements. The documented returns are around ~1% for a 3-day period, which makes this anomaly one of the strongest performers among documented anomalies. Implementing this strategy would probably be difficult as the strategy probably works mainly in the small-cap universe (like the PEAD effect too), and the investor needs to be able to handle a large number of transactions with a large number of stocks in daily intervals. But the strategy’s expected return is very promising.
+
+Fundamental reason
+The main explanations of PEAD are the investors’ under-reaction to earnings announcements and liquidity. The strategy is probably connected to PEAD; therefore, it likely shares these explanations too. This complicated strategy’s real-life implementation could be another reason why abnormal returns are documented in academic research and why these returns are still not arbitraged away.
+
+Simple trading strategy
+The investment universe consists of all stocks from NYSE, AMEX, and NASDAQ except financial and utility firms and stocks with a price of less than $5. Two factors are used: Earnings Announcement Return (EAR) and Standardized Unexpected Earnings (SUE). EAR is the abnormal return for a firm recorded over a three-day window centered on the last announcement date (in excess of the return on a portfolio of firms with similar risk exposures). SUE is constructed by dividing the earnings surprise (calculated as actual earnings minus expected earnings, and expected earnings are computed through a seasonal random walk mode with drift) by the standard deviation of the earnings surprises.
+
+Stocks are sorted into quintiles based on EAR and SUE. Data from the previous quarter are used to sort stocks and to avoid look-ahead bias.
+
+Investors then hold stocks from the intersection of the top SUE and EAR quintiles during the next future earnings announcement (3-day period starting one day before the earnings announcement and ending one day after the announcement).
+
+Hedge for stocks during bear markets
+No - The selected strategy is designed as equity long-only. Therefore, it probably can’t be used as a hedge against market drops.
+

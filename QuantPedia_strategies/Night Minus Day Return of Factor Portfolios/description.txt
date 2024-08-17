@@ -1,0 +1,25 @@
+The authors propose a one-factor model that summarizes the predictive information in many stock characteristics for the cross-section of night-minus-day (NMD) stock returns. The NMD pricing factor prices the average NMD returns of the 17 long-short portfolios examined with a statistically significant cross-sectional R2. We use the NMD returns on this long-short portfolio as the author’s second specification of the NMD pricing factor (NMD CS). As for our side note: Although this is a harder tradeable anomaly, we confirm that overnight-like effects are present not only in individual stock settings (Overnight Anomaly) but also on long-short equity factors.
+
+Fundamental reason
+They construct the NMD pricing factor using a covariance-based SDF approach, as in Kozak, Nagel, and Santosh (2020), and a characteristic-based approach similar to Stambaugh and Yuan (2017). Their compelling evidence proves that the NMD pricing factor is a parsimonious summary of NMD return predictability: NMD pricing factor substantially exposes the dominant common risk factors within the NMD return space; there are limits-of-arbitrage equilibrium in which arbitrageurs require compensation for accommodating sentiment-driven demand; and the magnitude of the NMD return predictabilities is affected by time variation in both the strength of the sentiment-driven demand and the willingness of liquidity providers to accommodate such demand.
+
+Simple trading strategy
+Consider U.S. common stocks listed on the NYSE, AMEX, and NASDAQ stock exchanges as an investment universe.
+(Data are collected from the Center for Research in Security Prices (CRSP) database, NYSE Trade and Quote (TAQ) database, and merged by the TAQ-CRSP link table provided by Wharton Research Data Services (WRDS).)
+
+High-level overview: To construct the authors’ second specification of the pricing factor, NMD CS, first, we combine all 17 LPS characteristics into a composite predictive signal of a stock’s NMD return. Then, construct a one-dollar long-short zero-investment portfolio sorted on CS.
+
+Construction steps:
+Instead of equally weighting each characteristic, follow Lewellen (2015) and use a Fama and MacBeth (1973) regression approach to let the data indicate how much weight to put on individual characteristics. Specifically, at the end of each month t,
+1. run a multivariate cross-sectional regression of the NMD return on lagged characteristics as follows in eq. (9), where predictors (dependant vars) are the vector of the 17 LPS characteristics for firm i in month t−1, and response (independent var) is the average of daily NMD returns before the CAPM adjustment for firm i in month t, and
+2. further just normalize it as in eq. (10).
+3. Then, construct the composite (sorting) signal for firm i in month t using 12-month moving averages of ([slope] coefficient) β_t (eq. (11)).
+4. Sort all stocks into decile portfolios based on an ascending ordering of these signals at the end of each month t.
+
+Execution: An investor trying to replicate the proposed strategy in the real world would create an augmented long-short zero investment portfolio that goes long the top decile and short the bottom decile portfolios. The daily NMD returns of the long-short portfolio are the returns on a trading strategy that go long this portfolio overnight and short it intraday.
+
+Investors within this strategy should obey monthly rebalancing based on incoming data but execute it intraday, and the weighting scheme is explained in the first step.
+
+Hedge for stocks during bear markets
+Partially - Maybe, possibly, to some extend; the authors mention that the NMD pricing factor and LIQ simultaneously spiked during the 2000 dot-com crash, the 2009 financial crisis, and the 2020 COVID-19 stock market crash, when liquidity providers have more constrained risk-bearing capacities and higher risk aversions. The COVID-19 stock market crash episode serves as an out-of-sample test relative to the sample period studied by Nagel (2012). The simultaneous significant increases in LIQ and the NMD pricing factor around the COVID-19 stock market crash not only support Nagel’s argument that the returns from liquidity provision spike during periods of financial market turmoil but also our hypothesis that NMD return predictabilities are positively related to the required returns from liquidity provision.
+
