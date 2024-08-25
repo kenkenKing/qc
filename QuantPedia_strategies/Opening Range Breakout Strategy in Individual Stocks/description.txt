@@ -1,0 +1,24 @@
+The substantial potential of the ORB (Opening Range Breakout) strategy is highlighted, especially when applied to Stocks in Play exhibiting a high Relative Volume of at least 100%. The findings of (Zarattini, Barbon, Aziz, 2024) underscore the strategy’s effectiveness in generating consistent and uncorrelated returns, thereby addressing the long-standing debate about the feasibility of day trading as a sustainable income source. The critical role is in selecting stocks with substantial trading activity, driven by underlying fundamental news, to capitalize on intraday volatility and liquidity. 5-minute ORB strategy with Relative Volume creating a portfolio engaged in day trading both long and short positions of U.S. stocks made it the newest addition to our trading database.
+
+Fundamental reason
+The presented paper contributes to the body of financial literature by providing a detailed, stock-specific analysis of ORB performance across different time frames, a first of its kind with such intraday granularity. A comprehensive analysis of the ORB strategy in the US equity market offers significant insights into its profitability and viability as a day trading approach. The remarkable performance of the 5-minute ORB strategy, in particular, stands out, demonstrating a notable advantage over longer time frames within the ORB strategy and a passive buy-and-hold approach. This strategy achieved a net performance of over 1,600%, with a Sharpe ratio of 2.81 and an annualized alpha of 36%, significantly outperforming the passive S&P 500 return of 198% over the same period. The superior performance of the 5-minute ORB suggests a unique dynamic at play in the earliest phases of the trading day, highlighting an area ripe for further exploration. Further investigation into the reasons behind the 5-minute ORB’s exceptional performance and exploration of additional variables that may influence the strategy’s success will be one of the future courses of work to be done.
+
+Simple trading strategy
+Into the investment universe, including all US stocks/equities listed on US exchanges (NYSE and Nasdaq).
+(The stock data are sourced from the Center for Research in Security Prices (CRSP). Intraday data for all stocks are obtained from IQFeed.)
+
+As for coarse selection, these must be obeyed to enter a trade:
+1. The opening price is to be above $5.
+2. The average trading volume over the previous 14 days must be at least 1,000,000
+daily shares.
+3. The ATR over the previous 14 days was more than $0.50.
+4. An additional constraint for the selected strategy variant: exclusively focus on those stocks whose Relative Volume is at least 100% and pick the top 20 stocks experiencing the highest Relative Volume.
+
+Strategy conditions: The direction of each trade (long or short) is determined by the initial movement of the opening range. A positive opening range prompted a stop buy order, whereas a negative one led to a stop sell order. Then, there are 2 outcomes:
+Set a stop loss at 10% of the ATR for every position opened.
+If a position is not stopped during the day, wound at the end of the trading day.
+
+This is an intraday trading strategy consisting of equally-weighting 20 stocks every day.
+
+Hedge for stocks during bear markets
+Partially - This intraday strategy is agnostic about financial downturns and should be working in all possible macro environtments.

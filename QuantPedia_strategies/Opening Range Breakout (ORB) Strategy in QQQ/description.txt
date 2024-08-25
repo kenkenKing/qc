@@ -1,0 +1,22 @@
+Paper is an exciting contribution to the never-ending debate on the profitability of short-term (intra) day traders. While some point to it as the riskiest endeavor in financial markets, this study provides empirical evidence that day trading can produce excellent and uncorrelated returns. One of the most common is the n-minute ORB (Opening Range Breakout) strategy, with bread-and-butter in identifying the high and low points of stock during the first n-minutes of trading and then buying or selling when the stock breaks out of this range (buying or selling at the open of the second candle in the same direction of the first n-minute candle). We present a variant performed in 5 minutes and utilized on popular U.S. QQQ ETF. (An astute reader can also learn about this strategy on steroids utilizing products such as TQQQ, a leveraged ETF of QQQ.)
+
+Fundamental reason
+The ORB strategy is working well and is consistently profitable in both bull and bear markets. Traders often look to capitalize on the volatility that can occur at the beginning of the trading day. The active approach proposed by this paper will allow a disciplined day trader to profitably navigate different market regimes that can vary in terms of overall direction and volatility. Further, the outperformance of the active approach is easily grasped during bear markets when the passive benchmark suffers from the decline of equity markets.
+
+Simple trading strategy
+The investment universe consists of Invesco QQQ ETF (Nasdaq-100) [possibility to apply for leveraged products (TQQQ), or other broad-index ETFs].
+
+The trading algorithm goes as follows:
+1a) If, during the first 5 minutes, the market moved up, we took a bullish position starting from the second candle’s opening price; else
+1b) if the first 5-minute candle was negative, we took a bearish position at the opening of the second 5-minute candle.
+2) Set stop loss (as shown conceptually in Figure 1): The stop loss was placed at the low of the day (which was the low of the first 5-minute candle) for a long trade, and at the high of the day (which was the high of the first 5-minute candle) for a short trade.
+Set the profit target at 10x the $R, which is the distance between the entry price and the stop.
+3. Should the target not have been reached by the end
+of the day (EoD), liquidate the position at market close.
+
+The appropriate share size was calculated by factoring in the size of the trading account, the amount of $R, the percentage of the capital we wanted to risk per trade (1%), and the maximum leverage allowed by the broker as in the formula on page 5.
+
+This is a pure intraday trading strategy; all positions are entered and left during a normal U.S. trading day and use buying power only on one position (full-weight)
+
+Hedge for stocks during bear markets
+Yes - The ORB strategy worked well and was profitable in both bull and bear markets. Further, the outperformance of the active approach is easily grasped during bear markets, when the passive benchmark suffered from the decline of equity markets.
