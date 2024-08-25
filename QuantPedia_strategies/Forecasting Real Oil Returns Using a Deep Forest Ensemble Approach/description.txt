@@ -1,0 +1,58 @@
+Crude oil, integral to various industries, exerts substantial influence on the global economy and financial markets, making accurate price forecasting essential for governments, investors, and portfolio managers. Traditional econometric models and complex deep neural networks (DNNs) have struggled with the intricate dynamics of oil prices. This paper introduces the Deep Forest Ensemble Approach (DFEA), a novel machine learning technique that combines the predictive power of deep learning with fewer hyper-parameters. The authors evaluate the DFEA’s effectiveness in forecasting oil prices compared to conventional methods, using a comprehensive dataset of technical indicators and macroeconomic variables. Their findings reveal that the DFEA offers superior forecasting accuracy and economic value, presenting a promising alternative to existing models.
+
+Fundamental reason
+The functionality of this paper is grounded in addressing two key challenges in oil price forecasting: the choice of predictive factors and the modeling techniques. Crude oil’s profound impact on the global economy underscores the need for precise forecasts, which rely on technical indicators and macroeconomic variables. Previous studies have highlighted the superior predictive power of technical indicators, yet the complexity of oil price dynamics has often rendered traditional econometric models insufficient. This paper explores the potential of the Deep Forest Ensemble Approach (DFEA), a machine learning method that combines deep learning’s representational strength with fewer hyper-parameters, offering a promising alternative to conventional methods. By leveraging a comprehensive dataset and conducting rigorous comparisons with established techniques, the paper demonstrates that DFEA not only enhances forecasting accuracy but also delivers significant economic value, making it a vital tool for investors and policymakers alike.
+
+Simple trading strategy
+Section 2 provides an overview of the Deep Forest Ensemble Approach (DFEA) proposed by Zhou and Feng (2017), alongside eight other competing predictive models: Random Forest, XGBoost, Gaussian Process Regression (GPR), Support Vector Machine (SVM), Ridge Regression, LASSO, K-Nearest Neighbors (KNN), and the Mean Combination Method.
+The DFEA is a machine learning method that stands out due to its departure from traditional neural networks. Unlike deep neural networks (DNNs), it does not rely on backpropagation or numerous hyper-parameters, making it simpler to train. The DFEA employs a cascade forest structure and multi-grained scanning to capture complex feature relationships effectively.
+The competing models cover a range of techniques:
+• Random Forest: Utilizes an ensemble of decision trees to enhance prediction accuracy by reducing variance.
+• XGBoost: Implements gradient boosting with second-order optimization, known for its high performance in competitions.
+• GPR: A Bayesian method that uses Gaussian processes for regression, incorporating prior knowledge through kernel functions.
+• SVM: A robust method for both classification and regression, which employs a kernel function to handle non-linear relationships.
+• Ridge Regression and LASSO: These linear models incorporate regularization to address multicollinearity and perform variable selection.
+• KNN: A simple yet effective technique that predicts based on the average of the nearest neighbors.
+• Mean Combination Method: Aggregates predictions from multiple models to enhance forecasting performance.
+The section concludes with the methodology used to compare these models, focusing on their ability to forecast the log of spot oil price returns using data available up to the current month.
+
+Data Sources and Variables
+1. Crude Oil Prices:
+Crude oil prices, known for their volatility, are used to evaluate predictive models. This study focuses on three main proxies for oil prices:
+
+WTI Crude Oil: Monthly spot prices from the U.S. Energy Information Administration (EIA).
+Brent Crude Oil: Another widely used price proxy.
+Refiners’ Acquisition Cost (RAC): The cost for U.S. refiners.
+To construct real oil prices, nominal prices were adjusted using the U.S. Consumer Price Index (CPI) from the Federal Reserve Economic Data (FRED). Forecasts of real oil returns were generated from January 1986 to December 2019, with the in-sample period ending in December 2000 and out-of-sample forecasts beginning in January 2001.
+
+2. Technical Indicators:
+The study includes 18 technical indicators categorized into three groups:
+
+Moving Average (MA) Indicators: Uses short-term and long-term moving averages to generate buy/sell signals based on their comparison.
+Momentum (MOM) Indicators: Compares current oil prices to their past levels to assess market trends.
+On-Balance Volume (OBV) Indicators: Combines price and volume data to identify market trends and generate trading signals.
+These indicators were based on data from NYMEX crude oil futures contracts.
+
+3. Macroeconomic Variables:
+The study integrates 18 macroeconomic variables to enhance predictive power:
+
+Stock Market Related Variables: Includes Book-to-Market ratio, Treasury Bill rate, long-term yield, term spread, inflation, dividend-price ratio, dividend yield, and earnings-price ratio.
+General Economic Conditions: Covers unemployment rate, money supply growth, industrial production growth, capacity utilization, purchasing managers’ index, and Chicago Fed’s national activity index.
+Demand and Supply Pressures in Oil Markets: Includes global economic activity index, U.S. crude oil production, NYSE Arca oil index, and real U.S. trade-weighted exchange rate.
+This combination of technical and macroeconomic variables aims to provide a comprehensive approach to forecasting and understanding crude oil price movements.
+
+Empirical Analyses and Discussions
+1. Out-of-Sample Performance: The section evaluates the performance of the Deep Forest Ensemble Algorithm (DFEA) against competing models using three criteria: out-of-sample R², success ratio, and Certainty Equivalent Return (CER) gain. The out-of-sample evaluation, spanning January 2001 to December 2019, focuses on predictive accuracy beyond in-sample results to avoid overfitting. The DFEA is assessed using various benchmarks, including a no-change forecast and a historical average forecast.
+• Out-of-Sample R²: Measures the improvement in prediction accuracy compared to benchmarks. The DFEA outperforms all other models, showing the highest R² value of 40.04%, indicating it significantly improves upon the no-change benchmark.
+• Success Ratio: Evaluates directional accuracy in predicting oil price movements. The DFEA achieves a success ratio of 64.76%, the highest among models tested, underscoring its effectiveness in market timing.
+• CER Gain: Reflects the economic value of forecasts. The DFEA shows a substantial CER gain of 20.33%, second only to Ridge forecast’s 22.25%, demonstrating that investors are willing to pay a significant fee for its forecasts.
+The DFEA’s performance is consistently strong even during market turmoil, contrasting with other methods that struggle during crises.
+2. Forecast Encompassing Test: This test determines if the DFEA provides unique information not captured by other models. The DFEA is shown to encompass the information in competing models, meaning its forecasts contain valuable additional insights. The test results confirm that the DFEA’s forecast is superior and more informative compared to its competitors.
+3. Sources of Predictive Power: The study examines which variables contribute most to the DFEA’s predictive strength. Key findings include:
+• Technical Indicators vs. Macroeconomic Variables: Technical indicators, particularly Momentum (MOM) indicators, offer stronger predictive power than macroeconomic variables. The DFEA with MOM indicators performs nearly as well as the model with all technical indicators.
+• Impact of Technical Indicator Groups: Among the technical indicators, the MOM group significantly contributes to the predictive accuracy. The DFEA using only MOM indicators shows a high success ratio and R², indicating MOM’s dominant role in forecasting oil prices.
+The analysis highlights that MOM indicators are particularly effective due to their ability to capitalize on lagged market responses, reflecting market inefficiencies where delayed reactions to information can still be profitable.
+
+Hedge for stocks during bear markets
+Not known -
+

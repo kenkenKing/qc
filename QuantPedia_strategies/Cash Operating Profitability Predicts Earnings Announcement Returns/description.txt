@@ -1,0 +1,21 @@
+The reviewed study sheds much-needed light on the risk versus mispricing explanations for the positive relationship between profitability and future returns documented in prior studies, and the authors provide compelling evidence that high-profitability firms outperform low-profitability firms on days with substantial negative market returns. We have selected the strategy that takes extremes from deciles of one from stocks’ measure of operating profitability into a spread portfolio that trades around four quarterly five-day earnings release window without the least liquid stocks.
+
+Fundamental reason
+Authors enrich already discussed topics by competing explanations for these findings by investigating risk and mispricing. They build on a growing body of literature that documents that profitability predicts future returns (Fama and French 2006; Novy-Marx 2013; Ball et al. 2015, 2016), and more recently, Ball et al. (2015, 2016) show that operating profitability and cash-based operating profitability are the strongest predictors of future returns. Their first tests examine the relationship between profitability and extreme return outcomes. Profitability is negatively related to ex-ante stock crash risk. Profitability is also negatively associated with the likelihood of significant negative future returns but positively related to the likelihood of substantial positive returns. Their second set of tests investigates the potential underreaction by analysts and institutional investors to information on profitability as a mechanism for profitability mispricing. They find that analysts and institutional investors underreact to profitability information, suggesting that the profitability premium is more consistent with mispricing than risk.
+
+Simple trading strategy
+The investment universe is formed from stocks with a market equity value above the 20th percentile of NYSE market capitalization. (Microcap stocks are defined as stocks that would fall into the bottom 20% of market capitalization based on NYSE breakpoints; they should be excluded from the used sample.)
+(Stock return data are from the Center for Research in Security Prices (CRSP), financial statement data from Compustat, analyst forecast data from the Institutional Brokers Estimates System (I/B/E/S), stock option data from OptionMetrics, and institutional investor ownership data from Thomson-Reuters.)
+
+Trading/investment strategy; long in high-profitability firms and short in low-profitability firms occur around earnings announcements (based on see Section 3.1)
+
+1. For each calendar year, data on cash operating profitability (COP) is collected, and all firms are ranked into deciles based on it.
+2. Then, long (buy) the high (decile) COP portfolio and simultaneously short (sell) the low COP portfolio during the 5-day announcement window returns around the following four quarterly earnings announcements during the 12-month period starting in April.
+
+All portfolios are rebalanced daily and are value-weighted.
+
+ 
+
+Hedge for stocks during bear markets
+Not known - The authors found a strong result during the 2008 financial crisis (the economy experienced substantial aggregate credit, financial, and macroeconomic shocks) but did not indicate strategy suitability on other market crashes.
+

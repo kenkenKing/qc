@@ -1,0 +1,28 @@
+The trading strategy described in the research paper explicitly focuses on mean reversion, utilizing the Moving Average Convergence Divergence (MACD) indicator backtested by the QuantConnect platform. In a nutshell, the strategy generates buy signals when the MACD line crosses above the Signal line (Bullish Cross) and sell signals when it crosses below (Bearish Cross).
+
+The strategy also incorporates risk management and position sizing techniques. Entry and exit points are dynamically managed, with a preference for trailing stop loss over static stop loss methods. This approach is treated as a hyperparameter within a learning model and optimized using grid search techniques. The generic idea was that employing the default MACD strategy without fine-tuning parameters would benefit from taking profit / stop loss instead. This is the last improved version from the subsection 5.6 we present.
+
+The ultimate goal is to develop a robust, real-life trading strategy that effectively balances risk and return while addressing practical challenges. The process involves multiple iterations to refine the strategy, incorporating observations and adjustments to improve performance. The strategy is backtested and optimized iteratively on QuantConnect, leveraging its powerful backtesting system.
+
+Fundamental reason
+The economic and behavioral principles behind the mean reversion strategy utilizing MACD are rooted in the belief that asset prices will revert to their historical mean over time. This concept is based on the Efficient Market Hypothesis (EMH) and the Law of Large Numbers, suggesting that prices will, in the long run, reflect their intrinsic value despite short-term deviations.
+
+The strategy employs the MACD indicator, which consists of the MACD Line (12-period EMA minus 26-period EMA), the Signal Line (9-period EMA of the MACD Line), and the MACD Histogram (difference between the MACD Line and Signal Line). Behaviorally, the strategy leverages market participants’ psychological tendencies. The MACD indicator captures market momentum and sentiment shifts. When the MACD line crosses the Signal line, it signals a change in investor sentiment, prompting buying or selling actions.
+
+The Sharpe Ratio evaluates the relationship between returns and risk, aiming to maximize this metric for an optimal balance between risk and return. Position sizing is determined using the Kelly Criterion, which calculates the optimal fraction of capital to allocate based on the probabilities of success and failure.
+
+Simple trading strategy
+The investment universe for this strategy focuses on E-mini S&P 500 futures contracts using intraday data of 1 minute granularity. (Individual instruments are chosen based on the highest open interest among E-mini contracts with expiration dates between 5 to 120 days.)
+
+(Data are already provided on the QuantConnect platform.)
+
+Summary Explanation: The main plan aims to capitalize on mean reversion signals using the MACD indicator.
+
+Trading rule: The buy rule is triggered when the MACD Line crosses above the Signal Line, signaling a overbought entry (short). Conversely, the buy rule is triggered when the MACD Line crosses below the Signal Line, signaling a oversold entry.
+
+Exit rules: The strategy also incorporates a trailing stop loss set at 1% of the contract price and a take profit at 3% of the contract price.
+
+The strategy typically holds one position at a time, either long or short, based on the MACD signals; thus rebalancing intraday. Position sizing is determined using the Kelly Criterion, which calculates the optimal fraction of capital to allocate per trade. (The Kelly Criterion formula used is f* = (bp – q) / b, where f* is the fraction of capital to be invested, b is the net odds received on the wager, p is the probability of success, and q is the probability of failure.)
+
+Hedge for stocks during bear markets
+No - The strategy focuses on mean reversion and MACD signals, which may not effectively hedge against prolonged market downturns. Its reliance on intraday trading and specific technical indicators limits its ability to provide consistent protection in bear markets.

@@ -1,0 +1,22 @@
+Our in-hours research investigates the influence of sentiment change on Bitcoin price by proxy. The Crypto Sentiment Index (CSI) is built as the equally weighted average of the normalized search interest over time for a list of keywords related to the cryptocurrency market. The best combination is when past sentiment and past price trends are both positive, and we include them in our database of investing and trading approaches.
+
+Fundamental reason
+Since earlier studies have shown that sentiment measure is not the only factor influencing Bitcoin prices, we tried to find a relationship with a combination of sentiment and trend. Overall, sentiment measures seem to be an exciting predictor in the mostly retail-driven crypto markets. Adding the sentiment signal to the pure price signal may help improve models based on past performances.
+
+Simple trading strategy
+Bitcoin (BTC) is used as an only investment vehicle.
+(The alternative data source is Google Trends; you can use Yahoo Finance [YF] for backtesting purposes.)
+
+The calculation is explained in the Methodology section (focus on calculating percentiles with a suitable history window).
+
+The Crypto Sentiment Index (CSI) is built as the equally weighted average of the normalized search interest over time for a list of keywords related to the cryptocurrency market. The sentiment index is constructed using the following keywords (separated by a comma):
+
+blockchain, nft (or non fungible token), bitcoin, ethereum, crypto, cryptocurrency, hodl, altcoin, defi (decentralized finance), fomo, initial coin offering, stablecoin, mining pool, pump and dump, satoshi nakamoto, bitcoin mining, shitcoin
+
+For each keyword, we need to recalculate Google Trends’ “relative measure of interest at the end of the sample (October 2023)” to the “relative measure of interest in each month.” For each keyword, authors used the initial period of January 2004 to January 2017 as the “measuring period”, found the maximum number in the data, and recalculated what’s the January 2017 interest/sentiment number to the peak up to that date. Then, they iteratively increased the “measuring period” month by month and recalculated/normalized each month’s interest/sentiment to the measuring window’s peak. This way, they created a “relative measure of interest in each month“, and they then equally weighted numbers for each keyword to produce the final Crypto Sentiment Index (CSI).
+
+For strategy execution, combine:
+Rule A – If the monthly sentiment change (CSI change) is positive AND the BTC monthly price change also has a positive value, we buy one BTC unit and hold it for one month. Otherwise, we do not have any positions, but we also fill them with
+Rule D – It is completely negative of A. If both sentiment change AND price change are negative, invest in BTC for the next month. If one of them is positive or both are positive, then do not hold any position.
+
+The trading decision is always made at the end of the month and involves only one crypto asset (BTC).

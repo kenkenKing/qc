@@ -1,0 +1,17 @@
+The authors researched the existence of residual reversal effects at the intraday frequency and found that the residual reversal strategy is remarkably profitable. A residual component of stock returns, which captures the inherent noise, should exhibit reversals in subsequent periods: decomposed stock returns into risk and residual components by a cross-sectional regression of 30-minute returns on the set of well-known risk anomalies of stocks with a low level of residual have positive returns, and stocks with a high level of residual have negative returns. We selected the residual reversal strategy, which buys the stock with the lowest residuals and sells the stock with the highest residuals of the variant, incorporating the transaction costs of 3bp.
+
+Fundamental reason
+The stock market moves toward reducing noise. While prior literature primarily focuses on how large the noise is at different frequencies, the evidence in this paper emphasizes the role of noise in understanding the behavior of stock returns at a high frequency. The fundamental mean-reverting property of noise helped them identify the profitability strategy and drive the behavior of stock returns. Prior literature finds that most trading strategies cannot yield positive profits when considering transaction costs. The authors concluded that the residual reversal strategy is still profitable if we increase the holding period to longer than 1 hour.
+
+Simple trading strategy
+Employ stocks encompassing the S&P500 index in the investment universe.
+(The quote data from the Trade and Quote (TAQ) database. Also, the adjustment factor, CFACPR, from CRSP will be employed. T)
+
+1. Form decile portfolios every 30 minutes based on the residuals computed from Equations (1) to (5): Partition the 30-minute return into two distinct components: RISK and RESIDUAL. RISK corresponds to the part of a total return that can be attributed to firm-specific risk, while RESIDUAL is the rest portion of the total return, which the firm-specific risk profile cannot explain. (When estimating the level of residuals, we use 11 anomalies from Stambaugh et al. (2012) and 4 additional anomalies from Li et al. (2023).)
+2. Construct the long-short portfolio by taking a long position on the lowest residual portfolio and a short position on the highest residual portfolio (purchasing the residual decile 1 portfolio and selling the decile 10 portfolio).
+3. Hold residual reversal long-short portfolios for the next t period. (The first period is from 10:00 to 10:30, and the last (13th) period is from 16:00 to 10:00.)
+
+This is naturally an intraday trading strategy, and portfolios are value-weighted.
+
+Hedge for stocks during bear markets
+Yes - It turns out that our strategy performed better during periods of financial crisis. The reversal patterns intensify even more during huge financial crises such as the dot-com bubble in 2002, the global financial crisis in 2008, and the COVID-19 pandemic in 2020. As they have shown in Figure 3, it is interesting that the profitability of residual reversal strategies experiences a sharp increase in the case of market downturns: the early 2000s started by the dot-com bubble, the 2008 financial crisis, and 2020 due to COVID-19. Consistent with the conclusion of the result from Section 4.C, the result implies that the performance of the residual reversal strategy captures the elevated compensation of liquidity provision during financial downturns.
