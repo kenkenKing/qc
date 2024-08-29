@@ -1,0 +1,28 @@
+Rajan Raju (April 2023) provides clear evidence of the low-risk anomaly in the Indian equities market, using a large universe of firms over 15 years. Volatility-based metrics outperform beta-based portfolios in our observation period and equity universe. We have chosen a representative variant from this solid, thoughtful academy study of strategy portfolios built monthly on one of the four low-risk metrics (namely, 3-year [36-month] realized volatility [VOL_36M]) developed by a sole scientist.
+
+Fundamental reason
+The factor construction plays an essential role in the ability to estimate accurate anomaly returns. The anomaly is robust to the type of low-risk metric used and over time. Like other factor literature, the author suggests that a combination of measures might be preferable to using single metrics for low-risk. Although the literature about Indian markets has not conclusively shown the “lottery-seeking” behavior in Indian equities, findings from this study suggest that searching for other explanations for the low-risk anomaly is a fruitful avenue for future research. Long-short beta-neutral factors are not investable portfolios; instead, they add to the list of formal academic factors available monthly.
+
+Simple trading strategy
+The investment universe consists of firms that are listed on the NSE or BSE (Indian equities markets).
+(The data used to construct low-risk portfolios are sourced from Refinitiv and Datastream [using the Worldscope India database]. The factor data and risk-free rates used in our analysis are sourced from Invespa.)
+
+The general idea of low-risk strategies is to buy (overweight) low-risk assets and to short (underweight) high-risk assets.
+Spread in the D_1 less D_10 portfolio is creating a statistically significant average alpha we are catching.
+
+We use two factors following the Fama and French (2015) methodology of double-sorted portfolios:
+1. The first factor is the classic size from FF. (Big stocks are those in the top 90% of the market cap for the month, and Small stocks are those in the bottom 10%.)
+2. We construct a beta-neutral long-short Low-Risk Factor 3-year realized volatility (VOL) VOL_36M (replicated by the formula in column Factor Return of Table 1).
+
+3. Portfolio Schema is [2×3] double Sorted (first) on Size and (then, secondly) VOL:
+3. 1. Completely disregard less liquid Small stocks (from first Size sorting).
+3. 2. From three portfolios (Low-Risk, Neutral, and High-Risk) created using the 30th and 70th percentiles of respective metrics for the Big stocks; go long (buy) low-risk, and sell (short) high-risk.
+
+(The market factor represents the market value-weighted returns of all relevant stocks during the period.)
+
+Weight Scheme is Market Weight: For MW portfolios, the average universe is scaled by the market factor (basically value-weighted). As mentioned previously, this strategy requires monthly rebalancing
+
+ 
+
+Hedge for stocks during bear markets
+Not known - The author does not implicitly suggest any hedges against bear markets.

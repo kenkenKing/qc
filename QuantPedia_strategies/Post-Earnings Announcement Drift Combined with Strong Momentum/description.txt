@@ -1,0 +1,11 @@
+Stocks with strong past earnings announcement surprises also tend to have good returns during their consecutive earnings announcements. And what happens when they are also strong past performers? Stock returns before announcements are particularly strong as traders and investors expect good results, and this performance reverses to negative performance during the first several days after the announcement when traders cash in their gains. It is a classical process that fulfills the old saying: “Buy the rumor, sell the news”. It is, therefore, possible to exploit this inefficiency by buying strong momentum stocks with a strong history of good announcements several days before the announcement, selling them near the announcement, and reversing the position to short for several days after the announcement.
+
+Fundamental reason
+Strong performing stocks (on which the strategy focuses on) likely attract investors’ attention due to their sharp past returns. Their attention is likely to be further heightened just prior to the firms’ earnings announcements. Research suggests that limited attention on the part of small, naïve investors is at least partly responsible for the observed return pattern around the earnings announcements of past stock market winners. The pre-announcement price increase stems from buying by large traders, who anticipate an increase in the buying by small traders around the earnings announcement and the accompanying increase in price.
+
+Simple trading strategy
+The investment universe consists of all stocks from NYSE, AMEX, and NASDAQ with a price greater than $5. Each quarter, all stocks are sorted into deciles based on their 12 months’ past performance. The investor then uses only stocks from the top momentum decile and goes long on each stock five days before the earnings announcement and closes the long position at the close of the announcement day. Subsequently, at the close of the announcement day, he/she goes short, and he/she closes his short position on the 5th day after the earnings announcement.
+
+Hedge for stocks during bear markets
+Not known - Source and related research papers don’t offer insight into the correlation structure of trading strategy to equity market risk. Therefore we do not know if this strategy can be used as a hedge/diversification during the time of market crisis.
+

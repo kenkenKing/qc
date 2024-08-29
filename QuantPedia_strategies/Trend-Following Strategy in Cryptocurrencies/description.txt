@@ -1,0 +1,27 @@
+Sadik (rev. 2023) demonstrates a few stylized facts in cryptocurrency returns, disclosing distributional characteristics in the time series of crypto returns, which helps investors in this relatively young asset class predict risk ex-ante returns, and there is evidence of trend or persistence in returns, which may justify momentum. The risk-based methods show sizeable improvement compared to the simple long-only benchmark, suggesting synergy in performance when incorporating trend following with risk-based allocation rules. For inclusion into our investing and trading strategies database, we selected a risk-based approach based on inverse volatility plus trend strategy for the long-short portfolio.
+
+Fundamental reason
+That much-needed research about understanding the distributional characteristics of cryptocurrencies employing stylized facts and assessing the feasibility of risk-based and trend-following approaches to investing in this asset class is well presented in this paper. Most currency pairs show improved risk-adjusted performance for their volatility-targeting strategies alone. Combined with the trend-following momentum application, even with significantly shorter lifespan, this asset class is welcomed and viewed as responsible for similar aspects of other mainstream asset classes. 
+
+Simple trading strategy
+The investment universe has (so far) 22 crypto(currencie)s. (For each [next] year in your sample, find the top 10 currencies ranked by market cap at the beginning of that year. The final list is the union of all the top 10 lists by year.)
+(You can pull all the data from CoinMarketCap API.)
+
+The risk model used for all the estimations is based on a conditional covariance matrix with exponentially weighted volatilities with a 63-day half-life and an exponentially weighted correlation matrix with a 252-day half-life.
+Following two cornerstones of inverse Volatility (ivol) allocation rules as presented in sections 3 A Trend Following System for Cryptocurrencies closely followed by 4 Risk Based Portfolio Construction:
+
+1. Design a trend-following system:
+a) For each CTA asset i, calculate:
+i. Risk Adjusted Momentum (eq. (3))
+ii. EMA Crossover (eq. (4), eq. (5))
+iii. EMA Breakout (eq. (6))
+iv. Max Breakout (eq. (7))
+b) The signal strength is calculated based on the median of those four separate models (eq. (2)).
+c) Normalize each x_n by their exponentially weighted volatility (eq. (8)).
+d) Then, transform into a position size based on a sigmoid function capped at 2 sigma, denoted as s_n (eq. (9)).
+2. Finally, construct a daily rebalancing inverse volatility portfolio as prescribed by the rule of Long/Short with Trend from eq. (14).
+
+The strategy is set for daily rebalancing, with vol(atility) weighting.
+
+Hedge for stocks during bear markets
+Not known - Investing in cryptos during the financial stress periods is not appreciated also due to constraints in shorting them. However, in theory, the strategy seems to be prone to bear markets in cryptocurrency markets. The author does not mention its usefulness during prolonged bear markets and crashes.

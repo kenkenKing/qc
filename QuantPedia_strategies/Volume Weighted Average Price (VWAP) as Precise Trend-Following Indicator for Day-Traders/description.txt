@@ -1,0 +1,22 @@
+Professional trader Aziz and academia hedge fund practitioner Zarattini present their findings with compelling evidence for the exceptional claim that the Volume Weighted Average Price VWAP-based trading strategies are superior to conventional buy-and-hold (investing, swing, and moving average-based) methods. Two bear markets and several instances of abnormal volatility provided a robust test of the strategy’s resilience when the (passive) buy-and-hold (investment) strategy on QQQ in the same period had a maximum drawdown of 37%, a maximum daily loss of 12%, and a Sharpe ratio of 0.7.
+
+Fundamental reason
+This paper is a critical resource for traders and quantitative analysts, providing a statistically robust and empirically validated approach to enhance trading methodology, and this research reaffirms the significance of VWAP in intraday trading over the specified period and encourages further exploration into algorithmic strategies. The overall performance and risk-adjusted returns of the VWAP-based strategy remain notably superior. The reason is that VWAP reflects market liquidity, is an execution benchmark, and is a valuable tool for intraday trend analysis, forming both support and resistance levels.
+
+Simple trading strategy
+The investment universe consists of QQQ [and/or TQQQ (a leveraged and liquid ETF that gives traders a 3x exposure to the daily fluctuation of QQQ), two] very liquid ETF[s] tracking the famous Nasdaq100 index.
+(IQFeed and Interactive Brokers provide data.)
+
+Rationale: We will always and only have a QQQ portfolio engaged in day trading, both in long and short positions on QQQ, using the VWAP-based system described in section 3 Strategy Definition: VWAP Trend Trading, from which we provide a snapshot below.
+
+Trading rule: The system waits for the first 1-minute candle to close after the U.S. market opens at 9:30 am ET. Then either:
+
+a) At exactly 9:31:00am ET, if the asset’s price is above the VWAP (not including pre- or post-market trading hours), a long (buy) position is initiated. The strategy consists of setting a stop loss at the price level where a 1-minute candle closes below VWAP. Or:
+b) Similarly, if the first 1-minute candle opens below VWAP, the system enters a short (sell) position at the start of the following 1-minute candle. In this case, the strategy sets a stop loss at the price level where a 1-minute candle closes above VWAP, as conceptually illustrated in Figure 1.
+
+The position is held throughout the trading day, either until it gets stopped out or until it closes at the market’s close price at 4 pm ET.
+
+Strategy is intraday-based and uses one investment vehicle of choice (regular or leveraged), utilizing all available equity (100% of available funds) without leverage. Apart from the first minute of the trading session and outside regular trading hours, the strategy always implied an open position, either long or short. No positions are held overnight.
+
+Hedge for stocks during bear markets
+Yes - Day trading can significantly outperform a standard buy-and-hold portfolio on benchmark indexes in the US public equity markets (Nasdaq or NYSE). The active strategy to exploit two significant bear markets (the COVID-19 bear market and the 2022 bear market triggered by inflation concerns and rising interest rates).

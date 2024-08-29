@@ -1,0 +1,19 @@
+According to the authors, a cryptocurrency carry portfolio provides investors with unique investment opportunities, as it is able to withstand periods of cryptocurrency market crashes while still delivering a steadily rising cumulative return. Concluded research indicates that carry can predict the excess return of cryptocurrencies in the cross-section, with higher carry leading to a higher excess return. The basis for our presented strategy is summarised as going long on cryptocurrencies with high-interest rates and shorting those with low-interest rates; this cross-sectional carry trade can generate substantial positive carry returns.
+
+Fundamental reason
+Cryptocurrencies, same as fiat currencies or other asset classes, with high carry have a larger return than those with low carry, consistent with the previous result that carry can positively predict excess returns of cryptocurrencies in the cross-section. Various existing risk factors have an impact on the cryptocurrency carry premium. Results from this paper are mixed: suggested explanation range from that geopolitical risk is a significant factor in the positive carry premium, but a negative risk-adjusted carry return still persists, warranting further investigation in future research.
+
+Simple trading strategy
+The investment universe consists of 42 cryptocurrencies (no stablecoins). (The cryptocurrency interest rate data may be obtained from the Bitfinex platform.)
+
+1. The investor first ranks the cryptocurrencies by their carry i^c_t − i^USD_t (they are the interest rates of the cryptocurrency and U.S. Dollar from time t to time t + 1, respectively),
+
+2. then split them equally into three groups (14 cryptos in each one).
+
+3. The final equally-weighted cross-sectional carry portfolio is constructed as follows: cryptocurrencies in Group 1 are in a short position, while those of Group 3 are all in a long position.
+
+The investor holds each portfolio for one week and rebalances it at the end of each week. (Since weekly interest rate data for the U.S. Dollar is not available on weekends, investor rebalances the portfolio on Fridays.)
+
+Hedge for stocks during bear markets
+No - Carry strategies are prone to crash at the same time equities market has crash; therefore, it’s definitely not a crisis hedge strategy.
+

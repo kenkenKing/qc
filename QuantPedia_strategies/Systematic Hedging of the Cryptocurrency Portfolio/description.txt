@@ -1,0 +1,21 @@
+The cryptocurrency hedging variant with cold storage presented by (Vojtko and Dujava, 2024) retrospectively provided a very good tradeoff for people who would have wanted to have crypto in their own hands, paper or hardware (both represent so-called cold) wallets, but on the other side, would have wanted to mitigate the most adverse effects of the price swings. Since there is a reasonable expectation in the future to continue to do so positively, we welcome it as an entry to our database of investing and trading strategies.
+
+Our hedging strategies (mainly those that use the shorter X-day high signals) registered returns between 44% and 47%, with halved volatility (34-43%) and a fraction of the maximal drawdown of the passive cold-storage portfolio (-22% to -37%). Of course, the non-hedged cold-storage portfolio would probably also have higher returns in the future. However, it would be unwise not to consider hedging at least a portion of the portfolio with BTC derivatives. A little lower returns are not a high price for a good night’s sleep.
+
+Fundamental reason
+The cryptocurrency market is extremely volatile, and many participants are accustomed to the wild swings in the price. However, it doesn’t make sense to tolerate that large swing all of the time when there are options for dampening the volatility of the portfolio a little. Cryptocurrency investors can experience crazy bubble rallies of altcoins, but brutal drawdowns (some even over -80 %) may be associated with them. This is the disadvantage of B&H portfolios in most asset classes, but cryptos are by far the most risky. Everybody wants to mitigate that B&H risk somehow; nobody likes to see their portfolio value disappear exceptionally fast, as in crypto busts. And that is where hedging arrives to (at least) a particular rescue. Suspecting that there is left Bitcoin beta residual associated with other cryptocurrencies (as Bitcoin is the largest and the oldest cryptocurrency), we supposed that beta could be efficiently hedged out by Bitcoin derivatives, which may offer an antidote to drawdowns, which played out as quite right.
+
+Simple trading strategy
+The investment universe consists of cryptos: 1. BTC (Bitcoin), and 2. each year, on the first day of the year, select 5 top coins ranked by market cap for a yearly holding period (in our sample, we have 14 of them).
+(As a data source, you can use CoinMarketCap.)
+
+This is the alternative strategy that employs the cold storage and hedges it with a BTC future with the above-mentioned rules (hold cold storage without a hedge if BTC (Bitcoin) is at a 10-day high; otherwise, hedge with a BTC future):
+You shall use the trend-following signal to hedge the cold-storage portfolio selectively. So, you propose to include the following rules in a simple manner decision-if-then-tree manner:
+• if I am at a BTC 10-day high, you would prefer not to hedge a cold-storage portfolio;
+• if I do not fulfill such conditions, I would hedge cold storage through some instrument (near-term BTC or perpetual [PERP]) futures (for the sake of simplicity, each $1 of the portfolio is hedged 1:1).
+
+Rebalance Top 5 holdings each year (yearly), dynamic portfolio hedging with BTC (Bitcoin) depends on the above-explained signal.
+
+
+Hedge for stocks during bear markets
+Partially - Cryptocurrency markets are sensitive to equity market crashes and experience similar drawdowns. But aspects of these variants of strategies provide some mitigation of most of negative effects and aim to preserve the value of the more volatile cryptoassets (such as altcoins) with more-or-less active Bitcoin (BTC) hedging. The strategy can serve as inspiration for similar hedging strategy for equity markets.
