@@ -1,0 +1,37 @@
+In this study, the authors focused on information contained in financial news and its impact on the U.S. stock market. Previous research showed a quick response to news at the market opening (Boudoukh et al. (2019); Greene and Watts (1996); and others). A modern BERT based natural language model on the Thomson Reuters financial news database was trained and used. This allowed to analyze the market reaction to news sentiment.
+There are three main contributions of this study to the literature.
+1. The authors documented the impact of overnight news sentiment on the market opening price and report a mispricing that leads to a predictable return reversal. The reaction to news sentiment is apparently asymmetric, depending on the direction of the previous day’s return in relation to news sentiment. In the absence of company-specific overnight news, subsequent-day returns can very hardly be predicted.
+2. Re-investigation of the attention effect reported by Barber and Odean (2008) and Berkman et al. (2012). Those studies state that increased investor attention (indicated by large absolute previous-day returns) leads to elevated prices at market opening followed by a reversal during the trading day. This effect unconditional on news releases was detected, but in the absence of overnight news, it is much less significant than the effect of news sentiment on asset prices.
+3. The simple trading strategy that exploits overnight reversal by taking a long (short) position in the opening auction of stocks that experienced exceptionally negative (positive) idiosyncratic returns on the previous trading day only if we observe overnight news was presented.
+In particular, the authors document a predictable return reversal of previous day returns on days with company-relevant overnight news. When there is no overnight news, predictability is only marginal. This pattern results from investors’ asymmetric responses to news sentiment.
+Fundamental reason
+The main reason for the functionality of the strategy is the logic behind the usage of the modern BERT ML model for detection of company relevant overnight news. It was shown in this study that overnight news (for instance news released during times when stock markets are closed) has a clear directional impact on the opening share price at the subsequent trading day. Overnight news with positive sentiment predicts a high opening price and overnight news with negative sentiment predicts a low opening price. However, this opening price is not fully efficient in the sense that returns during the subsequent trading day are predictable.
+The authors considered the U.S. market and a stock universe of S&P 500 companies. The interplay of previous-day returns with overnight news sentiment predicts occurrence, direction, and magnitude of an inefficient market opening. This is turn in translates into a predictability of subsequent-day returns. In this study is documented a predictable return reversal of previous day returns on days with company-relevant overnight news. When there is no overnight news, predictability is only marginal/minimal.
+
+Simple trading strategy
+Data
+The authors considered a total of 1122 constituents that are listed in the S&P 500 from 1996 to 2020. They also used daily open and close prices as well as payout- and split-adjusted close prices from Refinitiv Datastream.
+Each news article was tagged with metadata containing ticker codes of the companies mentioned in the news. After matching news to the set of S&P 500 companies, the authors found 812 unique ticker codes in the news metadata. Data were restricted to news articles that contain either a company name or a ticker code in the headline. Then each news article was feed into a data cleaning pipeline, where the text is converted to lowercase and cleaned by removing all numbers, punctuation marks and brackets, so that only letters remain. Irrelevant (the author’s contact information) were also removed.
+More details can be found in Appendix F.
+Informations calculated from data
+From adjusted close prices they calculate corresponding same-day adjusted open prices for each asset (Equation 1, Figure 1).
+They calculated simple close-to-close returns from adjusted prices (total returns) and dissect them into overnight returns, when markets are closed and returns during market activity (Figure 1).
+Then they calculate the idiosyncratic return components relative to the market model, where βs are calculated from weekly returns over a rolling window of two years.
+The main analysis of this paper is fully based on idiosyncratic returns. When they used t −1 open-to-close returns as predictive variable, they used z-scores zi(t-1), calculated dividing idiosyncratic open-to-close returns, by the daily return volatility estimated over a rolling window of 6 month.
+Model
+The model which was implemented is a down-sized BERT-like model with a total of 18.95 million parameters. This model was pre-trained exclusively on domain-specific Thomson Reuters financial news. Fine-tuning on the sentiment prediction task was performed on an annotated dataset with annotations automatically generated from the joint behavior of news stories and asset returns (z-scores) based on Dangl and Salbrechter (2021).
+The authors classified news sentiment as positive, neutral, or negative. Therefore, they were able to identify the directional effect of overnight news on the overnight return. The market tends to open significantly higher (lower) if positive (negative) news is released. Sentiment classification was trained strictly out-of sample. Consequently, it was concluded that the sentiment assigned by the BERT-based model is a good representation of investors’ news perception.
+To demonstrate that the observed effects are persistent and not solely driven by a small number of large impact events, they performed backtests utilizing the signals generated from financial news. The trading logic that was implemented harnesses the inefficiencies caused by overnight news.
+They went long in stocks that either have:
+a) positive overnight news of the topic analyst forecast and zi,(t−1) > 1.5 or
+b) positive overnight news of the topic earnings report and zi,(t−1) < -1.0.
+In addition they shorted stocks with either:
+c) negative overnight news of the topic analyst forecast and zi,(t−1) < -1.5 or
+d) negative news in combination with zi,(t−1) > 1.0.
+Trades are entered at market open on day t and exited at market close on the same day.
+Moreover, the maximum weight is set to 100%, i.e., a maximum of 100% of the capital is invested in one asset within one trade,13 portfolios are weighted equally.
+Note: For a full understanding of this strategy is necessary to go through Sections 5.2 – 5.5.
+Note: The cumulative portfolio return of this strategy is shown in Figure 7.
+Hedge for stocks during bear markets
+No - No information about the application during crisis periods.
+

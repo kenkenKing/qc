@@ -1,0 +1,35 @@
+The research paper discusses a trading and investing strategy based on the unique but somehow complicated application of the Price-to-Utility (PU) ratio in crypto markets. This innovative approach offers a fresh perspective on cryptocurrency valuation, explicitly focusing on the store-of-value principle.
+
+The PU ratio is a novel metric designed to evaluate the intrinsic value of crypto assets beyond traditional utilities. It incorporates several established measures, such as unspent transaction outputs (UTXO), spent transaction outputs (STXO), Weighted Average Life Span (WAL), and CoinDaysDestroyed (CDD). These metrics collectively provide insights into users’ spending behaviors and the overall utility of the cryptocurrency.
+
+The strategy involves back-testing trading indicators for both Bitcoin and Litecoin. The results from these tests substantiate Charlie Lee’s metaphor, positioning Bitcoin as a superior store of value relative to Litecoin. The study’s findings suggest that Bitcoin, much like gold, is predominantly hoarded and serves as a long-term asset, whereas Litecoin, akin to silver, is used more frequently for transactions.
+
+However, profound ideas are not converted into fruitful strategies, and they invite others (whether academics or practitioners from industry) to contribute to better implementing otherwise novel approaches. We have included the version we found most helpful and will update you accordingly if there are other related papers with more developed applications.
+
+Fundamental reason
+The trading strategy based on the PU ratio aims to leverage these behavioral patterns. For instance, higher PU ratios might indicate undervaluation, prompting buy signals, while lower PU ratios could suggest overvaluation, leading to sell signals. This method allows traders to make informed decisions based on cryptocurrencies’ underlying utility and transactional dynamics.
+
+The economic and behavioral principles behind the trading strategy based on the Price-to-Utility (PU) ratio are rooted in classic monetary theory and user behavior in the cryptocurrency market. Economically, the strategy parallels traditional assets like gold and silver and cryptocurrencies like Bitcoin and Litecoin. Gold has historically been a store of value, hoarded for its intrinsic worth, while silver has been more actively used as a medium of exchange. This analogy is applied to Bitcoin and Litecoin, where Bitcoin is seen as a long-term store of value and Litecoin as a transactional currency.
+
+Psychologically, the strategy taps into the investor sentiment and market dynamics. During volatile market conditions, investors’ decisions to hold or spend their assets can provide critical signals for trading. The PU ratio encapsulates these economic and behavioral insights, offering a comprehensive metric for informed trading decisions.
+
+To promote transparency and further research, the authors have made their datasets available on Harvard Dataverse and shared their Python code on GitHub as open source. This openness enables other researchers and traders to replicate and build upon their findings, potentially refining the PU ratio-based trading strategy further.
+
+Simple trading strategy
+The investment universe for this strategy includes Bitcoin and Litecoin, performing this selected variant on Bitcoin. (In conclusion, Bitcoin is considered a superior store of value, akin to gold, while Litecoin is seen as a medium of exchange, similar to silver.)
+
+(Transaction data and details can be sourced from the Big-Query Public Datasets program.)
+
+Computation Matric: The primary tool used in this strategy is the Price-to-Utility (PU) ratio, a novel valuation technique centered around the store-of-value principle. Additional on-chain metrics such as Unspent Transaction Outputs (UTXO), Spent Transaction Outputs (STXO), Weighted Average Life Span (WAL), and Coin Days Destroyed (CDD) are also employed to provide a comprehensive view of user spending behaviors and the store-of-value characteristics of cryptocurrencies.
+
+Simple Trading Strategy Variant Performance Algorithm Decisions:
+
+Buy Rule: A buy signal is generated when the PU ratio falls below a predefined threshold, indicating that the cryptocurrency is undervalued. For example, a PU ratio below 0.5 might trigger a buy signal.
+
+Sell Rule: A sell signal is generated when the PU ratio rises above a predefined threshold, indicating that the cryptocurrency is overvalued. For instance, a PU ratio above 1.5 might trigger a sell signal.
+
+Rebalancing and Position Sizing: Risk management techniques include using stop-loss and take-profit orders. A stop-loss order is set at 5% below the entry price to limit potential losses, while a take-profit order is set at 10% above the entry price to lock in gains. Additionally, leverage is used cautiously, if at all, to avoid excessive risk. You shall only perform on one selected asset, thus total weight (1). However, as with all crypto strategies, we advise not to use or allocate more than 10 % of the total investment/trading capital in the vast strategy basket. Rebalance when recalculated on a per-day basis.
+
+Hedge for stocks during bear markets
+Not known - The strategy’s reliance on PU ratios and market conditions may not provide consistent protection during bear markets. Its effectiveness depends on accurate threshold adjustments and market behavior, which can be unpredictable.
+
