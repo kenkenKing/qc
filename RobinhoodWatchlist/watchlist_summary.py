@@ -72,8 +72,9 @@ def from_hist(hist, time_start, ticker, field):
     '''
     df = hist.loc[time_start:, field][ticker]
     
+    new_time_start = time_start
     while df.isnull()[0]:
-        new_time_start = (datetime.datetime.strptime(time_start, '%Y-%m-%d') + relativedelta(days=1)).strftime('%Y-%m-%d')
+        new_time_start = (datetime.datetime.strptime(new_time_start, '%Y-%m-%d') + relativedelta(days=1)).strftime('%Y-%m-%d')
         df = hist.loc[new_time_start:, field][ticker]
         
     return df
@@ -82,7 +83,7 @@ def from_hist(hist, time_start, ticker, field):
 def generate_results_plots_csv(hist, watchlist):
     columns = ['1m return', '3m return', '6m return', '1y return']
     results = pd.DataFrame(index = watchlist, columns = columns)
-
+    
     for ticker in watchlist:
         # csv report
         one_month_series = from_hist(hist, one_month_prior, ticker, 'Close').dropna()
