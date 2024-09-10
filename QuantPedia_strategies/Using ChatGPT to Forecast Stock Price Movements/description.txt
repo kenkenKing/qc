@@ -1,0 +1,27 @@
+This paper explores the application of generative artificial intelligence and large language models (LLMs) like ChatGPT in predicting stock market returns, a relatively uncharted territory in financial economics. The paper investigates whether LLMs, despite not being explicitly trained for this purpose, can effectively predict stock market movements by leveraging their natural language understanding capabilities. Using a novel approach that incorporates sentiment analysis from news headlines data, the performance of ChatGPT is evaluated and compared to existing sentiment analysis methods.
+The research has significant implications for the financial industry. If successful, integrating ChatGPT in predicting stock market returns could lead to a paradigm shift in market prediction and investment decision-making. Regulators can benefit from understanding the risks and benefits of LLM adoption, influencing regulatory frameworks and best practices. Asset managers and investors can make more informed decisions using empirical evidence on LLMs’ efficacy, potentially improving performance. The study also advances AI applications in finance, inspiring further research to develop tailored LLMs for the industry and encouraging innovation in AI-driven finance.
+
+Fundamental reason
+The fundamental reasons for the functionality of this strategy using ChatGPT and large language models in predicting stock market returns are:
+
+– Exploration of Uncharted Territory: While LLMs have gained traction in various domains, their application in financial economics, particularly for predicting stock market movements, remains relatively unexplored. This study ventures into this uncharted territory, aiming to assess the potential of LLMs in this specific field.
+
+– Natural Language Understanding: LLMs possess a high capability to understand and process natural language. This inherent feature makes them valuable tools for processing textual information, such as news headlines, which can be leveraged to predict stock returns.
+
+– Empirical Evidence: The research provides empirical evidence that ChatGPT’s sentiment analysis capabilities outperform traditional sentiment analysis methods. This empirical support substantiates the value.
+
+Simple trading strategy
+Data
+The study uses three main datasets: CRSP daily returns, news headlines, and RavenPack. The sample period is from October 2021 to December 2022, ensuring evaluation on new data. The goal is to analyze the relationship between ChatGPT’s sentiment scores and stock market returns. Relevant news headlines are collected and matched with RavenPack’s data. Filtering techniques remove duplicates and ensure data integrity.
+
+Methods
+– PROMPT
+This part highlights the significance of prompts in guiding ChatGPT’s responses for specific tasks. A prompt provides context and instructions for generating a relevant response. ChatGPT can perform various language tasks using prompts, and they can be customized for different domains. The study demonstrates a financial analysis prompt where ChatGPT assumes the role of a financial expert and evaluates a news headline’s impact on a company’s stock price. An example (see the section 3.1 of the paper) with Oracle’s headline and ChatGPT’s response is provided to showcase its capabilities.
+
+– Empirical Design
+ChatGPT is prompted to provide a recommendation for each headline, and the recommendation is converted into a “ChatGPT score.” The scores are mapped to numerical values: “YES” to 1, “UNKNOWN” to 0, and “NO” to -1. The scores for multiple headlines of the same company on a given day are averaged. The headlines are matched to the next market period, and linear regressions are conducted to analyze the relationship between the ChatGPT score and the next day’s stock returns. The study compares these results to sentiment scores provided by a news curating company. All findings are based on out-of-sample analysis.
+
+The analysis shows that ChatGPT’s sentiment scores have a statistically significant predictive power on daily stock market returns. The model’s advanced language understanding capabilities enable it to outperform traditional sentiment analysis methods in forecasting stock market movements. Comparisons with other models like BERT, GPT-1, and GPT-2 are made using different strategies due to their limitations. The study demonstrates the potential benefits of incorporating ChatGPT’s sentiment analysis into investment decision-making processes, especially for small stocks. Table 3 presents regression analysis results, indicating the relationship between next-day stock returns and sentiment scores from various models.
+
+Hedge for stocks during bear markets
+Not known - No explicit mention of profitability during bear markets.
