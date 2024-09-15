@@ -1,0 +1,102 @@
+Time,Symbol,Price,Quantity,Type,Status,Value,Tag 
+2024-04-22T13:31:00Z,JEF,42.17,118,Market,Filled,4976.06,Warning: No quote information available at 04/19/2024 16:00:00 America/New_York, order filled using TradeBar data 
+2024-04-22T13:31:00Z,SNEX,66.83,74,Market,Filled,4945.42,Warning: No quote information available at 04/19/2024 16:00:00 America/New_York, order filled using TradeBar data 
+2024-04-22T13:31:00Z,OPEN,2.17,2298,Market,Filled,4986.66,Warning: No quote information available at 04/19/2024 16:00:00 America/New_York, order filled using TradeBar data 
+2024-04-22T13:31:00Z,BFH,34.48,144,Market,Filled,4965.12,Warning: No quote information available at 04/19/2024 16:00:00 America/New_York, order filled using TradeBar data 
+2024-04-22T13:31:00Z,ENVA,60.71,82,Market,Filled,4978.22,Warning: No quote information available at 04/19/2024 16:00:00 America/New_York, order filled using TradeBar data 
+2024-04-22T13:31:00Z,TWO,12.13,411,Market,Filled,4985.43,Warning: No quote information available at 04/19/2024 16:00:00 America/New_York, order filled using TradeBar data 
+2024-04-22T13:31:00Z,HE,10.91,457,Market,Filled,4985.87,Warning: No quote information available at 04/19/2024 16:00:00 America/New_York, order filled using TradeBar data 
+2024-04-22T13:31:00Z,FBRT,12.57,396,Market,Filled,4977.72,Warning: No quote information available at 04/19/2024 16:00:00 America/New_York, order filled using TradeBar data 
+2024-04-22T13:31:00Z,BZH,26.31,189,Market,Filled,4972.59,Warning: No quote information available at 04/19/2024 16:00:00 America/New_York, order filled using TradeBar data 
+2024-04-22T13:31:00Z,PRAA,24.37,204,Market,Filled,4971.48,Warning: No quote information available at 04/19/2024 16:00:00 America/New_York, order filled using TradeBar data 
+2024-04-22T13:31:00Z,BRSP,6.34,786,Market,Filled,4983.24,Warning: No quote information available at 04/19/2024 16:00:00 America/New_York, order filled using TradeBar data 
+2024-04-22T13:31:00Z,TPC,13.28,375,Market,Filled,4980,Warning: No quote information available at 04/19/2024 16:00:00 America/New_York, order filled using TradeBar data 
+2024-04-22T13:31:00Z,UNFI,9.27,537,Market,Filled,4977.99,Warning: No quote information available at 04/19/2024 16:00:00 America/New_York, order filled using TradeBar data 
+2024-04-22T13:31:00Z,LSEA,11,453,Market,Filled,4983,Warning: No quote information available at 04/19/2024 16:00:00 America/New_York, order filled using TradeBar data 
+2024-04-22T13:31:00Z,QRTEB,3.88,1284,Market,Filled,4981.92,Warning: No quote information available at 04/19/2024 16:00:00 America/New_York, order filled using TradeBar data 
+2024-04-22T13:31:00Z,CYH,2.86,1743,Market,Filled,4984.98,Warning: No quote information available at 04/19/2024 16:00:00 America/New_York, order filled using TradeBar data 
+2024-04-22T13:31:00Z,VHI,15.5,321,Market,Filled,4975.5,Warning: No quote information available at 04/19/2024 16:00:00 America/New_York, order filled using TradeBar data 
+2024-04-22T13:31:00Z,OPY,37.66,132,Market,Filled,4971.12,Warning: No quote information available at 04/19/2024 16:00:00 America/New_York, order filled using TradeBar data 
+2024-04-22T13:31:00Z,CRMT,58.24,85,Market,Filled,4950.4,Warning: No quote information available at 04/19/2024 16:00:00 America/New_York, order filled using TradeBar data 
+2024-04-22T13:31:00Z,SENEB,57.2,87,Market,Filled,4976.4,Warning: No quote information available at 04/19/2024 16:00:00 America/New_York, order filled using TradeBar data 
+2024-05-01T08:01:00Z,CRMT,57.25,-85,Market On Open,Filled,-4866.25,Liquidated 
+2024-05-01T08:01:00Z,QRTEB,4.07,-1284,Market On Open,Filled,-5225.88,Liquidated 
+2024-05-01T08:01:00Z,SNEX,72.32,-4,Market On Open,Filled,-289.28, 
+2024-05-01T08:01:00Z,BFH,36.56,-6,Market On Open,Filled,-219.36, 
+2024-05-01T08:01:00Z,OPEN,1.99,268,Market On Open,Filled,533.32, 
+2024-05-01T08:01:00Z,HE,9.83,61,Market On Open,Filled,599.63, 
+2024-05-01T08:01:00Z,PRAA,23.81,10,Market On Open,Filled,238.1, 
+2024-05-01T08:01:00Z,TPC,16.73,-68,Market On Open,Filled,-1137.64, 
+2024-05-01T08:01:00Z,UNFI,8.9,34,Market On Open,Filled,302.6, 
+2024-05-01T08:01:00Z,CYH,3.31,-196,Market On Open,Filled,-648.76, 
+2024-05-01T08:01:00Z,VHI,14.85,24,Market On Open,Filled,356.4, 
+2024-05-01T08:01:00Z,SLRN,4.19,1221,Market On Open,Filled,5115.99, 
+2024-05-01T08:01:00Z,SKIN,3.22,1581,Market On Open,Filled,5090.82, 
+2024-06-03T08:01:00Z,LSEA,9.96,-453,Market On Open,Filled,-4511.88,Liquidated 
+2024-06-03T08:01:00Z,SKIN,2.24,-1581,Market On Open,Filled,-3541.44,Liquidated 
+2024-06-03T08:01:00Z,TPC,22.44,-307,Market On Open,Filled,-6889.08,Liquidated 
+2024-06-03T08:01:00Z,KKR,104.15,52,Market On Open,Filled,5415.8, 
+2024-06-03T08:01:00Z,CNH,10.59,515,Market On Open,Filled,5453.85, 
+2024-06-03T08:01:00Z,BFH,41.99,-8,Market On Open,Filled,-335.92, 
+2024-06-03T08:01:00Z,ENVA,61.94,6,Market On Open,Filled,371.64, 
+2024-06-03T08:01:00Z,HE,10.99,-23,Market On Open,Filled,-252.77, 
+2024-06-03T08:01:00Z,FBRT,12.87,31,Market On Open,Filled,398.97, 
+2024-06-03T08:01:00Z,PRAA,21.93,38,Market On Open,Filled,833.34, 
+2024-06-03T08:01:00Z,BRSP,6.14,114,Market On Open,Filled,699.96, 
+2024-06-03T08:01:00Z,UNFI,12.07,-118,Market On Open,Filled,-1424.26, 
+2024-06-03T08:01:00Z,CYH,3.99,-172,Market On Open,Filled,-686.28, 
+2024-06-03T08:01:00Z,VHI,19.5,-65,Market On Open,Filled,-1267.5, 
+2024-06-03T08:01:00Z,OPY,45.93,-13,Market On Open,Filled,-597.09, 
+2024-06-03T08:01:00Z,SENEB,59.57,6,Market On Open,Filled,357.42, 
+2024-06-03T08:01:00Z,SLRN,4.17,98,Market On Open,Filled,408.66, 
+2024-06-03T08:01:00Z,CRMT,61.11,90,Market On Open,Filled,5499.9, 
+2024-07-01T08:01:00Z,CRMT,60.66,-90,Market On Open,Filled,-5459.4,Liquidated 
+2024-07-01T08:01:00Z,SLRN,4.37,-1319,Market On Open,Filled,-5764.03,Liquidated 
+2024-07-01T08:01:00Z,UNFI,13.07,-453,Market On Open,Filled,-5920.71,Liquidated 
+2024-07-01T08:01:00Z,JEF,50,-11,Market On Open,Filled,-550, 
+2024-07-01T08:01:00Z,BFH,44.75,-10,Market On Open,Filled,-447.5, 
+2024-07-01T08:01:00Z,SEDG,25.03,211,Market On Open,Filled,5281.33, 
+2024-07-01T08:01:00Z,OPEN,1.82,342,Market On Open,Filled,622.44, 
+2024-07-01T08:01:00Z,HE,9.14,98,Market On Open,Filled,895.72, 
+2024-07-01T08:01:00Z,HOV,141.43,37,Market On Open,Filled,5232.91, 
+2024-07-01T08:01:00Z,PRAA,19.7,20,Market On Open,Filled,394, 
+2024-07-01T08:01:00Z,BRSP,5.77,39,Market On Open,Filled,225.03, 
+2024-07-01T08:01:00Z,VHI,17.75,20,Market On Open,Filled,355, 
+2024-07-01T08:01:00Z,OPY,48.26,-8,Market On Open,Filled,-386.08, 
+2024-07-01T08:01:00Z,CYH,3.38,218,Market On Open,Filled,736.84, 
+2024-07-01T08:01:00Z,AMCX,9.66,554,Market On Open,Filled,5351.64, 
+2024-08-01T08:01:00Z,CYH,5.27,-1593,Market On Open,Filled,-8395.11,Liquidated 
+2024-08-01T08:01:00Z,KKR,123.77,-52,Market On Open,Filled,-6436.04,Liquidated 
+2024-08-01T08:01:00Z,HOV,211.25,-37,Market On Open,Filled,-7816.25,Liquidated 
+2024-08-01T08:01:00Z,SEDG,29.04,-211,Market On Open,Filled,-6127.44,Liquidated 
+2024-08-01T08:01:00Z,CNH,10.29,103,Market On Open,Filled,1059.87, 
+2024-08-01T08:01:00Z,JEF,58.59,5,Market On Open,Filled,292.95, 
+2024-08-01T08:01:00Z,SNEX,83.63,8,Market On Open,Filled,669.04, 
+2024-08-01T08:01:00Z,ENVA,86.45,-12,Market On Open,Filled,-1037.4, 
+2024-08-01T08:01:00Z,HE,16.52,-196,Market On Open,Filled,-3237.92, 
+2024-08-01T08:01:00Z,TWO,13.55,77,Market On Open,Filled,1043.35, 
+2024-08-01T08:01:00Z,FBRT,13.23,48,Market On Open,Filled,635.04, 
+2024-08-01T08:01:00Z,PRAA,26.47,-25,Market On Open,Filled,-661.75, 
+2024-08-01T08:01:00Z,BRSP,5.7,209,Market On Open,Filled,1191.3, 
+2024-08-01T08:01:00Z,COMM,2.61,2541,Market On Open,Filled,6632.01, 
+2024-08-01T08:01:00Z,OPY,51.42,17,Market On Open,Filled,874.14, 
+2024-08-01T08:01:00Z,MERC,7.38,863,Market On Open,Filled,6368.94, 
+2024-08-01T08:01:00Z,AMCX,11.16,37,Market On Open,Filled,412.92, 
+2024-08-01T08:01:00Z,CRMT,69.79,95,Market On Open,Filled,6630.05, 
+2024-08-01T08:01:00Z,LSEA,12.93,540,Market On Open,Filled,6982.2, 
+2024-08-01T08:01:00Z,SENEB,60.39,13,Market On Open,Filled,785.07, 
+2024-09-03T08:01:00Z,COMM,3.72,-2541,Market On Open,Filled,-9452.52,Liquidated 
+2024-09-03T08:01:00Z,MERC,5.91,-863,Market On Open,Filled,-5100.33,Liquidated 
+2024-09-03T08:01:00Z,CRMT,60.15,-95,Market On Open,Filled,-5714.25,Liquidated 
+2024-09-03T08:01:00Z,KKR,122.125,52,Market On Open,Filled,6350.5, 
+2024-09-03T08:01:00Z,BFH,57.27,-8,Market On Open,Filled,-458.16, 
+2024-09-03T08:01:00Z,HE,10.68,212,Market On Open,Filled,2264.16, 
+2024-09-03T08:01:00Z,OPEN,2.1,135,Market On Open,Filled,283.5, 
+2024-09-03T08:01:00Z,TWO,14.1,-26,Market On Open,Filled,-366.6, 
+2024-09-03T08:01:00Z,SEDG,23.81,268,Market On Open,Filled,6381.08, 
+2024-09-03T08:01:00Z,PRAA,22.88,33,Market On Open,Filled,755.04, 
+2024-09-03T08:01:00Z,BZH,30.99,20,Market On Open,Filled,619.8, 
+2024-09-03T08:01:00Z,BRSP,5.9,-49,Market On Open,Filled,-289.1, 
+2024-09-03T08:01:00Z,VHI,29.2,-76,Market On Open,Filled,-2219.2, 
+2024-09-03T08:01:00Z,CYD,11.14,594,Market On Open,Filled,6617.16, 
+2024-09-03T08:01:00Z,AMCX,9.79,73,Market On Open,Filled,714.67, 

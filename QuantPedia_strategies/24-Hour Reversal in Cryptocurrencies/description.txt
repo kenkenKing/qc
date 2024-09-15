@@ -1,0 +1,10 @@
+Paper from Fracassi and Kogan (2021) contributes to research of reoccurring theme of momentum in financial worlds, this time specifically in cryptocurrencies. According to the authors, there are strong and negative relations between time t returns and lagged 1-hour returns of 24 hours earlier. They try to find advantage that this phenomenon and market inefficiency provides, and a proposed reversal strategy is built upon their findings. While performance and Sharpe ratio are pretty attractive, the returns of this high frequency kind of trading is mostly eaten by fees.
+
+Fundamental reason
+Previous studies on momentum in crypto are inconsistent, very possibly due to quite short time sample and number of trading instruments during which these kind of new assets exist. Authors provide new, unique perspective, and coin new term “a pure momentum” which is characterized by them as measure of the pure response to changes in returns that are unaffected by fundamentals; simplify said, past prices. Since the reference point for computing return is not fixed but moves continuously over time as the return window constantly shifts, so do perceptions of investors. Possible proposed explanations includes investors’ relations to risk, their biases and beliefs, and under-reaction to information.
+
+Simple trading strategy
+The investment universe consists of 138 cryptocurrencies. Each hour, investor ranks cryptos according to their lagged 24-lagged 1-hour returns and each hour they go long the two cryptos with the lowest returns, and go short the two cryptos with the highest returns. The strategy is assumed to be equally-weighted and rebalanced hourly.
+
+Hedge for stocks during bear markets
+Not known -

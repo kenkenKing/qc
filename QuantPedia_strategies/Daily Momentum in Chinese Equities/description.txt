@@ -1,0 +1,16 @@
+This paper sucesfully tries to solve a new puzzle—daily price momentum in the Chinese stock market. Building from foundations of an international sample, including the comparison between 21 emerging and 21 developed markets, authors show that around half of emerging markets exhibit significant daily price momentum effects. In contrast, developed markets are more likely to display daily reversal patterns. As one of the suitable applications of the findings, we present very simple and straightforward momentum strategy buying strongest and selling weakest stocks from China based on short-term daily close price data.
+
+Fundamental reason
+The daily price momentum effect in China can be explained by the unique trading behavior of new investors. Overall, new investors play a significant role in the stock price dynamics, and this purer measure of noise trading has essential implications for price mispricing in the Chinese stock markets. Interesting question to explore whether emerging markets displaying daily momentum effects also attract large inflows of new investors actively trading in the stock markets like China, and whether new investors’ trading behaviors contribute to daily price momentum is left open. Future research when detailed holding and trading data in other markets are accessible is still to be conducted.
+
+Simple trading strategy
+The investment universe consists of stocks from the two major stock exchanges in China, both the Shanghai Stock Exchange and Shenzhen Stock Exchange, within the sample, excluding stocks hitting day price limits.
+(Stock return data are from the China Stock Market and Accounting Research [CSMAR] database.)
+
+1. Investor creates one-day sorted portfolios (following Jegadeesh and Titman (1993)): Thus, sorting stocks based on past one-day returns.
+2. Construct a long-short portfolio: long 10th (highest, top decile) and short 1st (lowest, bottom decile) portfolio.
+
+Portfolios are value-weighted, and rebalanced every day.
+
+Hedge for stocks during bear markets
+Not known -

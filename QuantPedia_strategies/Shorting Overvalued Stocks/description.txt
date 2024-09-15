@@ -1,0 +1,38 @@
+Finding a good short selling system (like the O-Score by Beneish and Nicholson) is like finding a little treasure. Short selling systems have the valued characteristic of a very strong negative correlation to equity markets; therefore, they make a very good addition to any portfolio. The O-Score combines an assessment of financial statement fraud with characteristics of the firms’ operating, investing, and financing activities that suggest value-destroying managerial behavior. Firms with glamour characteristics, a poor current operating cash flow performance, a high likelihood of earnings overstatement, a history of merger activity, and the recent but excessive issuances of stocks fit the profile of overvalued equity. These findings are stable for different levels of market capitalization. The system also correctly identifies overvalued firms among large-cap stocks, which is an important feature that allows its easy implementation.
+
+Fundamental reason
+Research shows that a weak fundamental performance with a high likelihood of earnings overstatement, a history of acquisitions, excessive investment and equity issuance, and unrealistic market expectations, leads to poor future stock returns as each attribute is a predictor of possible overvaluation. Each of these characteristics can be measured (albeit with error) and gives a good prediction. Therefore, using their combination could get even better results.
+
+Simple trading strategy
+The investment universe consists of companies with a market cap greater than $ 1Billion. Stocks are evaluated yearly in April (after the year-end fundamental data are reported). An O-SCORE (overvaluation score) ranging from 0 to 5 is then calculated for each company. Firms receive one point for each of the following characteristics:
+– the company is in the highest quintile of sales growth (compared to other companies)
+– the company is in the lowest quintile of CFO (cash flow from the operation) to total assets (compared to other companies)
+– the company’s net stock issuance in the current year or prior year is greater than the industry median
+– the company acquired another company within the last five years
+– and the company is in the highest quintile of PROBM (probability of manipulation); PROBM is calculated from the model created by Beneish (1999), which is stated in the second source paper
+
+The investor then goes short stocks, which score 5 points and rebalances the portfolio yearly.
+The PROBM score is calculated from a regression equation with the following eight variables:
+
+a) Days Sales in Receivables Index (DSRI) – the ratio of days sales in receivables in the year t to the corresponding measure in year t-1. This variable gauges whether receivables and revenues are in or out-of-balance.
+
+b) Gross Margin Index (GMI) – the ratio of the gross margin in year t-1 to the gross margin in year t. When the GMI is greater than 1, it indicates that gross margins have deteriorated.
+
+c) Asset Quality Index (AQI) – the ratio of non-current assets other than property plant and equipment (PPE) to total assets, and measures the proportion of total assets for which future benefits are potentially less certain. AQI is the ratio of asset quality in year t, relative to asset quality in year t-1.
+
+d) Sales Growth Index (SGI) – the ratio of sales in year t to sales in year t-1.
+
+e) Depreciation Index (DEPI) – the ratio of the rate of depreciation in year t-1 vs. the corresponding rate in year t.
+
+f) Sales General and Administrative Expenses Index (SGAI) – The SGAI is calculated as the ratio of SGA to sales in year t relative to the corresponding measure in year t-1.
+
+g) Leverage Index (LVGI) – The LVGI is the ratio of total debt to total assets in year t relative to the corresponding ratio in year t-1.
+
+h) Total Accruals to Total Assets (TATA) – Total accruals are calculated as the change in working capital accounts, other than cash, less depreciation.
+
+The evidence indicates that the probability of manipulation rises with unusual increases in receivables, deteriorating gross margins, decreasing asset quality and sales growth, and increasing accruals. PROBM measures these indicators and calculates the overall probability of earnings manipulation. The eight variables stated above are then inputted into the following regression equation:
+PROBM = -4.840 + 0.92*a+0.528*b+0.404*c+0.892*d+0.115*e-0.172*f+4.679*g-0.327*h
+The regression equation was calculated by Beneish (1999) from a sample of firms that participated in earnings manipulation in the years 1982-1988, and the regression coefficients should be stable. Still, it is better to recalculate the coefficients in the PROBM regression equation every year.
+
+Hedge for stocks during bear markets
+Yes - The short-selling strategy is a natural hedge/diversification to equity market factor during bear markets.
