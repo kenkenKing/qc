@@ -1,0 +1,10 @@
+External investors have always thought insiders possess special information about stocks, which isn’t accessible to the public. Therefore, it was and still is popular to follow insider purchases. A portfolio that is long stocks that had the most insider net purchases and short stocks which had the most insider sells earns abnormal returns even after correcting for traditional factors like company size and book-to-market.
+
+Fundamental reason
+A long list of research papers suggests that insiders have special non-public information about companies’ future outlook and use that information in their timing of trades. Those signals, however, have the strongest meaning for small-cap stocks, so it isn’t always easy to implement a correct trading strategy for such a system.
+
+Simple trading strategy
+The investment universe consists of all stocks on NYSE, AMEX, and NASDAQ with a price of more than $2 (closed-end funds, REITs, and ADRs are also excluded). The net purchase ratio (total number of insider/manager purchases minus the total number of insider sells divided by the total number of transactions) during the prior 6-month period is calculated for each stock at the end of April. Stocks are then divided into deciles based on NPR. The investor goes long top decile (highest NPR) and short bottom decile (lowest NPR) and holds the portfolio for one year, after which the portfolio is again rebalanced.
+
+Hedge for stocks during bear markets
+Not known - Source and related research papers don’t offer insight into the correlation structure of insider trading strategy to equity market risk; therefore, we do not know if this strategy can be used as a hedge/diversification during the time of market crisis. Strategy using insider trading is usually built as a long-short, but it can be split into two parts. The long leg of the strategy is undoubtedly strongly correlated to the equity market; however, the short-only leg can be maybe used as a hedge during bad times. Rigorous backtest is, however, needed to determine return/risk characteristics and correlation.
