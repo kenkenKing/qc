@@ -1,0 +1,18 @@
+Merger arbitrage is a market-neutral form of trading that seeks to exploit inefficiencies in the stock price of a company that has agreed to be sold to another company for cash, stock, or a combination of both. The strategy could be implemented by active stock trading or by buying specialized ETF or funds.
+
+Fundamental reason
+Because of this slight uncertainty, the target company’s stock will typically sell at a discount to the price that the combined company will have when the merger is closed. This discrepancy is the arbitrageur’s profit. Quasi-market neutrality is accomplished because stocks are simultaneously bought (target) and sold (acquirer).
+
+Simple trading strategy
+The universe consists of all announced mergers. The narrow deal universe includes only North American and European merger deals with the following liquidity features:
+– Target has a market cap of > $500 M
+– Target has sufficient trading volume
+– Acquirer for stock deals is easy to borrow
+Apply systematic constraints to ensure deals have arbitrage potential:
+– Positive acquisition premium
+– Offer is for substantially all shares outstanding of target
+– The acquirer does not already own all of the target’s shares substantially
+Rebalance the equal weight portfolio daily. It is possible to use several websites that update information about actual/potential mergers (e.g., http://www.mergerinvesting.com/pendingmergers).
+
+Hedge for stocks during bear markets
+No - Merger arbitrage strategy suffers bad performance during preliminary stages of crises. Therefore it is not recommended as a hedge/diversification of equity market factor during bear markets.

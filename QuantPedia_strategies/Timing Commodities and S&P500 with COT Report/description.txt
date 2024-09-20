@@ -1,0 +1,15 @@
+Several academics have started to document that commercial hedging pressure (defined as the number of long futures contracts divided by the total number of futures contracts) has predictive ability for the S&P 500 market. The same predictive ability could also be found for the non-commercial hedging pressure, which influences some commodities (oil and copper).
+
+COT (Commitments of Traders) reports could, therefore, be used as an input into a market timing system. Combining these three assets (S&P 500, copper, and oil) and their respective market timing systems into one portfolio achieves much better risk/return characteristics than the S&P 500 alone.
+
+Fundamental reason
+The Commodity Futures Trading Commission (Commission or CFTC) publishes the Commitments of Traders (COT) reports helping the public understand market dynamics. Specifically, the COT reports provide a breakdown of each Tuesday’s open interest for futures and options on futures markets in which 20 or more traders hold positions equal to or above the reporting levels established by the CFTC.
+Producers and consumers of the underlying commodity (hedgers) transfer the risk of price fluctuations to speculators, who are willing to undertake this risk in the hope of a substantial positive return. The hedging pressure variable tells the actual hedging needs for market participants.
+
+Simple trading strategy
+The investment universe is the S&P 500, copper, oil, and risk-free asset. The investor uses non-commercial hedging pressure for copper and oil and commercial and non-reportable hedging pressure for the S&P as an independent variable in the regression equation. The excess market return for the S&P 500 index, copper, and oil and their volatilities are then used as inputs in the optimization calculation to determine the optimal weights of the risky assets and risk-free asset in the next period.
+Optimization looks for a portfolio with a maximum Sharpe Ratio and could be calculated analytically or numerically. The weights calculated in optimization are used in the immediate trading period. Regression and optimization calculations are performed each week, and the portfolio is rebalanced accordingly. The portfolio weights for each asset are then identified based on their predicted asset return.
+
+Hedge for stocks during bear markets
+Partially - The selected strategy is a class of “Tactical asset allocation” strategies like the one proposed by Mebane Faber in his famous paper “A Quantitative Approach to Tactical Asset Allocation”. The selected strategy contains equities, and the TAA strategy tries to rotate out of them during the time of stress. Therefore the proposed strategy isn’t mainly used as an add-on to a portfolio to hedge equity risk directly, but it is more an overlay that can be used to manage the percentual representation of equities (or “equity-like assets”) in a portfolio. The tactical asset allocation framework can decrease the overall risk of equities in a portfolio, and it can improve the risk-adjusted returns.
+

@@ -1,0 +1,20 @@
+Growth stocks (stocks with high Price-to-Book ratios) usually underperform value stocks, and this effect is a source of an important value premium. But is there some way to identify better stocks? Even among those growth stocks predestined to underperform? A research study done by Mohanram (2005) shows the possibility of using a financial statement analysis to create a G-Score and distinguish between strong and weak growth stocks. Then there is nothing easier than to use this information to create a long-short portfolio and exploit this strategy to gain above-average returns. These excess returns persist even after controlling for other factors like size, momentum, accruals, etc., which makes this strategy a valuable addition to a portfolio of other strategies. One more feature which is especially important is that the strategy works well even on bigger stocks. This makes it easier to implement for a broader spectrum of investors.
+
+Fundamental reason
+Research suggests that the market does not understand the correlation between current growth fundamentals and future fundamentals, and it fails to consider a firm’s historical earnings and growth variability. It also fails to determine whether the firm will be able to maintain its current performance or not. The system gives signals which are related to the stability of earnings and growth. This helps to identify stocks that are less likely to be overvalued because of the naïve extrapolation by the stock market.
+
+Simple trading strategy
+The investment universe consists of the top quintile of stocks with the highest book-to-market ratios from the top tercile of stocks based on market capitalization. Each company is then graded by using the G-Score, which is a score based on eight accounting indicators:
+ROA – net income before extraordinary items, scaled by the beginning of the year total assets; a firm gets one point if it is greater than the industry’s median.
+Cash Flow ROA – cash flow from operations scaled by the beginning of the year total assets; a firm gets one point if it is greater than the industry’s median.
+Accrual – cash flow from operations minus net income; a firm gets one point if it is greater than the industry’s median.
+ROA variance over the past five years – a firm gets one point if its earnings variability is less than the industry’s median.
+Sales variance over the past five years – a firm gets one point if its sales growth variability is less than the industry’s median.
+R&D Intensity – R&D expenditure scaled by the beginning of the year total assets – a firm gets one point if its R&D Intensity is greater than the industry’s median.
+Capital Expenditure Intensity – capital expenditure scaled by the beginning of the year total assets – a firm gets one point if its Capital Expenditure Intensity is greater than the industry’s median.
+Advertising Intensity – advertising expenditure scaled by the beginning of the year total assets – a firm gets one point if its Advertising Intensity is greater than the industry’s median.
+
+The investor goes long stocks with a score of 6,7, or 8 and short stocks with a score of 0 or 1. The portfolio is equally weighted and is held for one year. Portfolio rebalancing is done after the accounting information for the previous year is all known (therefore, usually at the end of April).
+
+Hedge for stocks during bear markets
+Not known - Source and related research papers don’t offer insight into the correlation structure of the proposed trading strategy to equity market risk. Therefore, we do not know if this strategy can be used as a hedge/diversification during the time of the market crisis. The strategy is built as a long-short, but it can be split into two parts. The long leg of the strategy is surely strongly correlated to the equity market; however, the short-only leg can be maybe used as a hedge during bad times. Rigorous backtest is, however, needed to determine return/risk characteristics and correlation.

@@ -1,0 +1,10 @@
+One of the critical concerns of all traders and investors is whether an anomaly, which they have discovered or they use in their portfolios, could continue to perform in the future. A financial paper by Huang (2009) investigated whether a trader could use already published anomalies in his/her trading. He discovered that the momentum effect is possible to use in the selection process. Momentum solves the questions of which anomaly/trading system to trade and whether a trader can outperform the market by recursively picking the best past performer among the published anomalies.
+
+Fundamental reason
+The research paper doesn’t give exact fundamental reasons for the effect’s functionality. Therefore, we could only speculate that anomalies don’t vanish right after they are published because investors are slow to incorporate information about them into real-world trading. Thus, a momentum effect could emerge. The research’s added value is that it tries to avoid any potential biases which could arise in a research study using past backtest data. Therefore this practice increases confidence in the anomaly’s validity.
+
+Simple trading strategy
+In each year, the trader searches through the universe of financial journals for implementable trading strategies. The investment universe, which consists of existing anomalies, is then created. The investor then chooses the best performing anomaly for the last two years (based on his backtesting results of all published anomalies) and will trade it in the following year.
+
+Hedge for stocks during bear markets
+Not known - Source research paper and also other academic papers don’t give enough clues to say/estimate how would strategy react during crises. Backtest is needed to have more information.

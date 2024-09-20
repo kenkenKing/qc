@@ -1,0 +1,11 @@
+Aggregate market variance combined with idiosyncratic volatility (the sum of specific volatilities for each company) in aggregate predicts the return on the S&P index. The higher the sum of volatilities is, the lower the returns that can be expected. It is, therefore, possible to create a trading system that exploits this volatility characteristic.
+
+Fundamental reason
+Academics assume that high levels of idiosyncratic volatilities are related to a high level of dispersion among the opinions of the market participants. Therefore, a negative relation between idiosyncratic volatility and future stock returns could exist.
+
+Simple trading strategy
+Market variance for the preceding quarter is calculated as the squared daily excess stock market return. Then the idiosyncratic variance for each stock in the S&P 500 is calculated by using regression analysis. Fama and French factors (Market, Size, Book-to-Market) are the independent parameters in the regression, and residuals from the regression for each stock are weighted and summed based on the market cap value of the stock to obtain the summary idiosyncratic variance. The expected excess stock market return for the next quarter is then calculated from the regression, with the market variance and summary idiosyncratic variance as independent variables. The equity weight in the portfolio is determined from the expected excess stock market return, expected stock market variance, and investor’s risk aversion coefficient. The portfolio is rebalanced quarterly.
+
+Hedge for stocks during bear markets
+No - A strategy is timing equity market using aggregate and idiosyncratic volatilities but uses high leverage ratios and invests long-only into equity market factor, therefore, is not suitable as a hedge/diversification during market/economic crises.
+
