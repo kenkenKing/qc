@@ -1,0 +1,18 @@
+Momentum strategies (buying the latest winners and selling the latest losers) are favorite strategies among market participants (for trading) and also among academics (for investigating). Earnings momentum (defined as the standardized unexpected earnings surprise), revenue momentum (defined as the standardized unexpected revenue surprise), and price momentum are three different types of momentum. They are mostly independent of each other, and each offers unique information to the investor. Therefore, they could be combined well together, and an overall portfolio profit could be enhanced this way.
+
+Fundamental reason
+Academic research postulates that investors cannot efficiently use information from revenue surprises, earnings surprises, and prior price performance (behavioral biases are in play – like overconfidence as an example). Therefore, revenue momentum, earnings momentum, and price momentum strategies are profitable.
+
+Simple trading strategy
+The investment universe consists of all stocks from NYSE, AMEX, and NASDAQ with a price greater than $5 and excludes financial companies and regulated industries.
+
+Price momentum: stocks are ranked into deciles based on their prior 6-month returns and grouped into ten equally weighted portfolios. The top decile portfolio is called “winners,” and the bottom decile portfolio is called “losers.”
+
+Earnings momentum: Standardized unexpected earnings (SUE) are defined as current earnings less expected earnings, divided by the standard deviation of earnings growth. The expected quarterly earnings are calculated as earnings for the same quarter from the previous year plus drift, which is calculated as the averaged change in earnings during the last eight quarters against earnings from one year earlier. Stocks with the highest SUE (top decile) are winner stocks, and stocks with the lowest SUE (bottom decile) are losers.
+
+Revenue momentum: This is calculated in the same way as earnings momentum using revenue instead of earnings in the calculations. Stocks with the highest standardized unexpected revenue growth (SURGE) in the top decile are winner stocks, and stocks with the lowest SURGE (bottom decile) are losers.
+
+A “price-earnings-revenue combined momentum” strategy is performed by buying stocks with the highest 6-month prior returns, the most positive earnings surprises, and the most positive revenue surprises and selling stocks with the lowest prior returns, the most negative earnings surprises, and the most negative revenue surprises. Stocks are held for six months and then are rebalanced. Therefore, the investor puts 1/6 of his/her money into a newly rebalanced long-short portfolio each month (to meet a 6-month holding period on each sub-portfolio and simultaneously be able to rebalance 1/6 of his/her portfolio each month).
+
+Hedge for stocks during bear markets
+Not known - Source and related research papers don’t offer insight into the correlation structure of the proposed trading strategy to equity market risk. Therefore, we do not know if this strategy can be used as a hedge/diversification during the time of the market crisis. The strategy is built as a long-short, but it can be split into two parts. The long leg of the strategy is surely strongly correlated to the equity market; however, the short-only leg can be maybe used as a hedge during bad times. Rigorous backtest is, however, needed to determine return/risk characteristics and correlation.

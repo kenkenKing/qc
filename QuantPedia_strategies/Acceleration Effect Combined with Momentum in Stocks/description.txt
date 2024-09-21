@@ -1,0 +1,16 @@
+Momentum strategies are one of the most favorite strategies used by traders and investors. Acceleration strategies are a momentum enhancement and are employed by institutional investors with the intention of earning positive excess returns. They are not so well-known in the academic world, so there aren‘t a lot of academic studies about them. This gives investors the possibility to diversify their portfolios with a lesser-known anomaly. The acceleration effect is based on the momentum of momentum – stocks which have strong momentum and the power of that momentum is growing to outperform their peers, and they even outperform strong momentum stocks.
+
+Fundamental reason
+Most academics agree that investors do not fully react to information immediately, but rather impound information into prices gradually. It has been repeatedly documented that this tendency gives rise to a medium-term positive autocorrelation in returns, which is the main reason for a momentum anomaly. Acceleration measures the performance of individual firms relative to their historical returns in addition to the population of other equities. This is an important distinction that allows the investor to exploit other investors’ miss-reactions more efficiently.
+
+Simple trading strategy
+The investment universe consists of all stocks on NYSE, AMEX, and NASDAQ. The acceleration ratio is calculated for each company as a 6-month momentum minus 6-month momentum six months before. Stocks are then sorted into deciles and are weighted equally in each decile. The investor goes on long stocks with high acceleration and short on stocks with low acceleration. The acceleration effect starts to materialize six months after portfolio formation, and the returns are strongest after 12 months.
+
+So if an investor wants to gain maximum advantage from the acceleration effect, then he has to wait six months after the portfolio formation to buy stocks, and then hold them for six months.
+
+It is best to combine the acceleration effect with a momentum effect in the following way:
+
+Compute acceleration as momentum (T-7 minus T-12) minus momentum (T-13 minus T-18). Sort stocks based on acceleration into deciles. Then at the end of month T, go long on stocks with the strongest momentum (T-1 minus T-6) from the top acceleration portfolio and short stocks with the lowest momentum (T-1 minus T-6) from the bottom acceleration portfolio. Hold the long/short portfolio for six months.
+
+Hedge for stocks during bear markets
+Partially - Based on the source research paper (see Table IX), the strategy has a negative loading of equity market factor, so it is possible, that strategy can be maybe used as a hedge/diversification to equity market risk factor during bear markets. An independent backtest is, however, recommended.

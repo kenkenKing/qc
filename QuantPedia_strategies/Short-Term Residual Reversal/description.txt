@@ -1,0 +1,14 @@
+A conventional short-term reversal strategy (a strategy that buys (sells) stocks with low (high) total returns over the past month) has been academically documented many times. This old-school strategy has delivered positive returns even after its publication, but it is slowly losing its significance. Luckily, current academic research has come up with an enhanced strategy based on residual stock returns, which shows stable higher returns with lower volatility and is statistically significant even among the biggest stocks and after transaction costs. It is even stronger within residual industry reversals and offers additional improvement in the original strategy (see table 8 in the academic paper).
+
+Fundamental reason
+Academic research states a behavioral explanation that market prices tend to overreact to information in the short run.
+
+Simple trading strategy
+The investment universe consists of all common U.S. stocks listed on the NYSE, AMEX, and NASDAQ markets that have a market capitalization above the NYSE median and a price above $1.
+
+The Market factor, Small-cap factor, Value factor, and Momentum factor are used in a linear regression equation as independent variables. Stock returns over the preceding 36 months are used as input data (the dependent variable), and residual returns from the linear regression are calculated for each stock. Next, the estimated residual returns are standardized by dividing them by their standard deviations over the preceding 36 months.
+
+Residual reversal portfolios are constructed by sorting stocks into decile portfolios at the end of each month based on their estimated standardized residual returns during that month. The winner portfolio consists of 10 percent of stocks with the highest returns over the past month, and the loser portfolio consists of 10 percent of stocks with the lowest returns. The investor goes long on the loser portfolio and goes short on the winner portfolio. Stocks are equally weighted, and the portfolio is rebalanced monthly.
+
+Hedge for stocks during bear markets
+Yes - Equity reversal strategies are usually type of “liquidity providing” strategies, and as such, they perform well during market crises. However, reversal strategies are also naturally a “short volatility” strategies; their returns increase mainly in the weeks following large stock market declines. Traders must be cautious during crises during days with high volatility as reversal strategies usually force traders to buy stocks which performed especially bad (and to sell short stocks with an extremely positive short term performance). This position is emotionally hard to open, and risk management of reversal strategies must also be very strict during these days. We recommend reading the research paper by Nagel: “Evaporating Liquidity” to gain insight into the behavior of reversal strategies during crises.

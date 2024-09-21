@@ -1,0 +1,11 @@
+Stock repurchases are often used as a signal of a stock’s undervaluation, and they are also often presented this way by a company’s management. But what if a company’s management doesn’t act the way it presents and sells its own stocks instead of buying? Academic research shows this is a negative sign for future performance. Therefore, simultaneous strong insider purchases with a company repurchasing its own stocks are viewed as strong buy signals for external investors as well, and a simple trading strategy exploiting both indicators could be constructed.
+
+Fundamental reason
+Academic research shows that both net insider buying and net insider selling increase during the quarter of a share repurchase. Insider buying during a share repurchase is consistent with expectations that the company is currently undervalued. Firms that engage in net insider selling and non-trivial repurchases in the same quarter tend to have large amounts of option exercises, and repurchases are motivated to offset the dilution.
+
+Simple trading strategy
+The investment universe consists of NYSE, AMEX, and NASDAQ stocks (data for the backtest in the paper come from Compustat). Share repurchases are calculated as the spending on the repurchase of common and preferred stock minus any decrease in redeemable preferred stock, scaled by the percentage of shares outstanding. Non-trivial repurchases are defined as 0.5 percent of market capitalization. The investor calculates the total dollar values of insider (restricted to open market purchases) purchases and sales for each fiscal quarter. If the total insider purchases surpass the total insider sales by at least 0.005 percent of the firm’s market capitalization, then these insiders are identified as “net buying”. The investor buys all stocks with non-trivial repurchases and with a net buying by insiders in the previous quarter. Stocks are held for one year, and 1/4 of the portfolio is rebalanced each quarter. The portfolio of stocks is equally weighted.
+
+Hedge for stocks during bear markets
+No - The selected strategy is designed as a long-only. Therefore, it can’t be used as a hedge against market drops as a lot of strategy’s performance comes from equity market premium (as the investor holds equities; therefore, his correlation to the broad equity market is very very high).
+

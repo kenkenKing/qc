@@ -1,0 +1,14 @@
+The accruals effect is a long-known market anomaly related to the negative association between accounting accruals (the non-cash component of earnings) and future stock returns. Current academic research shows it is not the only anomaly related to accruals. Accrual volatility also seems to be a factor that forecasts futures stock returns. Stocks with high accrual volatility have smaller future returns than stocks with low accrual volatility. The effect is independent of the original accrual anomaly, and it is significant even after controlling for transaction costs and short-selling constraints.
+
+Fundamental reason
+The academic paper uses the earnings fixation hypothesis to explain the accrual anomaly. Accruals and their volatility are more consistent in explaining stock prices than future earnings because investors are fixated on accounting earnings rather than on its components, and they tend to overprice (underpriced) earnings with relatively high (low) accruals. The degree of earnings fixation increases with uncertainty in accruals, which is measured by the accrual volatility.
+
+Simple trading strategy
+The investment universe consists of NYSE, AMEX, and NASDAQ stocks (data for the backtest in the source paper come from Compustat). Financial services companies and firms with negative assets or negative sales are removed. Total accruals are defined as changes in working capital minus deprecation and amortization. Networking capital is defined as:
+
+(Current assets – Cash and short-term investments) – (Current liabilities – Debt in current liabilities).
+
+The accrual volatility is defined as the standard deviation of the ratio of accruals to sales over the past 16 quarters. Stocks are sorted into deciles based on accrual volatility. The investor goes long on stocks with the lowest volatility and short on stocks with the highest volatility. The portfolio is equally weighted and is rebalanced monthly.
+
+Hedge for stocks during bear markets
+Partially - Based on the source research paper (see Table X and Table A-II), the strategy has a negative correlation to the equity market. So it is possible, that strategy can be maybe used as a hedge/diversification to equity market risk factor during bear markets. An independent backtest is, however, recommended.
