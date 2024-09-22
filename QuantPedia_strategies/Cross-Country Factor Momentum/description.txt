@@ -1,0 +1,20 @@
+Sweet (clear to understand), short (9 pages), and straight-to-point study offers evidence of the cross-country factor momentum effect. Academia members identify a compelling cross-country factor momentum effect: anomalies in winning countries consistently beat those in losing countries. From cross-sectional and time-series factor momentum strategies, we selected the latter one with value-weighting.
+
+Fundamental reason
+This is a valuable contribution to the rapidly growing literature on the factor momentum effect, first identified by Avramov et al. (2017) and extensively investigated in the U.S. market (Ehsani & Linnainmaa, 2022; Arnott et al., 2023). Subsequent research extended the evidence to international markets (Gupta & Kelly, 2019; Fan et al., 2021). The effect is prevalent for most factors and particularly pronounced for size, age, and value anomalies. As a suggestion, future studies should explore the origins, reliability, and practical applications of the cross-country factor momentum effect, considering, in particular, their implementation costs.
+
+Simple trading strategy
+The investment universe comprises 51 stock markets worldwide.
+(It is replicable when investing in ETFs or trading futures [CFDs].)
+
+(Market data for the United States is from CRSP, and the market data for other markets, as well as all accounting data, is from Compustat. All factors are computed using publicly available code from Jensen et al. (2023).
+Use monthly returns expressed in USD, and the risk-free rate is proxied by the U.S. one-month Treasury bill rate.)
+
+High-level summary overview: We perform a time-series (XC-FMOM_TS) cross-country momentum strategy. The building blocks of all factor momentum strategies are long-short strategies based on cross-sectional anomalies (replicate a comprehensive set of 145 non-momentum stock characteristics from Jensen et al. (2023)). Represent all factor strategies by long-short value-weighted portfolios that buy (sell) a tercile of stocks with the highest (require at least five firms per long and short leg, if not ignore).
+Sorting for Each Factor: Every month, sort all countries in the sample according to the average return of factor i over the past 12 months (t-12 to t-1).
+Execution Clarification: The cross-country time-series factor momentum strategy (XC-FMOMTS) assumes a long position in countries with positive factor i returns over the past 12 months and a short position in those with negative performance.
+
+(Weighting: value, rebalancing: monthly frequency.)
+
+Hedge for stocks during bear markets
+Not known -

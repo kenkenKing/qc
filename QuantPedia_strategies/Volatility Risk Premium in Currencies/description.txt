@@ -1,0 +1,12 @@
+The option strategies, which aim to capture a return premium over time as compensation for the risk of losses during sudden increases in market volatility, are called “volatility risk premium” strategies. These strategies are profitable because implied volatility in options is on average higher than subsequent realized volatility. This anomaly can be observed across all asset classes, but in this database entry, we are focused on the currency futures options risk premium as we want to have an individual database entry for each separate asset class. The authors of source paper describe volatility risk premium in four markets, but we will not be writing about all of them because some are already covered at Quantpedia. You can find volatility risk premium in equity market here, and in the fixed income market here.
+
+Fundamental reason
+To gain exposure to volatility risk premium through currencies, the source paper suggests currency forward options to EUR, GBP and JPY, each vs USD as straddles (put and call option at the same strike price and maturity). The straddles need to be delta hedged (hedged each day against moves of the underlying instrument) to retain exposure primarily to the changes in market volatility. An alternative could be to use variance swaps which has the delta hedging feature built-in, but its use will not be further described in this strategy.
+
+The volatility risk premium is supported by structural imbalances in supply and demand, where demand is higher from hedgers or speculators seeking leverage with capped downside and supply from natural sellers is low. These imbalances are critical, especially during crises due to increased capital requirements and lower tolerance of leverage. Currency volatility strategies also have a significant equity-risk component, contributiong nearly 40% of returns.
+
+Simple trading strategy
+Continuously sell one-month at-the-money straddles for EURUSD, GBPUSD and JPYUSD (straddle is comprised of a put and a call at the same strike and maturity) on a monthly basis. Equal weight these straddles. Delta hedge the straddles (hedge each day against moves in the underlying instrument) to retain exposure primarily to the changes in the market volatility.
+
+Hedge for stocks during bear markets
+No - Absolutely not a hedge, volatility risk premium strategy is a fat-tail strategy which loses a lot of money during crisis periods…

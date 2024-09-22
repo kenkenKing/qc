@@ -1,0 +1,20 @@
+The paper finds evidence of heightened sensitivity of the Treasury market to the Quarterly Treasury Refunding Announcements, elevating the status of TRAs within the bond market context to a level of importance comparable to FOMC meetings within equity markets. (Wang, Zhao, 2024) uncover a novel pattern of significant price appreciation in long-term Treasurys preceding the quarterly Treasury Refunding Announcements, a phenomenon observable since the 1990s and notably more pronounced in recent decades coinciding with escalating Federal deficits. The authors also build a simple trading strategy that exploits this predictable pattern of four days per year, achieving a reasonable Sharpe ratio with only 4 days in capital allocation. We selected a strategy variant for the pre-Treasury Refunding Announcement (pre-TRA) Days of bond ETF TLT.
+
+Fundamental reason
+Novel insight invites further exploration into the interplay between fiscal and monetary events and their impact on various asset prices. Recent literature on the bond market has emphasized the impact of fiscal policy-related events and budgetary conditions on government bond pricing and risk premia (e.g., Jiang, Lustig, Van Nieuwerburgh, and Xiaolan, 2024; Gomez Cram, Kung, and Lustig, 2023). Pre-TRA movements account for a substantial fraction of the annual yield fluctuations and term premia. There is also compelling evidence that uncertainty reduction contributes to the pre-TRA price movement. There is the mportance of the TRAs are a key policy event in the bond market and an essential tool for the Treasury Department to maintain market stability.
+
+Simple trading strategy
+The investment universe is only TLT ETF (in this variant).
+(Treasury Refunding Announcement dates are publicly available on the Treasury website. Data on daily returns and yields on Treasuries from the CRSP US Treasury Database. Treasury and Equity ETF returns are from CRSP.)
+
+TRAs occur four times yearly on a pre-scheduled week between the first and second month of each quarter. Quarterly releases occur Mondays between the first and second months of the quarter at a pre-scheduled and regular cadence. (During the TRAs, the U.S. Department of the Treasury announces its plans to issue new debt, refinance existing debt, and any changes in debt management policy.)
+
+The trading strategy is based on long treasuries that are held on four pre-TRA days yearly. The simplest strategy to capitalize on this predictable price movement is to long the longer-maturity Treasurys on the pre-TRA days, executed four times each year:
+Perform it on “Pre-TRA Days,” only which refers to strategies that long (buy) the iShares 20+ Year Treasury Bond ETF [TLT] [or the other respective maturity Treasury bonds ETFS] on the day before the TRA, and liquidate (sell) at close on announcement day.
+
+Strategy is performed quarterly and is single-weighted (100 %) in the instrument in the version we selected.
+
+ 
+
+Hedge for stocks during bear markets
+Not known - Authors do not provide information on strategy performance in equity bear markets.
