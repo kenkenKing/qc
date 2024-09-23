@@ -1,0 +1,14 @@
+A new academic paper shows that intraday momentum exists in the crude oil ETF market. The first half-hour return (calculated as ETF price 30 minutes after market open compared to the previous day’s market close) positively predicts the last half-hour return.
+
+Predictability is stronger during crisis periods and on days with higher realized volatility, higher trading volume, higher overnight returns, and jumps. The market timing strategy significantly outperforms two other benchmark strategies, the always-long, and the buy-and-hold strategies, with a higher average return, a lower standard deviation and a higher Sharpe ratio.
+
+Fundamental reason
+The prevalence of momentum is not limited to the equity market. For a wide range of assets, including currencies, commodities, and bonds, an asset’s past performance can predict its future returns.
+
+The first half-hour return of a trading day significantly predicts the last half-hour return of that day. For each trading day, the first half-hour return is computed by comparing the previous trading day’s close price to the ETF price 30 minutes after market open, so that the predictor captures information released after the previous trading day’s close. Price-sensitive news released before the market opens increases the likelihood of large pre-market moves inducing high trading volume and high volatility during the first half-hour of trading. News such as this is also likely to create a gap between the opening price and last closing price, thereby creating a significant overnight return. After the first half-hour, trading activities become less active until the last half hour. Institutional traders and professionals actively exit their positions in the last half-hour, an action that prompts high volume and high volatility in the market. Their trading is often affected by news from the first half-hour, which creates correlated price action in the last half-hour.
+
+Simple trading strategy
+Each trading day computes the first half-hour return by comparing the previous trading day’s close price from the price at 10:00 am. Take a long (short) position at the beginning of the last half-hour if the predictor is positive (negative), and then close the position at the end of the last half-hour.
+
+Hedge for stocks during bear markets
+Not known - Source and related research papers don’t offer insight into correlation structure of proposed trading strategy to equity market risk; therefore we do not know if this strategy can be used as a hedge/diversification during the time of market crisis.

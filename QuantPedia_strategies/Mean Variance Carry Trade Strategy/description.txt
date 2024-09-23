@@ -1,0 +1,10 @@
+The carry trade (borrowing in currencies where the interest rate is low and lending where the interest rate is high) is probably the best-known forex strategy. It offers attractive return but isn’t without risk as carry trades are prone to sudden crashes. The mean-variance methodology applied to carry trade strategy could solve crash risk problem and upgraded strategy presented in the academic paper shows better risk/return characteristics.
+
+Fundamental reason
+Academic research states that uncovered interest parity predicts that exchange rates will move to close up any possibility of profit from the carry trade strategy. The hypothesis has not fared well when confronted with the data. Instead, the empirical evidence shows that in the short-run exchange rate movements are unpredictable, and resemble a random walk. Thus, while the carry trade investor still faces exchange rate risk, on average, the strategy has a positive expected return.
+
+Simple trading strategy
+The investor takes the U.S. dollar (USD) as the domestic currency. He invests in the following foreign currencies: Swiss franc (CHF), Euro3 (EUR), Japanese yen (JPY), British pound (GBP), Australian dollar (AUD), Canadian dollar (CAD), Norwegian krone (NOK), Swedish krona (SEK), Singapore dollar (SGD), and New Zealand dollar (NZD). Each month, for each currency, investor computes the expected excess return under the random walk hypothesis, which is just the difference between the currency’s interest rate and the U.S. risk-free rate. Each month, the investor also re-estimates the daily covariance matrix by using the last 250 observations. Covariance matrix and expected excess returns are then used in a mean-variance methodology to compute optimal long/short weights for each currency in a portfolio. The portfolio is rebalanced monthly.
+
+Hedge for stocks during bear markets
+No - Based on the source research paper (see Tables 9), the strategy has a positive return during 2008 recession; however, strategy times carry strategy, which is strongly correlated to equity markets, therefore probably can’t be used as a hedge/diversification to equity market risk factor during bear markets.

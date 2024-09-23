@@ -1,0 +1,14 @@
+A large range of research and empirical evidence has shown that poor ESG firm’s stocks perform poorly in equity markets. In this paper, the authors look at the effect of poor governance on stock performance. In this case, the form of poor governance that is being tested is CEOs being overpaid and the effect on the respective stock when the news of the matter spreads. They test whether firms overpaying their CEOs do expectedly suffer in stock markets.
+
+In doing so, the authors have found that this is indeed is the case. They find that this poor governance does indeed reflect poorly on the respective stock performance. Therefore, we can use this and construct our strategy of shorting stocks of underlying firm’s with the most underpaid CEOs.
+
+Fundamental reason
+The functionality of our strategy lies in the fact that empirically it is seen that stocks underperform when the underlying company is known to have a form of poor governance: overpaid CEOs in this situation.
+
+One reason this may be the case is that shareholders are led to believe that the underlying company tend to use resources poorly and does not strongly factor in corporate governance and responsibility when making decisions. Additionally, another possibility is that the firm itself begins to underperform as a result of its employees finding out that their CEO is overpaid. The subsequent fall in morale and hence productivity may lead to the firm underperforming and hence this leading to its stock underperforming. Therefore, due to such reasons, we can validate and have confidence in our strategy involving shorting stocks that are empirically and logically bound to perform negatively.
+
+Simple trading strategy
+The investment universe consists of all stocks traded on the NYSE. The main variable of interest is the overpaid CEO ranking. This can be found using a service such as “As You Sow” or similar. Based on this the current annual top 100 firms with the most overpaid CEOs can be found. The stocks with the underlying companies where these CEOs are employed will be shorted and a long position in a market index, such as the S&P500, will be opened as a hedge. All stocks are weighted equally and portfolio is rebalanced yearly.
+
+Hedge for stocks during bear markets
+Yes - Strategy is mainly shorting stocks, therefore, there is a high probability that it will work as a hedge.
