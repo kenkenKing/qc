@@ -1,0 +1,15 @@
+Multiple research papers show that extent of a net share issuance by a public company strongly predicts equity prices of this company – positive net share issuance are associated with subsequent negative performance, and negative net share issuance (repurchase) is associated with a subsequent positive performance. We present a trading strategy based on a study performed in Australian equity markets. There are studies which confirm this effect also exist in the US however these studies are not practical for our purposes as they do not contain performance/risk characteristics (see “Other papers” section for additional details).
+
+Fundamental reason
+New share issuance means dilution to existing shareholders and is therefore understandable that share prices react to such act. The delayed response of investors to share issuance information is related to behavioural biases.
+
+Simple trading strategy
+The investment universe consists of stocks from Australian exchange. Stocks are sorted into three groups – micro stocks as the lowest 30% of firms, small stocks as the middle
+40% of firms, and big stocks as the largest 30% of firms ranked according to market capitalization. Only Big stocks are used in the subsequent trading strategy.
+
+At the end of each December of year t-1, investor forms portfolios based on net share issuance – net issuance variable is computed as the natural log of adjusted shares at the end of June of year t-1 minus the natural log of adjusted shares at the end of June of year t-2. Stocks are sorted into eight portfolios based on their respective net issuance variables. Firms with negative net issuance are placed in one of two negative portfolios split at the 50th percentile of negative issuance firms. These portfolios are termed NegLow and NegHigh, where NegLow represents the most negative net issuance firms. Firms with zero net issuance over the period are placed in a so-called Zeros portfolio. The remaining positive net share issuance stocks are split into quintile portfolios PosLow, Pos2, Pos3, Pos4, and PosHigh, using breakpoints at the 20th, 40th, 60th, and 80th percentiles of positive issuance firms, respectively.
+
+Investor goes long stocks from Zero portfolio (zero share issuance) and shorts stocks from PosHigh portfolio (stocks with the highest share issuance). Stocks are weighted equally, and portfolio is rebalanced yearly.
+
+Hedge for stocks during bear markets
+Not known - Source and related research papers don’t offer insight into correlation structure of proposed trading strategy to equity market risk; therefore, we do not know if this strategy can be used as a hedge/diversification during the time of market crisis. The strategy is built as a long-short, but it can be split into two parts. The long leg of the strategy is surely strongly correlated to the equity market; however, the short-only leg might be used as a hedge during bad times. Rigorous backtest is, however, needed to determine return/risk characteristics and correlation.
