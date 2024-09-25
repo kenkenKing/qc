@@ -1,0 +1,11 @@
+Do management earnings forecasts (guidance) offer some added value, or are they just a firm’s PR? Academic research shows that earnings guidance could be a good predictor of future stock returns. Stocks usually drift in the direction of an earnings guidance surprise, and this drift is stronger if the surprise (positive or negative) is also strong. A profitable long-short strategy could, therefore, be easily constructed by going long on positive surprise firms and short on negative surprise firms.
+
+Fundamental reason
+Academic research explains the anomaly as investors’ under-reaction to forecast news. The anomaly is consistent with investor behavior based on ambiguity aversion, as a strong continuation of returns to correct an under-reaction to announcements of good news is consistent with prior evidence on the relative inefficiency with which investors respond to earnings-related information events such as “earnings announcements and analysts’ forecast” revisions.
+
+Simple trading strategy
+The investment universe consists of NYSE, AMEX, and NASDAQ companies, which give quarterly earnings guidance with a price greater than $1. Forecast surprise is the difference between the management EPS forecast and the pre-management-forecast analyst consensus mean EPS forecast. The investor then sorts the firms into quintile portfolios and goes long on positive surprise firms and short on negative surprise firms the third day after the management forecast. Firms are held in the portfolio for three months. The portfolio is equally weighted.
+
+Hedge for stocks during bear markets
+Not known - Source and related research papers don’t offer insight into the correlation structure of the proposed trading strategy to equity market risk. Therefore we do not know if this strategy can be used as a hedge/diversification during the time of market crisis. The strategy is built as a long-short, but it can be split into two parts. The long leg of the strategy is surely strongly correlated to the equity market; however, the short-only leg can be maybe used as a hedge during bad times. Rigorous backtest is, however, needed to determine return/risk characteristics and correlation.
+

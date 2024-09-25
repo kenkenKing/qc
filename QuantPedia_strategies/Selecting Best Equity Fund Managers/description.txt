@@ -1,0 +1,16 @@
+What is the easiest way to earn money in markets? Find a super-manager and invest money into his fund. But is there a way to distinguish real alpha-deliverers from simple luck? Research suggests there is one way how to do it (at least in equity mutual funds). When a mutual fund contains mostly mediocre-performing stocks and only one or a few super-performers, then it is likely that the overall fund performance would be due to luck. However, a fund that has a larger number of above-average performing stocks may have a good fund performance due to its manager’s true stock picking-ability. A fund manager‘s stock-picking skill could, therefore, be observed from the distribution of the individual stock performances inside the fund. Consistency can be measured by analyzing the skewness of the distribution; if a manager consistently picked above-average performing stocks, the individual stock performance distribution inside the fund would be left-skewed. Research also shows that this measure works best for the funds with the best past performance.
+
+Fundamental reason
+How can we be sure that a manager is skilled in his job? It makes sense that the more good stocks he picked in the past, the more skilled he is (or there is a higher probability) than somebody who has picked only a few top-performing stocks (and most of the stocks were only average).
+
+Simple trading strategy
+The alpha measure is calculated for all stocks on NYSE, AMEX, and NASDAQ – the Carhart 4-factor model and past 125-day performance are used as inputs in the regression equation. Stocks are then divided into percentiles based on their alpha measure.
+
+Growth equity funds are used as the investment universe. Periodical quarterly (or 6-month) holding statements are used as inputs to calculate the skewness measure. The skewness measure is calculated for each fund as:
+S = n/((n-1)*(n-2))*SUM(Wi^1,5*(Xi-(Average(X)/sigma)^3))
+where n is the number of stocks in the fund, Wi is the weight of stock i, Xi is the alpha ranking of stock i (percentile), and sigma is the standard deviation of the alpha rankings in the fund.
+
+The investor then chooses the top quintile of the funds with the best past performance (the paper doesn’t state the measuring interval, but a 12-month interval would probably be adequate) and selects the top quintile of funds with the most negative skewness for his/her investments.
+
+Hedge for stocks during bear markets
+No - Fund picking strategy is implemented in a long-only variant, which means that it is not suitable to hedge equity market risk.

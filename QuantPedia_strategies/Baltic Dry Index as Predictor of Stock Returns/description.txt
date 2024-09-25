@@ -1,0 +1,18 @@
+The Baltic Dry Index (BDI) is an indicator of transportation costs for raw materials shipped by sea and is calculated as a weighted average of the Baltic Exchange’s indices for the shipping costs of the four largest dry-vessel classes. The supply structure of the shipping industry is generally predictable and relatively inflexible; therefore, changes in shipping costs could be seen largely due to changes in the worldwide demand for raw materials. This links BDI to global demand, and changes in BDI could, therefore, be seen as a leading indicator of economic activity. Academic research shows that a three-month growth rate of the BDI predicts returns for a number of stock markets, and especially for emerging markets. BDI also has a strong predictive ability for aggregate commodity indices. As a consequence, BDI’s prediction ability could be used in a trading strategy which weights stocks and risk-free assets (treasury bonds) based on the forecasted returns for stocks.
+
+Fundamental reason
+Research shows that BDI has a strong predictive ability for future growth in global economic activity, and growth in economic activity has a strong impact on equities, and this more closely links BDI to stock market returns.
+
+Simple trading strategy
+The investor can divide his/her portfolio between emerging market stocks and risk-free bonds (cash).
+
+The investor’s preferences are described by a CRRA utility function with a coefficient of relative risk aversion denoted by gamma:
+
+U[x] = (X^(1-gamma)) / (1-gamma)
+
+Gamma is set to 3, and X is the weighted average of stocks and cash predicted future returns.
+
+The up-to-date history of the BDI index is used as an independent variable in a regression equation to predict the next period’s return on equities (an initial sample length equal to 120 months is used, and the independent variable’s sample expands each month). The investor then uses information from the regression equation to maximize his/her utility in the next period and weight the stocks and cash in his portfolio accordingly. The portfolio is rebalanced every month.
+
+Hedge for stocks during bear markets
+Partially - The selected strategy is a class of “Market Timing” strategies that try to rotate out of equities during the time of stress. Therefore the proposed strategy isn’t mainly used as an add-on to the portfolio to hedge equity risk directly. Still, it is more an overlay that can be used to manage the percentual representation of equities (or “equity-like assets”) in a portfolio. “Equity Market Timing” strategy can decrease the overall risk of equities in a portfolio, and it can improve the risk-adjusted returns. Moreover, as strategy’s goal is to hold equity market only in a positive times for equity market factor and be out of equities otherwise, therefore this logic can be maybe used to create amended market timing strategy (using original rules) which is out of equities during positive times and holds bonds (or goes short equities) during bad times. This new amended strategy can be maybe used as a hedge/diversification to equity market risk factor during bear markets. However, performance/risk characteristics and overall correlation and quality of suggested amended strategy can be found out only by rigorous backtest and source academic research paper doesn’t give us any clues on how it will perform…

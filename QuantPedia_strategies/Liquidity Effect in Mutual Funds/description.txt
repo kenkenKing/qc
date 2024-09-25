@@ -1,0 +1,10 @@
+Academic research shows that the liquidity effect in stocks is a strong factor that allows investors to obtain some extra performance over market return. However, not all investors are able to trade sizeable portfolios consisting of thousands of stocks. Sometimes it is easier to exploit this factor indirectly – through picking mutual funds. Research suggests that mutual funds, which, knowingly or unknowingly, systematically construct portfolios of less liquid stocks outperform their peers as they capitalize on this anomaly. Therefore, investors familiar with this effect could reach above-average returns with little effort in executing trades.
+
+Fundamental reason
+Research shows that less liquid assets are discounted in price, while more liquid assets have higher prices for the same set of expected cash flows. Correspondingly, less liquid assets have higher expected returns, while more liquid assets have lower expected returns. Investors require an additional return for holding illiquid assets; therefore, this pattern holds in nearly every asset, and higher performance for less liquid equities is no exception.
+
+Simple trading strategy
+Mutual funds that invest in small-cap equities, as the liquidity effect is the strongest among the smallest companies, are part of the investment universe. The investor then uses 13f filings or a mutual fund data provider (e.g., Morningstar) to gain access to the end of the year mutual fund equity holdings for each fund. He/she then calculates the liquidity factor for each stock in each fund (based on the stock’s turnover – the number of shares traded divided by the outstanding shares in the stock) and creates a weighted average liquidity score for each fund (the stock’s liquidity score multiplied by its weight in the fund). He/she then goes long on the top quintile of funds with the lowest liquidity composite score. The portfolio is rebalanced once a year.
+
+Hedge for stocks during bear markets
+No - Fund picking strategy is implemented in a long-only variant, which means that it is not suitable to hedge equity market risk.

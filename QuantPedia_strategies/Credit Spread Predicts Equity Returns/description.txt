@@ -1,0 +1,17 @@
+Credit analysts say that “credit anticipates and equity confirms.” It means the credit market prices should anticipate trends before the stock market does. We present a research paper showing a market timing strategy built on this relationship. The strategy compares whether equities are overpriced or underpriced relative to credit bonds. If stocks appear undervalued relative to corporate bonds, the investor goes long on stocks. Otherwise, he/she holds risk-free assets.
+
+Fundamental reason
+There is a strong, well-established relationship between a firm’s debt and equity. High yield debt is highly correlated with stock market returns. The debt becomes more “equity-like” while the stock becomes much more sensitive to the company’s credit risk. A rise in the credit spreads coincides with a fall in equities. The small-cap stocks tend to be more sensitive to the credit cycle than the large-cap stocks; therefore, it is useful to use liquid Russell 2000 futures or ETFs as a trading vehicle.
+
+Simple trading strategy
+The Russell 2000 and Bank of America Merrill Lynch HY/B (High Yield Bond) are used as equity and credit indices, respectively. The HY/B index is converted from spreads to default probability as:
+
+default probability = 1 – exp (-T * spread * (1/(1-RR)))
+
+where T is expected time to maturity (5 years), the spread is HY/B spread, and RR is expected recovery rate (based on long-term averages).
+
+The actual price levels for the Russell 2000 are modeled using a power model regression equation and current default probabilities. The model parameters are recalculated each trading day for use on the next trading day. The investor holds equities if the Russell 2000 price level is lower than the modeled price level and stays in cash otherwise.
+
+Hedge for stocks during bear markets
+Partially - The selected strategy is a class of “Market Timing” strategies that try to rotate out of equities during the time of stress. Therefore the proposed strategy isn’t mainly used as an add-on to the portfolio to hedge equity risk directly, but it is more an overlay that can be used to manage the percentual representation of equities (or “equity-like assets”) in a portfolio. “Equity Market Timing” strategy can decrease the overall risk of equities in a portfolio, and it can improve the risk-adjusted returns. Moreover, as strategy’s goal is to hold equity market only in a positive times for equity market factor and be out of equities otherwise, therefore this logic can be maybe used to create amended market timing strategy (using original rules) which is out of equities during positive times and holds bonds (or goes short equities) during bad times. This new amended strategy can be maybe used as a hedge/diversification to equity market risk factor during bear markets. However, performance/risk characteristics and overall correlation and quality of suggested amended strategy can be found out only by rigorous backtest and source academic research paper doesn’t give us any clues on how it will perform…
+
