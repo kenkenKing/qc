@@ -1,0 +1,23 @@
+The momentum effect is a premier anomaly since its initial discovery, and the momentum effect has been documented and researched in many markets worldwide. The momentum is statistically very significant, and only a very few researchers doubt that this effect exists. However, no anomaly is without faults, and the momentum often experiences temporary crashes or periods with unimpressive returns. Academic research, therefore, currently tries to isolate positive momentum periods from negative ones predictably. We present one such research where changes in an aggregate default risk are very successfully used for a good/bad momentum periods’ separation. That momentum returns are positive only during great default shocks and nonexistent otherwise.
+
+Fundamental reason
+Research states that that firm-level default becomes more important when aggregate default unexpectedly increases because high credit risk stocks are more likely to default in these states leading to lower performance and the observed momentum effect. Therefore, the returns to the momentum strategy are time-varying, and they should be more (less) pronounced during periods of high (low) default shocks.
+
+Simple trading strategy
+The investment universe consists of all stocks traded on AMEX/NYSE/NASDAQ. Stocks that are priced below $1, foreign stocks, and American Depositary Receipts (ADR) are excluded.
+
+An investor follows the methodology introduced by Jegadeesh and Titman (1993) and sort stocks into deciles based on their cumulative performance over months t-6 through t-1. Skip-month after the formation period is used, and the momentum portfolios are formed by equally weighting firms in each of the deciles. The top decile represents winners, and the bottom decile consists of losers. Investor forms momentum portfolios every month and holds them for the next six months (referred to as the basic momentum 6-1-6 strategy).
+
+Investor measures the aggregate default premium as the yield spread between Moody’s CCC corporate bond index and the 10-year U.S. Treasury bond. To capture unexpected changes in aggregate default, he derives innovations in the default premium as the residual from the following model:
+
+DEFt = a0 + a1*DEFt-1 + a2*DEFt-2 + XIt
+
+where DEFt is default spread in month t, and unexpected shocks to default are represented by XIt. The values of residuals above (below) median correspond to positive (negative) shocks
+in aggregate default.
+
+Investor firstly estimates model using the pre-sample period (from January of 1954 to December of 1959). He then adds one observation to the sample and estimates the model to obtain the value of the residual in January of 1960. He continues this procedure until residuals are estimated for every observation of the time-series.
+
+Each month, investor calculates the median value of aggregate default shocks and determines if the actual period is high default shock period or low default shock period. The investor holds momentum portfolio only in a high default shock periods.
+
+Hedge for stocks during bear markets
+Yes - Based on the source research paper (see Table 2), the strategy has a positive return during recession months (as defined by NBER) therefore probably can be used as a hedge/diversification to equity market risk factor during bear markets.

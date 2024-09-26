@@ -1,0 +1,12 @@
+The moving average (MA) is one of the most popular filer rules widely used by market participants for market timing purposes. The most important decision in MA use is the choice of the length of the moving average. The MA length parameter is easily identifiable with a backwards-looking view; however, it is always hard to pick the MA length for the future as markets are constantly evolving and changing. We present an interesting research paper using the adaptive methodology to pick the length for a common trend-following trading strategy which uses the cross-over of two moving averages (long and short).
+
+Fundamental reason
+Trend-following systems are very common in the financial world. They derive their success from volatility clustering on financial markets. Simple trend-following rules allow investors to exploit this effect as it is advantageous not to hold risky assets during periods of high volatility. An adaptive layer increases the probability of the correct segregation between high volatility (low return) and low volatility (high return) states on the market.
+
+Simple trading strategy
+The investor trades the S&P 500 index (could be easily executed via future or ETF). This trading system uses simple MA rules based on two MAs of past prices, one computed over a short interval and the other over a long interval. The index is assumed to be in an upward (downward) trend when the short MA (SMA) is above (below) the long MA (LMA). 23 (48) different lengths for the SMA (LMA) with values ranging from one (five) day to 100 (990) days.
+
+In the first step, the optimal selection of simple rules is determined according to their performance in the 4-year selection period. This optimal strategy is then used in the trading period. The length of the trading period is not stated in the source research paper’ however, we assume a 1-day trading period. The selection period is rolled every day, and the result of the selection process is used during the trading session.
+
+Hedge for stocks during bear markets
+Partially - The strategy is timing equity market, but traders can possibly split this strategy into two halves and use the short-only part of this strategy. After a careful backtest, this short-only strategy might be used as a hedge/diversification during market/economic crises.

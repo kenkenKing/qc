@@ -1,0 +1,18 @@
+It is a common discovery that the ETF price often deviates from the underlying NAV. These deviations are larger if there is higher uncertainty about the pricing of the underlying. This usually happens if the underlying is illiquid or the underlying market isn’t opened. This is the case of European ETFs traded on US markets. Recent academic research shows that German, UK and French iShares overreact to US market developments after European markets close, and the investor is, therefore, able to profitably explore such overreactions.
+
+Fundamental reason
+Academic research formulates the hypothesis that iShare prices may overreact to late-day news or trading activity in US markets. For example, if late-day US equity rallies are associated with European iShare rallies that are systematically greater than the next day NAV rises, these overreactions should lead to predictable European iShare price declines the next day.
+
+Simple trading strategy
+Multiple international ETFs could be used for this type of trading. We present a strategy using the UK ETF and SPY US for hedging.
+
+Each day, the investor needs to determine whether the UK iShare ETF at the close of US trading is trading at discount or premium to its NAV. The current day closing NAVs of the European iShare ETF is not reported by the close of US trading; therefore, the premium or discount must be calculated from the forecasted European iShare NAV on the basis of trading in the foreign equity and foreign exchange markets. The NAVs reported the previous evening for the close of the previous European trading day is adjusted by the current day’s percentage change in the broad stock index of the particular country and by the percentage change in the value of the relevant foreign currency against the Dollar.
+
+E(NAVt) = NAVt-1 * (1 + INDEXRETt) * (1 + FXRETt)
+
+Where INDEXRET is the daily close-to-close percentage return of the FTSE and FXRET is the daily percentage return of the Pound against the Dollar.
+
+The investor then compares the premium/discount to the fixed threshold (50bp in this case). He goes long (short) foreign ETF and short (long) SPY US if foreign ETF is trading at a premium (discount). Trade is open at US market close, and the position is held for one day.
+
+Hedge for stocks during bear markets
+Partially - ETF NAV Arbitrage strategy is related to other arbitrage/reversal strategies – it is also a type of “liquidity providing” strategy and as such it usually benefits from increased volatility or a drop in liquidity and performs well during market crises. However, source and related research papers don’t offer insight into the correlation structure of the proposed trading strategy to equity market risk; therefore, rigorous backtest is recommended …

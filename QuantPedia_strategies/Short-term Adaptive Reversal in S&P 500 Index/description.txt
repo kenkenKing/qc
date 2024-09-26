@@ -1,0 +1,21 @@
+Equity markets in the last 15-20 years have been very mean-reverting on a short-term time frame (daily, weekly basis). This effect has been spotted by market practitioners (traders, portfolio managers) at first. Finally, an academic research paper has been published recently, describing a market timing system using an adaptive framework to capitalize on this anomaly. Adaptive feature of this trading system is very important since it enables the strategy to adjust to the actual market state. It will also hopefully help strategy to survive and adapt to adverse periods when mean reversion on equity indexes will stop working. This adaptive feature together with a practical description of the methodology for testing of robustness is the main reasons why we decided to add this strategy into our database.
+
+Fundamental reason
+Source academic paper doesn’t describe the fundamental reason for the mean reversion effect, which it exploits. System’s adaptive feature gives some assurance that the system will react to possible changes in market structure.
+
+Simple trading strategy
+The trading strategy uses short-term mean-reverting characteristic of the S&P 500 Index in the last 10-15 years. Amibroker code is published in a source academic paper on pages 7 and 8. The investor uses ETF, futures or CFDs to trade the S&P 500 Index.
+
+Trading rules are:
+
+System trades on close. The system uses six parameters (3 parameters for long trades and 3 for short trades) which are always optimized on a data from the past year and the best parameters are used in the following year – in a real out of sample trading (walk-forward testing methodology). Parameters for long trades are:
+
+LongZScore – which is calculated as a difference between the actual price of S&P Index and EMA moving average (with a period X), divided by a standard deviation of daily closing prices (for a period of X days), parameter X is first optimized parameter.
+Buy Level – is a level of LongZScore parameter at which the trader buys the S&P Index. This parameter is the second parameter optimized in a walk-forward test.
+BuySecond – is the second Level of LongZScore parameter at which the trader buys the second position in the S&P Index (price averaging). This parameter is the third parameter optimized in a walk-forward test.
+
+Similar parameters are also used for the short side.
+
+Hedge for stocks during bear markets
+Partially - The strategy is timing equity market, but traders can possibly split this strategy into two halves and use a short-only part of this strategy. After a careful backtest, this short-only strategy might be used as a hedge/diversification during market/economic crises.
+

@@ -1,0 +1,15 @@
+The effect of accruals (firms with higher accrual component of earnings underperform firms with lower accrual component of earnings) is a well-known investment anomaly which utilizes in-depth financial statement analysis. Final accrual component could be divided into several sub-categories with different reliability and significance. Few sub-components have a stronger prediction ability than summary accrual component. One such sub-component is which is the change in non-current operating assets.
+
+Fundamental reason
+The major underlying components of ∆ΝCOA are property, plant and equipment (PP&E) and intangibles. Considerable uncertainty is involved in these accruals. Therefore firms with a low level of non-current operating assets and negative changes in them should outperform firms with high changes.
+
+Simple trading strategy
+The investment universe consists of all stocks traded on AMEX/NYSE/NASDAQ except financial companies.
+
+Each year, investor calculates one year change in a Non-Current Operating Assets. Non-Current Operating Assets are defined as Total Assets minus Current Assets minus – Investments
+and Advances.
+
+Stocks are sorted into deciles based on the calculated change in Non-Current Operating Assets. Investor goes long stocks with the lowest change (the most negative) and short stocks with the most significant change (the most positive). Stocks are weighted equally, and the portfolio is rebalanced yearly.
+
+Hedge for stocks during bear markets
+Not known - Source and related research papers don’t offer insight into correlation structure of proposed trading strategy to equity market risk; therefore, we do not know if this strategy can be used as a hedge/diversification during the time of market crisis. The strategy is built as a long-short, but it can be split into two parts. The long leg of the strategy is surely strongly correlated to the equity market; however, the short-only leg might be used as a hedge during bad times. Rigorous backtest is, however, needed to determine return/risk characteristics and correlation.
