@@ -1,0 +1,16 @@
+There are plenty of sentiment indicators that are used to evaluate investors’ sentiment. The number of IPOs is one of them. Research shows that peaks in IPOs coincide with peaks in equity prices as companies sell stocks to the public, primarily when business prospects are bright, and companies view their stocks as generously priced. Bottoms in the number of IPOs is also connected to bottoms in equities as investors lose hope in the future. Therefore, this sentiment information could be used to construct a contrarian indicator that could be successfully used to time not only the overall equity market but also individual sectors. A sector timing trading strategy computes the number of IPOs in each market sector and periodically assesses which sectors are beaten down and invests only in them. The rest of the resources are invested in cash.
+
+Fundamental reason
+The investor sentiment can be gauged by the number of IPOs brought to the market. As the market advances, investors feel more comfortable buying up shares of IPOs, and more IPOs are brought to market. This high investor sentiment usually drives prices to unsustainable levels, and the number of IPOs could be used to assess the magnitude of an overreaction (and also under-reaction in times of low investor sentiment).
+
+Simple trading strategy
+Ten equity sectors (ETFs) are used as the investment universe. The investor divides his resources into these ten sectors equally, and his equity holding in each sector is managed by a market timing system (it is invested in an ETF or cash based on autonomous signals tied to each sector).
+
+Initial Public Offerings (IPOs) are defined as a new issue of equity listed on a major U.S. exchange (NYSE, AMEX, or NASDAQ). Current information about IPOs is available by several data vendors (Bloomberg, CRSP, etc.). Every IPO is investigated and included in its consequent equity sector. The number of IPOs brought to the market for each equity sector are calculated each month, and 3-month and 12-month moving averages of IPOs for each sector are calculated. The ratio of the 3-month moving average to the 12-month moving average is then computed.
+
+A crossover rule is then used in each equity sector – A Buy signal is registered if the ratio crosses Threshold1 upward and a Sell signal is registered if the ratio crosses Threshold2 upward. The investor holds ETF after a Buy signal and sells it and goes to cash after a Sell signal.
+
+Treshold1 and Treshold2 in the research paper for this trading system are defined as 50% and 110%, but these ratios (as well as longer and shorter SMA periods) could be chosen differently.
+
+Hedge for stocks during bear markets
+No - The selected strategy is a long-only, and as such, has a strong exposition to equity market risk; therefore, it can’t be used as a hedge/diversification during the time of market crisis.

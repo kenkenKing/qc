@@ -1,0 +1,20 @@
+“Find a trend and follow it” is a simple piece of advice, which is often repeated by many experienced traders. Trend-following is one of the oldest trading techniques, and trend-following systems belong to the standard repertoire of investors and traders. Strategies are still profitable despite their eminence as the underlying factor behind their success (that the market has a long-tail distribution and trend-following cuts its negative tail) will probably not disappear. We present a summarized study on various trend-following systems in futures markets. Only one system out of it is described in detail (to save space in the Quantpedia database), but we believe the whole study is worth reading.
+
+Fundamental reason
+Behavioral biases (investor herding, under- and over-reaction, etc.) create a non-normal return distribution on financial markets. Trend following systems cut the left tail of the long-tail distribution. This characteristic creates improved risk/return characteristics in trend following systems when compared to a diversified buy&hold approach.
+
+Simple trading strategy
+The investment universe consists of 20 futures markets (4 currencies, four financials, two metals, three softs, three grains, two meats, and two energies). The initial position size is based on the maximum amount of risk the investor is willing to take for each position. The system described (and all simulation in the source paper) has an initial risk of 2%, i.e., if the market works against the investor, he will lose a maximum of 2% of his equity in this position. The exposure of each position is additionally restricted to 10% of current equity.
+
+The selected strategy is a Donchian Channel Breakout 100 (chosen due to its lower probability of curve-fitting as it depends only on three parameters: the number of days used to calculate the Donchian channel and two parameters in the ATR stop). The Donchian channel is formed by taking the highest high and the lowest low of the last n (100) periods.
+
+Rules:
+– The investor goes long/short at Stop as soon as the price crosses the upper/lower Donchian band of 100 days.
+– The investor exits and reverses position as soon as the opposite Donchian band is crossed.
+– He/she uses four times the ATR of 10 days as a parameter for the maximum risk to calculate the position size.
+
+Position sizing:
+2% based on the initial stop loss (based on four times the 10-day-ATR).
+
+Hedge for stocks during bear markets
+Partially - Futures trend-following/momentum strategies are a cornerstone of trend-following CTA funds and, as such, are excellent candidates for an uncorrelated strategy and very often a hedge to equity market factor. The source research paper doesn’t offer insight into the correlation structure of the proposed trading strategy to equity market risk; however, we can expect that strategy will probably retain a negative correlation to equities. Backtest would be helpful to determine correlation and hedging characteristics.
