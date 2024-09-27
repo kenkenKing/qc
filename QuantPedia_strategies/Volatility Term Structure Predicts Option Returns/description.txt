@@ -1,0 +1,16 @@
+The main drivers of option prices are the underlying stock price and volatility. The future stock price is hard to predict. Still, it could be easier to predict a stock’s future volatility as an investor can potentially use the shape of the term structure of volatilities. Academic research shows that option portfolios with high slopes in the volatility term structure outperform option portfolios with low slopes in the volatility term structure. This outperformance is economically and statistically quite significant and holds even after various robustness tests and after the subtraction of the bid/ask spread. Various variants of the basic strategy exist. We present net returns for the “delta hedged call option” variant, but we also recommend reviewing other variants.
+
+Fundamental reason
+Academic research postulates that an increasing volatility term structure indicates that the spot volatility is expected to rise in the future, and a decreasing volatility term structure indicates that the spot volatility is expected to decrease. If this hypothesis holds, there should be a positive relationship between the magnitude of the slope of the volatility term structure and the returns of the short-term options.
+
+Simple trading strategy
+The investment universe consists of all US-based stocks with liquid options.
+
+Every month, the investor computes the slope of the volatility term structure for each stock. The slope of the volatility term structure is defined as the difference between the long-term and the short-term volatility. The short-term volatility is defined as the average of the one-month ATM put and call implied volatilities. The long-term volatility is the average volatility of the ATM put and call options, with the longest time-to-maturity available and the same strike as that of the short-term options. The longest time to expiration is between 50 and 360 days.
+
+Every month, the investor then forms ten portfolios based on the slope of the volatility term structure. Decile portfolios contain delta hedged one-month call ATM options that are available on the second trading day (usually a Tuesday) after the expiration of the previous one-month options. The strike price is as close as possible to the closing price.
+
+The investor goes long on the delta hedged decile with the highest slope in the volatility term structure, and he goes short on the decile with the lowest slope in the volatility term structure. The portfolio is equally weighted and rebalanced monthly.
+
+Hedge for stocks during bear markets
+Not known - Source and related research papers don’t offer insight into the correlation structure of the proposed trading strategy to equity market risk. Therefore, we do not know if this strategy can be used as a hedge/diversification during the time of market crisis. The strategy is built as a long-short, but it can be split into two parts. The short-only leg might be used as a hedge during bad times. Rigorous backtest is, however, needed to determine return/risk characteristics and correlation.

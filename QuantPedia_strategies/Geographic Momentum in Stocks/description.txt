@@ -1,0 +1,14 @@
+Most large-cap companies in today’s globalized world are multi-national companies. They derive sales from various parts of the world. Equity returns should reflect the performance of foreign markets. However, academic research shows that markets aren’t fully efficient and do not promptly incorporate all information into stock prices. This return predictability could be profitably exploited with a long-short market neutral strategy. This predictability cannot be explained by a firm’s own momentum, industry momentum, post-earnings announcement drift, or exposure to emerging market risk, which could make this strategy a very valuable part of a portfolio of strategies.
+
+Fundamental reason
+Academic research postulates that the effect is consistent with investors having limited attention. Return predictability is strongest among rms that generally receive less investor attention: less analyst coverage, medium, and small stocks, and stock that are not in major stock indices. The predictability is also strongest among rms that are geographically more complex, i.e., firms with sales coming from more countries.
+
+Simple trading strategy
+The investment universe consists of all stocks listed on the New York (NYSE), American (AMEX), and NASDAQ stock markets (data for the backtest in the academic paper come from the Compustat database).
+
+Firms are required to report sales from geographic segments, and this information is publicly available through 10-Ks yearly. The investor uses this data to compute each firm’s “geographic return” as the weighted average of returns on equity indexes in each region/country where a company does business. The weight given to each country’s index return is a fraction of the previous year’s sales, which come from that country divided by total sales. The proxy for the country returns is the MSCI Country Indexes, which are denominated in U.S. dollars.
+
+The investor forms a portfolio that longs stocks in the top 20 percentile and shorts stocks in the bottom 20 percentile according to their previous month’s geographic returns. The portfolio is rebalanced monthly and is equally weighted.
+
+Hedge for stocks during bear markets
+Not known - The source and related research papers don’t offer insight into the correlation structure of the proposed trading strategy to equity market risk; therefore, we do not know if this strategy can be used as a hedge/diversification during the time of market crisis. The strategy is built as a long-short, but it can be split into two parts. The long leg of the strategy is surely strongly correlated to the equity market; however, the short-only leg can be maybe used as a hedge during bad times. Rigorous backtest is, however, needed to determine return/risk characteristics and correlation.

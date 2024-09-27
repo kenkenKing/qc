@@ -1,0 +1,18 @@
+The performance difference between value and growth stocks is a long-known market anomaly. Many theories try to explain this effect, which shows up over and over in different markets. This entry is focused on the ways to use fundamental analysis to enhance the value/growth spread in the Japanese market. Academic research by Numa shows that value stocks with strong fundamentals (expressed by an aggregated F_SCORE measure) achieve much higher returns than growth stocks with weak fundamentals. A long-short portfolio allows an investor to capture this spread in a market-neutral way.
+
+Fundamental reason
+Academic research explains the significance of the spread by the “life cycle hypothesis” – firms are separated into four groups, i.e., early-stage momentum loser, late-stage momentum loser, early-stage momentum winner, and late-stage momentum winner. The early-stage momentum losers that continue to support poor performance can become subject to extreme pessimism and experience low volume and investor negligence (becoming a late-stage momentum loser). Eventually, the average late-stage momentum loser does “recover” and becomes an early-stage momentum winner. Similarly, early-stage momentum winners that continue to support good performance can become subject to extreme optimism and experience high volume and investor favoritism (i.e., a late-stage momentum winner). Finally, the average late-stage momentum winner becomes an early-stage momentum loser. The academic study suggests that the F_SCORE and Book-to-Market ratio are appropriate for identifying each firm’s location in the life cycle.
+
+Simple trading strategy
+The investment universe consists of stocks from the Japanese stock exchange (backtest universe from the source academic paper); however, the strategy is probably functional within other equity universes. Each year, all stocks are evaluated by an F_SCORE. The F_SCORE is an aggregated signal measure – the sum of the three binary signals.
+
+The first measure is deltaROA (ROA as net income before extraordinary items scaled by beginning-of-the-year total assets); the signal is equal to one if deltaROA is positive, and zero if otherwise.
+
+The second measure is cash flow from operations (CFO – calculated as the current year’s net income before extraordinary items minus accruals, scaled by the beginning-of-the-year total assets). The signal is equal to one if the CFO is positive, and zero if otherwise.
+
+The third measure is deltaMARGIN calculated as the current year’s MARGIN (the firm’s current gross margin ratio calculated as gross margin scaled by total sales) minus the prior year’s MARGIN. The signal is equal to one if the deltaMARGIN is positive, and zero if otherwise.
+
+The investor goes long on high Book-to-Market firms (value firms, the top 33% of the investment universe) with F_SCORE 3 and short on low Book-to-Market firms (growth firms, the bottom 33% of the investment universe). The portfolio is equally weighted and rebalanced yearly.
+
+Hedge for stocks during bear markets
+Not known - The source and related research papers don’t offer insight into the correlation structure of the proposed trading strategy to equity market risk; therefore, we do not know if this strategy can be used as a hedge/diversification during the time of market crisis. The strategy is built as a long-short, but it can be split into two parts. The long leg of the strategy is surely strongly correlated to the equity market; however, the short-only leg might be used as a hedge during bad times. Rigorous backtest is, however, needed to determine return/risk characteristics and correlation.

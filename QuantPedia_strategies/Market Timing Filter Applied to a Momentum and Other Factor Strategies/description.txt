@@ -1,0 +1,13 @@
+Equity markets are full of market anomalies. Academic research has been very successful in uncovering plenty of them, and effects like medium-term momentum, long-term and short-term reversal, value and others have become common factors. Portfolio exposure to these factors (long-term only) allows for outperformance against ordinary market returns; however, the business cycle still has a strong impact on portfolio performance. Recent academic research shows that there is a very simple way to dampen this business cycle impact, i.e. with the use of a trend-following filter. Research shows that increases in risk-adjusted returns are common throughout all of the best-known anomalies. We extracted the performance and risk characteristics only for a momentum portfolio combined with a trend-following filter. Combinations with other anomalies are stated in the research paper.
+
+Fundamental reason
+The success of the strategy lies in the use of moving averages as a trend-following filter. The momentum/trend following filter rules are able to divide time into periods of lower performance (higher volatility/risk) and higher performance (lower volatility/risk) as a time series of financial asset returns often exhibit the volatility clustering property: large changes in prices tend to cluster together.
+
+Simple trading strategy
+The strategy is backtested on French deciles portfolios (from the Kenneth French data library), but we also present a way to construct these portfolios.
+
+The investment universe consists of all AMEX, NYSE and NASDAQ stocks. Every month, stocks are sorted into deciles based on their performance between the previous t-2 and t-12 months (momentum with a skipped month). Stocks in a decile are value-weighted. The investor tracks the equity curve of this simple momentum strategy without a filter and applies a 24-month moving average filter on it – he goes long on stocks from the highest momentum decile only if the previous month point on the equity curve was higher than the equity curve’s 24-month average.
+
+Hedge for stocks during bear markets
+No - The strategy is timing equity factors but invests into them on a long-only basis, therefore, is not suitable as a hedge/diversification during market/economic crises.
+
