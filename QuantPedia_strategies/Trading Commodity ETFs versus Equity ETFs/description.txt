@@ -1,0 +1,10 @@
+It is a well known that liquid financial markets are not always as orderly as the efficient market advocates suggest. Arbitrageurs face a lot of limits (risk of trading and short selling, risk of flight of funding capital, etc.) and are often specialized on one type of market. Therefore it is possible that commodity ETFs which trade on equity markets may have (from time to time) prices away from their fundamental values. This situation may often arise during extreme sentiment periods – during strong moves on equity markets. Multiple trading strategies that go long commodity ETF against a short position in equity ETF (or another way around) could be build based on these signals (equity and or commodity market sentiment defined as a sign of a short term performance). Trading strategies survive trading costs and could be therefore used as an interesting diversifier.
+
+Fundamental reason
+Academic research postulates that equity market sentiment influences commodity ETF prices as they are traded on equity markets too. Although arbitrage can be undertaken by many market participants who can buy the cheap asset and short the more expensive one, commodity ETFs and their underlying securities are not traded in the same market. If arbitrageurs lack the capacity to engage in arbitrage across multiple markets, the tracking errors of commodity ETFs would be affected by investor sentiment in the stock market.
+
+Simple trading strategy
+The investment universe consists of two ETFs – SPY (S&P500 Index ETF) and one broad commodity market ETF. At the beginning of each day, the investor goes long a commodity ETF and short SPY if the stock market was bullish the prior day. The portfolio is held for one day and then liquidated.
+
+Hedge for stocks during bear markets
+Not known - Source and related research papers don’t offer insight into correlation structure of proposed trading strategy to equity market risk; therefore, we do not know if this strategy can be used as a hedge/diversification during the time of market crisis.
