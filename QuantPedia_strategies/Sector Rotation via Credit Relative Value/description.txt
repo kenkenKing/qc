@@ -1,0 +1,22 @@
+Equity sector rotation system is an old concept, and many different variations of this strategy exist. The recent academic paper uses signals from the credit strength of individual sectors. It states that equity values drop as credit risk rises, and vice versa and an investor can use this relationship to judge relative value between the credit and equity markets with good proxies for credit risk. The relative cheapness of particular equity sector is the main factor used to pick winning sectors. The model also uses absolute cheapness for the indication to switch to cash in case the picked sector is expensive on an absolute basis.
+
+Fundamental reason
+The academic paper explains that the strategy makes use of relative value across the corporate capital structure to rank sectors and judge when entry and exit are recommended. Equity values drop as credit risk rises and vice versa. With good proxies for credit risk, one can use this relationship to judge relative value between the credit and equity markets.
+
+Simple trading strategy
+The investment universe consists of 9 SPDR equity sector ETFs. The main indicator is calculated from option-adjusted spreads for Bank of America/Merrill Lynch’s US High Yield B index (HYB Index).
+
+An investor uses the linear model to judge relative cheapness of equity sectors:
+ETFfair = A*HYB + B
+HYB is the option-adjusted spread as published in the St. Louis Fed’s FRED database. OLS is used to calibrate parameters for fair value model for each sector (using the previous 26 weeks of data).
+
+Once the model has been calibrated via linear regression, the investor can estimate fair value for each sector ETF and estimate how far, on a percentage basis, each ETF is away from fair value:
+ETFdisconnect = (ETFfair – ETF market) / ETFmarket
+
+Each week investor ranks the sector ETFs in order to select a basket of ETFs in which to invest. The investor considers whether the disconnect is positive or negative to determine whether to invest in the ETF or in a risk-free asset. A basket with top-ranked ETFs, those ETFs with the greatest disconnect, should generate higher returns than a basket containing bottom-ranked ETFs.
+
+Each week, investor picks six top-ranked ETFs, gives equal weights to them and replaces each sector, with the fair value lower than market value, with cash. The portfolio is rebalanced weekly.
+
+Hedge for stocks during bear markets
+No - The selected strategy is a long-only, and as such has a strong exposition to equity market risk, therefore it can’t be used as a hedge/diversification during the time of market crisis.
+

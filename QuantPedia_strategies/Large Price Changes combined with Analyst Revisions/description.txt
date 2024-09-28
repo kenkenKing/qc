@@ -1,0 +1,17 @@
+A common question when observing large swings in equity prices is whether this jump is driven by new information, or whether it is simply caused by noise. If the latter is true, then it is likely that these large price moves will be followed by corrections and price reversals in a relatively short period of time. On the other hand, if these moves are caused by new information, equity prices are unlikely to display the same pattern of corrective price reversals. Academic research shows that it is possible to use analyst revisions to identify stocks which had jump caused by fundamental news instead of simple noise. Stocks which had large price change followed by analysts’ revision could be then used to construct portfolio strategies that earn abnormal returns. Source academic paper shows multiple such strategies. We picked the long-only strategy as a representative demonstration.
+
+Fundamental reason
+Large price change could be caused by the arrival of new fundamental information or by noise. Analysts revisions after price jump increase probability that price jump was caused by new information. The academic paper doesn’t state why it is possible that the effect is not arbitraged away. The most usable theory that could be used to explain this anomaly is “limits to arbitrage theory” – stated effect is not a risk-free anomaly, and arbitrageurs have limited capital to make markets completely efficient.
+
+Simple trading strategy
+The investment universe consists of all stocks from NYSE, AMEX and NASDAQ.
+
+At the end of each month, investor identifies stocks which had large positive price change (at least +5%) together with a significant volume change (at least 1.1 times greater than the average volume during previous 45 days) on a one day during the previous month.
+After a large price swing, analysts can either issue new price targets higher or lower than their earlier one. A firm is usually followed by more than one analyst, and therefore it is possible that multiple revisions will be issued after a given price move. If a majority of these revisions are upward (downward), investor defines this as a positive (negative) revisions.
+
+Investor filters stocks which had large price change and selects only stocks which had target price revisions on or within five days after the large price swing.
+
+Selected stocks are held for one month (portfolio is rebalanced afterwards) and are equally weighted.
+
+Hedge for stocks during bear markets
+No - The selected strategy is designed as a long-only therefore it can’t be used as a hedge against market drops as a lot of strategy’s performance comes from equity market premium (as the investor holds equities, therefore, his correlation to the broad equity market is very very high).
