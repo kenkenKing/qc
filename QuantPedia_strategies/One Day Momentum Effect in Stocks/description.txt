@@ -1,0 +1,16 @@
+Trading flow data could be an important source of information. Research shows that companies which are strongly accumulated during one day usually perform well in the next day. The described strategy is highly data-intensive as it requires tick data. Fortunately, final execution is done only two times during the day (open and close), so strategy doesn’t require real-time data flow and its parameters could be calculated overnight.
+
+Fundamental reason
+Research states that the dynamic interplay between noise traders and rational arbitrageurs establishes prices. According to this view, returns are affected by persistence in buying and selling by uninformed traders. Research finds positive autocorrelation in daily order imbalances. An excess of buyer or seller initiated trade for a particular security on any given day is likely to be followed by an excess of buyer or seller initiated trade in the next day.
+
+Simple trading strategy
+The investment universe consists of all stocks from US markets except stock within the lowest quintile of volume. At the end of each trading day, investor rank stocks into deciles by the fraction of buyer initiated trades in each stock on that day.
+
+The investor uses tick data to classify trades. A trade is classified as a buyer- (seller-) initiated if the transaction price is closer to the ask (bid) price of the prevailing quote. The quote must be at least one second old. If the trade is at the exact midpoint of the quote, a “tick test” classifies the trade as the buyer (seller) initiated if the last price change prior to the trade is positive (negative)
+
+Investor counts the total number of buyer-initiated and seller-initiated trades for each stock each day and calculates the percentage of buyer-initiated trades as the total number of buyer-initiated trades divided by the total number of trades.
+
+Each day at the morning investor buys decile of stocks with the highest number of buyer-initiated trades and sells stocks with the lowest number of buyer-initiated trades. Stocks are held until the end of the day end are sold at close.
+
+Hedge for stocks during bear markets
+No - Based on the source research paper (see part 3.3), the strategy has a very low performance during recession therefore probably can’t be used as a hedge/diversification to equity market risk factor during bear markets.

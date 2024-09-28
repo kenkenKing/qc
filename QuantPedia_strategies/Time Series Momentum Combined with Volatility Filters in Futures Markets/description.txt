@@ -1,0 +1,12 @@
+Technical / Momentum trading is prevalent between market participants specialized in futures trading. However, like every strategy, momentum trading has its weaknesses. The most known is momentum’s sensitivity to high volatility periods when technical momentum rules usually do not perform very well. Interesting research paper by Dunis and Miao propose a simple solution. In essence, the strategy uses volatility filter, it trades momentum rules in low volatility periods, and it uses the same rules but goes in opposite (counter-trend) directions during high volatility periods.
+
+Fundamental reason
+Academic research postulates that high volatility periods often correlate with periods when prices change direction. Such periods are bad for momentum / trend-following rules which likes more low volatility trending environment. Therefore, trading rules reversion is advised.
+
+Simple trading strategy
+The investment universe consists of 7 futures – EUR$ (CME), T-Note (CBT), S&P500 (CME), EUR/USD (CME), USD/JPY (CME), GBP/USD (CME) and Copper (COMEX). The basic strategy for low volatility environment uses MACD indicator to asses whether a particular future is in uptrend or downtrend and goes long or short. MACD parameters are 1/250 for EUR$, T-Note, Copper, 1/61 for EUR/USD, USD/JPY, GBP/USD and 3/250 for S&P 500. Volatility is computed daily using simple “Risk Metrics” methodology (see page 4 in a source research paper).
+
+The first year of data in an academic research paper is used to optimize the volatility threshold. Thes optimized parameter is then used in out of sample trading. Investor goes long (short) particular future if short term MA is over (under) long term MA in a low volatility environment. This rule is reversed in a high volatility environment. Futures in the portfolio are equally weighted, and the portfolio is rebalanced daily.
+
+Hedge for stocks during bear markets
+Partially - Futures trend-following/momentum strategies are a cornerstone of trend-following CTA funds and as such is an excellent candidate for an uncorrelated strategy and very often a hedge to equity market factor. The source research paper doesn’t offer insight into the correlation structure of the proposed trading strategy to equity market risk. However, we can expect that strategy will probably retain a negative correlation to equities. Backtest would be helpful to determine correlation and hedging characteristics.

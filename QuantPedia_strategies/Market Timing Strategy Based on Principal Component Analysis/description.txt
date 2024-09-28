@@ -1,0 +1,20 @@
+The principal component analysis is a handy methodology to find useful information in large data sets. This methodology has been often used also in a finance world mainly for a “pairs trading” strategies to identify best pairs for trading. However, it is not only utilisation. PCA could be profitably used also for a market timing strategy for state-of-the-market categorisation.
+
+Fundamental reason
+PCA methodology allows the investor to extract the first few important determinants of stocks’ moves. This determinans is used to characterize the current state of the market. The future market return is then estimated based on the historical development of markets in a current state.
+
+Simple trading strategy
+The detailed process could be found on page 7 in a source research paper.
+
+Equity universe for calculations consists of 168 large-cap stocks form S&P 500 index. Each day, the last 100 days of prices for each stock is used for Principal Component Analysis to calculate the maximum eigenvalue function value of the correlation coefficient matrix.
+
+If the maximum eigenvalue function value of the current window exceeds the A-percentile or is below B-percentile of the maximum eigenvalue function values over all available historical data, the investor invests in the risk-free asset. For example, out of the range of the interval [35%; 77%].
+
+Otherwise, for each stock, investor calculates and stores mean return, the standard deviation of return, skewness of return, and kurtosis of return over the past 100 days.
+
+Investor than calculates the average overall assets for mean return, the standard deviation of return, skewness of return, and kurtosis of return. He then determines which percentile partition each parameter falls in based on the historical values. Each partition number represents a different dimension of the state vector. Investor stores the average return over N securities as linked to the current state. Given current state vector, search for the same historical states. If there is no historical information about the current window parameters, then he chooses risk-free investment for tomorrow.
+
+If the investor has historical information about the current state, then he computes the mean value of the historical returns per variance with the same state as today, and he makes a decision for tomorrow. Investor goes long stock market if the mean value per variance is higher than 1, goes short if that ratio is lower than -1 and stays in cash otherwise.
+
+Hedge for stocks during bear markets
+Partially - The strategy is timing equity market, but traders can split this strategy into two halves and use a short-only part of this strategy. After a careful backtest, this short-only strategy might be used as a hedge/diversification during market/economic crises.

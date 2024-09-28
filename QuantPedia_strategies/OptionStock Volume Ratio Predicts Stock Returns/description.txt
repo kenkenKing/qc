@@ -1,0 +1,14 @@
+Most of the academic research concludes that options markets are used mainly by informed traders as options provide favourable conditions for taking leverage positions. Informed traders like to use the options market, especially for the “bear” view as it is often easier to trade options than short stocks. It is therefore desirable for ordinary traders to observe changes in options markets. One such informative signal is the ratio of options volume to total stock volume. If informed traders use options and options volume on a particular stock is therefore high, then it is better to avoid this stock (or short it). Contrary, stocks with lower option volume imply a lower risk for a long position. Long/short strategy based on O/S volume ratio provides attractive results; however, caution is required as a short side could be hard to trade. O/S ratio could also be used for long-only trading to pick low-risk stocks.
+
+Fundamental reason
+Research postulates that the negative relation between O/S and future returns is driven by short-sale costs in equity markets, which make option markets an attractive venue for traders with
+negative news. Capital constraints and equity short-sale costs lead informed agents to trade options more frequently for negative signals than positive ones, thus predicting a negative relation between relative option volume and future equity value.
+
+Simple trading strategy
+The investment universe consists of US firms with liquid options (CEFs, REITs, ADRs and firms with a stock price below $1 are eliminated).
+
+Each month, investor calculated the ratio of total options volume to total stock volume (O/S ratio). Option volume equals the total volume in option contracts across all strikes for options expiring in the 30 trading days beginning five days after the month-end. Equity volume is expressed in round lots of 100 to make it more comparable to the quantity of options contracts that each pertain to 100 shares. Each month, the investor takes a short position in high O/S stocks and a long position in low O/S stocks. The portfolio is rebalanced monthly, and stocks are weighted equally.
+
+Hedge for stocks during bear markets
+Not known - Source and related research papers don’t offer insight into the correlation structure of the proposed trading strategy to equity market risk. Therefore, we do not know if this strategy can be used as a hedge/diversification during the time of market crisis. The strategy is built as a long-short, but it can be split into two parts. The long leg of the strategy is surely strongly correlated to the equity market; however, the short-only leg might be used as a hedge during bad times. Rigorous backtest is, however, needed to determine return/risk characteristics and correlation.
+

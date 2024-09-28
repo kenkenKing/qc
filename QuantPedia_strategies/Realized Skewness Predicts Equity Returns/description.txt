@@ -1,0 +1,13 @@
+Multiple academic research has shown that several indicators of riskiness derived from past price data (volatility, beta, etc.) predict future stocks returns. Historically realized skewness is one of those indicators. The research concludes that stocks with the highest realized skewness outperform those with the lowest skewness. Stock with high positive skewness are those which have lower fat tails on the left side of the statistical distribution – ergo they are less risky. Profitable trading strategy again confirms finding that less risky stocks are often better investments (the same finding as for volatility/beta factors).
+
+Fundamental reason
+The research concludes that assets with greater skewness have lower returns under cumulative prospect theory or for theory using heterogeneous investor preference for skewness.
+
+Simple trading strategy
+Investment universe consists of stocks from NYSE, AMEX and Nasdaq with a price higher than 5$. Only stocks from the highest size quintile are then used in trading. Intraday, 5-minute quotes, are used to calculate 5-minutes log-returns for each stock. Investor calculates skewness for each stock from those intraday data, and resultant daily measure is aggregated into weekly realized skewness. Negative values indicate that the stock’s return distribution has a left tail that is fatter than the right tail, and positive values indicate the opposite.
+
+Each week, investor sorts stocks into deciles based on the current-week realized moment and buys the portfolio of stocks with the highest realized skewness and sells the portfolio of stocks with the lowest realized skewness. The portfolio is value-weighted and rebalanced on a weekly basis.
+
+Hedge for stocks during bear markets
+Not known - Source and related research papers don’t offer insight into correlation structure of proposed trading strategy to equity market risk; therefore, we do not know if this strategy can be used as a hedge/diversification during the time of market crisis. The strategy is built as a long-short, but it can be split into two parts. The long leg of the strategy is surely strongly correlated to the equity market; however, the short-only leg might be used as a hedge during bad times. Rigorous backtest is, however, needed to determine return/risk characteristics and correlation.
+

@@ -1,0 +1,11 @@
+Trading of insiders is very valuable information available for investors. The most research papers and articles mention that insiders’ buying (selling) is a positive (negative) sign for future stock’s performance. But what if insiders do not trade? Academic research shows that it is also very valuable information on its own. Regulations inhibit insiders from trading on extreme information, implying a relation between insider silence and extreme future returns. Especially, among firms that are likely to have bad news (firms with high open short interest), insider silence predicts significant negative future returns, which are even lower than when insiders net sell.
+
+Fundamental reason
+Research papers state two hypotheses. One is litigation risk – insider silence is associated with weaker negative future returns for firms with higher litigation risk. The second hypothesis is that insiders’ portfolio constraints drive the main result – insiders cannot short sell; insiders hold the shares to maintain control; the shares insiders hold are restricted and not available for sale. A period of heavy insider selling, followed by a period of relatively low trading activity signals to the market that insiders possess bad information.
+
+Simple trading strategy
+The investment universe consists of all stocks from NYSE, Amex and Nasdaq. Each month investor ranks stocks into quintiles based on their short interest measured as of the previous month. Within the high short interest subsample, investor identifies stocks with no insider trading activity over the prior six months. Investor goes short on those stocks, holds each stock for one year and goes long on the equity market . The portfolio is rebalanced monthly and is equally weighted.
+
+Hedge for stocks during bear markets
+Yes - The short-selling strategy is a natural hedge/diversification to equity market factor during bear markets.
+

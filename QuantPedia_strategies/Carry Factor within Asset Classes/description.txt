@@ -1,0 +1,17 @@
+The carry trade strategy is based on the idea of holding asset class with strong cashflow and financing this position by borrowing money at a lower rate. The concept is applied mainly in currencies, and it is also the best known in this investment universe. Carry trade strategy could be, however, applied also in other markets. Resultant diversified carry strategy provides a much better risk/return characteristics than individual carry strategies.
+
+Fundamental reason
+Academic research shows that the carry effect could be naturally found in a broad set of assets that include global equities, bonds, commodities, and currencies. An asset’s “carry” is defined as its expected return assuming its price does not change. While both carry and the expected price appreciation are known in advance in principle, carry is a model-free measure of a component of expected returns that can be observed directly. In contrast, the part of the expected return coming from expected price appreciation must be estimated using a model. The carry is closely and positively related to expected returns in each of the major asset classes we study. Since carry varies over time and across assets, this result implies that expected returns vary through time and can be predicted by carry. Part of the return premium earned on average for going long carry may also be compensation for this exposure that generates large losses during extreme times of global recessions and liquidity crunches.
+
+Simple trading strategy
+The investment universe consists of 13 country equity index futures, 19 foreign exchange forward (futures) contracts, 23 commodities futures and ten government bonds contracts. The four types of carry are defined in the source academic paper: equity carry, currency carry, commodity carry and bond carry.
+
+Currency carry – investor goes long high carry currencies and short, low carry currencies. For currency, the carry is simply the local interest rate in the corresponding country.
+Equity carry – is the expected dividend yield minus the risk-free rate.
+Commodity carry – is the convenience yield or net benefits of the use of the commodity in excess of storage costs. The investor considers the price of the nearest to maturity commodity futures contract with the price of a futures contract on the same commodity at a longer-dated maturity.
+Bond carry – is defined as the yield to maturity in excess of the short-term risk-free rate.
+
+Carry portfolio in each sub-universe invests in high-carry securities while short-selling low-carry instruments, where each instrument is weighted by the rank of its carry and the portfolio is rebalanced each month-end. Diversified carry strategy across all asset classes is constructed as the equal-volatility-weighted average of carry portfolio returns across the asset classes.
+
+Hedge for stocks during bear markets
+No - The source research paper states that there appears to be some common risk faced by carry strategies that manifests itself during global recessionary periods often characterized by illiquidity and volatility spikes; therefore, the strategy is not suitable as a hedge/diversification during market/economic crises.

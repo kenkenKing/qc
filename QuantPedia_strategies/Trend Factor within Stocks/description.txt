@@ -1,0 +1,17 @@
+There are multiple, mainly fundamental factors that have been used by researchers to explain equity movements. Technical factors are used less often. Usually, only momentum, short-term and long-term reversals are recognized by academics as a technical factor usable for cross-sectional predictions. Recent academic research adds a new factor – short term trend. Research suggests very high prediction ability (after controlling for a variety of other technical and fundamental variables) even between large capitalization stocks which makes this perfect factor add-on to stock-picking systems.
+
+Fundamental reason
+Academic research postulates that there are periods in which the stock price have strong trends, which are likely caused by some persistent and fundamental changes or investors’ under-reaction or over-reaction. Information uncertainty amplifies this effect.
+
+Simple trading strategy
+The investment universe consists of all stocks from NYSE, Amex and Nasdaq (closed-end funds, REITs, unit trusts, ADRs and foreign stocks are excluded). Stocks are sorted by their market cap into five quintiles, and only the largest stocks are used.
+
+To construct the monthly trend signals, the investor first calculates the moving average prices on the last trading day of each month. He uses 3-,5- 10-, 20- day moving averages. He then normalizes the moving average prices by the closing price on the last trading day of the month.
+
+The investor then runs cross-sectional regressions each month regressing monthly stock returns on the trend signals to obtain time-series of the coefficients of the trend signals. The investor then estimates the expected return for next month using the moving averages of the coefficients in the 12 months prior to the actual month and the moving signals for the actual month.
+
+Stocks are then sorted into quintiles based on the predicted return. Investor goes long stocks with the highest predicted return and short stocks with the lowest predicted return. The portfolio is equally weighted and is rebalanced monthly.
+
+Hedge for stocks during bear markets
+Yes - Based on the source research paper (see Tables 2), the strategy has a positive return during recession months, therefore, probably can be used as a hedge/diversification to equity market risk factor during bear markets.
+

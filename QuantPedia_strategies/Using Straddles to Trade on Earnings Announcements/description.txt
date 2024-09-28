@@ -1,0 +1,13 @@
+Most of the investors/traders anticipate that systematically buying options is a “loser’s game” due to the well-known negative volatility premium. However, there exists a period of the year when each stock is more volatile – days surrounding earnings announcement days. Academic research shows that there exists a statistical edge in buying straddles before the earnings announcement. However, strategy suffers by low option liquidity, and high bid-ask spreads; therefore, it is important to carefully manage trades if traders want to profit from this effect. The research paper suggests one way to lower transaction costs – buying straddles only if the company reports its earnings close to the options expiration day.
+
+Fundamental reason
+Academic research shows that delta-neutral at-the-money straddles earn significantly positive returns during earnings announcement periods. The research paper suggests that options market investors consistently under-react to the rise in uncertainty regarding firm fundamentals prior to earnings announcements. The short explanation for this underestimation is a behavioural bias among investors, namely conservatism which means that investors are too slow to draw inferences from data, which leads to investors’ under-reaction to information in the data.
+
+Simple trading strategy
+The investment universe consists of all optionable stocks from NYSE, Amex and Nasdaq with the price greater than $5.
+
+Investor creates a database of earnings announcements for all stocks in the investment universe. He then discards all future events which are not close to option expiration days (they are more than ten days away). The investor buys delta-neutral straddle three days before earnings announcement for each stock which has earnings announcement day closer than ten days from option expiration days. Only 10% of portfolio assets are used to perform this strategy due to its high volatility. Straddles are equally weighted and hold until expiration.
+
+Hedge for stocks during bear markets
+Not known - Source and related research papers don’t offer insight into correlation structure of proposed trading strategy to equity market risk; therefore, we do not know if this strategy can be used as a hedge/diversification during the time of market crisis.
+
