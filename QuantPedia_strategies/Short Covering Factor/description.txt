@@ -1,0 +1,13 @@
+Using daily equity lending data, authors examine the flow and stock of open short positions to construct a novel measure of position closures and then examine the determinants and implications of position closures. The high-covering decile always significantly underperforms the low-covering decile by an alpha of up to 53 bps per month for value-weighted portfolios, and we base our presented strategy on that main finding. We can take this as strong evidence that short sellers cover too soon: after an increase in covering activity, the stock has negative returns indicating that short seller’s left money on the table.
+
+Fundamental reason
+Authors fill the gap in the existing literature by providing novel evidence on the covering behavior of short sellers using a large panel of U.S. equities over a nearly ten-year period. GrossCover is intended to capture to what extent short sellers are covering positions, irrespective of whether new investors are replacing them. It measures the total decrease in the quantity of shares on loan on a particular date for a particular stock. Many idiosyncratic limits to arbitrage do cause short sellers to exit their positions; yet, most systematic limits to arbitrage do not.
+
+Simple trading strategy
+The investment universe consists of U.S. stocks. Markit (a leading provider of data in the equity loan market) data are mandatory to construct a direct measure of the closing of short positions by short sellers called GrossCover (basic sum of the reduction in open loans in stock i from beneficial owners [BO] who are removing shares from their equity loan supply and the reduction in loan quantity from lenders whose quantity of shares on loan decreases in stock i) variable for each day, which is then summed to get monthly value for each stock i. All portfolios are value-weighted and rebalanced monthly (at the end of month t).
+1. Investor sorts stocks into decile portfolios based on (monthly) GrossCover values.
+2. The Low portfolio is formed of stocks in the lowest short covering decile, while the High portfolio is formed of stocks in the highest short covering decile.
+3. Investor forms final long-short Low-High portfolio and performs trading actions (buys stocks with low net short covering and shorts stocks with high net short covering).
+
+Hedge for stocks during bear markets
+Not known - The author does not implicitly suggest any hedges against bear markets.

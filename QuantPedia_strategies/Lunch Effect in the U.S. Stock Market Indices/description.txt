@@ -1,0 +1,37 @@
+The trading strategy described in our in-house research paper focuses on exploiting the “Lunch Effect” observed in the U.S. stock market, mainly using the SPDR S&P 500 ETF Trust (SPY) as the trading vehicle. This strategy is based on the observed intraday price patterns around New York lunchtime, where liquidity tends to dry up and algorithmic trading becomes more prominent.
+
+The summary of proposed trading rules is as follows:
+1. Short Position from 11 AM to 12 PM: Initiate a short position at 11 AM, anticipating a pullback or negative drift in the market during this hour.
+2. Cover Short and Go Long at noon: Close the short position immediately and enter a long position, expecting the market to rise in the subsequent hours.
+3. Sell Long Position at 2 PM: Liquidate the long position at 2 PM, capturing the gains from the anticipated uptrend.
+
+Alternatively, for discretionary traders, the strategy involves looking for shorting opportunities from 11 AM to 12 PM and then seeking extended entry opportunities in the afternoon.
+
+This strategy leverages intraday price action patterns around lunchtime to generate trading opportunities, with specific entry and exit points designed to capitalize on predictable market movements during these hours. We are happy to have summarised an early-stage prospective version of the exploitation of such an effect in our database and describe it in more depth later.
+
+Fundamental reason
+The economic and behavioral principles behind the “Lunch Effect” trading strategy are rooted in market liquidity dynamics and trader behavior during specific times of the trading day.
+
+In fundamental underpinnings, there are diverse and different reasons for explanations involved: various economic principles such as liquidity variations (The strategy exploits periods of low liquidity around lunchtime (11 AM to 2 PM) when many human traders are away from their desks. This reduced liquidity can lead to more pronounced price movements, which the strategy aims to capitalize on.) and algorithmic trading (During lunchtime, algorithmic trading becomes more dominant. These algorithms often follow predictable patterns, creating opportunities for traders who can anticipate their actions.)
+
+Other behavioral/psychological factors include traders’ behavior (Human traders tend to take breaks around lunchtime, leading to a temporary lull in trading activity. This behavior creates a window where fewer market participants can more easily influence price movements.) and market sentiment (The strategy leverages typical market sentiment patterns, such as the tendency for a slight pullback before noon and a subsequent rise after lunch. These patterns are driven by traders’ collective behavior and responses to market conditions during these times.).
+
+The strategy is designed to take advantage of predictable intraday nuances driven by liquidity changes and trader behavior, providing a systematic approach to exploiting these market inefficiencies.
+
+
+Simple trading strategy
+The investment universe for this strategy is centered on the SPDR S&P 500 ETF Trust (SPY), which represents the S&P 500 Index. This ETF is chosen due to its high liquidity and broader U.S. stock market representation. The strategy can also be applied to other trading vehicles, such as near-term futures on the S&P 500 Index (e.g., S&P 500 E-mini Futures) or CFDs on SPY. (The selection of SPY is based on its ability to capture the overall market movements and its suitability for intraday and overnight trading strategies.)
+
+(You can get data for your backtesting needs from Yahoo Finance and/or Finram.)
+
+The strategy employs specific time-based trading rules derived from the research paper’s findings on the Lunch Effect and Overnight Anomaly. No additional technical indicators are used; the approach is purely time-based.
+
+Once again, rules overview:
+1. At 11:00 AM ET, enter a short position on SPY.
+2. At noon ET: reverse; hence, cover the short position and enter a long position on SPY.
+3. At 2:00 PM ET, exit the extended position.
+
+This is an intraday strategy with no overnight holding and involves one (100 %) asset, so it is fully weighted in that proportion of total capital.
+
+Hedge for stocks during bear markets
+No - The strategy’s reliance on specific intra-day and overnight patterns may not provide consistent protection in bear markets, as it does not inherently hedge against prolonged downturns and is more focused on exploiting short-term anomalies.
