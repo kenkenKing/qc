@@ -1,0 +1,10 @@
+There are many academic studies which show that macroeconomic announcements have strong impact on financial markets. Monetary policy decisions revealed after the Federal Open Market Committee (FOMC) are especially important and are the cause of strong movements in equity (see strategy #75) and currency (see strategy #254) markets. Volatility (VIX) derivatives (futures and derived ETFs) are also influenced during FOMC days, and simple trading strategy could be created by going short volatility.
+
+Fundamental reason
+Academic research states that implied volatility should decrease at the time of a prescheduled news announcement. The release of prescheduled news can be seen as the resolution of uncertainty, and since implied volatility is a measure of future volatility, such an announcement reduces the degree of future uncertainty that is left in the market.
+
+Simple trading strategy
+The trading strategy is very simple – an investor takes a short position at the start of the FOMC meeting days at 9.35 EST, by selling the VIX futures contract at the prevailing bid price, and close the position at 15.30 EST by taking an offsetting position at the prevailing ask price. The investor is not invested otherwise during other trading days.
+
+Hedge for stocks during bear markets
+No - Absolutely not. The strategy is implicitly short volatility and can very easily suffer during crises …

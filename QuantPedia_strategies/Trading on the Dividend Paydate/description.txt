@@ -1,0 +1,10 @@
+A lot of academics are concentrated on research dividends and the effect on stocks’ performance. They routinely explore the effects of dividend announcements or stocks’ performance on/after of dividend ex-date. However one specific day, the dividend pay-date is largely unnoticed. Research paper by Berkman and Koch fills this hole. They examine returns on stocks of companies which offer DRIPs (dividend reinvestment programs). Their conclusion is that DRIPs are causing temporary price pressure around dividend pay-date with a statistically significant abnormal return which could be captured by speculators on the expense of investors reinvesting their dividends back into stocks. The effect is concentrated mainly in small-cap stocks universe.
+
+Fundamental reason
+The increasing magnitude of this dividend pay date effect contrasts with the tendency for other market anomalies to diminish in importance over time, as they have become more well-known. Authors attribute this evolution in the pay date effect to a lack of awareness about this phenomenon, as well as to increased ‘herding’ behaviour over time that is due to a growing propensity to reinvest dividends on the pay date.
+
+Simple trading strategy
+The investment universe consists of stocks from NYSE, AMEX and NASDAQ that offer company-sponsored DRIPs. Each day at close investors buy stocks which have dividend payday on the next working day and hold these stocks for one day. Stocks are weighted equally.
+
+Hedge for stocks during bear markets
+No - The selected strategy is designed as a long-only therefore it can’t be used as a hedge against market drops as a lot of strategy’s performance comes from equity market premium (as the investor holds equities; therefore, his correlation to the broad equity market is very very high).

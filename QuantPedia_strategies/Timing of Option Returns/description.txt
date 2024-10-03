@@ -1,0 +1,10 @@
+Academic literature generally focuses mostly on two options phenomena: the level of option return and its dependence on moneyness (level of implied volatility) and the volatility skew. Only little is known about when option returns accrue. Generally, the expected return depends on the time to maturity. But specifically, the returns from shorting out-of-the-money (OTM) S&P 500 put options are concentrated in the last few days preceding their expiration. Shorting front-month OTM put options during the last week of the option cycle earns returns that are as high as those earned by shorting OTM put options during the entire cycle, but with a much lower overall riskiness.
+
+Fundamental reason
+There is a substantial trading activity during the last days of the option cycle. Option returns mostly accrue shortly before the expiration date. This option premium shortly before expiration reflects price jump risk more than volatility risk. Specifically, options’ convexity risk increases sharply close to maturity, making them more sensitive to jumps in the underlying price. Volatility risk does not play such a big role close to maturity.
+
+Simple trading strategy
+The investment universe consists of the most liquid S&P 500 index options. The illiquid securities (with a price below 0.1 USD on the previous trading day) are excluded. And only the most traded 25% of front-month put options are chosen. Then they are classified as ATM, ITM or OTM. Each month, the investor goes short front-month OTM put options which are one week before maturity and holds them until the expiration date (1 week). Option portfolio is equally weighted.
+
+Hedge for stocks during bear markets
+No - The strategy is selling equity options volatility (even that only for a very short period of time) therefore is not suitable as a hedge/diversification during market/economic crises.
