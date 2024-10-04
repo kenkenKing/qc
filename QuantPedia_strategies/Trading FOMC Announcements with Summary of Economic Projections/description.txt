@@ -1,0 +1,10 @@
+Since 2007, the Federal Open Market Committee (FOMC) publishes the Summary of Economic Projections (SEP) – a document, which includes forecasts for the key macroeconomic indicators, namely GDP, unemployment and inflation. The FOMC announcements are closely followed by market participants as they have a noticeable impact on asset prices. For instance, a recent paper finds that stock returns rise significantly after the FOMC announcements with SEP releases. Specifically, over the period from January 2012 to December 2015 (which contained 17 FOMC announcements with SEP), the authors found that the average post-announcement return to be approximately 56 basis points within one hour after the announcement. On the other hand, announcement without SEP was, on average, followed by negligible returns (0.1 basis points). However, the sample period is very short – only four years. This decision was made as FOMC started releasing individual members’ estimates of appropriate future levels of fed funds target rate (which is a certain enhancement to previous statements) in January 2012.
+
+Fundamental reason
+The author attributes the phenomenon to decreasing uncertainty (as measured by the VIX index) following the FOMC announcements with the SEP, which is especially due to SEP containing information about the future direction of monetary policy.
+
+Simple trading strategy
+An investor buys nearby E-mini S&P 500 index futures contracts five minutes before the FOMC statements including the release of SEP and holds the position for 55 minutes after the announcement.
+
+Hedge for stocks during bear markets
+No - The strategy is timing equity market but invests long-only into equity market factor (even that only for a short period of time) therefore is not suitable as a hedge/diversification during market/economic crises.

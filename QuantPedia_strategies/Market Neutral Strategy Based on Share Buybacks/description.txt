@@ -1,0 +1,10 @@
+Corporate managers as insiders should have the best knowledge about the probable value of the firm they manage (and it’s over/under-valuation). Academic research confirms this idea and shows that corporate managers really undertake financing decisions to take advantage of firm-specific mis-valuation. Evidence suggests that firms tend to buy-back equity when they are undervalued, and by implementing this strategy, they really have higher long-term returns. Portfolio managers can easily exploit this outperformance spread by buying firms that recently announced buy-backs and shorting equal amount of diversified index fund (in the form of Russell 2000 ETF).
+
+Fundamental reason
+Academic research shows that share repurchase is consistent with expectations that the company is currently undervalued. There is strong evidence that companies are able to profitably repurchase shares, especially when the company is widely held by retail investors who are unsophisticated.
+
+Simple trading strategy
+The investment universe consists of all stocks on NYSE, Nasdaq and AMEX whose market capitalization is above $200 million and has a share price higher than $5. Each day, the investor creates an equally weighted portfolio consisting of all companies which had a buyback announcement during the past three months. The investor then hedges this portfolio by going short the IWM (iShares Russell 2000 ETF) using a portfolio-level Beta calculated based on the most recent 250 days (using a rolling window).
+
+Hedge for stocks during bear markets
+No - The strategy has negative returns during crises months (for example 11/2001 or 09-11/2008, can be seen in table 5 of source academic paper) therefore it probably can’t be used as a hedge/diversification of equity market factor during downturns.
