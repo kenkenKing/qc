@@ -1,0 +1,18 @@
+(Nie and Wu, 2023) identify a novel momentum effect among firms linked through board networks, which they call social-link momentum (SLM) spillovers. Findings support the notion of an efficient capital market and suggest that the connection between executive board members is an effective proxy for firms’ fundamental linkage and economic proximity. The momentum factor, SFRET, which is defined as social-linked firms’ return, is calculated as the weighted average return of a focal firm’s social-linked firms, generates a persistently profitable long-short equity strategy, and exhibits a slow speed of information diffusion. Through long-short trading strategies, they found strong evidence of the return predictability of social-linked firms’ returns for focal firms’ future returns.
+
+Fundamental reason
+The authors’ results indicate that this spillover effect is robust enough to be tested by a series of tests. It is distinct from and cannot be explained by other well-documented spillover effects such as industry, customer, geographic, and pseudo-conglomerate momentum. Even after controlling for many traditional return determinants, including size, book-to-market, gross profitability, asset return, short-term reversal, and medium-term individual price momentum, this cross-firm return predictability, or momentum spillovers, persists. Consisting with other momentum factors research, these results reveal that the momentum effect is reconciled with the fundamental linkages of firms and investors’ limited attention explanation.
+
+Simple trading strategy
+The contained sample is collected from stocks, including all NYSE, NASDAQ, and Amex-listed securities. (Stocks with a price below $5 are excluded from the analysis.)
+(Merged CRSP/accounting information from Compustat databases [data files]. Company profile and organizational composition of officers, directors, and senior managers from BoardEx. [Factor returns are from the Kenneth French Data Library, and factor models include the CAPM model and the Fama-French (1993) three-factor model.])
+
+1. Data Preparation and Processing: The first step involves identifying social-linked firms by capturing managerial ties using the BoardEx database. Then, these social-linked firms will be matched with stock returns from CRSP to create the social-link momentum (SLM) factor.
+2. Selected Variant Variable Calculation: SFRET_it (Eq. (1)) is the ties-weighted average return of social-linked firms for focal firm i during month t (calculated by the sum of Ties_i∩j,t, which the number of managerial ties between firms i and j in year t and r_jt, which is the raw return of firm j at month t, then divided by former Ties_i∩j,t). This is the social-link momentum (SLM) factor, which we use to form stock portfolios next in the analysis.
+3. Ranking and Sorting: Each month, stocks are ranked into decile portfolios based on the ties-weighted return to a portfolio of their socially linked firms in the previous month (SFRET_t−1).
+4. Strategy Execution: Perform the social-link-based momentum strategy: L/S is the alpha of a zero-cost portfolio with the top 10% stocks ranked by the ties-weighted SFRET_t−1 and shorts the bottom 10%.
+
+All stocks are value-weighted within a given portfolio, and the portfolios are rebalanced every calendar month to maintain value weights.
+
+Hedge for stocks during bear markets
+Not known -

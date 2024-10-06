@@ -1,0 +1,55 @@
+This paper deals with the challenge of classifying firms into economic sectors for portfolio allocation. It explores the limitations of existing classification systems such as SIC, NAICS, FF, and GICS and proposes a new approach using clustering methods based on firm characteristics. The findings show that clustering-based classification outperforms traditional industry classifications in terms of creating homogeneous groups with higher return comovement. These clusters also offer more attractive assets for mean-variance investors, leading to profitable trading strategies. Additionally, the study introduces a Stability Index to assess the stability of factor structures over time and a Proportion of (A)Cross-Clusters Feature Spread metric to quantify the contribution of firm characteristics to cluster differences. Overall, the paper presents a promising alternative for creating economic sectors that can enhance investment strategies.
+
+Fundamental reason
+This paper’s fundamental functionality lies in its innovative approach to tackling a longstanding challenge in finance: the classification of firms into economic sectors for portfolio optimization. By employing advanced clustering methods based on firm characteristics, the paper offers a fresh perspective on creating more cohesive and economically meaningful industry groups. This approach enhances portfolio allocation for mean-variance investors and introduces the concept of cluster-based economic sectors. Key functional aspects include the paper’s ability to improve classification accuracy compared to traditional systems, its creation of investment opportunities through cluster-based portfolios with higher return comovement, the development of profitable trading strategies within clusters, its evaluation of stability and adaptability using the Stability Index, and the introduction of the Proportion of (A)Cross-Clusters Feature Spread (PAC-FS) metric for quantifying cluster differences. In summary, this paper provides a dynamic and effective framework for classifying firms, addressing limitations in existing systems while delivering practical benefits for investors in terms of portfolio optimization and trading strategy development.
+
+Simple trading strategy
+Section 3 provides an overview of the four main classification schemes used to categorize firms into economic sectors. The SIC (Standard Industrial Classification) system, established in the 1930s, was designed for statistical purposes and relies on a hierarchical structure of four-digit codes to identify major industry groups, industry groups, and industries based on a firm’s primary product line. Despite its age, SIC codes are still in use today, alongside the newer NAICS (North America Industrial Classification System) introduced in 1999. NAICS also follows a hierarchical structure but uses six-digit codes, aiming to provide comparability across North America. Both SIC and NAICS are criticized for being product-oriented and less suitable for financial research.
+
+The Fama-French (FF) industries were developed by academics to create distinct industry groups covering all NYSE, AMEX, and NASDAQ stocks. FF industries are product-based and derived from reorganizing existing SIC code-based industries into 48 groups to capture common risk characteristics. Finally, the GICS (Global Industry Classification Standard) system, introduced in 1999, stands apart from the others by considering not only a firm’s primary business activity but also information from financial statements and research reports to assign sectors. GICS codes, with up to eight digits, provide more flexibility and reflect market participants’ perceptions.
+
+However, these standard classification schemes have limitations. Discrepancies exist across different databases, with codes not matching between data vendors. SIC codes struggle to identify firms with similar characteristics, and the practice of designating a primary industry for conglomerates can lead to misclassifications. The FF industries still rely on SIC codes and inherit their shortcomings. In contrast, the GICS system outperforms the others by incorporating more information and updating more frequently. This paper addresses these limitations by proposing a new classification algorithm that uses a wide range of return predictors from financial literature, recognizing that static, product-based classifications are inherently less effective in capturing economic realities and financial market dynamics.
+
+Data
+The dataset utilized in this study, an updated version of Gu et al. (2020), includes 94 firm characteristics for stocks listed on the CRSP database across various exchanges. These characteristics are merged with monthly return data from CRSP. To maintain the integrity of time-series fluctuations, missing values are not imputed. Instead, only covariates with less than 37.5% missing values across the full sample are retained, resulting in 69 characteristics. The dataset is further filtered to include only stocks with at least 1,000 observations per month and a minimum of 60 months of return data, spanning from July 1984 to June 2019 and comprising 7,052 firms. To ensure precision in the comparison across classification schemes, industry portfolios are replicated for each scheme, including SIC, NAICS, GICS, and Kenneth French’s classifications, with 48 as the maximum number of industries chosen for comparability and adequate group sizes. Abbreviations like “SIC9” denote industries formed following specific classification methods, clarifying the number of groups derived from each scheme.
+
+Methodology
+In methodology section, the authors describe their approach for clustering firms based on their characteristics.
+
+1. Clustering Technique: The authors use bisecting K-means to group firms into clusters. They choose the optimal number of clusters based on within-cluster commonality.
+
+2. Measure of Cluster Change Over Time: The authors develop a measure to describe how clusters change over time, which helps assess the stability of their clustering method.
+
+3. Feature Importance Metric: They introduce a novel metric called Proportion of (A)Cross-Cluster Feature Spread (PAC-FS) to quantify the importance of each feature for clustering.
+
+Clustering Algorithms
+The standard K-means algorithm is briefly explained, where the goal is to group data points into clusters to minimize the dissimilarity within clusters.
+K-means is an iterative algorithm that partitions data into clusters by minimizing the Within-Cluster Sum of Squares (WCSS).
+
+Bisecting K-means
+
+Bisecting K-means is introduced as a hybrid approach between divisive clustering and K-means clustering. It recursively splits clusters into sub-clusters using K-means until a desired number of clusters is achieved.
+
+Clustering Firms Using Firm Characteristics
+
+Firms are clustered each year using bisecting K-means, with firm characteristics aggregated over the past year to comply with the one-dimensional input requirement. The “k-means++” method is used to initialize cluster centroids, and the clustering algorithm is run multiple times with different random initializations. The best cluster configuration is selected based on the average R-squared of CAPM residuals, making the clusters interpretable as economic sectors.
+
+Cluster Time-stability
+
+The authors introduce a Stability Index (SI) to measure the stability of clusters over time, assessing how strong the relations between firms within clusters remain. An Instability Index (II) is also introduced to measure changes in the relations among firms over time.
+
+Feature Importance in Clustering: A novel Metric
+The authors propose the Proportion of (A)Cross-Cluster Feature Spread (PAC-FS) metric to assess the importance of each feature in determining differences across clusters.
+This methodology outlines the authors’ approach to clustering firms based on their characteristics, evaluating the stability of clusters over time, and quantifying the importance of individual features in the clustering process.
+
+The authors in section 6 discuss the distribution of firms across various economic sectors, comparing different classification schemes. They note that clustering-based sectors show similarities in distribution with other schemes but vary in average firm counts.
+Next, they assess how well different methods explain within-sector variation. Clustering consistently outperforms other methods, especially as the number of clusters (K) increases.
+The authors then demonstrate the superiority of clustering-based sectors in constructing investment portfolios and mean-reversion trading strategies.
+They introduce stability and instability indices, revealing that clustering strikes a balance between stability and variability, making it a reliable sector representation.
+Finally, they use a new metric to identify crucial firm characteristics distinguishing sectors or clusters. Characteristics like size, profitability changes, industry momentum, and sales concentration play key roles in sector differentiation, with importance varying across classification schemes and cluster counts.
+Overall, the study shows that clustering-based sectors offer better insights, leading to improved investment strategies and a nuanced understanding of sector differentiation.
+
+The authors conduct robustness tests to address concerns that their trading strategy might overlap with well-known risk factors such as short-term reversal, long-term reversal, and industry momentum. They augment existing models with these factors and find that the results remain essentially unchanged, with significant alphas only arising for clustering-based sectors. The study also explores the impact of using standard K-means clustering instead of bisecting K-means and finds that the choice of clustering algorithm does not substantially affect the profitability of investment strategies or the explanatory power of the clusters. Overall, the analysis supports the idea that it’s the objective of maximizing within-cluster R2 that drives the impressive results, rather than the specific clustering algorithm used.
+
+Hedge for stocks during bear markets
+No -
