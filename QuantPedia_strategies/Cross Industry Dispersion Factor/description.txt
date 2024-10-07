@@ -1,0 +1,20 @@
+Results from the paper suggest that the previously documented cross-sectional predictability of returns by cross-sectional dispersion (CSD) manifests the CID (cross-industry dispersion) premium. Controlling for CID (the mean absolute deviation of the returns of 49 industry portfolios), CSD loses its asset pricing relevance, implying that CID reflects a priced component of CSD. The key takeaway can be summarised as that stocks with low β_CID (betas) are riskier since they decline precisely when investors are subject to increased labor income risk. The idea is utilized on the selection of the presented strategy, which is manifested and executed on value-weighted long-short portfolio, formed on β_CID sorting.
+
+Fundamental reason
+The novel approach and main contribution of this paper is its exploration of CID as a measure of labor income risk from sectoral shifts and explores its asset pricing implications. The simple conclusion is that CID, to a significant degree and precision, predicts unemployment. CID premium is driven by industry-specific human capital risk due to sectoral shifts. A heterogeneity in factor loadings across industry portfolios, macroeconomic and financial uncertainty, or common idiosyncratic volatility does not explain these findings. The results are nor explained by known measures of uncertainty and labor income risk, such as volatility and VIX. As a possible explanation, it is offered one plausible that they have low momentum and investment as well as high book-to-market and are likely to suffer from sectoral shifts.
+
+Simple trading strategy
+The investment universe consists of: common stocks traded at NYSE, NASDAQ or AMEX.
+(Sources of macroeconomic data can be obtained from St. Louis Federal Reserve Bank and Bureau of Labor Statistics [BLS]. Kenneth French‘s website can be used for data about industry portfolios.)
+
+The strategy execution procedure is as follows:
+0. Calculation of needed variables:
+a. cross-industry dispersion CID_t as the mean absolute deviation of returns across 49 industry portfolios at a given monthly period (eq. (1)),
+b. estimation of betas (unknown parameters) β_CID from the time series regression (3), where monthly stocks returns R_it are dependent variables, and the independent variable is CID_t (t is current month).
+1. Investor creates quintile portfolios, sorted on β_CID. Q1 is the quintile portfolio with the lowest β_CID, and Q5 contains the highest β_CID stocks.
+2. The final long-short portfolio is formed by buying Q1 and selling Q5.
+
+All portfolios are value-weighted (constructed using as weights the market capitalization from the previous month), and rebalanced periodically monthly.
+
+Hedge for stocks during bear markets
+Yes - Partial; High β_CID stocks are natural hedges against such labor risk from sectoral shifts.

@@ -1,0 +1,10 @@
+Market breadth, i.e., the difference between the average number of rising stocks and the average number of falling stocks within a portfolio, is a favourite indicator used in technical analysis. A recent research paper written by Zaremba, Szyszka, Karathanasopoulos, and Mikutowski shows that market breadth is also a robust predictor of future stock returns on market and industry portfolios. The countries and industries characterized by high market breadth significantly outperform their low market breadth counterparts, and the effect is robust to many considerations. High (low) market breadth is a sign of a strong upward (downward) trend, forecasting positive (negative) future returns. The return-predictive abilities of market breadth are significant both at the country-level and industry-level, but the country herding appears to play a more important role.
+
+Fundamental reason
+This effect is robust to effects such as size, style, volatility, skewness, momentum, and trend-following signals. The role of market breadth is particularly strong among markets characterized by high limits to arbitrage, following bullish periods, and in collectivistic societies, supporting behavioural explanations of the phenomenon.
+
+Simple trading strategy
+The investment universe consists of country ETFs from 64 countries. Each month, for each country, investor calculates market breadth (MBR) as the difference between the average number of rising stocks and the average number of falling stocks within an index portfolio, scaled by the sum of these two values. Investor goes long 10% of countries with the best MBR and goes short 10% of countries with the worst MBR. The portfolio is equally weighted and rebalanced on a monthly basis.
+
+Hedge for stocks during bear markets
+Not known - Source and related research papers don’t offer insight into the correlation structure of the proposed trading strategy to equity market risk; therefore, we do not know if this strategy can be used as a hedge/diversification during the time of market crisis.

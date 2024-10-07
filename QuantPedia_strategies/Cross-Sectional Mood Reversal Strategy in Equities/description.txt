@@ -1,0 +1,20 @@
+According to the authors, there is a variety of intense, novel cross-sectional mood recurrence and reversal effects across calendar months and weekdays. We select two strategies from this fruitful research paper. The second one is the presentation of one from the noncongruent-mood reversal effects. The main takeaway from the paper is that the assets that outperformed in the past periods when investors are in ascending moods tend to outperform in future periods when an ascending mood is expected and underperform in future periods when a descending mood is expected, but it holds only for congruent months moods; exact opposite on the non-congruent ones. And we propose a strategy that builds upon this finding and exploits its edge.
+
+Fundamental reason
+A mood seasonality hypothesis asserts that seasonal variations in investor mood are partly responsible for both aggregate and cross-sectional return seasonalities. Still, how to reconcile these findings with a rational risk-based story needs to be clarified in which predictable, seasonal cross-sectional returns require either seasonal, negative risk premiums or seasonal reversals in the cross-section of market betas or factor loadings. Existing literature suggests that aggregate and cross-sectional return seasonalities manifest seasonal shifts in factor premia—though not necessarily rational risk premia. The authors’ contribution and the strong remark is to one source of such seasonal factor return predictability: that seasonal factor mispricing is induced by seasonal variations in mood.
+
+Simple trading strategy
+The investment universe comprises common stocks traded on the NYSE, AMEX, and NASDAQ.
+
+The historical seasonal return of a stock relative to other securities is a negative forecaster of the stocks’ relative future seasonal returns when investor moods during the historical and forecasting months are noncongruent.
+
+For example -> January and March are positive mood months, so stocks that performed well in January and March would underperform in September and October (non-congruent month). The same way, stocks that underperformed in January and March would outperform in the September and October. Same way, the predictability works from September&October to January&March.
+
+So to summarize it:
+
+Each January and March, we sort all selected number of stocks into deciles based on their average historical non-congruent mood month (September and October) returns during years t−2 through t−5. Also, in each September and October, we sort all selected number of stocks into deciles based on their average historical non-congruent mood month (January and March) returns RET_Low(High) during years t−2 through t−5.
+
+The long-short portfolios go long (buys) the lowest performing decile of stocks from nonconguent months, and short (sells) the highest performing decile from noncongruent months. The portfolio is equally weighted.
+
+Hedge for stocks during bear markets
+Not known - Unfortunately, the published and featured paper does not indicate any way to mitigate possible negative effects of widespread poor financial conditions of global economics.
