@@ -1,0 +1,16 @@
+There are many calendar/seasonal anomalies by which we can enhance our overall investment strategy. One of the least frequent but still very interesting anomalies is for sure the Pre-election drift in the stock market in the United States. Analyzing the stock market of the United States, where the elections occur on the exact day every even year, we found a specific pattern in the days before elections. This positive drift starts as soon as the fifth day before the election’s day and ends at the end of the election’s day with almost 2,5 % performance on average. An additional advantage of this pre-election pattern is its independence from the elections results even it is tied to the election cycle.
+
+The reason why this anomaly is not so popular overall is that it’s affecting only a few days every even year. Therefore, it’s much less frequent than, for example, Turn of the Month or Option Expiration Week seasonality, which occurs every month or other calendar anomalies discussed at Quantpedia.
+
+Fundamental reason
+The source research paper doesn’t discuss the fundamental reason behind this anomaly. However, the anomaly is strongly significant. The reason for the functionality of this strategy is in the history of elections. Exactly in 68 years, which we were analyzing from 1950 to 2018, where elections occurred 35 times. During these days, the average performance of the strategy was from -2,47 % to 10,79 %.
+
+The volatile period around elections happens not only in the stock market of the United States but in almost every developed country. Readers can review related research paper by Jędrzej Białkowski, Katrin Gottschalk, and Tomasz Wisniewski in their paper “Stock market volatility around national elections” in which they analyzed elections in OECD countries.
+
+Simple trading strategy
+The simple trading strategy consists of buying the S&P 500 (in whichever form: ETF, CFD …) at the market close before the fifth day before the US elections and hold until the close of elections day.
+
+In the United States, there are two elections for federal offices – elections for the United States Congress, which are held every second (even) year and presidential elections, which occur every fourth year. However, we don’t distinguish between these two elections, so we analyze them as one same event. Election’s day is specially set by United States law. The Congress defined occurrence of the election day as “the Tuesday next after the first Monday in the month of November”. This implies that the election day has to be between November 2 and November 8 of every even year.
+
+Hedge for stocks during bear markets
+No - The selected strategy is designed as a long-only therefore it can’t be used as a hedge against market drops as the most of strategy’s performance comes from equity market premium (as the investor holds equities, therefore, his correlation to the broad equity market is very very high).

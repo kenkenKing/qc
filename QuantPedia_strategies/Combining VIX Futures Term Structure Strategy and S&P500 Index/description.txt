@@ -1,0 +1,24 @@
+VIX index, which represents the volatility in the US stock market, was firstly introduced by CBOE in 1993 and subsequently, VIX futures in 2004. Therefore, investing in VIX is not the newest thing in the quant world, but yet, there are still not a lot of research papers which are focused solely on trading strategies based on VIX futures.
+
+Systematic long investment in VIX futures shows significant negative drift with occasional strong positive jumps during crisis periods. There exist multiple predictors which try to predict futures movement of VIX futures price and predict those volatility spikes. One of the most used predictors is the shape of the volatility futures curve. If the futures curve is in the contango, VIX futures price usually falls, contrarily,futures curve in backwardation signals rise in VIX futures prices. This method is popular in quant blogosphere, and a lot of blog posts and trading strategies are described based on various different implementations of this simple idea. However, there is a lack of academic research papers on this topic. Finally, we have been able to find one research paper which uses this methodology of trading VIX futures guided by the shape of the curve. Unfortunately, stated research paper combines this basic VIX futures strategy with a passive investment to S&P 500 Index. Therefore, we do not have clear information about the performance of individual VIX futures trading strategy. Nevertheless, we have added this paper into our database as we do not have the better one at the moment.
+
+Source research papers present multiple combinations of VIX futures strategy and the S&P 500 Index. Mentioned strategies are:
+– EnhancedLong, which allocates to the S&P 500 Index and uses long VIX futures positions as a hedge when VIX premium is negative.
+– EnhancedShort, which allocates to the S&P 500 Index and it applies only short VIX futures when the premium is positive.
+– The third strategy, Enhanced90, only adjusts the allocations.
+– The last one, Enhanced Portfolio, is a combination of EnhancedLong and EnhancedShort
+
+The performance and risk numbers in the rest of the article are based on the Enhanced Portfolio strategy. The position of VIX futures is based on ex-ante analysis (difference) of VIX futures and Index levels (VIX premium). As Cheng performed ex-ante in his VIX White Paper (2018), VIX premium inversely predicts returns of investment risk and VIX futures.
+
+Fundamental reason
+The selected strategy is made from equity exposure which has a higher weight in the portfolio during positive times of market uptrend and volatility trading exposure which has higher weight as the market falls. The weighting is based on the GARCH model, which makes the strategy more stable during stressful times, but also does not lower performance in the uptrend. In the year of the financial crisis (2008), the average absolute VIX futures allocation was 32,23%, and in the year of stable growth (2017), its allocation was only 14,49%. This results in an average monthly return of 2,08% and the Sharpe ratio of 1,19, which more than doubled S&P’s levels of 0,76% and 0,58 through the observed period.
+
+Volatility exposure of the portfolio is based on the shape of VIX futures curve – the VIX premium, which is calculated as the difference between constant maturity VIX futures (a combination of the front two VIX futures what eliminates the expiration effect) and the VIX Index during the observed period. The research paper shows that VIX premium is positive in low volatility period and smaller or negative at the period of higher levels of volatility. During the research, the VIX premium was positive for over 80% of the sample.
+
+Simple trading strategy
+The portfolio holds positions in the S&P 500 Index and constant maturity VIX futures. Their weightings are based on equality of their risk contribution to the portfolio, which is estimated by the GARCH(1,1) model lagged by one day. Long (Short) position in VIX futures is determined by the shape of the VIX term structure – the VIX premium. The portfolio is rebalanced daily.
+
+The VIX premium (described in fundamental reasoning or further in the source paper on page 8) is used as a one-day lagged indicator for trade execution of the VIX futures. The positive (negative) value of VIX premium indicates to hold the short (long) position in VIX futures on the next day after calculation of VIX premium.
+
+Hedge for stocks during bear markets
+Partially - Suggested Enhanced strategy from the research paper is strongly correlated to the equity market factor. However, the VIX futures long strategy from the EnhancedLong version can be used as a market hedge. Volatility is known for its feature to rise when there is higher stress or risk in the equity market. Therefore it is suitable to be used as a hedge to the portfolio which contains equities during the recession as shows data from the research.
