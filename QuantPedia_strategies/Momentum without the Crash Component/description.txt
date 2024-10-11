@@ -1,0 +1,11 @@
+The momentum effect is one of the premier market anomalies, studied and observed in stocks for many years. The main idea of this strategy is that the winning stocks will continue to win and the losing ones will continue to lose. It is proven to be reliable, however, great drawdowns happen during market crashes, when with the market rebounding the stocks that had crashed the worst rebound the fastest as well.
+This of course isn’t desirable and researchers have studied different ways how to eliminate the crash risk. The authors of this study offer a simple cross-sectional strategy to significantly reduce risks. It is argued, that if we decompose momentum into high-to-price (HTP) and price-to-high (PTH) components, that is using the highest price of the stock in the last year as the breakpoint, we get a part responsible for the crashes (PTH) and a part that is not market-dependent (HTP). If we only use the latter to form decile portfolios, we get an interesting and significant trading strategy.
+
+Fundamental reason
+By decomposing momentum into HTP and PTH, we get two complementary parts. It is already proven by research, that the momentum and PTH are not only linked to positive returns, but great crashes as well. That is because after downturns of the market, PTH component necessarily contains loser stocks. That’s why when market rebounds, it suffers great loses. However if this crash-prone part of momentum is removed, we’re left with a market-independent component, because by definition, HTP avoids recent loser stocks. As is demonstrated in the research, by avoiding the crashes, HTP can bring much larger cumulative gains.
+
+Simple trading strategy
+The investment universe consists of NYSE, AMEX and NASDAQ stocks. At the end of each month, calculate the HTP value – the log ratio of highest price to initial stock price in a timeframe of the last year (months t-12 to t-2, skipping out the last month) for each stock. Secondly, sort stocks into deciles and long the highest decile, while shorting the lowest. The strategy is value-weighted and rebalanced monthly.
+
+Hedge for stocks during bear markets
+Yes - According to Table 3, the strategy is profitable both during up and down market states and high and low return dispersion subperiods. Moreover, the performance seems to be stable also based on Figure 1.

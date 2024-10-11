@@ -1,0 +1,11 @@
+Even though India is a relatively young country, its stock market trading volume is around $400 billion, which makes it one of the biggest stock markets. Out of Indias nine existing stock exchanges, the most major ones are the National Stock Exchange (NSE) and Bombay Stock Exchange (BSE) which are studied in this research.
+As the Indian stock market is not that well researched, the authors of the study offer a complex overview and analysis of the 10 major market predictors and their presence. Therefore, the paper is an vital addition that tests the predictors/anomalies commonly known in the developed markets. A timeframe of 25 years is employed, creating sufficiently enough observations and the robustness is checked both by portfolio method and the cross-sectional regressions. It is found that size is a relevant sorting predictor in full stock sample and in the small stock sample (stocks with their value under the median).
+
+Fundamental reason
+Size is one of the most generally known market predictors, which states that small companies are likely to outperform larger ones. It is most likely tied to the fact, that small-cap stocks are more volatile and as a result, there is a risk premium. Another common explanation is that the small companies have more space to grow compared to larger cap stocks. To sum it up, the study confirms that Indian market is no exception.
+
+Simple trading strategy
+The investment universe consists BSE and NSE stocks. Stocks are sorted into quintiles according to their size (the research uses natural logarithm of the market value of equity). Long the lowest quintile (small stocks), short the highest quintile (big stocks). Strategy is value-weighted and rebalanced monthly.
+
+Hedge for stocks during bear markets
+Not known - Paper does not include any information regarding to hedging properties.

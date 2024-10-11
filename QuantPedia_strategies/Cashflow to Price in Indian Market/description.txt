@@ -1,0 +1,11 @@
+India is one of the greatest emerging economies. There are currently nine functional stock exchanges present in the country, from which the two major ones are NSE (National Stock Exchange) and BSE (Bombay Stock Exchange) which are studied in this research.
+The authors offer us a complex analysis of major market anomalies happening on these exchanges. A relevant timeframe of the last 25 years and enough monthly observations to secure the robustness of the results are used. It is found that cash-flow-to-price appears to be the strongest out of the studied predictors, it is present in both stock exchanges and across all types of stock samples. Cash flow to price or usually Price to cash flow ratio is an indicator describing stock value – it measures stock’s price relative to its operating cash flow.
+
+Fundamental reason
+Cash flow to Price ratio is a good way to determine whether a company is under- or overvaluated. It’s similar to Price to Earnings ratio, but it’s advantage is in the fact, that cash flows cannot be as easily manipulated on the Income Statement as the earnings can. Again, it’s a rather well known predictor in the US market or other developed markets and this research confirms its presence also in India.
+
+Simple trading strategy
+The investment universe consists BSE and NSE stocks. Stocks are sorted into quintiles according to their cash flow to price ratio (the company’s operating cash flow in the last fiscal year divided by the company’s market value in the previous month). Long the highest quintile, short the lowest quintile. Strategy is value weighted and rebalanced monthly.
+
+Hedge for stocks during bear markets
+Not known - Paper does not include any information regarding to hedging properties.
