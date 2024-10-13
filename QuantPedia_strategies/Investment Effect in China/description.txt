@@ -1,0 +1,12 @@
+There is a lot of evidence that in developed markets, such as the US, high corporate investments predict a bad firm stock performance. There are many explanations, but the main idea is that this effect stems from decreasing returns to capital effect; essentially, the returns on the investments are not profitable enough proportionally to their price.
+According to the authors, this should diminish if the returns to capital are not decreasing anymore but increasing instead. In China, and possibly in other emerging markets, corporate investments are positively related to future profitability. An abnormal increase in asset growth predicts higher stock in the next 6 months, and the effect is more substantial among high ROA and ROE firms and firms with high sales or asset growth. The indicator used is abnormal asset growth which, when a portfolio is sorted by, creates a good way to pick out stocks with positive future returns.
+
+Fundamental reason
+The authors offer a rather convincing explanation, unifying known seemingly contradictory facts about the effect on other markets with these new findings. Developing markets often behave differently than developed ones. Such is also the case here – the key is that unlike in the US, where the return to the capital relationship is decreasing, in China, it is not. Then, according to this study, corporate investments are positively related to future stock returns. Many factors might play a role in this. For example, investing capital into physical assets could allow the firm to have more effective machinery and higher working efficiency in a fast-growing economy.
+
+Simple trading strategy
+The investment universe consists of non-financial companies listed on the Chinese A-share market. Firms with non-positive book value are excluded.
+The sorting measure is abnormal asset growth (AAG), which is calculated using a simple equation on page 10 in the paper: asset growth during semi-annual fiscal year t minus one half of the sum of two previous semi-annual assets growths. Sort the stocks according to their AAG value into deciles, long the highest, and short the lowest. The portfolio is value-weighted and rebalanced every six months (holding periods are May-October, November-April)
+
+Hedge for stocks during bear markets
+Probably not - Although the market beta of the strategy is low (Table 5 and 6), it is significant. Furthermore, a small market beta certainly does not mean that the strategy could be used as a hedge.

@@ -1,0 +1,16 @@
+Historically, there exists a notable negative correlation between the VIX betas and the expected returns from a stock. Prior to this paper, it was accepted that the stock fundamentals and market behaviour were the primary reasons behind this phenomenon from the work of Ang et al. (2006).
+
+Through this paper, the author Tong Wang, proposes another explanation of this correlation between the VIX betas and expected returns. The paper suggests that this relation is in fact down to the behaviour of the investors in the market and them underreacting the volatility in the market.
+
+This behaviour will persist forever as it is a cause of irrational investing. Therefore, we can use the strategy of shorting stocks when we see a spike in intraday VIX betas and buy stocks when we see a fall in the betas.
+
+Fundamental reason
+Through testing carried out by the author, we find that intraday VIX betas have a degree of predictive power as they negatively predict future returns of a stock, whereas overnight VIX betas don’t hold any predictive power at all. This points to the fact that investor behaviour, namely irrationality through underreaction to market movement and volatility, is one of the primary reasons behind the relation between VIX betas and expected return, as it is accounted for in intraday calculations but not in overnight calculations.
+
+Due to this research, we can also rule out using market fundamentals, in a significant manner, when looking to explain the correlation due to the author’s findings regarding the lack of predictive power of overnight VIX betas; further giving credibility to the trading strategy.
+
+Simple trading strategy
+The investment universe consists of all stocks with a bid-ask spread of less than 10% listen on the NYSE. Stocks with a spread larger than 10% are to be excluded. The variable of interest to us is the VIX intra-day beta over the last month. The VIX intra-day beta of a stock can be found by making use of intra-day stock returns, calculated easily using the open and close price of the stocks, and the change in the VIX index across the trading day, calculated using open and close values of the VIX obtained through the CBOE. We split our investment universe into deciles, ranked based on intraday beta to VIX. We will then go short decile of stocks with the highest intraday beta to VIX over the previous month and go long decile of stocks with the lowest intraday beta to VIX over the previous month. Stocks are weighted equally, and the portfolio is rebalanced on a monthly basis.
+
+Hedge for stocks during bear markets
+Not known -

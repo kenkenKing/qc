@@ -1,0 +1,11 @@
+Recently, studying the combinations of different effects has gained popularity among academics. The Halloween effect has been no exception, though this is the first study to explore its relationship to the long-term reversal effect.
+The Halloween effect is the notion that stocks perform better during the winter months. As the name suggests, it implies that it is more profitable to buy around Halloween and then sell before the summer arrives. That has historical connotations, which are current even in today’s world. More people travel on holidays during the summer months, thus participating in the market less. On the other hand, there is the long-term reversal effect, which is a rather famous and well-studied anomaly. Thus the researchers in this paper study the relationship of those two anomalies – and indeed, they find, that the performance of the long-term reversal in the US market might be driven by the Halloween effect. This suggests that it may be meaningful to constrain trading of the long-term reversal effect only to the winter months, namely from November to April.
+
+Fundamental reason
+As mentioned, the presence of the Halloween effect within the long-term reversal means that the long-term reversal performs better during the winter months. The data also support this observation. Historically, it might be related to the traders’ holidays during the summer. Even a saying states: sell in May and go away. However, the authors suggest that their results are driven by a small-cap portfolio of losers, where the anomaly is the most prominent, and by the large-cap winners, where it is non-existent. The results are robust to the firm-size effect, January effect, and other definitions of the long-term reversal.
+
+Simple trading strategy
+The investment universe consists of all NYSE, AMEX, and NASDAQ stocks. Every year, during the months of the Halloween effect – that is from November to April, calculate returns on a given stock during the last five years, excluding the last year (t-60 to t-13). Split the portfolio into 6 quantiles, long the two lowest, short the two highest. The strategy is value-weighted and rebalanced monthly during the winter months.
+
+Hedge for stocks during bear markets
+No - seasonality effects are usually not providing good hedge against bear markets.

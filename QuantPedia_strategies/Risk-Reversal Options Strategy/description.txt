@@ -1,0 +1,11 @@
+Risk-reversal is an options hedging strategy that uses call and put options to hedge against disadvantageous changes in the price of the underlying asset. Investors can implement this for both short and long positions.
+However, many investors use options only to secure their assets solely downwards by buying puts and not selling calls, because this possibility isn’t even available to them through their broker. The disbalance is one of the reasons put options’ prices rise faster than the call options, which, if implemented in a trading strategy, as authors find, can create significant returns. The authors show that the out-of-the-money puts are overpriced to the out-of-the-money calls in the US equity indices; in other words, that the risk-reversal on US indices is mispriced. This knowledge can be used to create both stand-alone trading strategy or become a diversifying component in a suitable portfolio.
+
+Fundamental reason
+The mispricing of the risk-reversal in the US indices is mostly caused by overpricing of the out-of-the-money puts relative to the out-of-the-money calls. This situation happens because many investors tend to hedge only downwards, which creates rising (and disproportional) demand in the market. Another reason could be that many brokers don’t even allow their traders to sell options, further contributing to the shortage of puts. This means that selling OTM puts should be profitable because of the high demand. Furthermore, as the authors state, the positive correlation between volatility and the underlying price is the driving force behind this effect.
+
+Simple trading strategy
+The investment universe consists of SPY options with maturity as close to 25 days as possible. At the start, buy 15-delta calls and sell 15-delta puts with said maturity, and short 30 shares of SPY to initiate the position. During the next 20 days, the portfolio needs to be rebalanced whenever the net delta of the portfolio lowers under 20 or rises above 40. This is done by closing the position and re-initiating it again by options with the same expiration date, which are now closest to 15-delta. The trading position is closed 5 days before the expiration date.
+
+Hedge for stocks during bear markets
+Not known - Itself, it is a delta-hedged options strategy that may provide a diversifying component to long equity positions.
