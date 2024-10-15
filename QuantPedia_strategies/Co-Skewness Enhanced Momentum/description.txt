@@ -1,0 +1,21 @@
+Scientists found that the coskewness of momentum portfolio returns tends to increase before a subsequent market rebound when momentum crashes are likely to happen. The main takeaway and cornerstone of the presented strategy is that the coskewness of momentum portfolio returns predicts individual stock returns; more negative coskewness predicts higher returns. This new, improved version called the coskewness enhanced volatility strategy (CS-BSC) [momentum strategy that augments the constant-volatility strategy of Barroso and Santa-Clara] mitigates the downside risk of already known and similar classic momentum and constant-volatility strategies. Furthermore, it improves risk parameters for holding periods that are longer than one month, too.
+
+Fundamental reason
+The winner-minus-loser momentum strategy has an inherent downside risk, as the portfolio returns of the strategy always have a negative coskewness. The momentum strategy tends to cumulate profits in bear markets as the strategy displays a negative beta. Market volatility becomes associated with fewer negative returns before a market rebound. Coskewness of momentum portfolio returns significantly predicts future stock returns up to nine months ahead, which supports the return of the new, improved momentum strategy beyond horizons for which past returns display predictive ability.
+
+Simple trading strategy
+The investment universe consists of all stocks listed on NYSE, AMEX, and NASDAQ.
+
+(As a dataset, you can use CRSP.)
+
+The trading strategy goes as follows:
+0. We assume you are performing or about to perform any kind of momentum strategy consisting of winner-loser (long-short) portfolios.
+1. Compute the coskewness of the short and long momentum portfolio legs (CS_PORT) as from equation (1) using all available data (for your portfolio, or for one you are considering investing in) (at least 10 years). The formula considers the excess market return and the risk-free rates of portfolios in co-skewness computation.
+2. Calculate the coskewness of the (new) WML portfolio 𝐶𝑆_𝑊ML using the formula in eq. (2) from the coskewness of winner and loser portfolios, CS_W and CS_L, computed from the previous step. (The coskewness of WML portfolio returns is not only determined by the coskewness of winner and loser portfolios, CSW and CSL, but also by the correlation between the two portfolios.)
+3. Re-set portfolio each month as per equation (5): (1 + (𝐶𝑆∗ − 𝐶𝑆_𝑡−1 )⁄ 𝑅𝑎ng𝑒) ∗ (𝜎∗ ⁄  𝜎_𝑡−1).
+𝜎 is the monthly standard deviation of WML returns estimated using daily returns in the previous six months, and 𝐶𝑆 is coskewness of WML (calculated from the previous step). Range is the difference between the maximum and minimum CSWML values during the estimation period. Authors set the target 𝐶∗ and 𝜎∗ values as the rolling average coskewness and standard deviation calculated using historical data up to month t-1.
+
+(Holding period is one month. Then, calculations are performed again with actual information up to and including the previous month.)
+
+Hedge for stocks during bear markets
+Yes - CS-BSC strategy offers effective downside risk reduction in all three crash/crisis sub-periods (1987 crash, 2001 dot-com crash, 2008-2009 global financial crisis), as it has the highest Sortino ratio, skewness, and the most negligible maximum drawdown. The results further confirm that the efficacy of the proposed CS-BSC strategy is robust over time.

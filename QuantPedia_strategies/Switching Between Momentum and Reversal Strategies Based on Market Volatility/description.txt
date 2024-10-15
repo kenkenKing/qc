@@ -1,0 +1,16 @@
+Evidence that market volatility affects the returns on momentum and reversal strategies differently has been well-documented. These patterns can be used to form various investment signals. According to the authors’ research, empirical evidence shows that implementing a switching strategy between momentum and reversal outperforms traditional and volatility-scaled momentum strategies. To present the study’s results, we select the most straightforward one utilizing this finding: SWITCH. With a focus on U.S. markets, the same strategy has been shown to work well in other parts of the world’s markets, especially Japan and may be suited to be implemented in EMs. Mixing strategies not only can boost profits but can provide potential diversification benefits that mitigate tail risk.
+
+Fundamental reason
+Following high market volatility periods, the returns on the momentum/reversal strategy are lower/higher. Heightened market volatility indicates stress in the market (for example) due to a possible recession. At such times, it is plausible to assume that the cost of liquidity provision will increase, such that a momentum/reversal strategy experiences losses/gains. When market volatility is relatively high, previous studies have found that returns on the reversal strategy increase in U.S. and emerging stock markets. Conversely, market volatility is well known to be negatively correlated with future momentum returns. These opposite patterns for momentum and reversal strategies allow investors to invest in momentum when market volatility is lower and invest in reversal when market volatility is higher. Authors contribute to the subject by discussing that momentum is partly explained by state dependency and associated trade to immediacy costs linked to demand for market liquidity.
+
+Simple trading strategy
+The investment universe consists of stocks traded on the NYSE, AMEX, and NASDAQ exchanges.
+
+1. Calculate the current month’s market volatility 𝑄𝑖,𝑡 in connection to the previous five years of historical market volatility, and sort it into quartiles.
+
+2. Our performed value-weighted strategy, SWITCH, is a combination of momentum and reversal strategies based on the following volatility-related indicator rule: implement the momentum strategy for the next month if the current month’s market volatility is less than the 0.75 percentile (in the first three quartiles) of the previous five years of market volatility; otherwise (fourth quartile), choose the reversal strategy. The process for constituents of SWITCH: Sort all selected stocks in deciles, and perform a) MOM is a momentum strategy that goes long 10th decile winners’ stocks and short 1st decile losers’ stocks based on the performance over the last 11 months, and b) REV indicates the reversal strategy that goes long 1st decile losers in the previous month and short 10th decile winners.
+
+3. Rebalance monthly.
+
+Hedge for stocks during bear markets
+Yes - The paper provides insights on several ways of avoiding market downturns. The switching strategy capitalizes these inter-temporal patterns in momentum and reversal-related returns and avoids momentum crashes.

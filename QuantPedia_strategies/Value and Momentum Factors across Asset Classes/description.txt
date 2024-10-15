@@ -1,0 +1,16 @@
+The momentum strategy buys assets with the strongest past return (12-month or 1-month) and expects them to outperform assets with the lowest past return. Value strategy buys assets that are fundamentally cheap and intends to gain on the assets’ reversion to their long-term means. The combined long-short strategy allows the investor to secure market-neutral exposure to gains from both anomalies.
+
+Several different approaches to this basic strategy exist. We present the Blitz and Vliet strategy as an example, and more strategies are mentioned in the “Other papers” section.
+
+* Are you interested in systematic quantitative factor ETFs? Here is a link to the Alpha Architect Value Momentum Trend ETF (strategy background), our partner, which combines international equities’ value, momentum, and trend factors. *
+
+Fundamental reason
+Value and momentum strategies are very well documented by academics. These strong anomalies could be used together to enhance a portfolio’s profitability.
+
+Using value and momentum on asset classes and not just inside one asset class can also increase strategy robustness.
+
+Simple trading strategy
+Create an investment universe containing investable asset classes (could be US large-cap, mid-cap stocks, US REITS, UK, Japan, Emerging market stocks, US treasuries, US Investment grade bonds, US high yield bonds, Germany bonds, Japan bonds, US cash) and find a good tracking vehicle for each asset class (best vehicles are ETFs or index funds). Momentum ranking is done on price series. Valuation ranking is done on adjusted yield measure for each asset class. E/P (Earning/Price) measure is used for stocks, and YTM (Yield-to-maturity) is used for bonds. US, Japan, and Germany treasury yield are adjusted by -1%, US investment-grade bonds are adjusted by -2%, US High yield bonds are adjusted by -6%, emerging markets equities are adjusted by -1%, and US REITs are adjusted by -2% to get unbiased structural yields for each asset class. Rank each asset class by 12-month momentum, 1-month momentum, and by valuation and weight all three strategies (25% weight to 12m momentum, 25% weight to 1-month momentum, 50% weight to value strategy). Go long top quartile portfolio and go short bottom quartile portfolio.
+
+Hedge for stocks during bear markets
+Yes - The strategy is fundamentally related to a class of trend-following CTA (managed futures) strategies which historically have a very good hedging/diversification abilities in times of market stress. For example, Exhibit 12 (and Figure 5) in a source research paper confirms this intuition and shows that strategy has positive performance even during times of the higher than average value of the VIX Index.

@@ -1,0 +1,13 @@
+The small-capitalization stocks premium (size effect) is one of the few effects which is accepted by nearly the whole academic community. It says that low capitalization stocks earn substantial premiums against stocks with large capitalization (without additional risk). This anomaly is the best described in the classical Fama and French research paper (1993).
+Pure small-cap effect portfolios are created as long stocks with the lowest capitalization and short stocks with the largest capitalization. However, this pure small-cap effect had disastrous drawdowns with nearly 80% drawdown in the 90s. The small-cap factor is, however, still a strong performance contributor in long-only portfolios (formed as long stocks with the smallest capitalization without shorting large caps).
+This strategy was initially based on the paper by Fama and French: The Cross-Section of Expected Stock Returns, but to stay up to date we drew data from a newer paper by Alquist, Israel and Moskowitz: Fact, Fiction, and Size Effect which was published in May 2018.
+
+Fundamental reason
+The size effect can be explained by the illiquidity of small companies, mainly as a result of higher trading costs.
+The effect could also be caused by bigger space to grow for smaller companies, their greater flexibility during the business cycle, and higher inside innovation, which gives small-caps an advantage against large-cap stocks. Another explanation for this effect is simply higher risk involved in small-cap companies.
+
+Simple trading strategy
+The investment universe contains all NYSE, AMEX, and NASDAQ stocks. Decile portfolios are formed based on the market capitalization of stocks. To capture “size” effect, SMB portfolio goes long small stocks (lowest decile) and short big stocks (highest decile).
+
+Hedge for stocks during bear markets
+No - Small-cap stocks are not a good hedge/diversification during times of stress, they perform well after economic crises (see for example research paper by Bansal, Connolly, Stivers: “High Risk Episodes and the Equity Size Premium”), but they perform really bad during times leading up to it (when they are often one of the most damaged market segment).

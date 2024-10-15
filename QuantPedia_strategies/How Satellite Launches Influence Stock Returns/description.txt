@@ -1,0 +1,17 @@
+According to the authors, interesting short-term trading opportunities with appealing results for profitability emerge when employing a hypothetical strategy that exploits investor inattention on satellite launch days. For certain stocks, the satellite launch events trigger a gradual increase in return comovement with the market on pre-event days, which peaks on official launch days before dying down on post-event days. Furthermore, scientists find that portfolios of stocks that are most sensitive to satellite launches (i.e., beta quintiles 4 and 5) experience a significant increase in alpha across the holding windows. We base our presented strategy on using only the top quintiles of the most mispriced stocks to form a long-short portfolio to maximize and exploit this interesting market anomaly.
+
+Fundamental reason
+When investors are distracted by satellite launches, they will focus more on market-level information rather than idiosyncratic information at the stock level; therefore stock returns will comove more with market returns. Stocks with the lowest “underpriced” or “overpriced” betas (in their corresponding portfolios) are insignificantly affected by the satellite-driven investor attention and therefore have the lowest possibility of mispricing induced by satellite launches. Stocks in between have the highest possibility of mispricing induced by satellite launches are overpriced on satellite launch days. Therefore, if one longs the portfolio of underpriced stocks and shorts the portfolio of overpriced stocks, the strategy can earn abnormal returns.
+
+Simple trading strategy
+The investment universe consists of common stocks (that have share codes of 10 and 11) trading on NYSE/Amex and Nasdaq.
+(Stock data may be obtained from the Centre for Research in Security Prices [CRSP]. Data about satellite launches were found from Wikipedia; for upcoming ones, consult UCS satellite and various (space) databases.)
+
+0. For each satellite event on date t, we employ one-year data up to 10 days prior to the event (i.e., from t – 375 to t – 10) to run the following complex regression model described by Eq. (5), where the return of firm i on day w free of the risk-free rate on day w is the predictor (predicted variable), and Satellite_w is the dummy satellite event variable, which receives a value of one on the launch days and zero in other days within the estimation window, controls are the Fama–French five common risk factors.
+1. Portfolios are formed corresponding to quintiles of the “underpriced” betas (β_i,u,t), and “overpriced” betas (β_i,o,t), which are estimated by the firm by satellite events as following from the previous step. As a result, we obtain five portfolios associated with “overpriced” betas, and five portfolios associated with “underpriced” betas corresponding to each satellite event.
+2. Investor, in their Long-Short (final) portfolio, goes long (buys) highest (5) (quintile) “underpriced” beta portfolio and shorts (sells) highest (5) (quintile) “overpriced” beta portfolio.
+
+All introduced portfolios are value-weighted, and trades are executed (rebalancing rule) at the beginning (t-2 days) of a holding period and at the end (t+2) of the holding period.
+
+Hedge for stocks during bear markets
+Not known - No acknowledgment.

@@ -1,0 +1,18 @@
+This study aims to examine the impact of family ownership on stock return predictability through accounting accruals. Despite a significant amount of research on family firms, it is not well understood how family ownership affects economic efficiency. The study is motivated by the lack of evidence in this area and aims to fill this gap in the literature by examining the impact of family ownership on the accrual anomaly, which is a well-established pattern in which accruals are negatively related to future profitability and stock returns.
+
+The study finds that the negative effect of accruals on future earnings performance and stock price performance is more pronounced within family firms. The evidence from portfolio-level analysis also suggests that the profitable exploitation of the accrual anomaly is magnified within family firms, with the annual hedge abnormal return for family firms being 18.7% compared to 3.4% for non-family firms.
+
+Fundamental reason
+The study explores potential reasons for the intensification of the accrual anomaly within family firms by focusing on earnings management, information uncertainty, and limits to arbitrage as possible driving forces. It finds that the accrual anomaly within family firms may be due to market misunderstanding of the executives’ discretion over earnings and greater information uncertainty.
+
+It also finds that the accrual anomaly persists within family firms, possibly due to stronger limits to arbitrage by examining the performance of interacted trading strategies on both accruals and idiosyncratic volatility. The study finds that the hedge strategy on accruals and idiosyncratic volatility earns an annual abnormal return of about 27.3% and 16.9% for the subsample that consists of firms with low accruals and low idiosyncratic volatility, and firms with high accruals and high idiosyncratic volatility respectively within family firms, while the stock price performance of the strategy is indistinguishable different from zero within non-family firms.
+
+Simple trading strategy
+The investment universe consists of family firms from 34 international markets. To identify family firms, investor can use firms available in the NRG Metrics family ownership database. NRG Metrics is a unique database that provides a wide range of refined measures of family ownership sourced by publicly available documents such as annual reports, corporate governance reports, firm presentations, SEC filings, and press releases.
+
+A firm is classified as a firm with low total accruals if the value of total accruals falls into the lowest-ranked quintile portfolio (Low TOTACC) and as a firm with high total accruals if the value of total accruals falls into the highest-ranked quintile portfolio (High TOTACC). The firms are allocated into quintiles (i.e., five equally weighted portfolios) based on total accruals at the end of June of each year, investor goes long family firms from the Low TOTACC quintile and simultaneously short family firms from the High TOTACC quintile.
+
+The final portfolio is equally weighted and rebalanced on a yearly basis.
+
+Hedge for stocks during bear markets
+Not known - The described strategy, which involves investing in firms with low total accruals and avoiding firms with high total accruals, is not specifically designed to hedge against bear markets. The strategy is based on the empirical finding that firms with low total accruals tend to have higher abnormal returns than firms with high total accruals. However, it is important to note that bear markets are characterized by a broad decline in the stock market, and it is not clear whether the abnormal returns from the Low TOTACC portfolio would be sufficient to offset the declines in the broader market.

@@ -1,0 +1,13 @@
+Since the financial crisis in 2008, volatility trading has become hugely popular as investors started to appreciate volatility’s negative correlation to equity markets. The VIX index provides one of the most common ways to measure expected volatility, making it the “index of fear”. According to Whaley (2000), futures and options contracts designed using the VIX index as the underlying instrument help mitigate the expected investor fear. In short, if the VIX index goes up, the market tends to go down, and vice versa.
+On the other hand, recent research suggests an opposite effect exists. The authors (Chandorkar and Brzeszczynski) examined three fear indices – the VIX index in the US, the VFTSE index in the UK, and the VSTOXX index in Europe, showing that fear indices do not predict negative stock market returns. Instead, surprisingly, their results show that the three-standard deviation spike in the VIX index positively predicts future returns.
+Naturally, such a result can be the basis of the trading strategy. The authors tell us to open a long position on an underlying ETF immediately one day after the VIX index increases to three standard deviations above the mean, keeping the long position open for one month. Naturally, such a result can be the basis of the trading strategy. The authors tell us to open a long position on an underlying ETF immediately one day after the VIX index increases to three standard deviations above the mean, keeping the long position open for one month.
+
+Fundamental reason
+As already mentioned in the Short description, extreme jumps in fear indices (the VIX index for the US) predict significant positive future market returns. The main reason for the functionality of this strategy is the sensitivity of monetary policy to positive shocks in implied volatility indices. According to Bekaert et al. (2013), higher risk aversion and uncertainty, measured by decomposing the VIX index, lead to looser monetary policy. In conclusion, this may lead to higher realized returns as a consequence of a reduction in the discount factor.
+In other words, the proposed strategy could be described as a mean-reversion strategy that buys the stocks after a distressed period – after a jump in the VIX. Therefore, the strategy is an compelling quantitative indicator for equity market entry point.
+
+Simple trading strategy
+The investment universe consists of SPDR S&P500 Trust ETF (SPY). One day after the VIX index increases to three standard deviations above the mean, open a long position on an underlying ETF (SPY). Keep the long position open for one month (22 trading days).
+
+Hedge for stocks during bear markets
+Not known - The paper does not include any discussion of such possible effects on the strategy’s profitability.

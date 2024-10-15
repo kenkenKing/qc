@@ -1,0 +1,10 @@
+According to the authors, changes in earnings announcement dates can offer valuable insights about stock price can move surrounding earnings events. In addition, advancing or delaying earnings announcements can predict positive and negative earnings results. Therefore, from a few present variations of this research application, we selected a strategy that constructs a long-short portfolio which capitalizes on post-earnings reactions using the earliest advance/delay event signal of 1 day, focusing on targeting U. S. Mid/Large-Caps.
+
+Fundamental reason
+Corporate executives and investor relations teams often use strategic timing to schedule and disseminate earnings results. Previous studies claim that earnings delays may signal weak performance, while advancing the date may be a sign of good news. Scientists from RavenPack confirm this consensus. They well contribute to the topic with their advanced findings that Large/Mid-Cap companies show more momentum on the negative leg, while the Small-Caps have more momentum on the positive leg. The signal decays relatively quickly, with the difference between the average advance and delay reactions reaching a peak in just a few days.
+
+Simple trading strategy
+The investment universe consists of U.S. market Mid/Large-Caps stocks. Investor performing strategy trades stocks just before the final/confirmed earnings announcement, effectively going long the stocks that advance their earnings date and shorting those that delay their earnings announcement. We construct daily long-short equal-weighted portfolios within the Mid/Large-Caps U.S. universe, initiate the position at the market close before an earnings release based on the advance/delay signal, and exit the position at the next close (that is, 1-day aggregation window). Strategy is not being rebalanced periodically, as there are earnings announcements change dates announced dynamically based solely on companies’ decisions.
+
+Hedge for stocks during bear markets
+Not known - The paper needs to discuss possible hedging opportunities arising from its findings in detail.

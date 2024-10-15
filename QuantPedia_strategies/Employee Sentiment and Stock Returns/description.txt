@@ -1,0 +1,18 @@
+The employee sentiment index is defined as the equal-weighted firm-level difference between the percentage of positive and negative reviews posted on Glassdoor by public firm employees. According to the authors, empirical results from forecasting tests show that high employee sentiment significantly predicts low subsequent excess market returns at both monthly and weekly frequencies, thus making it a good potential future profit predictor. Our presented strategy builds on robust out-of-sample analysis, focusing on forecasted returns utilizing the employee sentiment (S^ES) variable.
+
+Fundamental reason
+Chen, Tang, Yao, and Zhou (October 2022) paper has compelling statistic evidence that employee sentiment negatively predicts subsequent stock market returns. Furthermore, they present their economic explanations as extrapolative bias (employees are likely to extrapolate the most recent firm performance into the future and expect that firms will continue to perform well), employment cost channel (immobility of employees in labor market, increasing firms’ employment costs, such as wages), employee sentiment (which is stronger for those companies that are hard to value), and (their [own]) characteristic-sorted portfolios.
+
+Simple trading strategy
+The monthly employee sentiment St^ES is defined for firm t based on Glassdoor survey data, as calculated in eq. (1): No. of positive reviews of overall ratings with four and five stars for firm i within month t minus No. of negative reviews refers of overall ratings with one and two stars for firm i within month t, which is divided by No. of the total review number for firm i within month t. The employee sentiment index is then defined as the equal-weighted firm-level sentiment.
+
+Using out-of-sample forecasts (information from the regression equation (7): Rt+1 = α + β * St^ES), the investor will maximize his utility and divide his assets between the market portfolio and risk-free bills. 
+
+The portfolio is being rebalanced every month.
+
+ 
+
+Hedge for stocks during bear markets
+Not known - The employee sentiment level fluctuates over time and decreases sharply during the 2008–2009 financial crisis. It also declined in 2011, during the sovereign debt crisis period, and in the recent COVID-19 pandemic. SBW and SMS show different variations in employee sentiment, although both of them decrease during the 2008–2009 financial crisis. This implies distinct information regarding employee sentiment relative to existing sentiment measures.
+
+It may be, therefore, suitable to use only the short legs of the final portfolio.

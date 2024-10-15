@@ -1,0 +1,23 @@
+In this recent research paper, the Fama-French three- and five-factor and momentum factor returns for Indian equities between October 2006 and February 2022 are calculated using data from Refinitiv Datastream and two breakpoint schemes. The results show a high correlation between the factor return estimates and those reported in the Indian Institute of Management, Ahmedabad (IIMA) Data Library for the Indian Market. Additionally, the study reports four- and five-factor return estimates using the current breakpoint methodology of Fama-French and other international replication studies, highlighting the differences in the factor return estimates due to the methodology. The study also differs from international studies by building portfolios in September of each year to reflect the Indian fiscal reporting period and uses factor spanning tests to show that all five Fama-French and Momentum factors explain average returns in the Indian equity markets.
+
+Profitability is an important factor in this research because it is one of the key drivers of stock returns. In general, companies that are more profitable tend to have higher stock prices and better investment performance than companies that are less profitable. Profitability can be measured in a number of ways, such as return on equity, return on assets, and net profit margin.
+
+Fundamental reason
+The authors included the profitability factor in their analysis because they wanted to test whether this factor provided incremental explanatory power for stock returns beyond the other factors. The profitability factor, also known as the “quality” factor, measures the profitability of a company based on its return on assets, operating cash flow to assets, and change in asset turnover.
+
+ 
+
+The authors believed that the profitability factor could capture important information about a company’s financial health and quality, which could affect its stock returns. For example, a company that is highly profitable may have stronger financials and may be more likely to withstand economic downturns. By including the profitability factor in their analysis, the authors could test whether this factor added to the explanatory power of the other factors in predicting stock returns.
+
+Simple trading strategy
+The investment universe in this research consists of 4,141 firms that are or were listed on the NSE or BSE, as reported in the Worldscope India dataset with Datastream code WSCOPEIN. The data shows a steady growth in the number of firms covered annually during the period 2006-2021, increasing from 1,700 firms to around 2,500 firms.
+
+The portfolios are formed on operating profitability (OP) at the end of each September. OP for September of year t is annual revenues minus cost of goods sold, interest expense, and selling, general, and administrative expenses divided by book equity for the last fiscal year-end in t-1 ”. This creates three portfolios named Robust (with profitability equal to or exceeding the 70th percentile), Weak (with profitability equal to or below the 30th percentile) and Neutral (remaining firms). The six double-sorted portfolios are Big/Robust, BR, Big/Neutral, BNP , Big/Weak, BW and their Small counterparts, SR, SNP, and SW.
+
+Portfolios are formed on September 30 each year and are held till September 30 of the following
+year.
+
+The profitability factor portfolio is build by going long the Big and Small Robust portfolio and going short Big and Small Weak portfolio. Stocks are value-weighted (based on their market-cap) and the final portfolio is rebalanced on a yearly basis.
+
+Hedge for stocks during bear markets
+Not known - There are no discussions about possible hedging applications against bear markets in equities.

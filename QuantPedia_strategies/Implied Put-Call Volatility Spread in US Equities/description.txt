@@ -1,0 +1,20 @@
+Volatility spread – the difference between the implied volatility of put and call options on the same underlying stock, with the same expiration date and strike price, can offer additional valuable information about the underlying asset, for example, positively predict individual stock returns.
+
+Most popular measures of implied volatilities are based on CRR binomial tree method and the Black-Scholes model, which both assume constant volatility throughout the option’s life. Under this condition, maintaining the principle of put-call parity, volatility spreads should not exist. However, the authors are the first to document that volatility spreads can exist without violating put-call parity and are related to the time-varying nature of volatility of the underlying asset of an American-style option. Furthermore, according to the paper, the positive correlation between volatility spreads and future returns can be driven by companies’ sensitivity to changes in aggregate volatility. Finally, the authors tell us to create equally-weighted quintile portfolios based on their average volatility spread in the previous month, go long the stocks with the highest volatility spread, and short stocks with the lowest volatility spread.
+
+Fundamental reason
+One of the popular explanations for the functioning of the strategy is that knowledgeable investors take advantage of short-term market inefficiencies by trading first in options markets (Easley et al., 1998). As a result, this creates demand pressure, moving option prices away from put-call parity, generating volatility spreads, and predicting stock returns. (Amin and Lee, 1997; Cao et al., 2005; Pan and Poteshman, 2006; Atilgan, 2014; Cremers and Weinbaum, 2010). On the other hand, this paper offers an alternative explanation for the existence of the implied volatility spreads under the assumption that volatility spreads may occur for American options with non-constant volatility. According to the authors (Campbell, Gallmeyer, and Petkevich), volatility spreads proxy in part for aggregate volatility risk, impacting future returns of the underlying stocks. In conclusion, this implies that the predictability of returns based on volatility spreads could be a byproduct of companies’ sensitivity to changes in aggregate volatility.
+
+Simple trading strategy
+The investment universe consists of U.S. stock options. Stocks with prices below 5$ are excluded. The data come from CRSP, Compustat, and OptionMetrics.
+
+First, match call and put options with the same underlying stock, strike price, and expiration date.
+
+Second, for each matched pair, calculate the individual volatility spread as the difference in implied volatilities for the call and put option for each day.
+
+Next, calculate the stock’s daily volatility spread (VS) as the weighted average of the individual volatility spreads of options written on the stock (equation (2), page 18). As the weights use the average open interest of the put and call options written on the stock.
+
+Finally, calculate monthly VS as the average of daily VS. Based on the monthly VS in the previous month, sort stocks into equally-weighted quintile portfolios. Go long the top quintile (stocks with the highest VS) and short the bottom quintile (stocks with the lowest VS).
+
+Hedge for stocks during bear markets
+Not known - Paper does not provide any information about strategies performance during uncertain times.

@@ -1,0 +1,10 @@
+The recurring themes of ESG (Environmental, Social, and Governance) and its place in investing could not sidestep China. According to the authors, extra returns from investment associated with poor ESG performance are alpha or compensation for bearing ESG risk. It may be caused by not expected ESG shocks and policy changes in this Asia country. Our selected ESG_1 portfolio delivers significant positive returns with an average monthly magnitude of 0.72% after the Paris Agreement.
+
+Fundamental reason
+Evidence that well-known risk factors can not explain low-ESG minus high-ESG portfolio returns suggests the existence of an ESG risk premium. After the ESG events of the Paris Agreement and Xi’s pledge to achieve carbon neutrality by 2060, firms with poor ESG performance face more regulatory risk, which may well explain the resulting premia, which brings higher returns for such firms’ stocks. Although, the authors’ analysis reveals that state-owned firms with better operational and financial performance tend to have higher ESG scores, there is no evidence suggesting that consumer decisions have any impact on firms’ ESG performance.
+
+Simple trading strategy
+The investment universe consists of Chinese equities listed on Shanghai Stock Exchange and Shenzhen Stock Exchange. We can categorize firms in each industry into two categories using the previous year’s ESG scores (ESG data are from Refinitiv). In the each industry, the high-ESG (low-ESG) portfolio consists of firms with the top (bottom) 50% ESG scores; both portfolios are value-weighted based on market capitalization. Investor goes long companies in the Low ESG portfolio and shorts companies from the High ESG. The resultant portfolio is updated rebalanced annually.
+
+Hedge for stocks during bear markets
+Not known - Paper does not provide any hints on how the strategy performs during bear markets.

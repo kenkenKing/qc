@@ -1,0 +1,18 @@
+This paper explores the relationship between customer momentum, price momentum, and earnings momentum and reports that the other types of momentum do not explain earnings momentum. Pinchuk (2018) reports that the firms with high returns of principal customers in the previous month are likely to have abnormally high returns in the current month. And according to the sole author, exploiting excess returns of decile portfolios formed on customer momentum is possible. These returns are not explained by Fama-French 5 factors and price momentum. We chose a suitable long-short value-weighted strategy that we present further.
+
+Fundamental reason
+Analysis of customer momentum in the post-discovery sample reveals that it has a smaller magnitude and is marginally statistically significant. The customer momentum factor has negative returns after 2005. These results suggest that after the discovery, customer momentum decreased due to exploitation by investors. Limited attention and the lead-lag relationship between large and small stocks due to non-synchronous trading (Lo and MacKinlay 1990) are the two likely explanations of customer momentum. The paper finds mixed evidence for the limited attention hypothesis. Customer momentum is 2-3 times larger among customer-supplier links with large relative customer sizes. This implies that the average customer drives customer momentum is 15 times larger than the average supplier in my sample.
+
+Simple trading strategy
+The investment universe consists of all firms with non-missing customer links, present in merged CRSP/Compustat.
+(You are advised and can use CRSP as a source of common stock returns and Compustat as a source of accounting data.). Customer momentum works the same way as traditional momentum, but instead of using the performance of the stock, you match the firm and its customers and use equally-weighted returns of all of its customers (over the predefined window) instead of the firm’s returns.
+
+0. Lag is defined as (Beginning of the return window as the number of months before the current month)-(End of the return window as the number of months before the current month).
+1. After matching the firms and the customers, calculate the value-weighted returns of the customers’ portfolios.
+1. In each month, firms are ranked to decile portfolios by the past returns of their customers’ portfolios. The window over which the past returns are calculated is defined by the lag 1-1.
+2. L/S corresponds to the long-short portfolio, defined as a difference in tenth and first decile portfolio returns. The tenth portfolio (D10) is the portfolio of the firms with the largest customer returns.
+
+The strategy uses portfolios that are value-weighted and rebalanced periodically monthly.
+
+Hedge for stocks during bear markets
+No - Although CMOM did not suffer the crash in 2009, it performed even worse than UMD in the after-discovery.

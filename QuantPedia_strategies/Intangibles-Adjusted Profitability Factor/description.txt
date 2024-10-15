@@ -1,0 +1,18 @@
+Authors adjust the Fama-French earnings measure by adding the R&D expenditures (or R&D and a fraction of SG&A), which they call intangibles-adjusted earnings. According to them, intangibles-adjusted earnings forecast the cross-section of future operating cash flows and cash dividends of firms better than unadjusted earnings at longer horizons. The profitability factor constructed based on this adjustment has a significant alpha against an array of existing factor models. When this R&D-adjusted profitability factor replaces the profitability factor in the FF5 model, it can subsume various anomalies like momentum and operating leverage. (It is worth noting that the paper presents many approaches to estimating those adjusted earnings, and we have chosen one. The astute and avid reader is recommended to check them out to find out the most suitable for their particular needs.)
+
+Fundamental reason
+The results in Table 5 suggest that adding 30% of SG&A can improve the explanatory power of the intangibles-adjusted factors. Fama and French (2015) develop a clever method for constructing an economy-wide pervasive risk factor that captures shocks to firms’ profitability which they denote as RMW (robust-minus-weak). Constructing this factor requires measuring firms’ profitability. Fama and French (2015) use earnings before taxes and depreciation reported in firms’ financial statements prepared according to Generally Accepted Accounting Principles (GAAP). Even though R&D and some components of SG&A expenditures should be treated as investments, GAAP requires total such spending expensing over our sample period. Authors propose and successfully defend new methodologies to account for those discrepancies, and we select a simple strategy to prove their findings in a real-world setting.
+
+Simple trading strategy
+The investment universe consists of all firms with share codes 10 and 11 and traded on NYSE, Amex, and Nasdaq.
+Standard data about stocks (such as monthly returns, dividends, prices, and numbers of common shares outstanding) can be collected from Center for Research in Security Prices (CRSP), annual and quarterly accounting information from Compustat, namely item CEQ as Book equity and Y (RD) [5) gross profit minus interest expense minus 100% of SG&A expense] (as our selected) earnings measure (in this strategy’s variant).
+
+Investing approach goes as follows:
+1. At the June end of each year t, firms are assigned into two size (ME) groups based on the median June end market equity of NYSE firms (market capitalization [based on the median market equity for NYSE firms]) and assigned independently into three profitability Y (RD)/B groups based on the 30 and 70 percentiles profitability of all NYSE firms reported annual earnings in calendar year t-1.
+2. H-L is a portfolio that is long the high-ROE group and short the low-ROE group within each size group.
+(3. Hold for one year, and reevaluate accordingly at June end of next year.)
+
+Portfolios are to be rebalanced annually (yearly), and stocks in them are weighted equally.
+
+Hedge for stocks during bear markets
+Not known - Probably not.

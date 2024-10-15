@@ -1,0 +1,16 @@
+In this paper, the author aims to study and understand the effect of different aspects of stock-level liquidity on reversals: stock size, volatility, and turnover. Importantly, they only study the effects of these aspects on reversals that aren’t driven by news reports- liquidity-driven reversals.
+
+In doing so, the authors find that despite smaller stocks being known for stronger reversals, the variance in the strength of reversals amongst stocks of different sizes is minimal. Therefore, they look to instead study the effects of volatility and turnover and find these are the main stock-liquidity aspects that drive strength and persistence of liquidity-driven reversals.
+
+As a result, we construct a strategy based on finding stocks that are/will experience a liquidity-driven reversal. Subsequently, we will short stocks that are about to face a drop in price as a result of the reversal and in contrast go long on stocks about to face increases in stock price.
+
+Fundamental reason
+The findings of this paper regarding aspects of stock liquidity affecting strength and persistence of reversals provide functionality to our strategy. This paper, and other literature, have all concluded that smaller stocks are known to have strong reversals. However, this paper also concludes that despite this, the size of a stock is a minimal factor contributing to the strength of a reversal. This is because the variance of strength in reversal amongst stocks of all sizes is minimal. Therefore, the main aspects to focus on are volatility and turnover.
+
+Resultantly, we see that the volatility of a stock is positively correlated with the initial size and speed of a reversal. We see that stocks with high volatility will experience larger and faster reversals than those with lower volatilities. Additionally, we see that the turnover of a stock also has a large impact on its reversal. We find that stocks with low turnover experience larger reversals that last a lot longer relative to stocks with high turnovers. Therefore, we see that volatility and turnover have significant impacts on the strength and persistence of a reversal; hence, we use this idea to validate our derived strategy surrounding liquidity-driven reversals as these reversals will be accordingly strong and long-lasting.
+
+Simple trading strategy
+The investment universe mainly consists of all stocks listed on the NYSE and can also be extended to international equity markets. The main variable of interest is the adjusted industry relative return (IRRX). This can be computed by first calculating a stock’s prior month’s return in excess of the industry return; can use the return of an index that tracks the individual industry. Subsequently, the IRRX can be computed by adjusting this value by subtracting the three-day cumulative abnormal return around the stock’s underlying firm’s most recent earnings announcement. The investment universe is sorted relative to this variable and split up into quintiles. We focus on the extreme quintiles and short stocks in the first quintile and go long on stocks in the last quintile. Stocks are weighted equally and the portfolio is rebalanced monthly.
+
+Hedge for stocks during bear markets
+Not known - The author does not implicitly suggest any hedges against bear markets.

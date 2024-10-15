@@ -1,0 +1,20 @@
+In this recent research paper, the Fama-French three- and five-factor and momentum factor returns for Indian equities between October 2006 and February 2022 are calculated using data from Refinitiv Datastream and two breakpoint schemes. The results show a high correlation between the factor return estimates and those reported in the Indian Institute of Management, Ahmedabad (IIMA) Data Library for the Indian Market. Additionally, the study reports four- and five-factor return estimates using the current breakpoint methodology of Fama-French and other international replication studies, highlighting the differences in the factor return estimates due to the methodology. The study also differs from international studies by building portfolios in September of each year to reflect the Indian fiscal reporting period and uses factor spanning tests to show that all five Fama-French and Momentum factors explain average returns in the Indian equity markets. CMA is a conservative investment strategy that prioritizes low volatility and risk by investing in stable companies with strong balance sheets, and avoiding risky or aggressive ones. It’s often favored by risk-averse investors, particularly those nearing retirement, who value stability and moderate returns over potential gains.
+
+Fundamental reason
+The investment factor is added to the four-factor or five-factor models because it captures an important risk factor that is not fully accounted for by the other factors. Specifically, the investment factor is designed to capture the tendency of firms that invest conservatively (i.e., have low levels of capital expenditure, research and development, and other forms of investment) to earn higher returns than firms that invest aggressively.
+
+This risk factor is important because firms that invest aggressively tend to be riskier, as they are more dependent on uncertain future growth prospects. In contrast, firms that invest conservatively tend to have more predictable earnings and cash flows, and may be less vulnerable to economic downturns or other external shocks.
+
+Therefore, by including the investment factor in the asset pricing model, investors can better account for the risk associated with investing in firms with different investment strategies, and potentially earn higher returns by tilting their portfolios towards firms that invest conservatively.
+
+Simple trading strategy
+The investment universe in this research consists of 4,141 firms that are or were listed on the NSE or BSE, as reported in the Worldscope India dataset with Datastream code WSCOPEIN. The data shows a steady growth in the number of firms covered annually during the period 2006-2021, increasing from 1,700 firms to around 2,500 firms.
+
+The portfolios are created based on the change in total assets from the fiscal year ending in year t-2 to the fiscal year ending in t-1, divided by t-2 total assets at the end of each September. This creates three portfolios named Conservative, Weak, and Neutral. The six double-sorted portfolios are named as Big/Conservative, BC, Big/Neutral, BNI, Big/Aggressive, BA and their Small counterparts, SC, SNI, and SA.
+
+Portfolios are formed on September 30 each year and are held till September 30 of the following year.
+
+The investment factor portfolio is build by going long the Big and Small Conservative portfolio and going short Big and Small Conservative portfolio. Stocks are value-weighted (based on their market-cap) and the final portfolio is rebalanced on a yearly basis.
+
+Hedge for stocks during bear markets
+Not known - The paper has no data about performance during equity market crashes.

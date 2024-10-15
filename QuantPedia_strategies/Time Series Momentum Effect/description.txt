@@ -1,0 +1,16 @@
+Traditional cross-sectional momentum is a popular and very well-documented anomaly. Traditional momentum uses a universe of assets to pick past winners, and it predicts that those winners will continue to outperform their peers in the future as well. However, recent academic research shows that we do not need the whole universe of assets to exploit the momentum effect.
+
+A new version of this anomaly (Time Series Momentum) shows that each security’s (or asset’s) own past return is a future predictor. The past 12-month excess return of each instrument is a positive predictor of its future return. A diversified portfolio of time-series momentum across all assets is remarkably stable and robust, yielding a high Sharpe ratio with little correlation to passive benchmarks.
+
+An additional advantage is that time-series momentum returns appear to be largest when the stock market’s returns are most extreme; hence, time-series momentum may be a hedge for extreme events.
+
+Fundamental reason
+Academic research states that the time-series momentum effect is consistent with behavioral theories of investors’ initial under-reaction and delayed over-reaction applied to information dissemination.
+
+Simple trading strategy
+The investment universe consists of 24 commodity futures, 12 cross-currency pairs (with nine underlying currencies), nine developed equity indices, and 13 developed government bond futures.
+
+Every month, the investor considers whether the excess return of each asset over the past 12 months is positive or negative and goes long on the contract if it is positive and short if negative. The position size is set to be inversely proportional to the instrument’s volatility. A univariate GARCH model is used to estimated ex-ante volatility in the source paper. However, other simple models could probably be easily used with good results (for example, the easiest one would be using historical volatility instead of estimated volatility). The portfolio is rebalanced monthly.
+
+Hedge for stocks during bear markets
+Yes - Most of the research papers about momentum/trend-following strategies in futures mention the negative correlation of this strategy against equity market risk; therefore, the strategy can be used as a hedge/diversification to equity market risk factor during bear markets.

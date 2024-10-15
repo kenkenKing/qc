@@ -1,0 +1,15 @@
+In the ever more globalized and interconnected society, Hong (2022) hypothesizes that exporting activities of a firm might bear interesting information about the firms’ financial state and their future returns. The study finds that geographical information holds additional value for the investor, and the Trade Momentum Index constructed by the author has a predictive power for stocks’ future returns, which is robust to various other market anomalies. The difference from previous research is that different metrics are used in the construction of the index (using trade volumes and trade barriers) and that the the study is limited only to the firms’ exporting activities. One of the interesting findings is that small exporting firms tend to outperform large exporting ones. A long-short trading strategy based on the Trade Momentum Index generates a large annualized alpha of 20,67%.
+
+Fundamental reason
+It seems to be the case that the incorporating of foreign export information for domestic (U.S.) firms is relatively slow in the market, as there is no obligatory form that would entail this information. This means investors mostly don’t hold enough information about this matter, and the low amount of geographical disclosures results in an alpha, which this strategy tries to capture. The author argues that his Trade Momentum Index, constructed in a different way than previous metrics of foreign trade, is a better way to estimate the return predictability of U.S. multinational firms.
+
+Simple trading strategy
+The investment universe consists of all stocks traded in the U.S. market, with the following data available: 10-K filings (cleared of all the names of U.S. states before counting the countries mentioned), U.S. annual export volumes to each destination country from the UN Comtrade Database, and the annual ad valorem equivalent measure of trade barriers applied by destination countries on U.S. exports by commodity from the Market Access Map portal.
+The sorting variable is called Trade Momentum Index. To calculate it, first, the citation share for each firm and each country, and country momenta have to be known.
+The citation share is calculated according to equation (2) on page 2, and it represents the number of mentions of a given destination country out of all mentions of destination countries in the given firm’s 10-K filing in the given year.
+The country momenta for a given country in a given year is calculated according to equation (3) on page 2, and it represents a change in the U.S. export to the said country.
+To get the Trade Momentum index, a product of n×1 vectors (calculated for each destination country) of both these variables is taken.
+A value-weighted long-short portfolio is created. Firms whose Trade Momentum Index is in the top 5th percentile are in the long portfolio, firms in the bottom 5th percentile are in the short portfolio. Strategy is rebalanced monthly to preserve the weights in relation to market capitalization.
+
+Hedge for stocks during bear markets
+Not known - No acknowledgment.

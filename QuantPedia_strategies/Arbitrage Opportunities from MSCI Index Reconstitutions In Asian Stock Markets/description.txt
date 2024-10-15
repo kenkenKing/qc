@@ -1,0 +1,17 @@
+According to the authors, added (deleted) stocks around MSCI index reconstitutions in seven major Asian equity markets experience drastic price increases (decreases) on the trading day before index reconstitutions become effective, consistent with index-tracking investors’ efforts to minimize tracking errors through buying (selling) added (deleted) stocks at the closing prices before the effective dates. There are several strategies for arbitrageurs to profit from these predictable stock price movements, which can generate sizable abnormal returns, and we select one with relaxed non-stress rules to be performed during quarterly rebalanced.
+
+Fundamental reason
+Announcement effects from the execution effect of index reconstitutions on stock prices and investors’ trading activities in Western markets are satisfactorily researched and usually well arbitraged. Arbitrageurs take advantage of the price changes induced by index deletions by shorting deleted stocks after the announcement date and buying back shares on ED-1. The study is among the first to provide evidence of how index-tracking investors’ avoidance of tracking errors can induce misvaluation in Eastern Asian stock markets, too, creating profitable arbitrage opportunities for other investors. This arbitrage opportunity can be costly for investors of index funds, who could purchase (sell) added (deleted) stocks at more favorable prices, for example, before or after the last trading day of the effective date. There is still a window for future research to design index rebalancing strategies that strike an optimal balance between the costs of tracking errors against the costs of rebalancing index portfolios for additions and deletions.
+
+Simple trading strategy
+The investment universe consists of stocks from the MSCI index for seven major stock markets in Asia: Japan, Singapore, Hong Kong, Korea, Thailand, Malaysia, and Taiwan.
+(ACWI index changes may be found from MSCI’s website, general data about stocks from Bloomberg, and stock lending data from the Markit Security Finance database.)
+
+Strategy Rationale and Implementation:
+During each MSCI quarterly index review, investors take a long position in added stocks and simultaneously short-sell deleted stocks from AD+1 to ED-1;
+1. This forms a long-short portfolio: Long (buy) added and short (sell) deleted stocks at opening prices on AD+1, and sell added and buy (cover shorted) deleted stocks at closing prices on ED-1.
+
+Investors generally hold stocks during 15-trading day quarterly index rebalancing intervals. Stocks in both portfolios should be value-weighted.
+
+Hedge for stocks during bear markets
+Not known - Not stated.

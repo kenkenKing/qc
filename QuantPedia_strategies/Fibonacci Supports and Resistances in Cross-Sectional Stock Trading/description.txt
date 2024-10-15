@@ -1,0 +1,18 @@
+Throughout history, traders around the world have been utilising the Fibonacci retracement levels every day to drive their trading strategies. In particular, the phenomenon used in a large range of markets is an inverse relation between asset prices approaching a level and subsequent financial performance.
+
+In this paper, the authors Savva Shanaev and Ryan Gibson notice the literature gap that exists in understanding and testing this invserse relation. In doing so, they look to once and for all test the predictive power of Fibonacci retracement level trading indicators; beyond this, they also look to determine the optimal set of retracement levels traders should use.
+
+They conclude, through rigorous testing, Fibonacci retracement levels have significant predictive power on financial performance regardless of the choice of levels. However, they find that the levels (0%, 38.2%, 50%, 61.8%, 100%) provide the optimal results and the inclusion of more levels, or exclusion of any leads to a worse performance.
+
+Using these findings, we look to utilise the inverse relationship between these levels and stock returns to formulate a portfolio. The trading strategy looks to monitor stocks approaching a retracement level from above/below and then long/short them to generate a strong portfolio return.
+
+Fundamental reason
+Through testing and analysis of data, the research has showcased the predictive power of Fibonacci retracement levels on stock returns. The tests have been carried out using a variety of portfolio types and a large array of datasets, all through which the inverse relationship between approaching retracement levels and financial performance persisted.
+
+Additionally, this phenomenon exists in a large range of markets, hence amongst a large pool of investors. Therefore, we know it isn’t predicated upon factors such as reversals and investor confidence but in fact something much more significant and powerful. Thus, trading strategies based on these levels are to be relied upon and expected to provide positive returns if executed correctly.
+
+Simple trading strategy
+The investment universe consists of stocks listed on the NYSE, mainly those that make up the composition of the S&P500. The variables of interest are the Fibonacci retracement levels of the desired stock. These can be computed using a simple formula L + alpha *(H-L) where H = stock all-time high, L = stock all-time low, and alpha = Fibonacci retracement level we want to compute in decimal form; levels we use are (0% (0), 38.1% (0.381), 50% (0.5), 61.2% (0.612), 100% (1)). The investment universe is split into quintiles depending upon the retracement level the stock’s price is approaching. Based on this we go long on stocks that are approaching their Fibonacci retracement level from above and go short on stocks that are approaching their Fibonacci retracement level from below. Stocks are weighted equally and the portfolio is rebalanced weekly.
+
+Hedge for stocks during bear markets
+Not known -

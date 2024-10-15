@@ -1,0 +1,18 @@
+Reversal, momentum, and seasonality effects in monthly returns reflect a weighted average of periodic spikes and waves and the inverted-U-shaped pattern in the daily return predictability term structure level. Monthly investment strategies might be improved by conditioning on high-resolution effects and returns from investment strategies that condition on high-resolution effects span the standard momentum factor and explain short-term reversal. Spyros Skouras (March 2023) presents their ‘high-resolution investment strategy’ (HiRes) based on these findings, and we include it as our encyclopedic entry.
+
+Fundamental reason
+High-resolution analysis of the term structure of predictability can refine many aspects of our understanding of return dynamics. However, fundamental drivers of underlying outcomes are still discussed, with strong suspicion towards explanations as theoretical models of predictability consistent with models that involve limited arbitrage, slowly-moving capital, clientele flows triggered by periodic events, and panic during risky factor shifts.
+
+Simple trading strategy
+The investment universe consists of all common US stocks included at NYSE, Amex, or NASDAQ from CRSP (codes 10 or 11).
+
+Trading strategy description & process:
+0. We will perform the HiRes trading strategy, which denotes the returns of the monthly decile investment strategy based on out-of-sample forecasts from the ARmidas model for monthly returns using 1600 daily lags.
+1. For each stock you consider to be in your portfolio, perform an autoregressive Midas model (1, pg. 9), where the outcome/response variable is the return cumulated over a 22 calendar day interval starting at t − 1. The predictor/explanatory variable is the sum of the returns on stock i on calendar days t-1 … t-1600.
+2. Rank stocks only on those dates t − 1 that is at the end of each month in the sample, in line with standard (value-weighted) forecast decile investment strategy methodology.
+3. Buy (go long) stocks in the top and sell (go short) bottom stocks in the decile portfolio formed in the previous step.
+
+(Stocks in portfolios are value-weighted, and) the strategy requires constant monthly rebalancing.
+
+Hedge for stocks during bear markets
+Not known - Probably not.

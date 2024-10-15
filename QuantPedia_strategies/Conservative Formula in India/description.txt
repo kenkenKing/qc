@@ -1,0 +1,12 @@
+The Conservative Formula has been proposed by Van Vliet and Blitz (2018) as a simple quantitative investment formula based on three metrics: volatility, net payout yield and momentum. Their motivation was to create a simple formula for investing, which would be easy to implement – it is long-only, and no accounting data are needed. Moreover, it is low-risk and tied to the low volatility anomaly. It has been shown to be profitable in the US, European, Japanese and emerging markets, and now, the authors Raju and Teli (2022) extend the research, and show that it also outperforms in the Indian equity market. The strategy significantly outperforms both the benchmark index, and the Conservative’s formula counterpart, the Speculative formula (high risk, low net payout yield and negative momentum). It is robust and profitable even after accounting for transaction costs.
+
+Fundamental reason
+The strategy exposes the investors only to low realized volatility, high net payout yield, and strong price momentum, all of which represent well established, robust factors in the market. Moreover, the strategy invests only in the stocks from the 1000 largest stocks by market capitalization, which are liquid, resulting in a low-risk strategy. The fact that the formula is long-only and has a quarterly rebalancing period ensures reduced transaction costs, so the strategy is profitable for the practitioners after implementing it.
+
+Simple trading strategy
+The investment universe consists of NSE and BSE firms that in March of the current year are listed as “active” with positive net worth, and have a market cap at the end of March of at least 10% of the overall market median.
+At the end of every quarter, 1000 stocks with the largest capitalization are selected. Based on their realized 3-year stock return volatility, split them into two groups of 500. Following Jegadeesh and Titman (1993) (the 12-1 month price momentum), rank them on their momentum. Following Boudoukh et al., 2007, rank them on their total net payout yield (NPY), which consists of their dividend yield and the net charge in outstanding shares as a percentage of the prior 24-month average shares outstanding.
+Calculate their aggregate rank from the momentum and NPY ranks. The portfolio is equally weighted, it consists of the top 100 ranked stocks and can be hedged by going short the S&P BSE 100 Index benchmark. Rebalance quarterly.
+
+Hedge for stocks during bear markets
+No - this strategy is long-only.
