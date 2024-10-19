@@ -1,0 +1,19 @@
+Academics’ paper examines the informational content of options on leveraged ETFs and their ability to predict the performance of the underlying ETF. They construct a measure of informed trading in these options using innovations in the implied volatility of call and put options on leveraged ETFs. Presented in levered and levered signals are statistically significant, and the economic significance of the levered signal is notably stronger. Later, one made it to our database as a newer acquisition, and we iterated it further: the strategy invests in a synthetic 3X ETF in bull markets and earns risk-free returns in bear markets.
+
+Fundamental reason
+Their results provide strong empirical support for their proposition. Specifically, they document that both levered and unlevered option signals predict future returns of the underlying ETFs. Sophisticated traders who prefer leveraged securities will likely trade leveraged ETFs to capture broad market exposure. Consequently, informed investors might turn to options on leveraged ETFs to hedge or speculate on these leveraged positions effectively. These findings highlight the importance of leveraged products, particularly options on leveraged ETFs, in price discovery within the market.
+
+This study contributes to the literature on price discovery in the derivatives market, particularly in the options market. However, they do not claim that the options market is the only venue for sophisticated or informed trades. As An et al. (2014) noted, “informed traders who receive news about future firm cash flows can trade stocks, options, or both, depending on the relative size of noise trading present in each market.” Acknowledging this perspective and drawing from Chen et al. (2016), they recognize that index futures offer a viable alternative, especially when focusing on indices rather than individual stocks as the underlying asset. The choice of trading venue is likely influenced by the amount of noise trading, which impacts the trading cost via the bid-ask spread, among other considerations. These include the degree of leverage achievable and the additional liquidity risks associated with margin calls in highly leveraged futures positions.
+
+Simple trading strategy
+The universe of leveraged and inverse leveraged ETFs tracks the US broad market or US sector benchmarks in FactSet. (76 leveraged ETFs [21 1X ETFs] are included in this test.) Plus; TLT, a bond ETF.
+
+Nutshell Formula: Form a risk-on-risk-off strategy that utilizes the ETF option signal at the end of each month. If an ETF’s option trading signal at a month’s end is greater (smaller) than the median value of the prior 12 months, we classify the next month as a bull (bear) market for the ETF.
+
+1. Each month in our sample period is classified as a bull or bear market based on the respective option signal. Specifically, a month is identified as a bull (bear) market when ∆C-∆P or ∆C1X-∆P1X is greater (smaller) than its median value over the previous 12 months.
+2. The risk-on-risk-off strategy involves investing in the synthetic 3X ETF in bull markets and earning risk-free returns in bear markets. (When a 1X ETF has multiple corresponding leveraged ETFs, ∆C—P is computed as the equal-weighted average across all these leveraged ETFs.)
+
+Recalculate (and thus rebalance) monthly; it is an equally-weighted, long-only version of the strategy.
+
+Hedge for stocks during bear markets
+Partially - The strategy is“collecting risk-free premium during bear markets.”

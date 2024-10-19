@@ -1,0 +1,20 @@
+Rajan Raju (2023) presents their implementation of a 52-week high effect, which differs significantly from academic momentum. While they confirm long-term reversals exist in 52-week high strategies, just as in academic momentum, the performance decrease is less pronounced for the 52-week high strategy than the academic momentum. for example, in the U.S. Meanwhile, the study highlights the importance of the 52-week high as a separate and robust phenomenon in the Indian equity market. It offers a more stable alpha than academic momentum, potentially enriching portfolio construction strategies. We suggest our readers go toward a spread portfolio in Indian equities to capture this interesting alpha.
+
+Fundamental reason
+The results contribute to the ongoing discourse on alternative momentum indicators and the behavioral biases that influence them. The Raju’s 52-week high effect has predictive power and suggests different underlying causes of these phenomena. The predictive power of this anchor is not solely based on extreme past returns. This aligns with George and Hwang (2004) and Saurav et al. (2023) and confirms the role of price levels in investor decision-making. Behavioral theories such as anchoring explain momentum as a slow revision of investors’ beliefs, followed by an overreaction (Barberis et al., 1998). This overreaction corrects over time (Daniel et al., 1998). The 52-week high serves as a salient anchor for investors.
+
+Simple trading strategy
+The investment universe consists of companies in the Worldscope India database (Datastream code WSCOPEIN) (comprising 4,331 companies listed on the NSE or BSE at present or in the past).
+(The portfolios in this analysis use data from LSEG Datastream and Invespar India Factor Data Library data.)
+
+Quintile portfolios use the 52w metric. This is strategy pre-calculation:
+1. We calculate how close a stock’s last-month closing price is to its 52-week high each month using the formula (1). (A high 52_w_i implies that the stock price is near its 52-week high price, and conversely, a low 52_w_i indicates that a stock trades well below its 52-week high)
+2. Using these 52w metric, first construct market-cap weighted quintile portfolios at the end of each month by ranking stocks on 52wi. (Quintile 1 has stocks far from their respective 52-week highs, and Quintile 5 has those whose prices are near or at their respective peaks.)
+
+This is portfolio execution:
+3. Create a quintile portfolio such that Q5 – Q1: go long (buy) stocks in Quintile 5 and simultaneously short (sell) those in Quintile 1.
+
+Strategy obeys rebalancing and is the market(-cap)-weighted.
+
+Hedge for stocks during bear markets
+Partially - Sharma and Mehra (2014) findings show that filtered portfolios generally do not outperform others except in bearish periods for short-term investments. Yet, they produce statistically less loss in bearish times or when average monthly returns are less than 91 days of T-bills.

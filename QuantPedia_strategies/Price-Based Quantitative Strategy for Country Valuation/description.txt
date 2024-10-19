@@ -1,0 +1,18 @@
+QuantPedia’s authors conclude their original research by undergoing an enjoyable thought process, testing various price-only valuation signals on country ETFs. From the whole early-stage paper, we select one of the most reasonable strategies to be performed, using simple regression to find the most pricey-based overvalued and undervalued asset following country indices and exploit the spread in a 1-to-1 long-short spread portfolio. It also seems that despite the significant number of country ETFs, this market segment is quite efficient. Additionally, it’s even harder to find a reliable long/short value strategy that has performed well in the last ten years when all of the other value strategies also struggled.
+
+Fundamental reason
+There are a lot of different definitions of “value.” The idea of buying “cheap assets” is in widespread use in currencies (Currency Value – PPP Factor), country ETFs (Value Factor – CAPE Effect within Countries), or in a diversified portfolio of assets in general (Value and Momentum Factors across Asset Classes). (Deutsche Bank, 2009), (Faber, 2012), (Blitz and van Vliet, 2008). Dujava and Vojtko were to redefine and challenge the traditional notions of  “value” and tried to find a more quantitative way to look at it. While it did not yield the expected results, such research was missing, and authors felt the way it needed to fill the gap. Unfortunately, explanatory and statistical power seems lower than we wanted to achieve. It is weaker than relative valuation signals that use non-price signal variables such as CAPE, MVE vs. GDP, etc.
+
+Simple trading strategy
+The investment universe consists of 21 countries’ ETFs (it might be possible to replicate results with various CFDs).
+(For calculations, you can use data from Yahoo Finance about ETFs and MSCI website about underlying countries indices.)
+
+Calculation: Do simple linear regression where y variable is the monthly return of the individual country, and x is the monthly performance of the equal-weighted averaged index. Note each intercept α.
+(Note: use a rolling five-year window for regression calculations.)
+
+Trading rule: Follow the Intercept α signal: go long (buy) 1 country ETFs with the lowest (worst) alpha (regression intercept) against the equal-weighted averaged index, and go (sell) short one country ETFs with the highest (best) alpha regression intercept α) against the equal-weighted averaged index.
+
+The portfolio will be rebalanced quarterly (using four tranches over a 12-month), and as mentioned before, the final portfolio is equal-weighted (its constituent short and long portfolios, obviously, also).
+
+Hedge for stocks during bear markets
+No -

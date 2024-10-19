@@ -1,0 +1,22 @@
+The leading role of the US market in influencing the international markets at the intraday level is that the US market’s last half-hour returns can predict the global markets’ first half-hour returns on the next day. This phenomenon is statistically and economically significant worldwide; intraday trading based on this cross-market momentum effect generates considerable economic benefits regarding investment timing and asset allocation in international stock markets. The CITSM strategy, which utilizes the last half-hour returns of the US stock market as a signal for constructing portfolios in global markets, outperforms the passive buy-and-hold strategy in terms of Sharpe ratios in 11 out of 15 markets, indicating its significant profitability (substantial even after accounting for appropriate transaction costs).
+(The paper is interesting, but the preprint article does not contain tables. Please find indicative performance from available information for now.
+We plan to backtest the strategy and amend it with our results as soon as we have one.)
+
+Fundamental reason
+Intraday Time-Series Momentum (ITSM) demonstrates that the first half-hour return predicts the last half-hour return in international stock markets. This authors’ study considers the well-documented linkages between stock markets and introduces a new cross-market intraday time-series momentum (CITSM) strategy. Further exploration into the profitability of the CITSM strategy in international markets reveals that its profitability is tied to specific market characteristics. Research indicates that CITSM’s profitability is enhanced when international market liquidity or information uncertainty is low. Additionally, the CITSM strategy demonstrates strong profitability in conditions where the US market experiences high information uncertainty or when the US market’s liquidity is at extreme levels, either low or high.
+
+Simple trading strategy
+The investment universe comprises 16f MSCI-classified developed market stock indices, including the US stock index.
+(Minute-level data was sampled using half-hour data on international stock markets from the Refinitiv DataScope database, which would be needed for the strategy performance.)
+
+Rationale: The predictive power of the US market’s last half-hour returns, as evidenced in the authors’ empirical results, translates into tangible financial gains in international markets. To quantify this economic impact, we thus construct a CITSM strategy to conduct back-testing in the international stock market.
+Calculation: The CITSM strategy uses the last half-hour return of the US stock market (𝑅^𝑈𝑆_𝐿) as a timing signal for trading in international markets on the first half-hour the next day.
+Execution: Specifically, if the timing signal from the US last half-hour
+a) is positive, create a long position (buy) at the opening of the international stock market;
+b) alternatively, create a short position (sell short) at the market open.
+Then, close (liquidate) the position at half an hour after the opening.
+
+Trade one (international) market at a time (100 % allocation of trading capital). As previously mentioned, this is an intraday strategy.
+
+Hedge for stocks during bear markets
+Partially - Many empirical studies suggest that high-frequency stock indicators and a variety of daily and monthly macroeconomic indicators generally exhibit more predictive power during recessionary periods, especially financial crises. Moreover, the skewness of the CITSM strategy return is positive in all 15 markets, revealing a low crash risk using the strategy in investment, which is favorable to investors. In contrast, the BH (buy and hold) strategy delivers returns with negative skewness, showing higher risk in almost all market investments.

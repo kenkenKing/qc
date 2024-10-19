@@ -1,0 +1,20 @@
+According to the authors, option factors describe the cross-section of stock returns exhibit momentum; and through stocks’ and industries’ factor exposure, this momentum causes stock and industry momentum. In this paper, they extend tests for factor momentum to the options markets, relying on a novel set of 56 factors based on sorts of daily delta-hedged call options. Based on findings from the research paper, it is possible to build various, different, and attractive time series factor momentum (TSFM) and cross-sectional factor momentum (CSFM) strategies based on eight formation periods, and we selected the best-performing TSFM one as a representative sample for our encyclopedic entry.
+
+Fundamental reason
+Published research finds corroborating evidence for both the existence of factor momentum and its explanatory power for momentum in the factors’ underlying assets: First, time-series and cross-sectional factor momentum strategies are profitable. Their returns are distinct from returns of an equally-weighted factor portfolio and robust to the factor model of Horenstein et al. (2020). Second, strategies relying on a one-month formation period are largely driven by factor autocorrelation. However, the longer the formation period, the more important are high mean factor returns and their persistent variation as momentum drivers. Third, as in Ehsani & Linnainmaa (2022) and Arnott et al. (2023), momentum effects are the strongest in the option factors’ largest eigenvalue principal components. Fourth, and extending the findings in Heston et al. (2022) to single option returns, we find momentum at the option level. Spanning tests suggest that option factor momentum subsumes option momentum and not vice versa. While these results are similar to studies focusing on the equity market, there are some remarkable differences. Although autocorrelation is high in option factors, some also exhibit extraordinary mean returns and Sharpe ratios, driving factor momentum. However, future research to analyze the implications for optimal option portfolios is still suggested as there is still insufficient evidence to draw definitive conclusions.
+
+Simple trading strategy
+The investment universe consists of U.S. equity stocks with share codes 10 or 11 (avoid options on highly illiquid underlying stocks and exclude stocks with a prior month’s closing price below USD 5).
+(Primary data source is OptionMetrics IvyDB, which provides historical prices and interpolated volatility surface data for all U.S. single equity options. Historical prices for underlying stocks are obtained from CRSP. Daily risk-free rates are taken from Kenneth French’s online data library.)
+
+0. a) Use the 12-month formation period.
+b) Construct option return factors using various stock- and option-level characteristics. Precisely, consider a mixture of characteristics that have shown explanatory power for delta-hedged option returns in the existing literature as well as readily-available and common stock-/ option-level characteristics. In total, consider 56 characteristics, to be found in Table 2 (further details on all characteristics in Appendix A).
+1. Compute monthly factor returns by sorting all available options at the end of each month into quintiles. Define factor returns as the equal-weighted high-minus-low quintile returns over the subsequent month.
+2. TSFM strategy goes:
+a) long in factors with positive formation period returns, and
+b) short in negative ones.
+
+The strategy is rebalanced monthly (1-month holding period), and individual factors are weighted equally in the final portfolio.
+
+Hedge for stocks during bear markets
+Not known -

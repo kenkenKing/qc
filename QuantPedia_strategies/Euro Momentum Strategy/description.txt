@@ -1,0 +1,29 @@
+Time Series Momentum (TSM) is a form of market inefficiency where past returns of an asset are used to predict its future returns. The trading strategy described in the research paper revolves around TSM in the European equity market, which was sorely lacking in academic focus and would make an excellent addition to our overall database entries.
+
+The study tests and implements this strategy using a pooled autoregressive model on 24 European leading equity indices. The model demonstrates that past returns are significant predictors of future returns. The results show that TSM strategies consistently outperform a simple buy-and-hold (B&H) strategy in mean-variance terms, with higher Sharpe ratios indicating better risk-adjusted returns.
+
+The strategy involves examining an asset’s returns over the past 1 to 12 months, buying assets with positive returns (winners), and shorting those with negative returns (losers). We selected a scaled TSM variant with a 12-month lookback period and a 1-month holding period scale.
+
+Fundamental reason
+In summary, the TSM strategy involves using historical returns to predict and trade future returns, holding positions for a short period, and consistently outperforming traditional passive investment strategies.
+
+The economic and behavioral principles behind the Time Series Momentum (TSM) strategy are rooted in market inefficiencies and investor behavior. Economically, TSM challenges the Efficient Market Hypothesis (EMH), which posits that asset prices fully reflect all available information and thus cannot be consistently predicted. The persistent profitability of TSM suggests that markets are not fully efficient and that past returns can predict future returns.
+
+Behaviorally, TSM is linked to investor psychology, particularly underreaction and overreaction. Initially, investors may underreact to new information, causing prices to trend in the same direction for a period (momentum). Over time, as more investors recognize and act on this trend, prices may overshoot, leading to eventual reversals. This pattern aligns with sentiment theories, where initial underreaction is followed by delayed overreaction.
+
+Simple trading strategy
+The investment universe for this strategy consists of 24 European equity indices.
+
+(The dataset under analysis consists of total return indices obtained from Bloomberg for national equity indices for European countries.)
+
+Execution Procedure (do that for each index; first calculate this, then do weighting computation):
+
+Calculate the cumulative 12-month lookback return for each index.
+The trading signal is generated based on the sign of this cumulative return:
+If the cumulative return over the past 12 months is positive, a buy signal is generated;
+if it is negative, a sell signal is generated.
+Apporach-specific overperformance is achieved by optimal weighting: Each month, positions are adjusted based on the latest 12-month cumulative returns and ex-ante volatility. The position size for each index is determined by targeting a 20% annualized volatility. (The ex-ante volatility is calculated using a 60-day exponentially weighted moving average (EWMA) to scale the returns and ensure comparability across different indices. This means that more volatile indices will have more minor positions, and less volatile indices will have larger ones.)
+The strategy involves monthly rebalancing (1 month holding period).
+
+Hedge for stocks during bear markets
+Yes - The strategy’s performance resembles an option straddle payoff, earning extra profit during pronounced market movements, which can provide some hedging benefits in bear markets.

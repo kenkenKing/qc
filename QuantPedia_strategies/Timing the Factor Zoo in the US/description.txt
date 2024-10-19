@@ -1,0 +1,21 @@
+Researchers comprehensively analyze factor timing, simultaneously considering a large set of risk factors and prediction variables, and the final analysis reveals that factor timing is indeed possible. They arrived at the conclusion that predictability is not concentrated in short subsamples of the data, and has not decayed in recent periods. In short, factor risk premia are robustly predictable. This all becomes fruitful in selected strategy, which portions investment universe into the quintiles, and then the high-low (H-L) portfolios, both for the untimed and the PLS1-timed factors, which latter one made it to our database as satysfying variant.
+
+Fundamental reason
+So far, academic literature has identified many asset pricing factors – the factor zoo. It has also analyzed whether risk premia associated with these factors is time-varying and whether it is possible to time investors’ exposure to the various risk factors successfully. The evidence for the latter question is inconclusive, as different papers have focused on very different sets of factors and predictive variables. Authors added evidence which reveals that factor timing benefits investors relative to passive “harvesting” of risk premia. In addition, their results have important implications for asset pricing theories and models. Their results show a large difference between the conditional and unconditional behavior of factor returns and risk premia. In particular, constant conditional risk premia models appear inconsistent with the data. Their findings are also helpful for the design of models of the stochastic discount factor. For example, models that imply i.i.d. innovations of the SDF cannot match our empirical findings and are likely to be rejected in the data.
+
+Simple trading strategy
+The investment universe includes NYSE, AMEX, and Nasdaq ordinary common stocks.
+To sort stocks into portfolios, you need to construct firm characteristics based on data obtained from CRSP, Compustat, IBES, and FRED.
+The factor portfolios are obtained by applying the methodology of (Chen and Zimmermann, 2022).
+
+0. This version uses partial least squares (PLS) as the appropriate signal aggregation technique: PLS 1 timed factor sorts are based on predictions from partial least squares regressions with 1 component.
+T is the sample length. So,
+
+1. compute regression model at eq. (5): The dependent variable is a T × 1 vector of factor i’s one-period ahead excess returns, and the independent variable is a T × J factor-specific signal matrix that contains J = 39 column vectors; from results, proceed to:
+2. Sorting of the portfolios based on the predicted factor returns: At the end of each month t, sort factors into five portfolios based on their t + 1 predicted return and execute:
+3. Construct a high-low (H-L) portfolio (final portfolio: long [buy] H, [short] sell L).
+
+Rebalance monthly. The weighting w^PLS1q_i,t equals 1/N^q_t for all factors where the t + 1 return predicted with PLS1 is in the qth quintile, and 0 otherwise.
+
+Hedge for stocks during bear markets
+Not known - Unfortunately, no mention of strategies performances in bear markets, and financial crisises and crashes.

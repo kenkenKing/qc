@@ -1,0 +1,19 @@
+According to the authors, a novel method has been developed to construct optimal mean-variance options’ portfolios on the monthly options for the S&P 500, Nasdaq 100, and Dow Jones Industrial Average equity indexes. The method incorporates position limits implied by margin requirements, substantial bid-ask spreads, and the limited depth typical of the options market. The results show that it is possible to optimize typical options portfolios to entail frequent small gains with rare large losses, similar to the risk profile of insurers. Simplified, we present a rather complicated but working mean-variance optimization version of options on the S&P 500 Index with actual set constraints.
+
+Fundamental reason
+Position limits significantly distort optimal portfolio weights, spreading otherwise concentrated options positions across several strike prices and mitigating the risks of spurious long-short positions in similar contracts. Overall, the effect of position limits is akin to that of estimating the covariance matrix’s shrinkage combined with an increase in risk aversion. A backtest on over two decades of options investments shows that these optimizations are prosperous and akin to traditional, simplified approaches.
+
+Simple trading strategy
+The universe consists of European options on the S&P 500, Nasdaq 100, and Dow Jones Industrial Average equity indexes.
+(OptionMetrics’ IvyDB database is the main source of data.)
+
+Each month, on a Monday following the monthly options’ expiration (the third Friday of the month, or Thursday Friday is a holiday, such as Good Friday), construct a portfolio of options expiring the following month through the procedure described as:
+1. forecast realized volatility over the following month, obtaining a rescaled empirical distribution of returns.
+2. calculate the options’ expected returns and covariances from the empirical distribution and current options’ prices.
+3. expected returns and covariances are combined with the risk-aversion and position-limit parameters in the constrained optimization problem to obtain the optimal portfolio weights.
+4. record the portfolio performance at the end of the month from the index’s ex-post return. (To compute excess returns, the term structure of interest rates in OptionMetrics is interpolated linearly.) To examine the effect of solvency requirements, the same optimization is also performed with the additional constraint that the portfolio remains in-sample solvent (i.e., over all scenarios in the empirical distribution).
+
+Strategy is rebalanced once a month and has one constituent (options on the S&P 500 Index).
+
+Hedge for stocks during bear markets
+No - Overall, all portfolios significantly outperform the index, though their risk is concentrated to large occasional drawdowns rather than the small frequent losses typical of the index. For example, a large loss is observed on all options’ portfolios in correspondence with the coronavirus crisis of March 2020: As the options’ portfolios typically sell significant amounts of put options, as shown below, they are vulnerable to large losses on extreme events

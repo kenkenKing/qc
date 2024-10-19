@@ -1,0 +1,20 @@
+The motivation behind this exploration stems from the hypothesis that investors, especially retail investors, may inadvertently trade on less-known stocks due to ticker symbol confusion, thereby impacting their price movements in a manner that correlates with the leading stocks. By examining this potential misidentification effect, our research seeks to shed some light on this interesting factor. Even in a small universe, our in-house research shows that there is potential to exploit the proposed lead-lag relationships in misspelled (mistyped) stocks, and this effect justifies further study. Preliminary results are promising, so we included one version of the strategy in the initial article. It should serve as a high-level overview of the lead-lag effect that will be revised later.
+
+Fundamental reason
+The first concise article behind the development of the research was Typo Trading Analysis from Unusual Whales (section of “Typo Trading,” a.k.a. the Levenshtein Basket). The plausible explanations for which this may work from fundamental PoV (point-of-view):
+
+Once the news that pushes the retail stock higher is released, this buying pressure leaks into stocks within the Levenshtein basket that is typically and otherwise uncorrelated.
+Smartphone trading encourages risky behavior, unintentionally involving trading different securities (e.g., relatively big fingers on a small keyboard).
+Authors are more interested in studying whether there is a long-term drift in the mistyped stocks (for example, TLSA) if the leading stocks (for example, TSLA) perform well. Therefore, this study is more akin to papers that discuss linkages among related stocks. One such related paper is by Hulley, Liu, and Phua, 2024, who in their Investor Search and Asset Prices demonstrates that a momentum portfolio strategy based on firm relatedness, identified through EDGAR co-searches, predicts future returns.
+
+Simple trading strategy
+A possible investment universe involves company pairs with the exceptionally high possibility of confusion.
+(You can use Yahoo Finance as the free source to collect data.)
+
+We selected long-short strategies that use fixed weighting with a simple rule: for all stocks in the portfolio, decide:
+If the leading stock has a positive 6-month performance (momentum) at the end of the month, we buy lagging stock into the portfolio for the subsequent month. Alternatively, if the leading stock has a negative 6-month performance (momentum), at the month’s end, we sell short lagging stock into the portfolio for the subsequent month.
+
+Re-balance monthly, and use a fixed weighting scheme (always 1/n for every lagging stock in the portfolio, no matter if it is in the long or short leg of the portfolio).
+
+Hedge for stocks during bear markets
+Not known -

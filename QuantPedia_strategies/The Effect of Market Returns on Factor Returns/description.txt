@@ -1,0 +1,18 @@
+Michael Di Carlo and Ilias Tsiakas (July 2023) highlight mispricing as a prominent source of variation in the cross-section of expected stock returns, confirming established results relating to the performance of mispricing portfolios and additionally showing that mispricing is strongly related to the market state. In this context, based on strong empirical evidence and theoretical arguments, their analysis provides a novel view of the mechanisms contributing to momentum in individual and aggregate return anomalies. The variation in the cross-section of expected stock returns is often attributed to asset pricing anomalies. The Stambaugh, Yu, and Yuan (2015) mispricing measure can effectively summarize these anomalies. Portfolios sorted on the mispricing measure interact strongly with idiosyncratic volatility, which motivates using 5×5 double-sorted mispricing-idiosyncratic volatility portfolios. Scientists find that the H-L spread for both excess returns and risk-adjusted returns is significantly harmful. So, we invert the rule and thus create a profitable trading strategy.
+
+Fundamental reason
+Common explanations of return anomalies include compensation for systematic risk, data mining, and mispricing (e.g., Wang, Yan, and Zheng, 2021). Presented empirical observations are well established in the asset pricing literature, however, this paper adds a new perspective by demonstrating the crucial role of the market state in predicting the risk-adjusted returns of individual asset pricing anomalies, mispricing portfolios, and double-sorted mispricing-idiosyncratic volatility portfolios. Among these portfolios, the most overpriced/highest idiosyncratic volatility portfolio displays the strongest underperformance as indicated by highly negative and statistically significant risk-adjusted returns. Consequently, investors shorting this portfolio can earn highly positive and statistically significant risk-adjusted returns. For excess returns, either the anomaly spread is significant in one of the market states but not in the other one, or it is significant in both states but with a different sign.
+
+Simple trading strategy
+The investment universe consists of all firms with common stock traded on the NYSE, AMEX, and NASDAQ exchanges [(share codes 10 or 11 and exchange codes 1, 2, or 3) with a share price above five dollars].
+(For example, correspondence data can be obtained from CRSP [Center for Research in Security Prices] databases. You also should obtain the Stambaugh, Yu, and Yuan (2015) mispricing measure from Robert Stambaugh’s website [https://finance.wharton.upenn.edu/~stambaug/].)
+
+Trading strategy:
+1. Create quintile portfolios sorted on the mispricing measure of Stambaugh, Yu, and Yuan (2015). The Stambaugh, Yu, and Yuan (2015) measure (henceforth the “mispricing measure”) represents a firm’s average percentile ranking across 11 firm characteristics. (Original is found in the documentation: Mispricing Measure Data by Robert F. Stambaugh, Jianfeng Yu, and Yu Yuan <https://finance.wharton.upenn.edu/~stambaug/Mispricing_Measure_Documentation.pdf>.)
+2. Form value-weighted portfolios based on the following rationale: Overpriced firms (High) consistently perform worse than underpriced firms (Low). The “H-L” row from the corresponding table represents the return difference between the High and Low quintile portfolios.
+3. So, we revert the rule, go long (buy) the Low portfolio, and simultaneously sell (short) the High portfolio, thus creating the final spread “L-H” portfolio, when the previous month equity market performance was negative.
+
+The portfolios are rebalanced each month (monthly) and, as previously mentioned, value-weighted.
+
+Hedge for stocks during bear markets
+Not known -

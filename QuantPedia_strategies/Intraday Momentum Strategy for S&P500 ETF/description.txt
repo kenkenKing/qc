@@ -1,0 +1,23 @@
+The authors demonstrate the profitability and viability of implementing intraday momentum strategies within the context of the SPY ETF, which tracks the S&P 500 index. A simple intraday momentum strategy, initiated upon indications of abnormal demand/supply imbalance in intraday price action and incorporating dynamic trailing stops, yields substantial returns over the period from 2007 to early 2024. The intraday momentum portfolio achieves a remarkable total return of 1,985%, with an annualized return of 19.6% and a Sharpe Ratio of 1.33, underscoring its robustness and potential as a trading approach. The results offer compelling evidence supporting the efficacy of intraday momentum strategies. From a wide variety of presented variants, we selected the most complex but also most profitable one: an intraday momentum strategy with the current band with VWAP and an additional dynamically adjusted share size based on daily market volatility. This earned its way into incorporation into our rich trading and investing strategy corpus, and we present its summary in the following.
+
+Fundamental reason
+The reviewed paper delves into intraday momentum trading strategies, building upon the foundational work laid by scientists’ Jegadeesh and Titman’s momentum effect. This study contributes to the ongoing discourse on market anomalies and the practical applications of momentum trading, particularly in intraday contexts. By extending existing momentum frameworks to intraday trading, authors provide valuable insights for traders operating in fast-paced intraday markets. This original research underscores the persistent nature of momentum effects within shorter time frames and highlights opportunities for profitable trading strategies in today’s dynamic trading landscape. Understanding market dynamics offers actionable insights for market participants seeking to capitalize on short-term price movements.
+
+Simple trading strategy
+ETF SPY (tracking U.S. S&P 500 index) is the only investment vehicle used.
+(SPY and VIX (Chicago Board Options Exchange Volatility Index) has been constructed using 1-minute OHLCV (Open, High, Low, Close, and Volume) data from IQFeed.)
+
+Calculation Process: define the Noise Area as the space between 2 boundaries. These boundaries are time-of-day dependent and are computed using the average movements recorded over the previous 14 days. Mathematically, the Noise Area can be computed on day t following these steps:
+1. For each day t − i and time-of-day HH:MM, calculate the absolute move from Open as is in (eq. 1) (hence, the absolute division between close at HH:MM and the open price at 9:30 of day i).
+2. For each time-of-day HH:MM, calculate the average move sigma over the last 14 days as is in (eq. 2) (thus, an arithmetic average over the last 14 days).
+3. Using the Open of day t, compute the Upper and Lower Boundaries as step 3 on page 6 (compute Open price at 9:30 times 1 plus or either minus sigma).
+That concludes the Noise Area.
+
+Strategy Execution: I. Suppose the market breaches the boundaries of the Noise Area. In that case, our strategy initiates positions following the prevailing intraday move—going long if the price is above the Noise Area and short if it is below. To mitigate the risk of overtrading caused by short-term market fluctuations, trading is restricted to bi-hourly intervals, specifically at HH:00 and HH:30.
+II. Positions are unwound either at market Close if there is a crossover to the opposite boundary of the Noise Area or as soon as the price crosses either the current band or the VWAP. In the event of such a crossover, the existing position is closed, and a new one is initiated in the opposite direction to align with the latest evidence of demand/supply imbalance. Stop losses can also be triggered only at bi-hourly intervals.
+III. As a final refinement to the model, implement a sizing methodology that dynamically adjusts the traded exposure based on daily market volatility: Instead of maintaining constant full notional exposure, this method targets daily market volatility of 2% (σtarget = 2%). Practically, if the recent daily volatility of SPY is 4%, you would trade with half of the capital; conversely, if it is 1%, you would utilize a leverage of 2. (Mathematically, the number of shares traded on day t is computed as from page 14.)
+
+This is an intraday strategy with one constituent. (The strategy allocates exposure equal to 100% of the equity available at the beginning of each trading day.)
+
+Hedge for stocks during bear markets
+Not known -

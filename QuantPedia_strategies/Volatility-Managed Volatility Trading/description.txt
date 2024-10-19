@@ -1,0 +1,20 @@
+(Yang, 2024) develops timing strategies for the VRP that are analogous to equity premium timing strategies based on realized volatility, as in previous works (Moreira & Muir, 2017). These strategies involve trading two assets: a variance asset and a risk-free asset. First, they examine a benchmark portfolio with a fixed weight on each month’s variance asset. While this simple strategy already delivers remarkable long-term returns, they show that the portfolio’s performance can be significantly enhanced by incorporating various timing factors, including several volatility measures and an ex-ante VRP measure. Those simple volatility-managed strategies are particularly effective and robust, and one of the examples of VRP timing, 1/GARCH(1,1)_t, made it the newest acquisition of our encyclopedia.
+
+Fundamental reason
+These findings are consistent with (Yang, 2022), which estimates a regime-switch model and finds that the puzzling negative volatility-VRP relation is mainly driven by volatility spike periods. Their portfolios improve performance by reducing harmful exposure to the variance assets once volatility increases. They exploit the negative volatility-VRP relationship puzzle, which has been highlighted in several previous studies (Cheng, 2019). The author’s findings remain strong in both older and recent times and across three variance assets: variance swaps, VIX futures, and S&P 500 straddles. After accounting for margin requirements, bid-ask spreads and hold will unlikely affect these findings. The exploration of regime-conditional timing strategies is still open and left for future research.
+
+Simple trading strategy
+The trading supplement here is VIX futures (ETFs such as SVIX exist, which provide investors with a fixed negative exposure to constant-maturity VIX futures at minimum fees).
+(Source our data from standard resources such as CBOE and OptionMetrics and is based on one-month constant-maturity VIX futures returns provided in Johnson (2017), augmented with the most recent data obtained from CBOE; roll-over daily returns into monthly returns.)
+
+Selected Variable: We set the weight proportional to the inverse of stock market volatility: Inverse GARCH(1,1) conditional one-month volatility forecast:
+GARCH(1, 1_)_t is GARCH(1,1)’s forecast of next-month stock market return volatility. Each month-end t, GARCH(1,1) is fitted to the historical daily stock market return since 1986 (you can choose a reasonable time for your backtest).
+Calculation: First, use OLS predictive regressions to confirm that this negative relation robustly exists both in-sample and out-of-sample. Then, get parameter GARCH(1, 1_)_t, which sets the weighting of vol futures in the next step.
+Execution and Weighting in Detail: Each month t, a portfolio weight of w^i_t = −cf_t, is assigned to the volatility asset, and the remaining capital is allocated to risk-free assets. Here, c represents a positive scaling constant chosen to match the portfolio’s unconditional return standard deviation with that of the S&P 500 index. The term f_t represents a timing factor expected to demonstrate a positive relationship with the conditional one-month VRP.
+
+In other words, we sell more (less) volatility assets when conditional VRP is higher (lower), and it involves monthly rebalancing (instead of daily rebalancing, given that VIX futures ETFs are directly available to investors).
+
+ 
+
+Hedge for stocks during bear markets
+No - Short volatility strategies don’t work like hedges.

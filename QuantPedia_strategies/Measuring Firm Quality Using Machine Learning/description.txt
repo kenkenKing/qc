@@ -1,0 +1,37 @@
+This paper investigates the fundamental aspects of value investing, emphasizing the identification of quality companies and their acquisition at reasonable prices, which hinges on assessing both firm quality and “cheapness.” Building on the works of Lee (2014) and Asness et al. (2019), the study employs machine learning techniques to refine the measurement of firm quality, given its forward-looking nature. The objective is to not only benefit investors but also cater to diverse stakeholders, including prospective employees, corporate boards, and financial regulators, who rely on precise firm quality assessments for various decision-making processes. Results demonstrate that machine learning, particularly XGBoost, outperforms traditional methods in predicting firm quality and constructing, profitable value investing strategies offering substantial potential for improving investment decisions and informing a range of stakeholders across multiple domains. The study also explores the extent to which further disaggregation of raw accounting data enhances firm quality prediction and highlights the robustness of machine learning-based models in handling missing data, ultimately contributing to the broader literature on fundamental analysis and asset pricing anomalies.
+
+Fundamental reason
+The fundamental reasons for focusing on functionality in this paper revolve around the core elements of value investing: identifying quality companies and acquiring them at reasonable prices, often referred to as “cheapness” (Lee 2014). While determining a stock’s cheapness is relatively straightforward, assessing firm quality is more challenging due to its forward-looking nature. A precise measurement of firm quality holds significance not only for investors but also for various stakeholders, including prospective employees, corporate boards, and financial regulators. Furthermore, given the rise of machine learning models in predicting stock returns, accurate measures of firm quality aid institutional investors in explaining the economic logic behind complex prediction models. This study explores the potential of machine learning to construct a more precise measure of firm quality compared to traditional heuristic approaches. It demonstrates that machine learning, particularly XGBoost, can effectively leverage disaggregated financial data and accommodate missing values, resulting in more accurate firm quality measures. These improved measures, based on the sum of the present value of a firm’s future realized residual earnings, have practical applications in value investing, offering superior performance in explaining stock prices and generating higher returns in value investing strategies.
+
+Simple trading strategy
+The trading strategy outlined in the paper is based on the prediction of firm quality using machine learning, specifically the XGBoost algorithm, and the subsequent utilization of this quality measure for the construction of trading portfolios. Here is a simplified trading strategy:
+
+1. Data Preparation:
+Historical accounting and stock return data for a sample of common stocks are collected from Compustat and CRSP.
+Observations from Compustat are matched with monthly CRSP data, utilizing June as the reference date.
+Independent variables are standardized for model training and testing.
+Missing values in accounting data are filled based on accounting knowledge, while firm-years with remaining missing values are excluded.
+Model input variables are winsorized at the top and bottom percentiles annually to mitigate the influence of outliers.
+
+2. Firm Quality Prediction Model:
+The dependent variable, representing true firm quality based on a complex formula provided in the paper (Equation 4), is defined.
+An XGBoost regression model is trained using a training dataset consisting of historical data from the past three years (t-3 to t-1).
+Hyperparameters (e.g., learning rate, max depth, subsample, and regularization terms) are tuned using a five-fold time-series cross-validation on the training dataset.
+The optimal hyperparameters are selected based on the average of the minimum absolute prediction error.
+The XGBoost model is retrained on the entire training dataset using the optimal hyperparameters.
+
+The model takes historical financial and accounting data as input, along with industry cost of capital, and uses machine learning (XGBoost) to estimate a proxy for firm quality (Q) as the output. The model’s performance is assessed using evaluation metrics like MSE and MAE. The goal is to develop an empirical proxy for firm quality based on these inputs and machine learning techniques.
+
+3. Portfolio Evaluation:
+Selected portfolios are held from July 1 of calendar year t to June 30 of calendar year t+1.
+Portfolio performance is evaluated using metrics such as Mean Squared Error (MSE) or Mean Absolute Error (MAE) for portfolio returns.
+
+4. Portfolio Rebalancing:
+Steps 1 to 4 are repeated monthly, considering the latest available data.
+
+Risk Management:
+Risk management strategies, such as the implementation of stop-loss orders, diversification, or position sizing, can be employed to manage portfolio risk.
+This simplified trading strategy is founded on the research paper’s methodology for predicting firm quality through machine learning and subsequently constructing trading portfolios based on these predictions. Parameter tuning and portfolio construction specifics can be tailored to individual preferences and risk tolerances. Additionally, practical implementation should account for transaction costs, taxes, and real-world factors.
+
+Hedge for stocks during bear markets
+Not known -

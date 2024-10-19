@@ -1,0 +1,43 @@
+MFMPs (macro factor-mimicking portfolios) are used to navigate different macroeconomic environments for growth, defense, and inflation. These MFMPs are natural building blocks for constructing a diversified macrofactor risk parity strategy that proves resilient across various economic regimes over a 100-year sample period. From macro factor portfolios during different regimes, the anchor portfolio is augmented with business cycle-related macro factor views (+ macro), and momentum views (+ momentum) are acquired as the new entry to our screening database.
+
+Fundamental reason
+Macro factor views are based on a simple business cycle model to identify the state of the economy; upon that, time series momentum signals are constructed for the single asset class and style factor instruments that drive the tested multi-asset multi-factor strategies. Both macro and momentum signals prove valuable and complementary in a combined dynamic macro factor allocation. The presented macrofactor investing framework effectively structures a multi-asset, multi-factor investment process for navigating various economic cycles. Moreover, they explore the possibility of dynamic macro factor allocation using a Back-Litterman framework.
+
+Simple trading strategy
+The investment universe comprises Global Equities, Global Bonds, Commodities, and FX. (The four style factors are:
+i. Carry, which is defined as the implied yield on each instrument, i.e., futures implied excess dividend yield for equities, the interest rate differential for currencies, excess bond yield plus rolling curve for bonds, and futures implied convenience yield for commodities.
+ii. Value is the dividend yield for equities, the real yield for bonds, a five-year reversal in spot prices for commodities, and absolute and relative purchasing power parity for currencies.
+iii. Momentum is the 12-month–1- month excess return.
+iv. BAB is defined as low beta assets minus high beta assets with positions neutralized for the ex-ante beta, where beta is measured relative to the global asset class portfolio.)
+(The data set is constructed using financial market prices and macroeconomic series from Bloomberg, Datastream, and the OECD. These series are combined with data from Global Financial Data and monthly commodity future data from Chicago Board of Trade annual reports.)
+
+The three factors are:
+1., 2. Growth and Inflation directly address investors’ core concerns about expected future cash flows. While the growth factor determines future cash flows, inflation crucially impacts their present value.
+3. Defensive, is expected to do well when the other two factors perform poorly.
+
+Specific macro factor views that result in macro factor weights based on the identified economic cycle: weighted portfolio with portfolio weights is listed in 2.2 Constructing macro factor-mimicking portfolios.
+
+1. Consider two market-based indicators, the price-earnings ratio of the S&P 500 and the AAA–BAA US spread.
+2. Use logarithmic changes in production led by 1 month as output related measure.
+3. Consider two consumption-related indicators, expected and unexpected inflation, measured as the fitted values and residuals of a full sample regression of inflation data on 12 months of lagged inflation, respectively.
+All these macroeconomic timing indicators are standardized.
+The resulting Z-scores are winsorized at three standard deviations using an expanding window, in line with our portfolio construction methodology. The aggregate macroeconomic timing indicator results as the equal-weighted combination of the Z-scores.
+Combining these two dimensions results in four possible economic regimes, which we classify in line with the related literature as
+a. Expansion (positive and increasing Z-score),
+b. Peak (positive but decreasing Z-score),
+c. Recession (negative and decreasing Z-score), as well as
+d. Recovery (negative but increasing Z-score).
+
+Have
+A. the MFRP anchor portfolio, augmented with a tactical overlay based on
+B. macro signal; and
+C. momentum signal.
+
+In expansions, the macro factor view portfolio is solely invested in the Growth MFMP. In peak regimes, one is also putting a high weight on the Growth MFMP (80%), but also bringing in defensiveness via the Defensive MFMP (20%) is considered prudent. The recessionary view portfolio should be more diversified, with the strongest weight on the Defensive MFMP (120%) and a short position in the Inflation MFMP (-100%); the smallest weight is in the Growth MFMP (80%). Lastly, the recovery view portfolio maintains the negative position in the Inflation (-100%) but goes all in w.r.t. the Growth MFMP (200%).
+
+Strategy is meant to be rebalanced monthly, and its constituents distributed equally (equally weighted).
+
+ 
+
+Hedge for stocks during bear markets
+Yes - Extended models (augmented portfolios), to some extent, work very well in financial downturns.

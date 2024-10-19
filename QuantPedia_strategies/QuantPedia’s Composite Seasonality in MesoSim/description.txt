@@ -1,0 +1,18 @@
+Calendar strategies are well-known in the financial world. Turn of the Month, FOMC Meeting Effect, and Option-Expiration Week Effect all share the same feature: they capitalize on predictable patterns in stock returns tied to specific calendar dates. Present research explores the implementation of QuantPedia’s Composite Seasonal/Calendar Strategy in options trading, leveraging the Volatility Risk Premium (VRP) to enhance risk and return profiles. The study aims to optimize trading strategies by timing entries to avoid historically negative trading days, thereby improving risk-adjusted returns. In order to achieve this, authors outline four key steps: creating synthetic long positions by buying a call and selling a put, then implementing a short put strategy, incorporating stop-loss mechanisms, and finally, optimizing position sizing. The final strategy exhibits improved Sharpe ratio and Drawdown metric compared to SPX. The collaboration with Deltaray and the use of MesoSim, an advanced options strategy simulator, provides a detailed examination of how seasonal patterns can be systematically exploited in options trading.
+
+Fundamental reason
+The strategy works primarily because it harnesses the predictable nature of calendar anomalies that have been well-documented in financial literature. These anomalies, such as the Turn of the Month, FOMC Meeting Effect, and Option-Expiration Week Effect, provide consistent patterns in stock returns. By timing trades to coincide with these patterns, the strategy aims to capitalize on the volatility risk premium (VRP). The VRP arises because implied volatility in options typically exceeds realized historical volatility, allowing traders to systematically earn a risk premium by selling options. This inherent market inefficiency forms the backbone of the strategy’s functionality, enabling traders to potentially achieve better risk-adjusted returns compared to traditional buy-and-hold strategies.
+
+Simple trading strategy
+The investment universe for this strategy includes options on the SPX.
+
+The strategy consists of 4 individual signals / sub-strategies that trade 4 distinct seasonal effects – the turn of the month, FOMC meeting days, option expiration weeks, and mid-month paydays. Investor should be in the market (hold a short put position) only during the days market by seasonal sub-strategies – the methodology for the calculation of the exact dates when to sell and cover position is explained in the source paper.
+
+The primary trading position employed in paper is selling naked Delta 10 put options to harness the volatility risk premium (VRP) in the predetermined days of the year. Authors use options expiring nearest to 5 DTE for option expiration week sub-strategy and 1 DTE options for other 3 sub-strategies (ToM, FOMC and FED day).
+
+In case the sell put signal is executed, authors enter into trade 5 minutes after open and exit the trade on the close of the trading day, when the cover signal should be executed. Usually, the trade is hold only for one day (from 5 minutes after open until the close). Only in the case of option expiration week sub-strategy, strategy hold short put position for multiple days.
+
+Risk management is implemented using stop-loss mechanisms based on option moneyness, position Delta, and/or profit and loss relative to the credit received. Position sizing is optimized to manage leverage and reduce drawdowns, maintaining a conservative market exposure. The strategy is rebalanced daily, aligned with the marked key dates.
+
+Hedge for stocks during bear markets
+No - Strategy is exposed to equity risk by shorting put options.

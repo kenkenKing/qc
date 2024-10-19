@@ -1,0 +1,20 @@
+Team of QuantPedia authors happily introduce their implementation of popular Technical Analysis technique Double Bottom with Target Profit variation based and performed on (developed) country ETFs. We tried to use TA in a quantitative fashion and had quite success. Our double bottoms methodology is used to build a trading strategy that use the double-bottom signal as a timing signal for a swing trading strategy that would buy country ETFs for a short period of time when the ETF hits a support level. Strategy produces a steadily rising equity curve without higher volatility.
+
+Fundamental reason
+While it might not be intuitive to expect such a subjective subject as technical analysis is expected to have such much academic significance and attention, plenty of articles try to quantify and give precise mathematical and statistical scrutiny to the question. Market technicians believe that prices currently contain all information about any asset. It is undoubtedly an oversimplified assumption, as the market is much more complex than that. But suppose you try to use fundamental analysis too harshly. In that case, you assume that you have all the possible information about market fundamentals and assets and that the others have complete information too. That seems to be too far from the truth. Now suppose you base your trading only on looking at charts. In that case, you also deal with seeing and basing your decisions on seeing different psychology of market participants, where during price spikes, you often find explanations in the news afterward. But markets are driven partly by fundamentals and partly by psychology/prices. Therefore, it would be unwise to overlook the Technical Analysis (TA) as just some hocus-pocus.
+
+Simple trading strategy
+Investment universe consists of 24 country ETFs (mostly iShares MSCI, along with iShares China Large-Cap ETF [FXI], and the U.S. is represented by SPDR S&P 500 ETF [SPY]).
+
+As mentioned before, the strategy is focused on finding a double bottom in country indexes that have long-term rising prices. (We do not consider shorting index ETFs based on this condition.)
+
+The trading procedure goes as follows:
+1. Find local lows. As standard, we use a rolling period of 30 days to look back and forward (into history and the future).
+2. Look for potential Double Bottoms from those local lows. The maximal distance between two local highs/lows is set arbitrarily to 1000 trading days, whilst the minimal distance is again 30 trading days.
+(Maximum percentage = 2% is the maximal vertical distance between two local lows to entitle a potential Double Bottom real one.)
+3. Place a limit order for ETFs at the double bottom level, and set up a trailing SL of 3% with Profit-Target with a Risk-to-Reward (R:R) ratio of 1:2, so Target Profit is set up at 6%. Trailing SL is moved every day if the position is in the profit.
+
+The maximal number of concurrent open positions is 4, and the maximum portfolio leverage is 2:1, so the maximal weight of an ETF in the portfolio is 50%. We look/scan for new double tops and double bottom formations once a month. But trading decisions are executed on a daily basis (entering and exiting from positions.
+
+Hedge for stocks during bear markets
+No - The strategy probably can’t serve as a hedge as it buys dips in equity markets; therefore, it’s risky as it increases its exposure to equity markets during bear markets.

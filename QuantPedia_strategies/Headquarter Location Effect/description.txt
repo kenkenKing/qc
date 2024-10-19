@@ -1,0 +1,17 @@
+Authors construct remoteness measures that characterize the geographic features of the firm, including the surrounding populations and distances from these population centers. Remotely headquartered stocks reportedly outperform proximate stocks by 8.59% annually on a risk-adjusted basis. We select that strategy using the simplest remoteness measure Remote6h as our database entry. The results confirm a remoteness premium. Authors proudly announce their results are consistent with their “near is dear” hypothesis.
+
+Fundamental reason
+Results from this study add the missing piece between the literature on the role of firm headquarters geographic locations and the literature on the asset pricing implications of information frictions. The outperformance of remote stocks is from both the long and short legs and is highly persistent due to remoteness. Scientists also hypothesize that the market requires a positive premium for holding stocks with more remote headquarters due to the information frictions. This return predictability is mitigated by the geographic dispersion of firm operations, consistent with soft information frictions explaining the remoteness-return association. They also claim famous post-earnings announcement drift (hereafter PEAD), indicating delayed information incorporation, is only observed among remote firms.
+
+Simple trading strategy
+The investment universe considered covers common stocks listed on the NYSE, Nasdaq, and Amex.
+(County population center data are on RavenPack [alternative data provider]. Stock-level data from the Center for Research in Security Prices [CRSP]. Firm headquarters address data from the Forms 10-Q and 10-K for all publicly listed companies from the SEC EDGAR system. You can obtain the longitudes and latitudes for all U.S. zip codes from the U.S. Census Bureau Gazetteer files and county population center data from the U.S. Census Bureau Centers of Population files.)
+
+The sorting variable is Remote6h. Assign value 6 hours to 𝑇𝑖𝑚𝑒𝑟𝑎𝑑𝑖𝑢𝑠 in equation (1) to calculate Remote6h. This Remoteness measure is defined in equations (1) [first step, calculate the accessibility (the opposite of remoteness) each year for each firm as the time-adjusted population within a certain radius from the firm headquarters; second step, calculate the z-score of 𝐴𝑐𝑐𝑒𝑠𝑠𝑇𝑖𝑚𝑒_i,t, 𝐴𝑐𝑐𝑒𝑠𝑠𝑇𝑖𝑚𝑒_𝑧i,t.] and (2) [𝑅𝑒𝑚𝑜𝑡𝑒𝑇𝑖𝑚𝑒_𝑖,𝑡 = −𝐴𝑐𝑐𝑒𝑠𝑠𝑇𝑖𝑚𝑒_𝑧𝑖,𝑡.].
+Investors should create portfolios sorted on remoteness: sort stocks into decile portfolios every month based on the remoteness of the previous calendar year.
+Strategy execution of spread [H-L] portfolio: spread portfolio is formed by longing the high decile (most remote firms) and shorting the low decile (most proximate firms).
+
+The portfolios are value-weighted and rebalanced monthly.
+
+Hedge for stocks during bear markets
+Not known -

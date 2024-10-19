@@ -1,0 +1,10 @@
+The volatility trading has become increasingly popular since the introduction of VIX futures and ETFs. Traders are attracted to this trading style mainly because of the high potential return offered by volatility selling strategies. Multiple volatility trading strategies are used. We present a really useful case study prepared by Tony Cooper for the NAAIM Wagner Award competition. The financial paper describes multiple approaches to volatility trading. We picked the momentum trading strategy as an example, but we recommend to read the whole paper to review other proposed strategies.
+
+Fundamental reason
+The reason for volatility premium existence is nicely explained by Time-Varying Investors’ Utility Theory which says that investors’ value strategies which pays off during the time of crisis. Long volatility exposure is such a strategy, and therefore it must have a negative risk premium. Shorting (selling) volatility, thus provides a positive risk premium but is highly skewed and is prone to extreme negative returns during crisis times. Momentum filter strategy, which switches between long and short volatility exposure, could overcome this problem.
+
+Simple trading strategy
+The investment universe consists of 4 volatility ETNs – XIV, VXX, ZIV, VXZ (see table on page 9). An investor uses 83-day momentum to rank these ETNs every day. The investor holds ETN with the highest past 83-day performance in case that past performance is positive. The trading signal is checked on a daily basis, and the portfolio is rebalanced accordingly.
+
+Hedge for stocks during bear markets
+Partially - The investor may try to split this strategy to two halves and hold only long volatility ETFs (ZIV or VXZ) when the signal arrives as a hedge against equity market crises and hold cash instead of short volatility ETFs (XIV and VXX). However, backtests are needed to determine if such amended strategy is beneficial without that short volatility part…

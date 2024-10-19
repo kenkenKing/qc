@@ -1,0 +1,16 @@
+Using account-level data, authors identify new investors focusing on Chinese markets without much stock trading experience and track their entries into the market and trading behaviors at the stock level. The authors’ evidence suggests that new investors time the market badly: they tend to buy the stock from more sophisticated investors around the peak before the price reversal. Contrary to the short-term momentum strategy also coming from this paper, which was presented earlier, this is a mid-term simple reversal strategy that professionals rather than retail traders often employ.
+
+Fundamental reason
+New investors’ entries predict the decline in future stocks’ returns in the Chinese market, and their net buying negatively indicates returns cross-sectionally. Scientists disclose the vast heterogeneity of retail investors and find that new investors tend to trade against more experienced and large-sized investors. Therefore, new investors’ activity provides a more accurate measure of noise trading, in contrast with the conventional wisdom of regarding all retail investors as noise traders. This phenomenon is often arbitraged out by professional investors, and presented reversal strategy builds on these notions.
+
+Simple trading strategy
+The investment universe consists of stocks from the two major stock exchanges in China, both the Shanghai Stock Exchange and Shenzhen Stock Exchange, within the sample, excluding stock hitting days-price limits.
+(Stock return data are from the China Stock Market and Accounting Research [CSMAR] database.)
+
+1. At the end of each month, sort stocks into quintiles (following Jegadeesh and Titman (1993)) based on returns over the last [previous] three months; and
+2. construct value-weighted short-long portfolios (to achieve reversal utilization rather than momentum) [that is, a portfolio that shorts (sells) the top quintile and longs (buys) the bottom], and so execute that trade.
+
+All portfolios are rebalanced monthly and value-weighted.
+
+Hedge for stocks during bear markets
+Not known -

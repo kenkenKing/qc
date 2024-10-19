@@ -1,0 +1,15 @@
+Put-write strategy entails selling put options and maintaining a portfolio of risk-free assets. Many studies demonstrate the outperformance of put-write strategies over buy-write strategies. Nonetheless, this
+phenomenon remains insufficiently explored in the global options market outside the United States. However, this paper aims to propose an effective conditional strategy to enhance option writing strategies within the Taiwan market, which stands out as one of the few global markets where retail investors play a predominant role. The put-call ratio (PCR) is utilized to determine when to initiate a short options position. The study introduce an easily implemented strategy that alternates between the market index and the option writing index, both well-established passive investment strategies based on the PCR. This approach not only outperforms VIX based conditional strategies and improves performance metrics but also greatly reduces trade frequency, making it more practical. Moreover, it appears that using institutional investors’ positions is generally less effective than utilizing the publicly available market-aggregated PCR.
+
+Fundamental reason
+The PCR acts as a technical indicator, reflecting investor consensus and predicting short-term index movements. When market participants have a hedging demand to protect against downside risk, put option prices become more expensive, benefiting the put-write strategy. Also, when put volumes exceed call volumes, the subsequent day’s returns tend to be significantly positive. These findings support the effectiveness of strategies based on PCR. Compared to VIX-based conditional strategy, PCR offers superior guidance for option writing, leading to better predictability of future index returns and overall strategy performance. These findings indicate that avoiding option writing during market upswings, as indicated by PCR, is more effective than leveraging changes in implied volatility.
+
+Simple trading strategy
+The investment universe consists of put options on TAIEX Index and underlying TAIEX Index.
+
+The calculation of put-call ratio (PCR) is based on daily open interest (or volume) data for put and call options on the TAIEX index. Specifically, the ratio of open interest (or volume) in put options to the total open interest (or volume) at a given time (day) (see page 11, equations 5 and 6) is important.
+
+When the value of the ratio is above 0,5 the strategy suggests full investment in TAIEX Index. Put option writing is implemented only when the value of PCR falls below 0,5. The PCR ratio is checked on a daily basis and the portfolio is rebalanced accordingly.
+
+Hedge for stocks during bear markets
+No - Short volatility strategies can’t work as a hedge in bear markets as their equity beta is too high.

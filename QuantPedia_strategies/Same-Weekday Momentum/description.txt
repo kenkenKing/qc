@@ -1,0 +1,17 @@
+(Da and Zhang, 2024) document a new empirical fact about stock momentum: A significant fraction (47.4%) of stock momentum reflects return continuation on the same weekday, even after accounting for reversals on other weekdays. As a representant, we chose a daily rebalanced trading strategy: Each day during the momentum holding period (month t), we long (short) stocks in our baseline sample whose average daily returns on the same weekday during the momentum formation period (months t − 12 to t − 2) are in the top (bottom) decile. Its risk-adjusted returns are also highly significant both statistically and economically.
+
+Fundamental reason
+Evidence suggests that institutional trading is an important ingredient of the stock momentum effect. This pattern is extremely robust to different filters, weighing schemes, time periods, and sample cuts. The net contribution of the same weekday momentum to the overall stock momentum ranges from about 20% to 60%. The same-weekday momentum is hard to explain using traditional momentum theories based on investor mis-reaction. Instead, authors find within-week seasonality and persistence in institutional trading to be its driver. A large number of institutions experience disproportionately large flows on a particular day of the week and concentrate their trading on that weekday. Such a seasonal trading tends to be highly persistent, which drives the same-weekday momentum.
+
+Simple trading strategy
+The investment universe covers a baseline sample of individual U.S. stocks listed on the NYSE, Nasdaq, and Amex (exclude penny stocks, those with prices below $5, and small stocks below NYSE 10% breakpoints).
+(Obtain price, return, trading volume, and market value data from CRSP book equity data
+from Compustat.)
+
+Sorting: You construct decile portfolios constructed based on the past 12-month overall, same-weekday returns, skipping the most recent one-month,
+Performance of the “same-weekday momentum strategy”: Execute long-short portfolio: Long (buy) winners for momentum decile 10, and (short) sell the bottom 10% of same-weekday losers from momentum decile 1. (For example, on Mondays during month t, we buy (sell) stocks whose average Monday returns during months t−12 to t − 2 are high (low); on Tuesdays during month t, we buy (sell) stocks whose average Tuesday returns during months t − 12 to t − 2 are high (low), etc.)
+
+Portfolios are value-weighted and are daily rebalanced since stocks are equally sorted based on different past return information every day for same-weekday strategy; the holding period is one day.
+
+Hedge for stocks during bear markets
+Not known - Authors do not provide any information about the performance of the strategy in bear markets, and financial crisises.

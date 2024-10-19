@@ -1,0 +1,19 @@
+The (Pietro Lazzaretto, 2024) empirically assesses the effects of mandatory disclosure as a regulatory tool for political insiders while finding novel empirical facts. Upon disclosure, stock trades by U.S. Senators predict abnormal returns in the same direction, exceeding 90 basis points for purchases and -60 basis points for sales. However, the same is invalid after the actual transaction dates: if anything, purchased stocks underperform in the short run. With these results came a new proposed strategy: a calendar time portfolio timed on new disclosure releases earns a monthly alpha of over 2%, and we happily include it in our database.
+
+Fundamental reason
+The public release of new disclosure filings clearly impacts asset prices. Although the extant literature depicts politicians as mediocre traders, and the existing regulation explicitly prohibits the members of Congress from leveraging non-public information for personal gain, the attention of the public opinion for lawmakers’ trading activity is high. When Senators trade speculatively (buy and sell the same stock repeatedly), scientist show that they earn significant returns, too— 9 basis points daily on average— consistently outperforming the market by three bps daily. Ex-ante, however, the speculative nature of Senators’ trades is uncertain, so that other traders may overreact or mistakenly replicate uninformed trades, pushing the price temporarily away from fundamental value. Consistent with this interpretation, scientist finds that the price impact after disclosure is reabsorbed within 60 days, suggesting that mandatory disclosure may collaterally catalyze increased noise trading. From a policy perspective, the results raise some doubts about the effectiveness of the current regulatory mechanism. Future extensions of this research could explore alternative policy trade-offs in more detail in this context.
+
+Simple trading strategy
+The investment universe consists of only U.S. common shares (CRSP share codes 10 and 11) [CRSP firms incorporated in the US and listed on the NYSE, AMEX, or NASDAQ], excluding trades of other domestic and foreign assets.
+(Input for back- and forward-testing is a hand-collected paper sample of trades from the U.S. Senators [transactions are periodically disclosed in electronic and pdf filings called Periodic Transaction Reports (PTR) made available online by the U.S. Senate Office of Public Records] plus CRSP data on the underlying securities. <https://trendspider.com/markets/congress-trading/> can be sourced.)
+
+Rationale: buy and hold (BH) after the separate disclosure of (ONLY) purchases (and NOT sales) transactions for the selected window of 30 days. The actual performance of execution consists of steps:
+
+0. The trading strategy idea is as follows: at the beginning of each month, the portfolio is constructed based on the trades disclosed in the previous month.
+1. Construct one long-only portfolio (only for the disclosure of buys).
+2. Liquidate (sell) after 30 trading days.
+
+Given that the traded amounts are known only in buckets, the portfolio’s weight is given by the midpoint of the bucket, standardized by the sum of all midpoints of all trades in the previous month (so that weights sum to 1). Then, the portfolio is rebalanced monthly based on the trades disclosed throughout the month.
+
+Hedge for stocks during bear markets
+Not known -

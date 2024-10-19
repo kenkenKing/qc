@@ -1,0 +1,19 @@
+(Cai, Li, Keasey, 2024) propose a new measure to capture investors’ perception of a price trend intuitively: the R-squared of the time trend regressions on the price level in the formation period which is in final analysis found to clarify the clarity of the trend in the price pattern during the formation period as an important determinant of the momentum strategy return. We are more than happy to include this unique contribution which is explaining momentum and enhancing momentum strategy as newest addition to our investing and trading database. Momentum is stronger when the past trend is clearer, clearest trend quintile double the unconditional momentum return effect identified only by the historical return without considering the trend of the formation period.
+
+Fundamental reason
+The study offers fresh evidence reinforcing theoretical perspectives on the influence of momentum traders in the process of price formation. It introduces a novel metric that effectively gauges the potential intensity of momentum traders’ engagement. Given the same size of momentum return, the intensity of momentum traders joining the chase will depend on the clarity of the price trend. Experiment verified the statistical connections between their R2 measures and people’s perceptions of trend clarity in a stock price chart. Ultimately, the intensity of momentum traders’ participation is influenced by the clarity of the price trend, even when the size of the momentum return is constant. Trend clarity plays an important role in momentum returns and short and medium-term reversals. This measure enriches overall comprehension of cross-sectional asset pricing in developed and emerging markets and is a practical instrument for refining momentum investment strategies. It also provides a vital component for consideration in future theoretical explorations and developments.
+
+Simple trading strategy
+The investment universe comprises stocks (equities) traded on U.S. domestic exchanges listed (share codes 10 and 11) on the NYSE, AMEX, and NASDAQ.
+(Return data from the Center for Research in Security Prices (CRSP) can be sourced. Accounting information was gathered from Compustat’s annual and quarterly databases. [For international markets, utilize data from Compustat Global]).
+
+0. Measure: Trend clarity is the R2 from the regression of daily stock price on date sequence in the past 12 months (requiring at least 200 days). Past return is the cumulative stock return over the past 12 months skipping the most recent month.
+1. Construct the double-sort portfolios:
+1.1. First sort stocks into quintiles based on past return performance in each month t, and
+1.2. the stocks are then assigned to quintiles based on trend clarity (TC) within each past return quintile in each month t.
+2. Execution: Select only clearest 5 (high TC), and create classic spread portfolio Mom (5-1): long (buy) winners quintile, and (short) sell losers quintile.
+
+Portfolios are to be equal-weighted, and rebalanced monthly. The holding period, on the other hand, of the sequentially sorted portfolios is 6 months (from t+1 to t+6).
+
+Hedge for stocks during bear markets
+Partially - The presented variants yielded significant returns in both stable and volatile markets, highlighting the role of trend clarity in reducing momentum crash risks. The study also highlights how incorporating trend clarity can help mitigate key risks in momentum investing, particularly momentum crashes. (Grundy and Martin, 2001) It highlights that momentum has a significantly negative beta following a bear market. Employing trend clarity could potentially mitigate the impact of these crashes.

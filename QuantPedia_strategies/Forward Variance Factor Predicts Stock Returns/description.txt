@@ -1,0 +1,28 @@
+The authors demonstrate that employing the information on international risk premia provided by FVF^US can enhance real-time asset allocation performance. Ignoring such information would be costly for investors. The portfolio strategy based on forecasts by FVF^US produces substantial CER gains relative to historical average forecasts for all countries except Japan. Therefore, the predictive power of FVF^US is significant in terms of both statistical and economic criteria. The asset allocation strategy for a mean-variance investor is selected and incorporated into our database of trading screeners.
+
+Fundamental reason
+The paper studies the cross-country impact of U.S. stock market volatility risk on the international equity premium. Using the PLS [partial least square] method, they construct a U.S. forward variance risk factor FVF^US based on the term structure of forward variance implied from S&P 500 option prices. Over the sample period from January 1996 to June 2019, they show that FVF^US positively and significantly predicts market returns of the U.S. and ten non-U.S. industrialized countries, both in-sample and OOS [out-of-sample]. Predictability is robust to include local option-implied forward variance risk factors and local and global economic variables. In addition, their results are not sensitive to the choices of return measures (in national currency or U.S. dollars) or sample periods. In short, our findings illustrate the unique role of U.S. volatility risk serving as the global risk in determining the international risk–return tradeoff.They further find that exposure of international stock returns to U.S. volatility risk positively correlates with U.S. volatility spillover intensity. These findings support the notion that market integration shapes the price of global volatility risk. Overall, our results highlight the significance of incorporating U.S. volatility risk to understand international return predictability and to develop conditional international asset pricing models.
+
+Simple trading strategy
+The investment universe considers the U.S. and nine non-U.S. industrialized countries, including Australia, Canada, France, Germany, Italy, the Netherlands, Sweden, Switzerland, and the United Kingdom, using investment vehicles of total market return indices and three-month Treasury bill rates (proxies for domestic risk-free rates). (Strategy is not suited to be performed on Japan assets.)
+The financial data are from Global Financial Data (GFD) and S&P 500 option (SPX) price data from OptionMetrics.
+
+-1. We assume a risk aversion coefficient (level) of three.
+0. You should use the first 60 months of data as the initial training period [for example, in the authors’ case, that makes it from February 1996 to January 2001].
+
+Strategy Rationale in a nutshell: The investor chooses an optimal portfolio of the stock market and local risk-free treasury bill of the country using the OOS market excess return forecast based on the U.S. forward variance risk factor (FVF^US):
+
+1. To measure conditional U.S. volatility risk, first construct option-implied volatility (the VIX index) from S&P 500 option prices following the methodology of the CBOE.
+2. Calculate the “model-free” annualized time-t forward variance by taking the difference between two VIX indices with adjacent maturities as on eq. (2).
+3. Following the calculation of option-implied U.S. forward variance after cleaning the options data, on a given trading day, we compute the VIX indices for all available maturities of that day and follow the linear interpolation procedure outlined in CBOE (2009) to obtain the VIX index for a specific maturity (3, 6, 9, 12, and 18 months). Finally, we calculate the associated forward variances over the intervals [t + 3m, t + 6m], [t + 6m, t + 9m], [t + 9m, t + 12m], and [t + 12m, t + 18m] based on Eq. (3), which are denoted by FV_3m6m, FV_6m9m, FV_9m12m, and FV_12m18m, respectively.
+4. Use one-period-ahead U.S. market excess return (r_US,t+1) as the PLS proxy and run the following two-stage OLS regression:
+In the first stage, we run a time-series regression for each forward variance on the proxy variable (eq. (4));
+In the second stage, we run a cross-sectional regression of FV_i,t on the slope estimate from the first stage, ˆφ_i, for each period t (eq. (5).
+The slope estimate in Eq. (5) is the estimated PLS factor at time t. We refer to the PLS factor extracted from the term structure of U.S. forward variances using U.S. market excess return as the proxy variable, the U.S. forward variance risk factor FVF^US. (FVF^US is a linear combination of the four forward variances where the weight on each forward variance is based on its covariance with the one-period-ahead U.S. market return. [Eq. (6)])
+
+The optimal weight on the stock market is on eq. (17), basically a division of the OOS forecast of the stock market simple excess return of country and risk factor (three) times return variance forecast calculated in the last step before this line.
+
+All constructed portfolios are value-weighted (see the last line before this paragraph for computation) and rebalanced monthly.
+
+Hedge for stocks during bear markets
+Not known - Paper does not discuss possible applications in crises.

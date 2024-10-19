@@ -1,0 +1,10 @@
+Rothschild once said that the time to buy is when “Blood is in the streets”. Traders and academics know that extreme levels of the VIX Index are a strong indicator for equity index returns – one could anticipate that the higher the fear on the markets, indicated by the VIX index, the higher the subsequent returns on the broad equity index. However, buying during such extreme levels of fear could also be a strategy that is emotionally hard. “High fear” times bring high levels of market volatility; therefore, the strategy is liable to correct implementation, and the trader/investor must be able to handle high levels of stress and portfolio volatility. We present several papers using different approaches to building a trading system with a study from Giot (2003) as a sample source paper.
+
+Fundamental reason
+The academic theory states that if the expected market volatility increases, then investors will demand higher rates of return on stocks, as stocks become riskier. Academic research shows that these rates of return are indeed realized.
+
+Simple trading strategy
+The investor uses the rolling past two-year history of the VIX index to create 20 equally spaced percentiles. He/she then goes long on the equity index at the close for one day if the VIX index on the current day is higher than on any other day during the two-year rolling window or if the VIX index value is in the highest two percentile boxes. He/she goes short on the equity index at the close for one day if the VIX index on the current day is lower than on any other day during the rolling 2 year window or if the VIX index value is in the lowest two percentile boxes.
+
+Hedge for stocks during bear markets
+No - The selected strategy attempts to hold equity risk mainly during times of market stress; therefore, it can’t be used as a hedge/diversification during the time of market crisis.

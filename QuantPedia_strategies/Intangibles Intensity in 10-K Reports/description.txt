@@ -1,0 +1,23 @@
+David, Hosseini, and Srivastava (Jul 2023) construct a textual measure of intangibles talk using 10-K filings, Intangibles talk_i. Put in plain words and easy to understand: Companies and firms that talk about intangibles in 10-K Forms (to be found on the UNITED STATES SECURITIES AND EXCHANGE COMMISSION site) have higher absolute returns overall than those that do not. The paper is a telling example of classical factor construction methodology, and the presented strategy utilizes this notion. Based on their measure, they devise a long-short portfolio and report significant and positive returns between 1995 and 2020 (after excluding the years between 2000 and 2001 [the bursting of the dot-com bubble]). We include its most bread-and-butter variant in our database.
+
+Fundamental reason
+Authors thoughtfully test whether the common risk factors from Fama and French explain text intangibles’ variable informativeness for future stock returns and create meaningful strategies based on their findings. A positive and significant alpha over the three- and five–factor models from Fama and French, in addition to momentum, is present in most of the tested strategy variants. Comparing various strategy portfolio versions and their returns, which are built on intangible–augmented variables to value strategies based on traditional book-to-market, they report superior performance, especially in recent years, both in the study and also related literature (there seems to be consensus among scientists on this subject). Furthermore, the paper presents strong arguments in favor of the mispricing hypothesis; thus, the abnormal returns associated with intangibles talk are present only among stocks with high levels of idiosyncratic volatility (IVOL), which measure arbitrage risks; such effects are furthermore exacerbated by investors and cause severe mispricing of assets in question.
+
+Simple trading strategy
+The investment universe consists of stocks in the U.S. (NYSE, Amex, and Nasdaq).
+(Textual data for the analysis comes from 10-K filings submitted to the Securities and Exchange Commission [SEC]. Data from the Center for Research in Security Prices [CRSP] are used for corresponding stock-related information.)
+
+The calculation of portfolio returns is described in Section 3:
+Words used to calculate intangibles talk measure come from Filipovic and Wager (2019): Intangibles talk for 10-K filing i with n intangibles words Intangibles talk_i is defined as the sum of the frequency across all intangibles words divided by the total number of words in the filing (eq. (1)). INT^10K is the portfolio sorted based on the intangible talk.
+
+The long-short sorting method (resulting in the final portfolio), described in Fama and French (2015), is used, except that investors use intangibles talk INT^10K as the sorting variable instead of the book-to-market ratio:
+0. Intangibles talk Intangibles talk_i are used as an investment signal to identify yearly long and short portfolios.
+1. Sort firms on June 30 of each year, based on intangibles talk calculated from the 10-K filings for the fiscal year that ended in the previous calendar year.
+2. Identify stocks above the 70th percentile of intangibles talk and put them in the long portfolios [buy them] while shorting [selling] those below the 30th percentile.
+
+All portfolios are value-weighted and rebalanced yearly (portfolios are held constant from July 1, following the June 30 portfolio formation date, to June 30 of the following year, except for delisted stocks)
+
+ 
+
+Hedge for stocks during bear markets
+Not known - INT^10K performs most strongly during the period that records the worst performance of HML^FF, as shown in the post–financial crisis era (2008–2020). During the pre–financial crisis period from 2000 to 2007, INT^10K performs poorly. The returns of HML portfolios are positive with high Sharpe ratios but still are not statistically significant from zero.

@@ -1,0 +1,17 @@
+Using a large set of test assets involving ten equity factors, six classes of mean-variance efficient portfolios, and 176 anomaly portfolios, Božović (2023) shows that the proposed VIX-managed strategies generally outperform the one based on realized volatility in terms of spanning regression alphas, but with the downside of limited improvements in the Sharpe ratios. The managed strategies are based on implied volatility (VIX, downside VIX) and realized volatility (RV, realized downside RV, respectively). The proposed Implied Volatility VIX-based (”VIX-managed strategy”) portfolio management strategy, improving already existing and similar to BAB (Betting Against Beta) methodology portfolios, is easy to implement and offers a robust real-time after-cost performance. It exploits the forward-looking information embedded in options traded by the most sophisticated market participants. This simple portfolio management strategy gauges the leverage by scaling the original exposure with implied volatility. The strategy involves taking less risk when the squared sum of daily levels of VIX over the past month is high and vice-versa.
+
+Fundamental reason
+Miloš Božović built on the recent literature on volatility-managed portfolios and explored the possibility of scaling with implied instead of realized volatility. The scaling is based on the CBOE implied volatility index (VIX) observed from the daily data over the past month. This property can be understood by the well-established ability of VIX to time both variance and kurtosis, creating a potential to buffer the losses originating from near-term volatility and tail risk. In addition, for the market portfolio in particular, VIX also has a moderate return timing ability, which can be particularly interesting to a typical investor in real-time as a feasible alternative to more traditional passive approaches. VIX-managed portfolios require the least rebalancing among the tested strategies and are, therefore, least burdened with frequent trading costs.
+
+Simple trading strategy
+As for the investment universe, we advise you to develop your own portfolio that satisfies the conditions of BAB (industry portfolios) or find one suiting from the aforementioned sources.
+(BAB is from Frazzini and Pedersen (2014) [http://people.stern.nyu.edu/afrazzin]. The data on 207 anomaly portfolios are available from the Open Source Asset Pricing website [https://www.openassetpricing.com/data/].)
+
+0. We borrow and refresh the BAB (Betting Against Beta) strategy from the paper of the same name from Andrea Frazzini and Lasse Heje Pedersen (https://doi.org/10.1016/j.jfineco.2013.10.005) which is a precursor to mentioned in “original” portfolio, that is to be become “managed” (“improved”): core of strategy is in (buy) long leveraged low-beta assets and short (sell) high-beta asset.
+1. Follow Equation (4) to calculate the original portfolio’s conditional variance proxy σ’_t^2.
+2. Construct a managed portfolio reconciling the weight as set by eq. (2); if the risk measure increases in the current month t, we will decrease the exposure to our portfolio for the next month t + 1, and vice-versa.
+
+Strategy’s final managed improved portfolio is weighted by variables calculated just in the last step and rebalanced after computation each month.
+
+Hedge for stocks during bear markets
+Not known -

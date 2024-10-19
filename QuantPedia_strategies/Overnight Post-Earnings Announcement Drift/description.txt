@@ -1,0 +1,28 @@
+(Chan and Marsh, 2024) preliminarily laid a convincing evidence for existence of positive and significant post-earnings-announcement drift in overnight equity returns, particularly for stocks reporting extreme misses. The main takeaway can be summarised as follows: following an initial “gap down” in stock price on the announcement night, extremely bad earnings announcers consistently outperform the market by 8.25 basis points daily (or 8.25 x 260= 21.45% annualized) on average during after-market trading hours for the remainder of the quarter. From these pieces, we form version of strategy presented below.
+
+Fundamental reason
+Authors believe the significantly higher return can be traced to the smaller fraction of pre-announcement uncertainty about earnings and concomitant news resolved in stocks with extreme misses. Using 8-K event filings as a proxy for additional and material information revealed post-announcement, they confirm that those filings are higher following the near misses. Since most 8-Ks are filed overnight and retail investors tend to receive the information first, the post-announcement returns occur overnight, especially because the 8-K filings are not pre-scheduled. The overnight markets are fragile in that circumstance. As a result, market-maker risk and trading costs are commensurately higher.
+
+Authors show that the average post-earnings announcement returns accord with a quarterly “seasonal” pattern in implied volatility for the extreme miss announcements, where that pattern reflects additional information seeking engendered by the miss. As such, the risk associated with “information uncertainty” can potentially explain the higher OPEADs without appealing to ad hoc alternatives like a sluggish response in stock price on announcement night (which thus “spills over” to the higher post-earnings-announcement returns as investors come to pay full attention).
+
+Simple trading strategy
+The investment universe includes common stocks (with share codes 10 and 11) listed on the NYSE, AMEX, and NASDAQ.
+(You are advised to retrieve the data from five primary sources:
+1. Center for Research in Security Prices (CRSP): Daily stock prices and returns, and number of
+shares outstanding;
+2. COMPUSTAT: Quarterly earnings dates and other accounting data required to estimate firm
+characteristics such as the book-to-market ratio;
+3. Institutional Brokers’ Estimate System (I/B/E/S): Quarterly earnings dates, number of analysts
+and analyst forecasts;
+4. SEC EDGAR: Form 8-K filing and EDGAR log files;
+5. OptionMetrics: Stock option implied volatility.)
+
+The strategy is to extract an overnight post-announcement premium that persists throughout the quarter, especially for stocks reporting extreme earnings misses.
+The “overnight returns” refer to the close-to-open return or price change between when the market closes at 16:00 EST on day t-1 and when it opens at 09:30 EST on day t.
+Sorting & Ranking: Sort the earnings surprises each quarter, but focus now only on stocks into those with terrible unexpected earning news, i.e., “miss.” Assign quintile rankings of 0 to 4 to negative standardized unexpected earnings (SUE) (formula eq. (1)) (earnings misses), where Quintile 0 (Q0) encapsulates “extreme” observations with the largest earnings misses.
+Suggested Execution: Buy (long) these stocks that appear in Quintile 0 (Q0) on the close day after the earnings release, hold them until the end of the quarter, and sell on the close day before the earnings release.
+
+Rebalance intraday (buy on close, sell on open) and use the equally weighted weighting method.
+
+Hedge for stocks during bear markets
+Not known -

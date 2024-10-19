@@ -1,0 +1,16 @@
+The paper’s analysis reiterates that IBS (The Internal Bar Strength Indicator) strongly predicts close-to-close returns on equity ETFs. Scientists present a new strategy that aims to maximize the IBS effect by combining ETFs in a basket and going long and short on ETFs with maximum and minimum IBS values. We are happy to include a satisfactorily high Sharpe ratio selected basked strategy with a suggestion for volatility-based management. The presented strategy also outperforms the threshold-based strategy on multiple metrics, largely due to having a 100% time-in. Their approach to using a bucket of ETFs also reduces the risk of being over-reliant on any one ETF as the signal is calculated daily, and by picking more than one ETF per day, the returns are averaged between them.
+
+Fundamental reason
+Scholars attempt to build on the Pagonidis’ findings [1]. Initially, they corroborate their findings on the likelihood of mean reversion based on IBS thresholds in Table 3 on recent data. The analysis includes modifications of the above strategy where aspects such as holding period, number of held ETFs, and IBS calculation periods are varied. As an note that while the proposed strategy does well by going long and short on various ETFs, any trading costs, including Commissions, Borrow Rate, and Slippage, could reduce the strategy’s performance —especially on the Short Side.
+
+Simple trading strategy
+Consider seven countries index equities: Invesco India ETF [PIN], iShares MSCI Taiwan ETF [EWT], iShares MSCI Canada ETF [EWC], iShares MSCI Israel ETF [EIS], iShares MSCI United Kingdom ETF [EWU], iShares MSCI Singapore ETF [EWS], iShares MSCI Australia ETF [EWA]. (Possibly replicable with futures and CFDs.)
+(You can get price data from Yahoo Finance.)
+
+Measurement Variable Calculation: IBS_n (Eq. (1) = (Close − Low_n) / (High_n − Low_n).
+Strategy Execution: Implement a min-max strategy, going long on the ETF with the minimum IBS of that day and short on the ETF with the maximum IBS of that day.
+
+This is a daily rebalancing strategy (enter at the close of the current day and exit at the close of the next day), with equal (50 %) weighting [N (No. of ETFs) is 2.].
+
+Hedge for stocks during bear markets
+Not known -

@@ -1,0 +1,21 @@
+Authors show that an equity pairs trading strategy that uses fund common ownership to determine pairs is profitable in Chinese A-share markets. The pairs trading strategy is based on the connected stocks, and the pairs trading profits come from the comovement driven by fund flows. Finally, the pairs trading strategy has been profitable for the past month’s winners but has become insignificant for the past month’s losers, exploited in the final spread portfolio. As a significant contribution to the development of ideas in EM and the original approach for trading strategy, we are happily including it in our database and describing execution below:
+
+Fundamental reason
+The pairs’ trading profits are robust across various firm-specific attributes. Shared risk factors cannot fully explain them. However, the study explored the sources of the pairs’ trading profits. Investor attention, lottery features, valuation uncertainty, market beta or downside beta, and arbitrage risk can partly account for them. The authors used contemporary market return and volatility to test the “temporary price pressure hypothesis” to proxy aggregate fund flows. It is worth mentioning that the pairs’ trading profits are more significant following months of negative market returns and high market volatilities.
+
+
+Simple trading strategy
+China’s A-share markets (SHSE and SZSE) will be a concise investment universe.
+(All data used in this paper come from CSMAR and RESSET.)
+
+1. Specifically, to find pairs for a particular stock, we first construct fund common ownership (FCAP) for each of the two stocks at the end of June and December of each year, following (Antón and Polk, 2014). Follow expression (1) from 2. Pairs Trading Strategy.
+2. Find J stocks with the highest FCAP with stock i as its pairs, in which J=50.
+3. Conducted portfolio analysis by sorting stocks based on return differences. (P1 (P10) is the lowest (highest) return difference.)
+4. In the next month (t + 1), execute a long-short portfolio that buys the 50 stocks with the highest fund common ownership with a given stock in a recently disclosed fund holding position (thus with the highest return differences), and sells (short) 50 stocks with the lowest return differences.
+5. Hold for one month.
+6. Liquidate at the end of the first month (EOM).
+
+Portfolios are value-weighted and rebalanced monthly.
+
+Hedge for stocks during bear markets
+Yes - The results are consistent with Do and Faff (2010), who find the strategy performs strongly during prolonged turbulence, including the recent global financial crisis. In the unlisted table, the pairs trading strategy has a higher profit than the whole sample in crisis years (i.e., 2007, 2008, 2015, 2020, 2021).

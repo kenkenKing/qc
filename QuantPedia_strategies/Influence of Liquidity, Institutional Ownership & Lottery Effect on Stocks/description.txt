@@ -1,0 +1,25 @@
+This paper finds that the lottery effect is much stronger among liquid stocks. Furthermore, higher ownership of institutional investors does help improve the market efficiency, but only in liquid stocks. Liquid stocks with more noise (retail) traders prefer lottery-like stocks, and these overweight stocks are more likely to reflect cognitive errors in estimating the probabilities. These are three main takeaways from the paper, and the strategy we carefully selected builds on these notions utilizing a spread long-short portfolio based on the median of one from several lottery-like measures, MAX.
+
+Fundamental reason
+The authors’ results align with the view of Shleifer and Summers (1990) and Shleifer and Vishny (1997) that liquidity traders are noise traders who trade for reasons other than fundamental information, hedging, or liquidity shocks and are naïve about the problem of The noise trading in liquid markets seems to increase the risk of arbitrage and prevents the market from efficiently pricing stocks. However, the authors find that their results contrast with the predictions of standard market microstructure models, in which liquidity reduces the cost of trading by informed traders and facilitates the incorporation of information into stock prices, which we find as crucial addition to existing literature on this topic.
+
+Simple trading strategy
+The investment universe comprises U.S. NYSE and Amex stocks with share codes 10 and 11; NASDAQ stocks are excluded due to the different methodologies used in counting turnover.
+(You can use data from the Center for Research in Security Prices [CRSP] and stock accounting information from COMPUSTAT.)
+
+First, from the stocks’ sample, conclude the following two pre-filters:
+
+1. Calculate liquidity at each portfolio formation month (December) starting from 1979. It is calculated as the average daily share turnover for the prior 12 months (January to December). Daily share turnover is calculated as share volume times 1,000 divided by total shares outstanding.
+Filter #1: Stocks with turnover higher than the median are classified as liquid and used for this strategy’s variation.
+2. Institutional ownership (IO) is measured as the ratio of total shares held by 13-F institutional investors to total shares outstanding measured in December each year, with top (bottom) tercile as high (low) IO.
+Filter #2: Remove every stock that does not belong in the bottom tercile (low IO).
+3. Statistical variable: Finally, calculate the lottery-like measure to construct lottery-liquidity portfolios. This selected strategy’s variation uses maximum return (MAX): MAX is the maximum daily return of a year.
+
+Trading strategy rationale:
+Each year in December, stocks are independently sorted into portfolios by selected lottery-like measure (one group): the maximum return (MAX).
+Create difference (DIFF) [final] portfolio: short (sell) high and buy (long) low lottery-like portfolios, which are defined by the median of the maximum return (MAX) from all considered stocks.
+
+All portfolios are value-weighted, and each portfolio is rebalanced yearly.
+
+Hedge for stocks during bear markets
+Not known -

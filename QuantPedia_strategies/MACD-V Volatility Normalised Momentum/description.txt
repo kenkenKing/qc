@@ -1,0 +1,21 @@
+Alex Spiroglou introduces his MACD-V: Volatility Normalised Momentum, which is recognized by the technical analysis community as a novel indicator that is getting traction. His MACD-V Momentum Lifecycle RoadMap strategies are based on the notion of simple basic Moving Average Convergence Divergence (MACD) and improved by original adjustments, from which we selected The 70 & 77 System (Strong Momentum Range Rules) as viable representation to be definitely of a worthy addition to our colorful database of various viable investing and trading fundamental, technical, and quantitative strategies.
+
+Fundamental reason
+This paper acknowledges itself as “standing on the shoulders of giants,” as it would not have been possible without the knowledge shared by esteemed technicians, past and present. His unorthodox addition marks the enrichment of traditional knowledge of technical analysis, particularly MACD, from traditional oscillator use to unusual momentum strength classifiers. The author normalizes MACD by volatility via the Average true range (ATR) itself and calls his new indicator product MACD-V to address some of the classical MACD shortcomings.
+
+Simple trading strategy
+The investment vehicle used in this implementation is the DAX futures contract. (This is a long-only strategy.)
+
+Strategy rationale: Filter buy signals when a market enters high in the strong momentum range.
+
+MACD-V line formula: [( 12 bar EMA – 26 bar EMA) / ATR(26) ] * 100 where ATR is Welles Wilder’s Average True Range (ATR).
+
+Strategy trading rule: Buy 1 DAX future contract when the MACD-V is above 70 (market entry order) and
+a) selling at a target exit of 2.85% (next bar limit) or
+b) after 15 days if in profit (but the target exit had not been reached) or
+c) after 77 days if neither of these conditions held true.
+
+Since the strategy involves holding one asset, all capital to the strategy is allocated at the time (100 %); the strategy is then monitored for three exit conditions and, thus, rebalanced dynamically.
+
+Hedge for stocks during bear markets
+Partially - The selected strategy is a class of “Market Timing” strategies that try to rotate out of equities during the time of stress. Therefore the proposed strategy isn’t mainly used as an add-on to the portfolio to hedge equity risk directly. Still, it is more an overlay that can be used to manage the percentual representation of equities (or “equity-like assets”) in a portfolio. “Equity Market Timing” strategy can decrease the overall risk of equities in a portfolio, and it can improve the risk-adjusted returns. Moreover, as strategy’s goal is to hold equity market only in a positive times for equity market factor and be out of equities otherwise, therefore this logic can be maybe used to create amended market timing strategy (using original rules) which is out of equities during positive times and holds bonds (or goes short equities) during bad times. This new amended strategy can be maybe used as a hedge/diversification to equity market risk factor during bear markets. However, performance/risk characteristics and overall correlation and quality of suggested amended strategy can be found out only by rigorous backtest and source academic research paper doesn’t give us any clues on how it will perform…

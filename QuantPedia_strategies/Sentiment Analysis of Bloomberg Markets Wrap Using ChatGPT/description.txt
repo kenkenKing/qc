@@ -1,0 +1,19 @@
+This joint work of many scientists has explored the potential and adaptability of LLMs, specifically ChatGPT 4, in the challenging realm of financial sentiment analysis. Their findings show notable potential for forecasting future market returns when comparing a passive investment strategy’s Sharpe and Calmar ratios to a presented NLP-driven strategy. This research highlights ChatGPT’s promise in financial sentiment analysis. We are happily introducing this interesting research into our new encyclopedic entry. As a side note, there is the opportunity to leverage up along with risk tolerance and increase potential returns whiting following the presented strategy.
+
+Fundamental reason
+Using a zero-shot prompting technique, scientists assessed the model’s proficiency in deciphering and producing predictive sentiment scores from financial market summaries without necessitating domain-specific refinement. Additionally, their investigation emphasizes the pivotal role of judicious prompt selection in augmenting the efficacy of sentiment analysis endeavors and the importance of filtering out data noise through mechanisms like cumulative sentiment scores and detrended cumulative sentiment indicators. The prompts’ efficacy in summarizing daily news and discerning market sentiment suggests avenues for refining data integration and filtering textual noise.
+
+Simple trading strategy
+As for investment, what is your favorite vehicle to track the NASDAQ index? Recommended are QQQ ETF or near-term NQ futures.
+(Their analysis was based on a meticulously assembled dataset of daily Bloomberg market summaries, disseminated via platforms like the Bloomberg terminal to external sources such as Yahoo Finance, CNews, etc.)
+
+-1. From the collected data, compute the cumulative sentiment score S_d (eq. (2). (In detail, follow 5.2. Two steps approach.) ChatGPT platform is used to compute the setnimet score.
+
+0. Compute the trend of the sentiment score by calculating the difference between the cumulative sentiment score and its average over a period d, which we also take as a month. (Eq. (3))
+
+1. a) and b) Then, decide: if the calculated detrended score is positive (respectively negative) we take a long (respectively short) position.
+
+Strategy adheres to having one position, which is rebalanced daily. As the proposed strategy has low risk and Sharpe ratio higher than baseline B&H of the underlying market, the strategy’s performance can be easily increased by using leverage if needed.
+
+Hedge for stocks during bear markets
+Not known -

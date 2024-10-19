@@ -1,0 +1,18 @@
+Sole scientist proposes a new method to study how all [emphasis author] firm characteristics, at the same time, are related to the expected returns. To do so, they try to have a novel approach: create a small number of portfolios sorted on the expected returns rather than any characteristics, and then study how each characteristic varies among these portfolios. In simple terms, one replicating this research would let data discuss the relationship between hundreds of firm characteristics and expected returns, not the other, more traditional way around. So do you if you chose to execute a long-short strategy with a spread portfolio based on findings from this work.
+
+Fundamental reason
+This exciting paper contributes to the literature on big data asset pricing, machine learning methods in asset pricing, and high-dimensional return predictability. The paper provides a simple yet strong solution to the large dimensionality of factor zoo. To create the portfolios for research, they rank stocks based on their realized returns in the quintile portfolios in the in-sample set in the past. Second, they make out-of-sample portfolios such that the 206 characteristics of out-of-sample portfolios resemble most of the in-sample portfolios’ characteristics; they all are price-based predictors. The out-of-sample portfolios generate a fairly large dispersion in the cross-section of stock returns. Idiosyncratic risk, momentum, maximum past returns, nearness to the high historical price, and cash-based operating profitability account for most of the cross-sectional variations in stock returns.
+
+Simple trading strategy
+Large U.S. stocks (above the NYSE median) have been considered for portfolio formation in this strategy’s variation.
+
+1. We create a one-dimensional sort on expected returns: sort stocks into quantile portfolios where portfolio 1 (5) contains assets with the lowest (highest) expected returns (10-year rolling window by returns at the end of each month). (Portfolio formation in the future will be that they are as similar as possible to the in-sample portfolios with respect to a large set of firm characteristics.)
+(The similarity of characteristics is measured with the Euclidean distance between vectors of characteristics, and the framework is depicted in Figure 1.)
+2. The final portfolio is the long-short portfolio (H-L) from portfolios 5 (high) and 1 (low): a long-short five-minus-one portfolio is profitable because, using all the signals, it repeatedly contains buying (selling) the high-mean (low-mean) securities on average.
+
+All portfolios are value-weighted and rebalanced monthly.
+
+Hedge for stocks during bear markets
+Not known -
+
+Source paper

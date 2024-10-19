@@ -1,0 +1,23 @@
+Authors claim to find that find that the aggregate negative momentum spillovers (AMS), identified by the LASSO approach from cross-sectional stock returns, provide statistically and economically significant predictive ability for the monthly equity risk premium on both in-sample and out-of-sample basis. Strategy variant based on utilizing variable AMS_Low also generates substantial utility gains and a high Sharpe ratio for a mean-variance investor with various risk aversion coefficients, and we select the conservative approach as representative sample to be included into our database.
+
+Fundamental reason
+Reviewed study provides a positive and innovative answer to the question from the perspective of aggregate momentum spillover. The LASSO regression method is used to identify the unified stock connections that are difficult to uncover using standard regression techniques. Authors’ results are robust to various methods to identify connections among stocks. They provide evidence supporting the economic interpretation of the aggregate order imbalance channel and distinguish our research from the existing literature on investor attention indices. However, authors admit that evaluating the lead-lag effect using more precise methods is still needed to draw more definitive conclusions. Main contibution to the literature on market return predictability is by shedding light on the market-level underreaction and limited attention.
+
+Simple trading strategy
+The investment universe comprises U.S. stock markets (NYSE/AMEX/NASDAQ).
+(You can obtain cross-sectional equity returns from the CRSP.)
+
+Presented below is a market-timing strategy based on findings from the paper, which made a place in our curated selection of investing and trading databases:
+
+1. Regression: at the end of each month, compute a LASSO regression on other stocks’ daily returns over the previous year for each stock i as on eq. (1), and then follow the optimization objective for LASSO by eq. (2). (To capture the accurate linkages of stock returns, use only 10% of stocks with the lowest MSE [mean squared error] in our following analysis.)
+2. For each stock i at the end of each month, we construct a weighted portfolio return of its connected stocks as a reference return R^∗_i from eq. (3).
+3. Finally, calculate the momentum spillover for stock i MS_i = R_i − R^∗_i
+4. Sort stocks into decile portfolios based on the MS_i and construct the value-weighted aggregate momentum spillover (AMS) in each group, which is predictor (independent variable) from standard OLS regression (eq. (5)) and response (dependent variable) forecasted return r_t+1.
+5. You are a mean-variance investor who allocates monthly between equities and risk-free bills using a predictive regression excess return forecast based on the predictor variable 𝐴𝑀𝑆_Low,10% with equities weight (as on eq. (8)) of 1/3 division of forecasted return r_t+1 and its variance.
+
+At the end of month t, the investor rebalances the portfolio and optimally allocates the following proportion of the portfolio to equities in the next month. The equity weight is based on various risk aversion coefficients (γ = 3).
+
+ 
+
+Hedge for stocks during bear markets
+Partially - The selected strategy is a class of “Market Timing” strategies that try to rotate out of equities during the time of stress. Therefore the proposed strategy isn’t mainly used as an add-on to the portfolio to hedge equity risk directly. Still, it is more an overlay that can be used to manage the percentual representation of equities (or “equity-like assets”) in a portfolio. “Equity Market Timing” strategy can decrease the overall risk of equities in a portfolio, and it can improve the risk-adjusted returns. Moreover, as strategy’s goal is to hold equity market only in a positive times for equity market factor and be out of equities otherwise, therefore this logic can be maybe used to create amended market timing strategy (using original rules) which is out of equities during positive times and holds bonds (or goes short equities) during bad times. This new amended strategy can be maybe used as a hedge/diversification to equity market risk factor during bear markets. However, performance/risk characteristics and overall correlation and quality of suggested amended strategy can be found out only by rigorous backtest and source academic research paper doesn’t give us any clues on how it will perform…

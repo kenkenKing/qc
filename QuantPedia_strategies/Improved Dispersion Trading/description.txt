@@ -1,0 +1,23 @@
+Oliveira and Wasserstein (2023) developed a relative value measure for gamma trades between single-name stocks and their equity index by comparing the ratio of implied volatilities with the projected ratio of realized volatilities. Their dynamic long/short gamma strategy outperforms the simpler and more popular gamma trades of outright selling index straddles and dispersion trades. As for our strategy variant selection, we consider a broader set of S&P500 stocks, for which the dynamic long/short gamma strategy achieves a decent risk-return with Sharpe ratio of about 0.83 after transaction costs. Wide applications bring opportunities for both traders on the short (bearish) side and hedgers (on long position exposure to single individual stocks) to possibly enrich their portfolio of various exotic advanced options strategies.
+
+Fundamental reason
+An innovative and unorthodox delta hedging approach is mitigating bear market drawdowns. The decent simulated risk rewards for the efficient S&P500 market in the last 15 years, which were particularly challenging for gamma trades due to the 2008 and 2020 crisis, is very encouraging. Preliminary estimations show very promising potential in other geographies and subindices, where wider margins and opportunities seem to exist. Further improvements to our strategy may be obtained in future research endeavors by developing a non-trivial extension of Artur Sepp´s (2013) analytical approximation of the second moment of the delta-hedged P&L for our hedged straddles (single long name vs. short index) set up. This would allow the building of more balanced portfolios of hedged straddles that might be closer to the Markovitz optimal frontier.
+
+Simple trading strategy
+The investment universe consists of all the 500 stocks of the S&P500.
+(Data for volatility calculations are from Bloomberg, general stock data from the S&P Capita lQ.)
+
+Theory Background
+Straddles combine a Call and a Put option over the same underlying, with the same maturity and strike price, usually set to be at-the-money at the onset of the trade. (Buying [or selling] straddles tend to be market neutral, not exposed to directional risks of the underlying asset, particularly when the exposure is delta hedged until the expiry of the options.)
+Dispersion trades are based on exploiting often overpriced index options relative to individual stock options. (However, popular dispersion trades usually purchase straddles on all single-name options available, irrespective of their relative costs and how cheap or expensive each individual implied volatility appears.)
+
+Improved Strategy Rationale
+We are about to perform a dispersion trading strategy in S&P 500 Index vs. stocks undergoing dynamic long/short gamma strategy: We explicit use of a selection mechanism that only allows for exposure on single name options considered “cheap” by showing that the expected return of each long/short component in the dispersion trade is proportional to the difference between:
+(i) the (projection of) the realized volatilities, and
+(ii) the relative implied volatilities.
+
+Trading Rule
+When the squared relative implied volatilities < [are less than] squared projected realized volatilities, go long $1 notional of the single name straddle j and short λ notional of the index straddle, where λ is hedge ratio, which is approximately equal to the ratio of implied volatilities. (Pg. 10)
+(Algorithm to estimate realized volatilities is to be found in Projecting the Ratio of Realized Volatilities section of the paper.)
+
+The strategy does not discuss stock weighting, and it would be reasonable to assume to be equally weighted among all option positions in the strategy’s portfolio. Strategy is dynamically rebalanced according to the presented rule.

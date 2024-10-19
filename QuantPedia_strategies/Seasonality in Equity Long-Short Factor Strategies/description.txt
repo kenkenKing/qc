@@ -1,0 +1,20 @@
+The authors examine the factor seasonality effect in international markets. A feasible and reliable result of their work is Long-Short Factor Seasonality Strategy (FSEAS), which is buying factors with high average same-calendar months returns and shorting those with low payoffs. We selected and included it in our encyclopedia as it performs statistically significantly and is a robust investing strategy built upon using up to 143 characteristic-sorted portfolios from developed markets.
+
+Fundamental reason
+The authors’ findings demonstrate a compelling factor of seasonality effect worldwide. The pattern is significant in 15 out of all 39 markets, holds in all pooled global and regional samples, and cannot be attributed to common risk factors. Furthermore, the phenomenon is not driven by the cross-sectional dispersion of unconditional returns or factor momentum. Instead, the effect originates from stock-level patterns: stock price momentum transfers to factor portfolios, giving rise to their seasonality. Hence, rather than constituting an independent effect, factor seasonalities just mirror their security-level counterpart.
+
+Simple trading strategy
+The investment universe consists of stocks from 23 developed stock markets.
+(You may use CRSP for U.S. price and market data and Compustat for accounting and international data.)
+
+1. Sort all factors on their average same-calendar month return over the prior 20 years.
+2. Group them into quartiles.
+3. Start a long-short strategy:
+a) long position in the quartile of factors with the highest, and
+b) short position in the quartile of factors with the lowest
+average same-calendar month return over the prior 20 years.
+
+Portfolios are assumed to be rebalanced monthly and value-weighted.
+
+Hedge for stocks during bear markets
+Not known - Probably not.

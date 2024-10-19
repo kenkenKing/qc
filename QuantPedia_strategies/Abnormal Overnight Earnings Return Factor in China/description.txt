@@ -1,0 +1,18 @@
+The authors utilize a unique setting related to trading and information disclosure around earnings announcements and reveal several unique and striking findings in Chinese stock markets. They show an overnight-intraday disparity regarding how the market reacts to earnings news in two different periods and how the announcement returns from the two periods differ in informativeness. Findings suggest that the overnight period in China exhibits a strong and consistent reaction to earnings news and provides a signal (abnormal overnight returns) that contains value-relevant information and is not subsumed by earnings news and analyst revisions. These results also point to profitable and practical investment trading strategies that the authors developed, which we summarised and presented in the following. To end, the paper’s highlight is summarized in one sentence: a unique overnight-intraday disparity related to earnings announcements in the Chinese market.
+
+Fundamental reason
+The study from Liu, Hope, and Hu (2023) sheds light on the Chinese stock market’s quality and adds to the literature on trading mechanisms. The Chinese market has many retail investors and is less efficient than more developed markets. One possible explanation for the overnight-intraday disparity lies in the role of the auction trading mechanism. The results suggest that, even in a relatively less efficient market such as China, the market can still generate strong reactions to new information and produce value-relevant information during the reaction. Their findings support the idea that auctions may help aggregate information from investors and thus yield more accurate price signals (Madhavan 1992; Economides and Schwartz 1995). However, it would be noted that the settings do not allow a comparison of overnight returns derived from auctions with a perfect counterfactual (i.e., overnight returns derived based on continuous trading); therefore, scientists still have topics to discover solutions on.
+
+Simple trading strategy
+The investment universe comprises all stocks listed on the Shanghai and Shenzhen Stock Exchanges (but exclude observations with an end-of-quarter market capitalization of less than 100 million yuan and stock price below one yuan).
+(We obtain trading data and financial statement items [quarterly earnings announcements] from the China Stock Market & Accounting Research (CSMAR) Database.)
+
+Strategy rationale: the trading strategies are based on one from each signal from stock performance predictability of abnormal overnight returns on earnings announcement day (AOR_EA).
+Calculation of selected variable: Overnight returns or close-to-open returns capture the price changes during the overnight period, which are solely driven by the opening auctions before the next market open, as from eq. (2): 𝑂𝑣𝑒𝑟𝑛𝑖𝑔ℎ𝑡 𝑟𝑒𝑡𝑢𝑟𝑛_𝑖,𝑡 = (𝑂𝑝𝑒𝑛𝑖𝑛𝑔 𝑝𝑟𝑖𝑐𝑒_𝑖,𝑡−𝐶𝑙𝑜𝑠𝑖𝑛𝑔 𝑝𝑟𝑖𝑐𝑒_𝑖,𝑡−1)/𝐶𝑙𝑜𝑠𝑖𝑛𝑔 𝑝𝑟𝑖𝑐𝑒_𝑖,𝑡−1
+Ranking rule: To construct the portfolio, firms are ranked at the beginning of each calendar month t into quintiles (Q1 to Q5) based on the last non-missing earnings announcement returns (from day) available at the end of month t-1.
+Portfolio execution: The hedge portfolios are constructed by holding a long position for firms in the highest quintile (Q5) and a short position for firms in the lowest quintile (Q1).
+
+All stocks are value-weighted within a given (final) portfolio, and the portfolios are rebalanced every calendar month.
+
+Hedge for stocks during bear markets
+Not known -
