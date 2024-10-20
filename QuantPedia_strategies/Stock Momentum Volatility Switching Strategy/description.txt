@@ -1,0 +1,23 @@
+There is compelling evidence for the existence of both high- and low-frequency variation in the rigidity of financial analysts’ earnings expectations: the rigidity of expectations declines during high-volatility periods and has experienced a sustained decline in recent years. It has wide practical implementations as improvements in the performance of mixed momentum relative to its constituent trading strategies are economically meaningful and statistically significant. Adding short-term momentum to the long-term strategy generates an annualized Sharpe ratio improvement. As for the presentation of the paper, we selected the real-time 12-2 momentum strategy, which is still the simplest, following laid-out principles and reasonable profitability.
+
+Fundamental reason
+Studies in the paper can reproduce the patterns in the rigidity of earnings expectations. Asset pricing implications of simple model whose main ingredient is endogenous inattention shows that it is consistent with several well-documented regularities in the asset pricing literature: the unconditional profitability of momentum (Jegadeesh and Titman, 1993), momentum crashes (Daniel and Moskowitz, 2016), the attenuation of momentum (Chordia et al., 2014) and the enhanced profitability of volatility-managed momentum (Barroso and Santa-Clara, 2015; Moreira and Muir, 2017). Unconditionally, long-run momentum outperforms short-run momentum, but the relative profitability of short-run and long-run momentum flips during high volatility periods. A trading strategy designed to exploit this pattern significantly improves momentum returns.
+
+Simple trading strategy
+The investment universe is built from firms listed on the NYSE, Amex, or Nasdaq (U.S. markets).
+(Fundamental and stock data can be from CRSP. Consensus (median) earnings-per-share (EPS) forecasts can be obtained from the I/B/E/S Unadjusted Summary file.)
+
+Strategy calculation and execution in nutshell:
+
+1. Calculate the 3-2 momentum signal, which represents stock returns during the three months preceding portfolio formation, skipping the month immediately prior to portfolio formation, and 12-2 momentum appropriately. They are to be used as controls / predictor variables in the following step.
+
+2. Perform optimization, in which we look for portfolio weight of short-term momentum strategy and long-term momentum strategy, total weights of both version are 100%. Optimization is ran on 240 months of data and we look for a weights that maximize Sharpe ratio in sample, based on the volatility of the current month compared to the last 20 years of data. The returns of the real-time mixed momentum strategy are computed as r_MM,t+1 = (1 − w^∗_t *1_HV,t) * r_LM,t+1 + w^∗t * 1_HV,t * r_SM,t+1 where 1_HV,t is an indicator variable which takes on the value of
+a) one if volatility during month t is above the 70th percentile of the volatility distribution for the 20 years preceding month t,
+b) or zero. Use the calculated estimated beta coefficient in the next step.
+
+3.The mixed momentum strategy places a weight of 1 (1 − w^∗_t−1) on long-run momentum and a weight of 0 (w^∗_t−1) on short-run momentum if month t − 1 is a low (high) volatility month.
+
+Strategy is weighted by previous steps and rebalanced monthly.
+
+Hedge for stocks during bear markets
+Partially - During episodes in which 12-2 momentum delivers negative returns (most notably during the Great Recession and the COVID-19 crisis), mixed momentum outperforms 12-2 momentum about 1/3 of the time, while 12-2 momentum displays superior performance only about 8% of the time. During these times, the weight on 3-2 momentum increases significantly, reaching one during the post-Financial Crisis period.

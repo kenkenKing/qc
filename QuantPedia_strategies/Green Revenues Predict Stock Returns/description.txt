@@ -1,0 +1,18 @@
+The study offers a better understanding of the market incentives for green investing. The risk–return relationship of an investment strategy portfolio using a sample of 23 different markets from 2016 to 2020 from the output perspective based on GR data from FTSE Russell results in the creation of various investment strategies with high-GR minus low-GR that can earn stock returns of 3.3%–4.1%. The results provide suitability and feasibility evidence for fund managers and other market participants to incorporate GR characteristics in every stage of their investment decision-making and extend EU Taxonomy worldwide. We select one variant of strategy implementations to represent these findings.
+
+Fundamental reason
+This research provides a better understanding of market incentives for green investment. There is still a need for knowledge of the real threat imposed by climate change, and there remains a widespread perception among investors today that explicitly managing ecological hazards will likely reduce investment returns. Convincing investors of the financial legitimacy of climate and environmental risks has been demanding. The research contributes to the literature on the relationship between a firm’s GR and stock market performance. The proposed GR treatment shows that a positive relationship is more pronounced in markets with national cultural values higher (lower) in harmony (mastery) and egalitarianism (hierarchy).
+
+Simple trading strategy
+The investment universe comprises (international and equivalents of) FTSE Russell constituents.
+(The FTSE Russell dataset, the firms’ revenues in the Thomson Reuters Refinitiv Eikon database and used the factor data for each market from Kelly (Data sources: https://jkpfactors.com/).)
+
+1. Sort gathered the firm–year GR information from FTSE Russell.
+We divide firms in each market into two groups concerning the previous year’s GR (green revenue).
+Firms above and below the mean of GR are the High_GR and Low_GR groups, respectively.
+2. The difference in average abnormal returns between the High_GR group and Low_GR group makes final GRHML (eq. (4): GRHML = High_GR – Low_GR) spread portfolio, which captures precious annual alpha (excess return) and we target to perform strategy in this manner.
+
+The strategy requires portfolio formation to be updated annually. The study uses value-weighted portfolio returns based on market capitalization to mitigate the impacts of microcap stocks, and we advise following this weighting scheme.
+
+Hedge for stocks during bear markets
+No - This strategy can’t be used as hedge during bear markets.

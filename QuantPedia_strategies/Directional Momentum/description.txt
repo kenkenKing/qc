@@ -1,0 +1,25 @@
+Authors document the existence of directional predictability in equity returns and introduce the directional high-minus-low (D-HML) strategy. The proposed strategy exploits directional information in the time series and cross-section of stock returns and sorts stocks according to forecasts of the conditional probability of future positive returns, buying (selling) stocks with the highest (lowest) predicted probability of positive returns. Over roughly 100 years of U.S. equity market data, they find that the D-HML strategy generates a monthly abnormal return ranging from 0.76% to 1.16%, which makes it into our database as an excellent example of catching alpha in consistent manner.
+
+Fundamental reason
+Proposed strategy also exhibits positively skewed returns with a small probability of large losses, and is not spanned by prominent factor models with the market, size, book-to- market, profitability, investment, momentum, and short/long-term reversal factors as well as mispricing and behavioral factors (Daniel et al. (2020); Stambaugh and Yuan (2017)), or the IPCA-based conditional asset pricing models (Kelly et al.(2021)). In addition, the Sharpe ratio of D-HML strategy is substantially larger than that of the momentum strategy (WML), with positively skewed returns that are also less prone to crashes, with its 0.1% quantile being equal to WML’s 5% quantile. Scientists find empirical support to the claim that D-HML portfolio profits from mispricing due to investors’ biased expectations (Engelberg et al. (2018)), with investors being excessively optimistic about some stocks and pessimistic about others, and they provide a simple theoretical model under which mispricing is generated from investors’ biased expectations. Moreover, they find that the D-HML premium is significantly higher for i) stocks with a higher presence of retail investors, ii) in months with earnings announcements, and iii) during high-sentiment periods in which investors are excessively optimistic.
+
+Simple trading strategy
+The investment universe contains stocks of all NYSE/AMEX/NASDAQ ordinary equities (share codes 10 and 11).
+(Data are from the Center for Research in Security Prices (CRSP). Accounting data and quarterly earnings announcement dates are obtained from COMPUSTAT. Institutional ownership data are sourced from the Thomson–Reuters Institutional Holdings (13-F) database, stock-level daily option data from Ivy DB OptionMetrics.)
+
+Short summary: Investor creates the directional high minus low portfolio (D-HML), obtained as the difference between the value-weighted high and low portfolios [top and bottom decile] constructed on the probability score (PS).
+
+Decision variable: conditional probability forecasts are derived from a linear probability model by estimating pooled regression as in eq. (1), from which probability scores (PS_i,t) are the forecasts of conditional probability measure based on the information available at time t P_t(r_i,t+1 > 0).
+
+Execution explained in steps:
+1. For each month, the investor sorts stocks into deciles based on their probability score (PS).
+2. Dependent variables in the regression are: lagged idiosyncratic variance, monthly returns, and the
+durations of the current run of monthly, weekly, and daily positive and negative
+returns.
+3.Then they use the lagged market capitalization of each stock to create value-weighted portfolios for each month and decile.
+4. Perform the strategy that takes a long position in (buys) stocks with high probability score (top decile) and a short (sells) position in stocks with low probability score (bottom decile) as the directional high-minus-low (D-HML) strategy.
+
+Portfolios are rebalanced monthly and market-cap (market capitalization) weighted.
+
+Hedge for stocks during bear markets
+Yes - During bear markets, the D-HML was reported to have a 0.69% per month premium, delivering an alpha spread of 1.35% per month.

@@ -1,0 +1,20 @@
+Authors examine retail investor trading behavior for high and low-beta stocks in the presence of salient upsides and downsides. The first focus is on the beta-return relation, their primary empirical setting. The negative (positive) beta-return relation is much more pronounced among stocks with salient upsides (downsides). Then, using the retail investor buy-sell order imbalance developed by Boehmer et al. (2021), they find that retail investors demand more high-beta stocks than low-beta stocks in the presence of salient upsides. By contrast, they demand less high beta stocks in the presence of salient downsides. These building blocks allow one to create profitable trading strategies, and we select classic high-minus-low portfolio variant to include in our rich database.
+
+Fundamental reason
+The salience effect is crucial to the risk-return relation. Work from authors builds on BGS (2012), who show that investors draw their attention to the stock’s salient payoffs and exhibit risk-seeking (risk-averse) behavior for stocks with salient upsides (downsides), and their paper provides a novel psychological explanation for the literature’s puzzling risk and return relation. The hypothesis laid was that high-risk firms are more likely to experience salient upsides and downsides than low-risk firms. As a result, overpricing (underpricing) of high-risk firms tends to be stronger than that of low-risk firms in the presence of salient upsides (downsides). Their innovative contribution can be summarised as: the salience effect on the beta-return relation is more substantial when the market volatility is high since both salient upside and downside returns tend to be more pronounced in such market states and, using abnormal search volume as a proxy for retail investor attention, they find that retail attention is significantly higher among stocks with salient upsides and downsides than non-salient stocks, especially for stocks with salient upsides.
+
+Simple trading strategy
+The sample includes NYSE/AMEX/NASDAQ CRSP exchange codes 1, 2, and 3) common stocks (CRSP share codes 10 and 11) with a price of at least $1 per share and excludes financial firms and firms with negative book equity.
+(Data may come from the Centre for Research in Security Prices (CRSP); accounting data are from Compustat. Institutional ownership data are from the Thomason Financial 13F files.)
+
+Calculations:
+1. The stock market beta (BETA) at the end of each month is estimated as the slope coefficient of regression of monthly excess stock returns on market excess return over a 60-month rolling window with a minimum of 24 months.
+2. Salience theory measure: final computation of the salience theory value (ST) for each stock in month t by calculating the covariance between salience weights and daily returns as in eq. (4). The salience weights 𝜔𝑖,𝑠 from eq. (3) need derivation of salience ranking states for stock i from eq. (1) where one uses the return of an equal-weighted CRSP index, which includes all stocks in the CRSP universe as the average market payoff.)
+3. One creates portfolios double-sorted on stock beta (BETA) and salience theory measure (ST); stocks are sequentially sorted into quintiles based on BETA and then into quintiles based on ST.
+
+Execution: High – Low refers to the high minus low risk portfolios (after second sorting). But we reverse the rule, so we go long (buy) those in the Low portfolio, and sell (short) those in High.
+
+The portfolio is held for one month and has value weighting.
+
+Hedge for stocks during bear markets
+Not known -

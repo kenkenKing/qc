@@ -1,0 +1,17 @@
+Anchoring biases of the entire market and institutional investors contain statistically and economically significant signals, providing valuable guidance for asset allocation to investors. Using the absolute slope (beta) coefficient of the 52-week high ratio regressed on the RNPR (regression equation (2) explained later), Xiea, Fenga, and Gao (revised 2023) introduce a novel measure of anchoring bias for individual stocks and investigate its impact on Chinese cross-sectional stock returns. The presented measure captures the level of investor trading bias influenced by the 52-week high ratio, thereby characterizing anchoring bias for individual stocks. On top of that, we present an investment strategy with a reversed rule based on an anchoring bias that delivers superior performance to confirm the guidance based on the findings from the paper.
+
+Fundamental reason
+Anchoring bias can significantly impact the cross-sectional stock returns. Exploring whether the time variation in anchoring biases can serve as a systematic asset-pricing factor and developing theoretical pricing models based on anchoring biases to explore their effects on expected stock returns can be viable avenues of investigation. Empirical tests from the study show that the anchoring bias of the entire market can predict stock returns for a month-ahead time frame using univariate portfolio analysis, bivariate portfolio analysis, and firm-level Fama-MacBeth regressions. Suggested future research on anchoring bias should focus on international markets, as anchoring biases can differ across countries.
+
+Simple trading strategy
+The trading universe should have included a variety of A-shares listed on the SHSE and SZSE (except the SHSE STAR Market) (Chinese markets).
+(Data come from CSMAR [China Stock Market & Accounting Research Database].)
+
+0. Calculation preparation: Time series regression of daily returns over the past year announced earlier (eq. (2)), with the dependent variable (response), the relative net purchase ratio (RNPR) is explained (regressed) by independent variables (predictors): the 52-week high ratio in month 𝑚 − 1 and the return of stock 𝑖 in month 𝑚; and that arrives us with the input of our interest, which is absolute slope coefficient used in the next step (sorting).
+1. Sorting rule: At the end of each month, stocks should be sorted by the anchoring bias of the entire market into deciles [ten portfolios] based on the values of the anchoring bias.
+2. Investing execution: Go long (buy) the portfolio with the lowest AB (Port 1), and (sell-) short the portfolio with the highest AB (Port 10) (you hence construct the zero-cost portfolio (L-H).
+
+Portfolios should be value-weighted and rebalanced monthly.
+
+Hedge for stocks during bear markets
+Not known - Unfortunately, the paper does not provide an indication that there is a hedge in bear markets with this strategy.

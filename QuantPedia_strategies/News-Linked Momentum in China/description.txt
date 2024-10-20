@@ -1,0 +1,19 @@
+Huaixin Wang (2023) studied the dissemination of information among news-connected firms in China’s stock market and found that news-linked firms are indeed economically connected and exhibit a solid lead-lag returns relation. From this research, we select a spread long-short strategy based on single-one-sorted portfolios by the orthogonal news-connected firm portfolio (RNCF) measure, which is of one firm’s new linkedness to the others.
+
+Fundamental reason
+The result of this paper provides new, much-needed evidence on the interaction of news coverage and price efficiency, especially in emerging markets. It is consistent with the hypothesis that investors underreact to value-relevant information conveyed by the returns of news-based peers, which leads to cross-firm return predictability. Ultimately, the result is that the joint news coverage of multiple firms reflects editorial decisions and the commonality in firm fundamentals, thereby describing economic linkages. The author also examined other economic linkages in the context of China’s stock market and showed that their result remains robust after controlling for existing momentum spillover effects.
+
+Simple trading strategy
+The investment universe contains non-financial Chinese A-shares listed on the Shanghai and Shenzhen stock exchanges.
+(Stock trading and accounting information are obtained from the China Stock Market and Accounting Research Database (CSMAR). The news articles data are obtained from the Financial News Database of Chinese Listed Companies (CFND), provided by the Chinese Research Data Services Platform (CNRDS).)
+
+Measures’ calculations:
+1. For each month, calculate each focal firm’s value-weighted average return of news-connected firms (NCF) (peers) in the same month. (Eq. (1))
+2. Then, construct the orthogonalized variable (RNCF) as the residual of the cross-sectional regression of NCF on the focal stock’s contemporaneous monthly return. (Eq. (2))
+
+Portfolio formation and strategy execution: Form monthly portfolios by sorting stocks into quintiles (five portfolios) based on RNCF and then calculate the return to the long-short portfolio that goes long (buys) stocks in the top quintile and (short) sells stocks in the bottom quintile.
+
+Portfolios are held for one month and are value-weighted (market capitalization is the weighting scheme).
+
+Hedge for stocks during bear markets
+Not known -

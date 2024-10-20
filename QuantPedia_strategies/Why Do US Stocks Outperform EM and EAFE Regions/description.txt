@@ -1,0 +1,17 @@
+QuantPedia team has tested and tried to unravel some of the forces that may be affecting the timing of the periods of the US market’s outperformance and/or underperformance. The ultimate conclusion results in the finding that periods of outperformance and underperformance come in cycles, and some spreads (US vs. EM or US vs. EAFE) are more suited to trading using trend-following rules. In contrast, other spreads (large vs. small caps) sometimes show a mean-reverting behavior. As a presentation of our original research, we choose the relaxed version of trend-following with 12 monthly rebalancing period that utilizes emerging markets strengths.
+
+Fundamental reason
+Authors concluded that over the last 30 years (approximately, more precisely, 29 and 1/2 years), the broad US stock market totally crushed EAFE (Europe, Asia, and Far-East) developed markets region (by over 4% every year), outperformed Emerging Market stocks (by over 2% every year), slightly outperformed value stocks (by 0.6%) and underperformed somewhat broad small-cap US stocks (by -0.5%). The SPY vs. EM also performs fine at the 1-year momentum horizon, but the main problem is a high drawdown in all trend strategies. And we simplified to a rule of thumb: if US stocks outperform EM or EAFE stocks on a 12-36-month horizon, then you can probably safely bet that they will continue to do so for some time . . . Plus, there is one more reason why the EM/US stocks spread trends – the US Dollar tends to trend, and its strength/weakness translates into the performance of the main asset classes, with the strongest impact on the performance of commodities. A lot of the EM (and some EAFE) countries are big commodity producers, and their stocks are a part of the broad EM and EAFE indexes. It would not be surprising if the US dollar also had some impact on the performance of SPY vs. EM or SPY vs. EAFE spreads.
+
+Simple trading strategy
+The investment universe of this strategy includes two ETFs: US Large Cap S&P 500 (TR) (ˆSP500TR) $SPY EM countries MSCI Index $EEM.
+(Data can come from Yahoo Finance and MSCI global markets indices website.)
+
+Simple trend-following strategy on one spread (SPY as a proxy for US equities vs. EM as a proxy for EM stocks):
+Select lag period of 1 year (12 months).
+The universal trading rule (for all spreads) is pretty simple and straightforward: if the past 12 months of performance of spread is positive, for the next month, we are long spread (long 100% SPY, short 100% corresponding equity ETF); else, we short the spread (short SPY, long corresponding ETF).
+
+Based on calculations, the strategy will be rebalanced every 12 months (yearly).
+
+Hedge for stocks during bear markets
+Not known -

@@ -1,0 +1,28 @@
+According to the authors, economic trends are highly complementary to price trends because they exploit the same mechanism differently. Pairing the two approaches more fully captures the underreaction phenomenon than either approach does stand alone, improving both average long-term returns and returns during market stress environments, which supplements interesting possible investment approaches, one of which made it to our database. The strategy rests on the same premise as price trend – markets tend to incorporate new information gradually – but it captures the phenomenon very differently, using a broad set of real-time measures of economic news.
+
+Fundamental reason
+The economic trend is somehow evergreen, as it is grounded in well-established theory yet constitutes a distinct and innovative approach. The economic trend backtest shown in this paper uses one simple signal per economic theme (in order to cover as long a period as possible), comprehensively capturing and processing economic news in real time and extending the set of signals to capture a broader set of economic indicators is a complex and highly ambitious endeavor – one which requires significant investment in data and long-term research.
+
+Simple trading strategy
+The asset universe includes 15 global equity futures, nine bond futures, 7 interest rate futures, 8 currency forwards, and 20 commodity futures.
+(Forecast data is from Consensus Economics and OECD (prior to 1991). For a complete list of listed assets and their sources, see Economic Trend and Price Trend Backtest Universe on pg. 19. Suggested sources include Bloomberg and DataStream, Citi and Reuters, and IFS.)
+
+1. Portfolio Formation: For each of the five economic themes, create a portfolio for each of the four asset classes, leaving us with 20 asset class-theme portfolios (e.g., growth within equities).
+
+2. These (theme) portfolios are built on the following 12-month trailing indicators (listed after the colon after the theme name) [suggesting a thoughtful look at Exhibit 1: Summary of Economic Trend Signals):
+Growth: Growth trends are captured using one-year changes in forecasts of real GDP growth.
+Inflation: Inflation trends are captured using one-year changes in forecasts of CPI inflation.
+International Trade: International trade trends are captured using one-year changes in spot exchange rates against an export-weighted basket.
+Monetary Policy: Monetary policy trends are captured using one-year changes in the front end of the yield curve.
+Risk Aversion: Changes in risk aversion are captured using an equally weighted combination of two metrics.
+
+3. Perform an Aggregate economic trend composite portfolio—this is an equal risk-weighted composite across all asset class-theme portfolios. It represents the full economic trend strategy, implemented using all themes and assets.
+Execution: Take long positions in (buy) assets in which economic trends are improving and (sell—) short positions in assets in which economic trends are deteriorating.
+
+Weighting Suggestion: Combine each asset class theme portfolio at equal risk and target 10% forecasted annual volatility. (Within each asset class theme portfolio, each individual position is sized to target the same amount of volatility [using a trailing 3-year covariance matrix].)
+Understood is re-weighing/balancing/changing portfolios (on a) yearly (basis).
+
+ 
+
+Hedge for stocks during bear markets
+Yes - Absolutely! The author reports and provides convincing and extensive evidence that the strategy exhibits a low correlation to traditional risk premia on average and performs exceptionally well during drawdown periods for traditional asset classes. It continued to perform exceptionally well in the out-of-sample period from 2017 onward and delivered exceptional returns during the stock and bond bear market of 2022.

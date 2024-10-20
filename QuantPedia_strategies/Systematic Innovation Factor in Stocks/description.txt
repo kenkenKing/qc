@@ -1,0 +1,10 @@
+Do stocks of companies perceived as Innovative exhibit better perfomance? Present trading strategy is anchored in Schumpeter’s ‘creative destruction,’ recognizing the pivotal role of innovation in economic growth and financial success. Given the absence of a universally agreed-upon measure of innovativeness (similar to the diverse metrics in ESG ratings), authors turn to Fast Company’s list of the 50 World’s Most Innovative Companies. They propose The ‘Innovative Portfolio’ crafted from publicly traded companies listed and then compare its performance to the S&P 500 index as a benchmark. As they conclude, such portfolio outperforms the index, although not without a trade-off. This outperformance is accompanied by increased volatility and a substantial maximum drawdown in the last 2 years attributed to spiking inflation and tightening monetary policy.
+
+Fundamental reason
+While a significant portion of the performance variance from the SPY index is attributed to idiosyncratic risk, the authors analyse additional factors influencing the Innovative Portfolio’s performance. Innovative portfolio has increased weighting in small-cap stocks and the Size Factor emerges as the primary driver of the portfolio’s outperformance. Conversely, the underrepresentation of Energy and Industrial stocks compared to SPY, coupled with their recent poor performance, contributes positively to the Innovative Portfolio’s overall success.
+
+Simple trading strategy
+The investment universe consists of top 10 publicly traded innovators in Fast Company’s annual list. Ranking is released annually around April. Every mid-year an equal-weighted portfolio, termed the ‘Innovative Portfolio’ is created. Strategy is long-only and rebalanced every June, holding stocks until the following June.
+
+Hedge for stocks during bear markets
+No - It’s a long only strategy, very prone to drawdowns at the same time as the stock market indexes.

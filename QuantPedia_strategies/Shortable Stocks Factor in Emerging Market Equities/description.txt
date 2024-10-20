@@ -1,0 +1,18 @@
+This study documents that shortable stocks, on average, earn significantly higher average returns than non-shortable stocks (using the short-selling regulatory setting from the Hong Kong stock market, where both shortable and non-shortable stocks coexist; however, these results are consistent with Chu, Hirshleifer, and Ma (2020) results for the US market). Furthermore, the zero-investment portfolio SMN, termed the misvaluation factor, can earn, on average, a significant positive abnormal return, even if it cannot perform strategy on governing bodies constrants. On the other hand, it is helpful to realize that the loadings of portfolios and stocks on the misvaluation factor predict a significant negative return premium in the cross-section of their returns, and we advise avoiding them in portfolios of a wide variety of practitioners.
+
+Fundamental reason
+Study (Xiaoming Li, 2022) highlights the importance of applying a behavioral framework to the issue of market misvaluation due to various reasons, including short-sale constraints. This proposed regulation-based SMN factor is a notable contribution to the literature. All of our results are robust to two sets of measures, value-weighted and return-weighted, of the misvaluation factor SMN, even when we control for exposure to seven common risk factors as well as eight firm characteristics as proxies for idiosyncratic mispricing. Based on DHS’s insights, overconfidence manifests as an overreaction to private signals, underreaction to public signals, and underestimating private signal variance relative to the public signal variance associated with the short-selling regulatory factor.
+
+Simple trading strategy
+The investment universe consists of equities traded on the Stock Exchange of Hong Kong (SEHK). (The stocks to be included in the portfolio must have relevant data available from June of the year t through June of year t + 1.)
+(All the financial and accounting data used in this study are sourced from Datastream. SEHK’s official short-selling list as a decision measure.)
+
+One should follow the construction methods of the SMN portfolios proposed by Asparouhova, Bessembinder, & Kalcheva (2013):
+0. Theoretical underpinning: We create a value-weighted SMNvw,1m (spread) portfolio with a 1-month buy-and-hold interpretation. (Let t be the current month.)
+1. Calculation: The weighting variable w_i,t is the stock i’s market capitalization in month t – 1 divided by the total market capitalization in month t – 1 of all the stocks included in portfolios formed in month t. Multiplying stock i’s return in month t by w_i,t and summing across i = 1, 2, …, n at t gives a value-weighted portfolio at t. If the stocks considered are shortable (non-shortable) at t, the corresponding portfolio is S_vw,1m (N_vw,1m) at t (for that you check list).
+2. Ideal execution: You are to catch the difference between S_vw,12m (so one would short [sell] it) and N_vw,12m (long [buy] it) for t = 1 month.
+
+The portfolio should be value-weighted. SMN portfolios must be rebalanced monthly because the official short-selling list is irregularly updated every one to six months (but mainly every three months). (In other words, some shortable (non-shortable) stocks could become non-shortable (shortable) in any month within the holding period (e.g., 12 months) of a predetermined.)
+
+Hedge for stocks during bear markets
+No - The strategy is a theoretical factor, that’s useful in the portfolio construction, but can’t be traded directly.

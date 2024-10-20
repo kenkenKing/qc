@@ -1,0 +1,20 @@
+The paper (Bali, Kelly, Moerke, and Rahman, 2023) introduced a statistical model of investor beliefs from which they built a novel measure of investor belief disagreement called MFD. In particular, we simulate differences in beliefs across investors by endowing them with different machine-learning models for forecasting returns from the same set of inputs. The value-weighted arbitrage portfolio that takes a short position in the 10th percentile of stocks with the highest MFD and takes a long position in the 10th percentile of stocks with the lowest MFD yields a significant alpha, and we have chosen it as a suitable candidate to include it into our rich database of investing and trading strategies.
+
+Fundamental reason
+Differences in beliefs across investors emerge from differences in how they perceive and use data. Investor disagreement is measured as the standard deviation of expected return forecasts across investors. Authors, of course, investigate the source of the MFD spread portfolio’s alpha. To differentiate the risk versus mispricing explanations, they present evidence that the alpha for high-MFD stocks is driven primarily by mispricing: the economic mechanisms mostly converging to explanation are short-sale constraints and/or other limits to arbitrage (high arbitrage costs), and high retail ownership. Therefore, their findings support the mispricing explanation of the disagreement premium, consistent with (Miller, 1977).
+
+Simple trading strategy
+The investment universe comprises common stocks trading at the NYSE, AMEX, and NASDAQ. (Exclude financial and utilities firms, small and illiquid stocks, and also exclude the low-priced stocks trading below $5.)
+(You can use the dataset from Jensen et al. (2022b) <https://github.com/bkelly-lab/ReplicationCrisis/tree/master/GlobalFactors>, a publicly available dataset of stock returns and characteristics. The underlying return data are sourced from the Center for Research in Security Prices (CRSP) and accounting data from Compustat.)
+
+To predict returns, use the 130 stock characteristics as the complete information set z. (Utilize a 10-year rolling window to estimate the random forest regressor.)
+Variable computation: The specific procedure for constructing a measure of disagreement, machine forecast disagreement (MFD), is described in section 3.1 MFD construction. It contains random forest regression model specifications (the maximum tree depth to be 6, the number of trees in the ensemble to be 2000, the fraction of features and the sample to be taken as log2(130)/130 and to be 0.1, respectively) with controls (control variables) that are taken from Jensen et al. (2022b), which represent widely-respected firm characteristic, that “simulates” K = 100 investors taking different combination weights of used abovementioned data (factors etc.) about companies (such as firm’s market capitalization SIZE, BM ratio, MOM, IVOL, for example.)
+
+Trading strategy:
+1. Individual stocks are sorted by MFD into decile portfolios.
+2. Construct the long-short portfolio: The long-short portfolio short-sells stocks in the highest 10th percentile of MFD (decile 10) and buys (long) stocks in the lowest 10th percentile of MFD (decile 1).
+
+Portfolios are rebalanced each month (monthly) and value-weighted.
+
+Hedge for stocks during bear markets
+No - There is no mention of the application of these strategies in equity bear markets.

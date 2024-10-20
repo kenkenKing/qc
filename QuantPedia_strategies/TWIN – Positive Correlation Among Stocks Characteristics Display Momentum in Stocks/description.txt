@@ -1,0 +1,19 @@
+Wang (2024) derives and extends the style demand of Barberis & Shleifer (2003) and provides empirical evidence on the asset pricing implications of style switching. They show that firm-level granular styles can be defined within the characteristic space by introducing a top-down mechanism featuring characteristics-based trading and extrapolative belief. Theoretically, stocks sharing negative (positive) correlations within the characteristic space are classified as dual (twin) styles. The switching of asset demand between these two competing styles implies cross-stock reversals for dual styles and cross-stock momentum for twin styles. Empirically, they use a set of prevalent characteristics such as value, profitability, investment, momentum, and volatility to construct dual/twin styles and find strong cross-autocorrelation in stock returns that aligns with style switching. As for our inclusion in the database, we chose two portfolio strategies based on the DUAL and TWIN methodology approaches.
+
+Fundamental reason
+The paper highlights the unique role of style investing in affecting asset prices. The documented cross-reversal and cross-momentum are robust to a large set of controls and consistent with institutional trading. They further extend the analysis to the predictability of factors, where they provide evidence on both reversals and momentum in factor returns. These findings suggest that the asset management industry might exert significant price impacts and contribute to market inefficiency. In future research, it would be intriguing to study the influence of style switching on other market anomalies, such as the risk-return trade-off. It would also be valuable to explore the asset pricing implications of style investing in other markets, such as the bond market, the derivatives market, and the foreign exchange market, as well as the potential cross-market correlations.
+
+Simple trading strategy
+The investment sample should include all common stocks (share codes 10 or 11) listed on NYSE, AMEX, and NASDAQ.
+(Obtain stock price data from CRSP and accounting data from Compustat. Monthly time series of asset pricing factors are downloaded from Kenneth French’s Data Library (Fama and French, 1996, 2015) and the Global-q website (Hou et al., 2015, 2021). Also, 13F institutional investor holdings data can be from Thomson Reuters, and analyst forecast data from the Institutional Brokers Estimate System (IBES) detail file.)
+
+0. Prepare data: value, profitability, investment factors, and momentum and volatility (from sources above).
+1. First, calculate the cosine similarities between stocks as in eq. (10) from the characteristic vectors of firms i and j (then use it in the next step).
+2. Calculate TWIN, which is the value-weighted monthly return of other stocks sharing positive cosine similarities within the characteristic space, defined according to equation (11). Each month, stocks are sorted into quintile portfolios based on TWIN.
+3. Each month, stocks are sorted into quintile portfolios based on TWIN.
+4. Perform the high-minus-low (long-short) hedge strategy, which buys stocks in the top quintile and sells stocks in the bottom quintile.
+
+Portfolios are value-weighted (VW) and held for one month (thus rebalanced each month).
+
+Hedge for stocks during bear markets
+Not known -

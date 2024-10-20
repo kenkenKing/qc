@@ -1,0 +1,27 @@
+According to the lottery-demand framework, retail investors prefer risky stocks. Consequently, an increase in the presence of these investors in the stock market would plausibly lead to a rise in the price of high-beta stocks. Based on this argument, an increase in the attention of individual investors should lead to a decrease in future BAB returns. Employing the volume of online searches on Google toward different US stock market indexes, this paper presents robust evidence since (Pedro, 2024) documents that attention negatively affects future BAB performance. We are happy to take an investment strategy that takes advantage of the negative BAB-attention relationship (BAB + Attention) by betting against (with) beta when the one-lag attention is negative (positive) to enrich our encyclopedic database.
+
+Fundamental reason
+The findings reported here can also shed more light on one of the most striking anomalies in finance, the low beta puzzle, since the findings suggest that the lottery demand of individual investors is a potential driving force for this anomaly. Even though investigating the mechanism by which individual investors can lead to low beta anomaly exceeds the scope of this paper, this process seems to be an exciting agenda for future research. For the time being, the most important message presented in this paper is that one should consult Google before betting against beta.Results from the author also indicate that investor attention can explain future BAB returns that are not captured by other explanatory variables such as liquidity constraints, investor sentiment, lottery demand, or volatility. On the contrary, the horse race analysis demonstrates that investor attention affects every one of these variables. Finally, the international analysis of the remaining G7 countries also attests to the paper’s central hypothesis: that increases in investor attention provoke decreases in future BAB performance.
+
+Simple trading strategy
+Investment universe consists of ordinary stocks from NYSE, AMEX & Nasdaq, from which the Betting against Beta strategy is build (see https://quantpedia.com/strategies/betting-against-beta-factor-in-stocks/).
+
+(The primary variables of this study are Google Searches, as a proxy for investor attention, and the returns of the Betting Against Beta strategy. The data for Google Searches were collected from the Google Trends platform using the expressions “S&P 500” and “Dow Jones Industry Average.” For robustness, you can add the searches for a more generic term, namely “Stock Market.” The search volumes are restricted to the US. The data for the Betting Against Beta factor (hereafter, BAB) were obtained from the AQR Capital Management website (www.aqr.com), which continuously updates the portfolio construction based on Frazzini and Pedersen (2014).)
+
+‘BAB + Attention’ refers to a strategy that aims to capitalize on the BAB-attention relationship. Google search volume (GSV) information is provided at a weekly granularity.
+
+Decision Tree:
+1. Run a VAR analysis [single-variable (univariate) autoregressive model] of both variables, as addressed in the following equations (1) and (2); where response/observation (dependent variable) is 𝐵𝐴𝐵_𝑡 for the return of betting against a beta portfolio in the week and 𝑆_𝑡,𝑖 is the contemporaneous weekly log difference of GSV in the given index and controls are market returns (R) of market indexes.
+2. Then, with results from the previous step, execute Ordinary least-squares (OLS) models as on eqs. (3, 4) where predictors/explanations (independent variables) are the same as in eqs. (1, 2) controls are the previous week’s responses (or other chosen timespan).
+3. Then, depending on the results, decide to bet a. against (b. with) beta (of the chosen index) when the one-lag attention is a. negative (b. positive).
+
+One should rebalance each week and have a weighting of the beta coefficient.
+
+Hedge for stocks during bear markets
+Partially - Maybe; some aspects:
+
+In this respect, since some of the GSV spikes and BAB falls are clustered during recent financial crises (subprime and Eurozone), it is reasonable to conjecture that the negative BAB- GSV relation is explained by funding constraints, which provoke negative BAB returns (Frazzini and Pedersen, 2014) and concomitantly grab investor attention toward the stock market since they are related to economic downturns. This hypothesis is addressed in a specific section, and the results indicate that, although part of the BAB-GSV association is explained by liquidity tightness, there is still a significant relation between these constructs.
+
+Another vital limit to arbitrage is liquidity constraints. Since funding shortage is especially acute during financial crises and given that individual investors are attracted by skewness (Barberis and Huang, 2008; Barberis and Xiong, 2012), it is reasonable to investigate the role of funding constraints in the BAB-attention relation.
+
+These results indicate that the prevailing negative influence of attention on BAB performance is moderated by funding constraints, becoming more critical when liquidity tightens (TED spread increases). It should also be noted that even though liquidity plays a relevant role in the relation between BAB and investor attention, most of the variance of this association is not explained by the TED spread

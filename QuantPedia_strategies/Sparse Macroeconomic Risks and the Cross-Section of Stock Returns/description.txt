@@ -1,0 +1,21 @@
+The reviewed study investigates the pricing effectiveness of macroeconomic news on the micro individual stocks and the underlying economic regimes in the era of big data. Utilizing the sparse PCA approach to aggregate macroeconomic information, authors obtain the eight components: inflation, housing, spreads, production, employment, personal income, yields, and credit, which are a basis for constructing firm-level macroeconomic risk exposures. We present our modification of employing a simple equally-averaged model capitalizing on rule revertation that provides satisfactionable alpha returns.
+
+Fundamental reason
+The study contributes to the literature on economic forces and asset pricing because of big data, the potential economic mechanism to understand the macro premium, and the connection and disconnection of macro risk exposures and micro individual stocks. The main themes are the considerably turbulent macroeconomic environment in recent years and mixed evidence of macroeconomic links to the stock market due to diversified macroeconomic information. Authors contribute with findings that firm fundamentals cannot cover the information in these macro betas; the betas of inflation, production, personal income, yields, and credit are strong predictors of future stock returns, and these betas have incremental information beyond those provided by other well-known risks; and that the evidence, both macro and micro views, suggests that mispricing due to arbitrage frictions and investor sentiment can explain the relationship between macro betas and returns, which display significantly different across industries.
+
+Simple trading strategy
+The investment sample consists of all the available common share firms (U. S. equity securities) listed on the NYSE, AMEX, and NASDAQ.
+(Stock return data are from the Center for Research in Security Prices (CRSP), accounting-related data from the merged Compustat-CRSP database, and macroeconomic indicators data from the FRED-MD database.)
+
+High-level computation summary:
+1. The cornerstone of the strategy is to analyze a wide array of 127 monthly macroeconomic variables through the sparse PCA approach and, specifically with the penalized matrix decomposition methodology advocated by Witten et al. (2009), to extract these variables into eight sparse PCs (eq. (1)), i.e., inflation, housing, spreads, production, employment, personal income, yields, and credit (see Table 1: Sparse Principal Component Weight).
+2. Then, take these PCs’ slopes (computation on eq. (5)) in the cross-sectional regressions on future stock returns as the corresponding risk exposures at the firm level or macro betas in this study.
+
+One creates long-short spread portfolios each month:
+1. We select Fama-French three-factor alphas (FF3-α) of all value-weighted portfolios with the lowest (denoted as “Low”) and highest (“High”) macro betas, and
+2. the corresponding hedge (“H-L”) portfolios are the basis for the constructed final portfolio.
+
+Our proposed strategy is an equally weighted application of all five of the abovementioned reviewed portfolios. The strategy settings obey monthly rebalancing.
+
+Hedge for stocks during bear markets
+No - This strategy can’t be used as a protection in bear markets.

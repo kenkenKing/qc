@@ -1,0 +1,34 @@
+This paper introduces the concept of “Network Momentum,” extending the traditional understanding of momentum spillover from individual assets to interconnected systems across multiple asset classes. The authors employ a graph learning model to infer dynamic networks among 64 continuous futures contracts spanning commodities, equities, fixed income, and currencies. The resulting network momentum signals are used to construct a novel trading strategy based on a linear regression model, taking into account risk characteristics and potential reversals. Empirical testing demonstrates the strategy’s impressive profitability, lower downside deviation, and unique predictive power, emphasizing the importance of inter-class connections in optimizing cross-asset trading strategies. The paper contributes to the field by pioneering the exploration of network momentum across diverse asset classes, proposing a robust methodology for portfolio construction, and offering insights into the topological structure and temporal dynamics of interconnections.
+
+Fundamental reason
+The logic behind the functionality of this paper lies in its exploration of momentum spillover and the subsequent development of Network Momentum—a novel trading signal. The paper begins by highlighting the persistent abnormal returns associated with momentum in finance, extending beyond individual assets to instances where the performance of one asset influences another, termed as momentum spillover.
+The initial focus is on pairwise relationships, such as between bond and stock within the same firm and the observation that high equity returns tend to lead to high bond returns. This momentum spillover concept is then expanded to interconnected systems within a universe of stocks, emphasizing a broader understanding beyond pairwise connections. The authors introduce the term “Network Momentum,” derived from averaging the time-series momentum characteristics of connected assets.
+To overcome challenges in establishing connections across diverse asset classes, the paper proposes a graph learning model. This innovative approach infers dynamic networks among continuous futures contracts, capturing momentum spillover patterns directly learned from historical data. The resulting graph structure provides an interpretable representation of complex relationships across assets and classes.
+The authors further develop a linear regression model to construct the network momentum strategy, considering risk characteristics and potential reversals. Backtesting demonstrates the strategy’s profitability, risk management, and low correlation with individual momentum. The paper’s main contributions lie in pioneering the examination of momentum spillover across multiple asset classes, proposing a methodology for portfolio construction based on network momentum signals, and offering insights into the topological structure and temporal dynamics of interconnections. In essence, the logic behind the paper’s functionality revolves around advancing our understanding of momentum in finance and leveraging it for effective cross-asset trading strategy development.
+
+Simple trading strategy
+Data
+The dataset consists of daily prices spanning from 1990 to 2022, covering 64 continuous futures contracts representing Commodities, Equities, Fixed Income (FI), and Currencies (FX). The data is sourced from the Pinnacle Data Crop CLC Database.
+
+Momentum Features
+Eight individual momentum features are computed from raw pricing data, forming the input for the graph learning model:
+
+• Volatility-scaled returns over 1-day, 1-month, 3-month, 6-month, and 1-year periods (denoted as rt−∆:t σt √ ∆ for asset i, where ∆ = {1, 21, 63, 126, 252} days). Daily volatility σt is estimated using an exponential weighted moving standard deviation (EWMstd) with a 60-day span on daily returns.
+• Normalized MACD indicators yi,t(S, L) for asset i at day t, developed by Baz et al. [8], with three combinations of short and long time scales (Sk, Lk) ∈ {(8, 24),(16, 48),(32, 96)}.
+
+Aggregating these features, a feature matrix Ut = [u1,t, …, ui,t, …, uNt,t]ᵀ ∈ ℝ^(Nt×8) is created for each trading day, where Nt is the number of assets. A data winsorization strategy is applied to mitigate outlier influence, capping and flooring each feature to a range defined by five times its exponentially weighted moving standard deviations from the corresponding exponentially weighted moving average.
+
+Network Momentum
+Graph Learning
+The construction of network momentum begins with developing dynamic networks representing interconnections between assets. The networks should adapt to evolving financial market regimes, reflecting historical similarities in individual momentum between assets. Key characteristics include non-negative edge weights and sparsity. Graph learning is employed to achieve these goals.
+
+On each trading day t, momentum feature matrices (Ut) are stacked over a lookback window of δ days, producing a matrix Vt ∈ ℝ^(Nt×8δ). The graph adjacency matrix At is estimated using graph learning, solving a convex optimization problem.
+
+Portfolio Construction
+With learned graphs, network momentum features are constructed for each asset by propagating individual momentum through connected assets. A linear regression model estimates the momentum trend, forming the basis for portfolio construction.
+
+Backtest
+The daily return of a long/short portfolio, labelled as GMOM, see Equation 9 from the paper. The proposed GMOM strategy is compared against benchmarks (Long Only and MACD) to assess its performance. GMOM involves long/short positions based on network momentum, with volatility scaling and a target annualized volatility of 0.15.
+
+Hedge for stocks during bear markets
+Yes - CTA/Momentum/Managed futures are traditionally a good hedge against drawdowns on stock markets.
